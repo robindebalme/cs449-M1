@@ -26,6 +26,21 @@ Unzip:
 > unzip ml-100k.zip
 ````
 
+# Personal Ratings
+
+Add your ratings in the 'data/personal.csv' file, by providing a numerical rating between [1,5] for at least 20 movies. For example, to rate the 'Toy Story' movie with '5', modify this line:
+
+````
+1,Toy Story (1995),
+````
+
+to this:
+````
+1,Toy Story (1995),5
+````
+
+Do include your own ratings in your final submission so we can check your answers against those provided in your report.
+
 # Usage
 
 ## Compute predictions
