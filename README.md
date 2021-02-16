@@ -46,7 +46,7 @@ Do include your own ratings in your final submission so we can check your answer
 ## Compute predictions
 
 ````
-> sbt 'runMain predict.Predictor'
+> sbt "runMain predict.Predictor --train data/ml-100k/u1.base --test data/ml-100k/u1.test --json answers.json"
 ````
 
 ## Compute recommendations
