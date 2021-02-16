@@ -56,19 +56,15 @@ Do include your own ratings in your final submission so we can check your answer
 
 ## Package for submission
 
-Update the ````name````, ````maintainer```` fields of ````build.sbt````, with the correct Milestone number, your ID, and your email.
-
-Package your application:
-````
-> sbt 'show dist'
-````
-
-You should should see an output like:
-````
-[info] Your package is ready in [...]/target/universal/m1_your_id-1.0.zip
-````
-
-Combine this package, alongside your report and any other files mentioned in the Milestone description (see Section ````Deliverables````). Submit to the TA for grading.
+Steps:
+    1. Update the ````name````, ````maintainer```` fields of ````build.sbt````, with the correct Milestone number, your ID, and your email.
+    2. Ensure you only used the dependencies listed in ````build.sbt```` in this template, and did not add any other.
+    3. Remove ````project/project````, ````project/target````, and ````target/````.  
+    4. Test that all previous commands for generating statistics, predictions, and recommendations correctly produce a JSON file (after downloading/reinstalling dependencies).
+    5. Remove the ml-100k dataset (````data/ml-100k.zip````, and ````data/ml-100k````), as well as the````project/project````, ````project/target````, and ````target/````. 
+    6. Add your report and any other necessary files listed in the Milestone description (see ````Deliverables````).
+    7. Zip the archive.
+    8. Submit to the TA for grading.
 
 # References
 
