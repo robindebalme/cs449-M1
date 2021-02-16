@@ -57,6 +57,7 @@ Do include your own ratings in your final submission so we can check your answer
 ## Package for submission
 
 Steps:
+
     1. Update the ````name````, ````maintainer```` fields of ````build.sbt````, with the correct Milestone number, your ID, and your email.
     2. Ensure you only used the dependencies listed in ````build.sbt```` in this template, and did not add any other.
     3. Remove ````project/project````, ````project/target````, and ````target/````.  
