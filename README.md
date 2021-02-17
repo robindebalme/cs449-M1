@@ -46,12 +46,18 @@ Do include your own ratings in your final submission so we can check your answer
 ## Compute predictions
 
 ````
-> sbt "runMain predict.Predictor --train data/ml-100k/u1.base --test data/ml-100k/u1.test --json answers.json"
+> sbt "runMain stats.Analyzer --data data/ml-100k/u.data --json statistics.json"
+````
+
+## Compute predictions
+
+````
+> sbt "runMain predict.Predictor --train data/ml-100k/u1.base --test data/ml-100k/u1.test --json predictions.json"
 ````
 
 ## Compute recommendations
 ````
-> sbt 'runMain recommend.Recommender'
+> sbt "runMain recommend.Recommender --data data/ml-100k/u.data --personal data/personal.csv --json recommendations.json"
 ````
 
 ## Package for submission
