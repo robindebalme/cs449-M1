@@ -43,7 +43,7 @@ Do include your own ratings in your final submission so we can check your answer
 
 # Usage
 
-## Compute predictions
+## Compute statistics
 
 ````
 > sbt "runMain stats.Analyzer --data data/ml-100k/u.data --json statistics.json"
