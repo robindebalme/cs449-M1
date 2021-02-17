@@ -89,4 +89,4 @@ JSON Serialization: https://github.com/json4s/json4s#serialization
 
 Erick Lavoie (Design, Implementation, Tests)
 
-Athanasios Xygkis (Original Idea, Requirements, Tests)
+Athanasios Xygkis (Requirements, Tests)
