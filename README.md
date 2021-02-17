@@ -70,4 +70,7 @@ Steps:
 # References
 
 Essential sbt: https://www.scalawilliam.com/essential-sbt/
+Explore Spark Interactively (supports autocompletion with tabs!): https://spark.apache.org/docs/latest/quick-start.html
+Scallop Argument Parsing: https://github.com/scallop/scallop/wiki
+Spark Resilient Distributed Dataset (RDD): https://spark.apache.org/docs/3.0.1/api/scala/org/apache/spark/rdd/RDD.html
 
