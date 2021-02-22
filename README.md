@@ -10,7 +10,7 @@ Should be available by default on the IC Cluster. Otherwise, refer to each proje
 
 Download the ````ml-100k.zip```` dataset in the ````data/```` folder:
 ````
-> mkdir data
+> mkdir -p data
 > cd data
 > wget http://files.grouplens.org/datasets/movielens/ml-100k.zip   
 ````

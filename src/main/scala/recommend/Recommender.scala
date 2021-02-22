@@ -61,13 +61,18 @@ object Recommender extends App {
         // Limiting the scope of implicit formats with {}
         implicit val formats = org.json4s.DefaultFormats
         val answers: Map[String, Any] = Map(
-           "4.1.1" -> List[Any](
-             List(0,"Tron", 5.0),
-             List(0,"Tron", 5.0),
-             List(0,"Tron", 5.0),
-             List(0,"Tron", 5.0),
-             List(0,"Tron", 5.0)
-           )
+
+            // IMPORTANT: To break ties and ensure reproducibility of results,
+            // please report the top-5 recommendations that have the smallest
+            // movie identifier.
+
+            "Q4.1.1" -> List[Any](
+              List(254, "Batman & Robin (1997)", 5.0), // Datatypes for answer: Int, String, Double
+              List(338, "Bean (1997)", 5.0),
+              List(615, "39 Steps", 5.0),
+              List(741, "Last Supper", 5.0),
+              List(587, "Hour of the Pig", 5.0)
+            )
          )
         json = Serialization.writePretty(answers)
       }
