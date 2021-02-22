@@ -65,9 +65,36 @@ object Predictor extends App {
         // Limiting the scope of implicit formats with {}
         implicit val formats = org.json4s.DefaultFormats
         val answers: Map[String, Any] = Map(
-           "3.1.4" -> Map(
-             "global-mae" -> globalMae
-           )
+            "Q3.1.4" -> Map(
+              "MaeGlobalMethod" -> 0.0, // Datatype of answer: Double
+              "MaePerUserMethod" -> 0.0, // Datatype of answer: Double
+              "MaePerItemMethod" -> 0.0, // Datatype of answer: Double
+              "MaeBaselineMethod" -> 0.0 // Datatype of answer: Double
+            ),
+
+            "Q3.1.5" -> Map(
+              "DurationInMicrosecForGlobalMethod" -> Map(
+                "min" -> 0.0,  // Datatype of answer: Double
+                "max" -> 0.0,  // Datatype of answer: Double
+                "average" -> 0.0 // Datatype of answer: Double
+              ),
+              "DurationInMicrosecForPerUserMethod" -> Map(
+                "min" -> 0.0,  // Datatype of answer: Double
+                "max" -> 0.0,  // Datatype of answer: Double
+                "average" -> 0.0 // Datatype of answer: Double
+              ),
+              "DurationInMicrosecForPerItemMethod" -> Map(
+                "min" -> 0.0,  // Datatype of answer: Double
+                "max" -> 0.0,  // Datatype of answer: Double
+                "average" -> 0.0 // Datatype of answer: Double
+              ),
+              "DurationInMicrosecForBaselineMethod" -> Map(
+                "min" -> 0.0,  // Datatype of answer: Double
+                "max" -> 0.0, // Datatype of answer: Double
+                "average" -> 0.0 // Datatype of answer: Double
+              ),
+              "RatioBetweenBaselineMethodAndGlobalMethod" -> 0.0 // Datatype of answer: Double
+            ),
          )
         json = Serialization.writePretty(answers)
       }

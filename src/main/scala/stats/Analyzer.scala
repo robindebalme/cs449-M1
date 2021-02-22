@@ -53,9 +53,31 @@ object Analyzer extends App {
         // Limiting the scope of implicit formats with {}
         implicit val formats = org.json4s.DefaultFormats
         val answers: Map[String, Any] = Map(
-           "3.1.1" -> Map(
-             "global-avg-rating" -> 3.0
-           )
+          "Q3.1.1" -> Map(
+            "GlobalAverageRating" -> 0.0 // Datatype of answer: Double
+          ),
+          "Q3.1.2" -> Map(
+            "UsersAverageRating" -> Map(
+                // Using as your input data the average rating for each user,
+                // report the min, max and average of the input data.
+                "min" -> 0.0,  // Datatype of answer: Double
+                "max" -> 0.0, // Datatype of answer: Double
+                "average" -> 0.0 // Datatype of answer: Double
+            ),
+            "AllUsersCloseToGlobalAverageRating" -> true, // Datatype of answer: Boolean
+            "RatioUsersCloseToGlobalAverageRating" -> 0.0 // Datatype of answer: Double
+          ),
+          "Q3.1.3" -> Map(
+            "ItemsAverageRating" -> Map(
+                // Using as your input data the average rating for each item,
+                // report the min, max and average of the input data.
+                "min" -> 0.0,  // Datatype of answer: Double
+                "max" -> 0.0, // Datatype of answer: Double
+                "average" -> 0.0 // Datatype of answer: Double
+            ),
+            "AllItemsCloseToGlobalAverageRating" -> true, // Datatype of answer: Boolean
+            "RatioItemsCloseToGlobalAverageRating" -> 0.0 // Datatype of answer: Double
+          ),
          )
         json = Serialization.writePretty(answers)
       }
