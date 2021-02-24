@@ -2,6 +2,8 @@
 
 [Milestone-1.pdf](./Milestone-1.pdf)
 
+Note: Section 7 (Updates) lists the updates since the original release of the Milestone on February 23rd.
+
 # Dependencies
 
 ````
