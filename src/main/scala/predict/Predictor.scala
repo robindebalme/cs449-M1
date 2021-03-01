@@ -76,22 +76,26 @@ object Predictor extends App {
               "DurationInMicrosecForGlobalMethod" -> Map(
                 "min" -> 0.0,  // Datatype of answer: Double
                 "max" -> 0.0,  // Datatype of answer: Double
-                "average" -> 0.0 // Datatype of answer: Double
+                "average" -> 0.0, // Datatype of answer: Double
+                "stddev" -> 0.0 // Datatype of answer: Double
               ),
               "DurationInMicrosecForPerUserMethod" -> Map(
                 "min" -> 0.0,  // Datatype of answer: Double
                 "max" -> 0.0,  // Datatype of answer: Double
-                "average" -> 0.0 // Datatype of answer: Double
+                "average" -> 0.0, // Datatype of answer: Double
+                "stddev" -> 0.0 // Datatype of answer: Double
               ),
               "DurationInMicrosecForPerItemMethod" -> Map(
                 "min" -> 0.0,  // Datatype of answer: Double
                 "max" -> 0.0,  // Datatype of answer: Double
-                "average" -> 0.0 // Datatype of answer: Double
+                "average" -> 0.0, // Datatype of answer: Double
+                "stddev" -> 0.0 // Datatype of answer: Double
               ),
               "DurationInMicrosecForBaselineMethod" -> Map(
                 "min" -> 0.0,  // Datatype of answer: Double
                 "max" -> 0.0, // Datatype of answer: Double
-                "average" -> 0.0 // Datatype of answer: Double
+                "average" -> 0.0, // Datatype of answer: Double
+                "stddev" -> 0.0 // Datatype of answer: Double
               ),
               "RatioBetweenBaselineMethodAndGlobalMethod" -> 0.0 // Datatype of answer: Double
             ),
