@@ -60,7 +60,7 @@ This code should then be used in the following applications and tests.
     2. ````src/main/scala/distributed/DistributedBaseline.scala````: Output answers to questions **D.X**.
     3. ````src/main/scala/predict/Personalized.scala````: Output answers to questions questions **P.X**.
     4. ````src/main/scala/predict/kNN.scala````: Output answers to questions questions **N.X**.
-    5. ````src/main/scala/recommend/Recommender.scala````: Output answers to questions questions **N.X**.
+    5. ````src/main/scala/recommend/Recommender.scala````: Output answers to questions questions **R.X**.
 
 Applications are separate from tests to make it easier to test with different
 inputs and permit outputting your answers and timings in JSON format for easier
