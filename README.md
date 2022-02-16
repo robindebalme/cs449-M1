@@ -56,11 +56,11 @@ This code should then be used in the following applications and tests.
 
 ## Applications
 
-````src/main/scala/predict/Baseline.scala````: Output answers to questions **B.X**.
-````src/main/scala/distributed/DistributedBaseline.scala````: Output answers to questions **D.X**.
-````src/main/scala/predict/Personalized.scala````: Output answers to questions questions **P.X**.
-````src/main/scala/predict/kNN.scala````: Output answers to questions questions **N.X**.
-````src/main/scala/recommend/Recommender.scala````: Output answers to questions questions **N.X**.
+    1. ````src/main/scala/predict/Baseline.scala````: Output answers to questions **B.X**.
+    2. ````src/main/scala/distributed/DistributedBaseline.scala````: Output answers to questions **D.X**.
+    3. ````src/main/scala/predict/Personalized.scala````: Output answers to questions questions **P.X**.
+    4. ````src/main/scala/predict/kNN.scala````: Output answers to questions questions **N.X**.
+    5. ````src/main/scala/recommend/Recommender.scala````: Output answers to questions questions **N.X**.
 
 Applications are separate from tests to make it easier to test with different
 inputs and permit outputting your answers and timings in JSON format for easier
@@ -88,7 +88,9 @@ clear and regular structure to check its correctness.
 
 ## Execute unit tests
 
-````sbt "testOnly test.AllTests"````
+````
+     sbt "testOnly test.AllTests"
+````
 
 You should fill all tests and ensure they all succeed prior to submission.
 
@@ -162,7 +164,7 @@ before running on cluster.
 ### Run on Cluster
 
 ````
-spark-submit --class distributed.DistributedBaseline --master yarn --num-executors 1 target/scala-2.11/m1_yourid-assembly-1.0.jar  --train TRAIN --test TEST --separator , --json distributed-25m-1.json --num_measurements 1
+spark-submit --class distributed.DistributedBaseline --master yarn --num-executors 1 m1_yourid-assembly-1.0.jar  --train TRAIN --test TEST --separator , --json distributed-25m-1.json --num_measurements 1
 ````
 
 See [config.sh](./config.sh) for HDFS paths to pre-uploaded TRAIN and TEST datasets. You can vary the number of executors with ````--num-executors X````, and number of measurements with ````--num_measurements Y````.
@@ -175,7 +177,7 @@ We will use the following scripts to grade your submission:
     2. ````./run.sh````: Run all applications without timing measurements.
     3. ````./timeTrials.sh````: Time applications to determine which student implementations are fastest.
     4. ````./timeOthers.sh````: Time applications to check report answers against independent measurements. 
-    4. ````./timeCluster.sh````: Package and time applications on Spark Cluster.
+    5. ````./timeCluster.sh````: Package and time applications on Spark Cluster.
 
 All scripts will produce execution logs in the ````logs````
 directory, including answers produced in the JSON format. Logs directories are
