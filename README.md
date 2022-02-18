@@ -13,6 +13,11 @@ Note: Section 'Updates' lists the updates since the original release of the Mile
 
 Should be available by default on ````iccluster028.iccluster.epfl.ch````. Otherwise, refer to each project installation instructions. Prefer working locally on your own machine, you will have less interference in your measurements from other students.
 
+If you have work on ````iccluster028.iccluster.epfl.ch````, you need to modify the PATH by default by adding the following line in ~/.bashrc:
+````
+    export PATH=$PATH:/opt/sbt/sbt/bin
+````
+
 If you have multiple installations of openjdk, you need to specify the one to use as JAVA_HOME, e.g. on OSX with
 openjdk@8 installed through Homebrew, you would do:
 ````
