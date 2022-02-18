@@ -192,19 +192,15 @@ interfere with other students working on their Milestone at the same time. If
 sufficient.
 
 
-## Package for submission
+## Submission
 
 Steps:
-
-    1. Update the ````name````, ````maintainer```` fields of ````build.sbt````, with the correct Milestone number, your ID, and your email.
-    2. Ensure you only used the dependencies listed in ````build.sbt```` in this template, and did not add any other.
-    3. Remove ````project/project````, ````project/target````, and ````target/````.  
-    4. Test that all previous commands for generating statistics, predictions, and recommendations correctly produce a JSON file (after downloading/reinstalling dependencies).
-    5. Remove the ml-100k dataset (````data/ml-100k.zip````, and ````data/ml-100k````), as well as the````project/project````, ````project/target````, and ````target/````. 
-    6. Remove the ````.git```` repository information.
-    7. Add your report and any other necessary files listed in the Milestone description (see ````Deliverables````).
-    8. Zip the archive.
-    9. Submit to the TA for grading.
+    1. Create a zip archive with all your code within  ````src/````, as well as your report:
+````
+    zip sciper1-sciper2.zip -r src/ report.pdf
+````
+    2. Submit ````sciper1-sciper2.zip```` the TA for grading on
+       https://cs449-submissions.epfl.ch:8083/m1 using the passcode you have previously received by email.
 
 # References
 
