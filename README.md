@@ -1,8 +1,10 @@
 # Milestone Description
 
-[To Be Released](./Milestone-1.pdf)
+[Milestone-1.pdf](./Milestone-1.pdf)
 
-Note: Section 'Updates' lists the updates since the original release of the Milestone..
+Note: Section 'Updates' lists the updates since the original release of the Milestone.
+
+Mu has prepared a report template for your convenience here: [Report Template](./Milestone-1-QA-template.tex).
 
 # Dependencies
 
