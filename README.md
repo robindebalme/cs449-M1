@@ -174,7 +174,12 @@ before running on cluster.
 spark-submit --class distributed.DistributedBaseline --master yarn --num-executors 1 m1_yourid-assembly-1.0.jar  --train TRAIN --test TEST --separator , --json distributed-25m-1.json --num_measurements 1
 ````
 
-See [config.sh](./config.sh) for HDFS paths to pre-uploaded TRAIN and TEST datasets. You can vary the number of executors with ````--num-executors X````, and number of measurements with ````--num_measurements Y````.
+See [config.sh](./config.sh) for HDFS paths to pre-uploaded train and test datasets to replace TRAIN and TEST with in the command. For instance, if you want to run on ML-25m, you should first run [config.sh](./config.sh) and then use the above command adapted as such:
+````
+spark-submit --class distributed.DistributedBaseline --master yarn --num-executors 1 m1_yourid-assembly-1.0.jar  --train $ML25Mr2train --test $ML25Mr2test --separator , --json distributed-25m-1.json --num_measurements 1
+````
+
+You can vary the number of executors with ````--num-executors X````, and number of measurements with ````--num_measurements Y````.
 
 ## Grading scripts
 
