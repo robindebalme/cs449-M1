@@ -112,7 +112,7 @@ On ````ml-100k````:
 
 On ````ml-25m````:
 ````
-    sbt "runMain predict.Baseline --train data/ml-25m/r2.train --test data/ml-25m/r2.test --json baseline-25m.json"
+    sbt "runMain predict.Baseline --train data/ml-25m/r2.train --test data/ml-25m/r2.test --separator , --json baseline-25m.json"
 ````
 
 ### Distributed Baseline
