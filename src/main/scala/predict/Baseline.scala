@@ -20,6 +20,7 @@ class Conf(arguments: Seq[String]) extends ScallopConf(arguments) {
   verify()
 }
 
+
 object Baseline extends App {
   // Remove these lines if encountering/debugging Spark
   Logger.getLogger("org").setLevel(Level.OFF)
@@ -46,6 +47,8 @@ object Baseline extends App {
   }))
   val timings = measurements.map(t => t._2) // Retrieve the timing measurements
 
+  val GlobalAvg = train.head.rating
+
   // Save answers as JSON
   def printToFile(content: String, 
                   location: String = "./answers.json") =
@@ -64,7 +67,7 @@ object Baseline extends App {
           "3.Measurements" -> ujson.Num(conf.num_measurements())
         ),
         "B.1" -> ujson.Obj(
-          "1.GlobalAvg" -> ujson.Num(0.0), // Datatype of answer: Double
+          "1.GlobalAvg" -> ujson.Num(GlobalAvg), // Datatype of answer: Double
           "2.User1Avg" -> ujson.Num(0.0),  // Datatype of answer: Double
           "3.Item1Avg" -> ujson.Num(0.0),   // Datatype of answer: Double
           "4.Item1AvgDev" -> ujson.Num(0.0), // Datatype of answer: Double
