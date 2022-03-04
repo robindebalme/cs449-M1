@@ -47,8 +47,30 @@ object Baseline extends App {
   }))
   val timings = measurements.map(t => t._2) // Retrieve the timing measurements
 
-  val GlobalAvg = train.head.rating
+  val GlobalAvg = train.foldLeft(0.0){(acc : Double, arr: Rating) => acc + arr.rating} / train.length
 
+  val User1Avg = train.filter(arr => arr.user == 1).foldLeft(0.0){(acc, arr) => acc + arr.rating} / train.filter(arr => arr.user == 1).length
+
+  val Item1Avg = train.filter(arr => arr.item == 1).foldLeft(0.0){(acc, arr) => acc + arr.rating} / train.filter(arr => arr.item == 1).length
+
+  def AnyUserAvg(user : Int, arr : Array[Rating]) : Double =  train.filter(arr => arr.user == user).foldLeft(0.0){(acc, arr) => acc + arr.rating} / train.filter(arr => arr.user == user).length
+  
+  def scale(x : Int, UserAvg : Double): Double = {
+    if (x > UserAvg)
+      5 - UserAvg
+    else if (x < UserAvg)
+      UserAvg - 1
+    else 1
+  }
+
+  def NormalizedDev(user : Int, item : Int, arr : Array[Rating]) : Double = {
+    val r_u_i = arr.filter(x => (x.user == user && x.item == item))
+    val UserAvg = AnyUserAvg(user, arr)
+    (r_u_i - UserAvg) / scale(r_u_i, UserAvg)
+  }
+  def AvgDev(user : Int, item : Int, arr : Array[Rating]): Double = {
+    arr.filter()
+  }
   // Save answers as JSON
   def printToFile(content: String, 
                   location: String = "./answers.json") =
@@ -68,8 +90,8 @@ object Baseline extends App {
         ),
         "B.1" -> ujson.Obj(
           "1.GlobalAvg" -> ujson.Num(GlobalAvg), // Datatype of answer: Double
-          "2.User1Avg" -> ujson.Num(0.0),  // Datatype of answer: Double
-          "3.Item1Avg" -> ujson.Num(0.0),   // Datatype of answer: Double
+          "2.User1Avg" -> ujson.Num(User1Avg),  // Datatype of answer: Double
+          "3.Item1Avg" -> ujson.Num(Item1Avg),   // Datatype of answer: Double
           "4.Item1AvgDev" -> ujson.Num(0.0), // Datatype of answer: Double
           "5.PredUser1Item1" -> ujson.Num(0.0) // Datatype of answer: Double
         ),
