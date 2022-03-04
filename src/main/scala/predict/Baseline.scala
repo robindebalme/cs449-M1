@@ -47,29 +47,50 @@ object Baseline extends App {
   }))
   val timings = measurements.map(t => t._2) // Retrieve the timing measurements
 
-  val GlobalAvg = train.foldLeft(0.0){(acc : Double, arr: Rating) => acc + arr.rating} / train.length
+  val globalAvg = train.foldLeft(0.0){(acc : Double, arr: Rating) => acc + arr.rating} / train.length
 
-  val User1Avg = train.filter(arr => arr.user == 1).foldLeft(0.0){(acc, arr) => acc + arr.rating} / train.filter(arr => arr.user == 1).length
+  val user1Avg = train.filter(arr => arr.user == 1).foldLeft(0.0){(acc, arr) => acc + arr.rating} / train.filter(arr => arr.user == 1).length
 
-  val Item1Avg = train.filter(arr => arr.item == 1).foldLeft(0.0){(acc, arr) => acc + arr.rating} / train.filter(arr => arr.item == 1).length
+  val item1Avg = train.filter(arr => arr.item == 1).foldLeft(0.0){(acc, arr) => acc + arr.rating} / train.filter(arr => arr.item == 1).length
 
-  def AnyUserAvg(user : Int, arr : Array[Rating]) : Double =  train.filter(arr => arr.user == user).foldLeft(0.0){(acc, arr) => acc + arr.rating} / train.filter(arr => arr.user == user).length
-  
-  def scale(x : Int, UserAvg : Double): Double = {
-    if (x > UserAvg)
-      5 - UserAvg
-    else if (x < UserAvg)
-      UserAvg - 1
+  def anyUserAvg(user : Int, arr : Array[Rating]) : Double = {
+    val arrFiltered = arr.filter(arr => arr.user == user)
+    if (arrFiltered.isEmpty)
+      globalAvg
+    else
+     arrFiltered.foldLeft(0.0){(acc, arr) => acc + arr.rating} / train.filter(arr => arr.user == user).length
+  }
+
+  def anyItemAvg(item : Int, arr : Array[Rating]) : Double =  {
+    val arrFiltered = arr.filter(arr => arr.item == item)
+    if (arrFiltered.isEmpty)
+      globalAvg
+    else
+      arrFiltered.foldLeft(0.0){(acc, arr) => acc + arr.rating} / train.filter(arr => arr.item == item).length
+    }
+    
+  def scale(x : Double, userAvg : Double): Double = {
+    if (x > userAvg)
+      5 - userAvg
+    else if (x < userAvg)
+      userAvg - 1
     else 1
   }
 
-  def NormalizedDev(user : Int, item : Int, arr : Array[Rating]) : Double = {
-    val r_u_i = arr.filter(x => (x.user == user && x.item == item))
-    val UserAvg = AnyUserAvg(user, arr)
-    (r_u_i - UserAvg) / scale(r_u_i, UserAvg)
+  def anyAvgDev(item : Int, arr : Array[Rating]): Double = {
+    arr.filter(l => l.item == item).foldLeft(0.0){(acc, elem) => 
+      val userAvg = anyUserAvg(elem.user, arr)
+      (elem.rating - userAvg) / scale(elem.rating, userAvg) + acc} / arr.filter(l => l.item == item).length
   }
-  def AvgDev(user : Int, item : Int, arr : Array[Rating]): Double = {
-    arr.filter()
+
+  def predicted(user: Int, item : Int, arr : Array[Rating]): Double = {
+    val userAvg = anyUserAvg(user, arr)
+    if (arr.filter(l => l.item == item).isEmpty)
+      userAvg
+    else {
+      val avgDev = anyAvgDev(item, arr)
+      userAvg + avgDev * scale((userAvg + avgDev), userAvg)
+    }
   }
   // Save answers as JSON
   def printToFile(content: String, 
@@ -89,11 +110,11 @@ object Baseline extends App {
           "3.Measurements" -> ujson.Num(conf.num_measurements())
         ),
         "B.1" -> ujson.Obj(
-          "1.GlobalAvg" -> ujson.Num(GlobalAvg), // Datatype of answer: Double
-          "2.User1Avg" -> ujson.Num(User1Avg),  // Datatype of answer: Double
-          "3.Item1Avg" -> ujson.Num(Item1Avg),   // Datatype of answer: Double
-          "4.Item1AvgDev" -> ujson.Num(0.0), // Datatype of answer: Double
-          "5.PredUser1Item1" -> ujson.Num(0.0) // Datatype of answer: Double
+          "1.GlobalAvg" -> ujson.Num(globalAvg), // Datatype of answer: Double
+          "2.User1Avg" -> ujson.Num(anyUserAvg(1, train)),  // Datatype of answer: Double
+          "3.Item1Avg" -> ujson.Num(anyItemAvg(1, train)),   // Datatype of answer: Double
+          "4.Item1AvgDev" -> ujson.Num(anyAvgDev(1, train)), // Datatype of answer: Double
+          "5.PredUser1Item1" -> ujson.Num(predicted(1, 1, train)) // Datatype of answer: Double
         ),
         "B.2" -> ujson.Obj(
           "1.GlobalAvgMAE" -> ujson.Num(0.0), // Datatype of answer: Double
