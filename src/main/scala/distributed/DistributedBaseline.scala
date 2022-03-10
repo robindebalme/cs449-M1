@@ -125,7 +125,7 @@ object DistributedBaseline extends App {
 
   def mae(df_test : RDD[Rating], df_train : RDD[Rating]): Double = {
     df_test.map{ elem =>
-      abs(elem.rating - distribpredicted(elem.user, elem.item, df_train)
+      abs(elem.rating - distribpredicted(elem.user, elem.item, df_train))
     }
   }
   // Save answers as JSON

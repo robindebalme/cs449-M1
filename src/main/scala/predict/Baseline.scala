@@ -107,7 +107,7 @@ object Baseline extends App {
     case "GlobalAvg" => 
       val globalAvg = train.foldLeft(0.0){(acc : Double, arr: Rating) => acc + arr.rating} / train.length
       test.foldLeft(0.0){(acc, elem ) =>  abs(globalAvg - elem.rating)} / test.length
-
+    case "UserAvg" =>
     case _ => -1
   }
   // Save answers as JSON
