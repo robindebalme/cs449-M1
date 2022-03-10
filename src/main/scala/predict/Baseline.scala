@@ -20,6 +20,7 @@ class Conf(arguments: Seq[String]) extends ScallopConf(arguments) {
   verify()
 }
 
+
 object Baseline extends App {
   // Remove these lines if encountering/debugging Spark
   Logger.getLogger("org").setLevel(Level.OFF)
@@ -46,6 +47,7 @@ object Baseline extends App {
   }))
   val timings = measurements.map(t => t._2) // Retrieve the timing measurements
 
+<<<<<<< HEAD
   //////////////////////////////////
   ////// CE QUE MOI J'AJOUTE //////
   ////////////////////////////////
@@ -183,6 +185,71 @@ object Baseline extends App {
   ///////////////////////////////
 
 
+=======
+  val globalAvg = train.foldLeft(0.0){(acc : Double, arr: Rating) => acc + arr.rating} / train.length
+
+  val user1Avg = train.filter(arr => arr.user == 1).foldLeft(0.0){(acc, arr) => acc + arr.rating} / train.filter(arr => arr.user == 1).length
+
+  val item1Avg = train.filter(arr => arr.item == 1).foldLeft(0.0){(acc, arr) => acc + arr.rating} / train.filter(arr => arr.item == 1).length
+
+  def anyUserAvg(user : Int, arr : Array[Rating]) : Double = {
+    val arrFiltered = arr.filter(arr => arr.user == user)
+    if (arrFiltered.isEmpty)
+      globalAvg
+    else
+     arrFiltered.foldLeft(0.0){(acc, arr) => acc + arr.rating} / train.filter(arr => arr.user == user).length
+  }
+
+  def anyItemAvg(item : Int, arr : Array[Rating]) : Double =  {
+    val arrFiltered = arr.filter(arr => arr.item == item)
+    if (arrFiltered.isEmpty)
+      globalAvg
+    else
+      arrFiltered.foldLeft(0.0){(acc, arr) => acc + arr.rating} / train.filter(arr => arr.item == item).length
+    }
+
+  def scale(x : Double, userAvg : Double): Double = {
+    if (x > userAvg)
+      5 - userAvg
+    else if (x < userAvg)
+      userAvg - 1
+    else 1
+  }
+
+  def anyAvgDev(item : Int, arr : Array[Rating]): Double = {
+    arr.filter(l => l.item == item).foldLeft(0.0){(acc, elem) => 
+      val userAvg = anyUserAvg(elem.user, arr)
+      (elem.rating - userAvg) / scale(elem.rating, userAvg) + acc} / arr.filter(l => l.item == item).length
+  }
+
+  def predicted(user: Int, item : Int, arr : Array[Rating]): Double = {
+    val userAvg = anyUserAvg(user, arr)
+    if (arr.filter(l => l.item == item).isEmpty)
+      userAvg
+    else {
+      val avgDev = anyAvgDev(item, arr)
+      userAvg + avgDev * scale((userAvg + avgDev), userAvg)
+    }
+  }
+
+  def fullpred(train : Array[Rating]): Array[Double] = {
+    train.map(elem => predicted(elem.user, elem.item, train))
+  }
+
+  def abs(x : Double): Double = {
+    if (x <= 0.0)
+      -x 
+    else x
+  }
+
+  def mae(train : Array[Rating], test : Array[Rating], version : String): Double = version match {
+    case "GlobalAvg" => 
+      val globalAvg = train.foldLeft(0.0){(acc : Double, arr: Rating) => acc + arr.rating} / train.length
+      test.foldLeft(0.0){(acc, elem ) =>  abs(globalAvg - elem.rating)} / test.length
+
+    case _ => -1
+  }
+>>>>>>> origin
   // Save answers as JSON
   def printToFile(content: String, 
                   location: String = "./answers.json") =
@@ -202,6 +269,7 @@ object Baseline extends App {
         ),
         "B.1" -> ujson.Obj(
           "1.GlobalAvg" -> ujson.Num(globalAvg), // Datatype of answer: Double
+<<<<<<< HEAD
           "2.User1Avg" -> ujson.Num(UserAvg(1, train)),  // Datatype of answer: Double
           "3.Item1Avg" -> ujson.Num(ItemAvg(1, train)),   // Datatype of answer: Double
           "4.Item1AvgDev" -> ujson.Num(AnyAvgDev(1, train)), // Datatype of answer: Double
@@ -212,6 +280,18 @@ object Baseline extends App {
           "2.UserAvgMAE" -> ujson.Num(MAE(test, train, "UserAvg")),  // Datatype of answer: Double
           "3.ItemAvgMAE" -> ujson.Num(MAE(test, train, "ItemAvg")),   // Datatype of answer: Double
           "4.BaselineMAE" -> ujson.Num(MAE(test, train, "BaselineAvg"))   // Datatype of answer: Double
+=======
+          "2.User1Avg" -> ujson.Num(anyUserAvg(1, train)),  // Datatype of answer: Double
+          "3.Item1Avg" -> ujson.Num(anyItemAvg(1, train)),   // Datatype of answer: Double
+          "4.Item1AvgDev" -> ujson.Num(anyAvgDev(1, train)), // Datatype of answer: Double
+          "5.PredUser1Item1" -> ujson.Num(predicted(1, 1, train)) // Datatype of answer: Double
+        ),
+        "B.2" -> ujson.Obj(
+          "1.GlobalAvgMAE" -> ujson.Num(mae(train, test, "GlobalAvg")), // Datatype of answer: Double
+          "2.UserAvgMAE" -> ujson.Num(0.0),  // Datatype of answer: Double
+          "3.ItemAvgMAE" -> ujson.Num(0.0),   // Datatype of answer: Double
+          "4.BaselineMAE" -> ujson.Num(0.0)   // Datatype of answer: Double
+>>>>>>> origin
         ),
         "B.3" -> ujson.Obj(
           "1.GlobalAvg" -> ujson.Obj(
