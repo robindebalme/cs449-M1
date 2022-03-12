@@ -62,6 +62,8 @@ object DistributedBaseline extends App {
 
   var allItemDev = Map(0 -> 0.0)
 
+  var singleDev = Map((0.0, 0.0) -> 0.0)
+
   def distribUserAvg(user : Int): Double = {
     if (allUserAvg.get(user) != None)
       allUserAvg(user)
@@ -79,7 +81,6 @@ object DistributedBaseline extends App {
       tmp
     }
   }
-  println("present")
 
   def distribItemAvg(item : Int): Double = {
     if (allItemAvg.get(item) != None) 
@@ -97,11 +98,6 @@ object DistributedBaseline extends App {
       tmp
       }
   }
-  println("meanI1")
-  val meanItem1 = distribItemAvg(1)
-  println("meanI1F")
-  val meanItem1pr = distribItemAvg(1)
-  println("fromMap")
 
   def scale(x : Double, userAvg : Double): Double = {
     if (x > userAvg)
@@ -111,17 +107,35 @@ object DistributedBaseline extends App {
     else 1
   }
 
-  def distribAvgDev(item : Int): Double = {
-    if (allItemDev.get(item) != None)
-        allItemDev(item)
-    else {
-      var tmp = train.filter(l => l.item == item).map{(elem) => 
-        val userAvg = distribUserAvg(elem.user)
-        (elem.rating - userAvg) / scale(elem.rating, userAvg)}.reduce(_ + _) / train.filter(l => l.item == item).count()
-      allItemDev =  allItemDev.updated(item, tmp)
+  def dev(r: Double, useravg : Double): Double = {
+    if (singleDev.get(r, useravg) != None)
+      singleDev(r, useravg)
+    else
+      {
+      val tmp = (r - useravg) / scale(r, useravg)
+      singleDev = singleDev.updated((r, useravg), tmp)
       tmp
     }
   }
+
+  def distribAvgDev(item : Int): Double = {
+    if (allItemDev.get(item) != None) 
+      allItemDev(item)
+    else {
+      var tmp = train.filter(l => l.item == item)
+      var tmp2 = tmp.map{(elem) =>
+        val userAvg = distribUserAvg(elem.user)
+        dev(elem.rating, userAvg)}.reduce(_ + _) / tmp.count()
+      allItemDev =  allItemDev.updated(item, tmp2)
+      tmp2
+    }
+  }
+
+  println("meanI1")
+  val meanItem1 = distribAvgDev(1)
+  println("meanI1F")
+  val meanItem1pr = distribAvgDev(1)
+  println("fromMap")
 
   def distribpredicted(user: Int, item : Int): Double = {
     val userAvg = distribUserAvg(user)
@@ -141,6 +155,7 @@ object DistributedBaseline extends App {
   println("present2")
   val pred1 = distribpredicted(1, 1)
   println("present2'")
+
   val allprediction = train.flatMap( elem => Map((elem.user, elem.item) -> distribpredicted(elem.user, elem.item))).collectAsMap()
 
   def abs(x : Double): Double = {
