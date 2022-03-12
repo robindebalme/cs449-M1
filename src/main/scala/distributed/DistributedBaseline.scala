@@ -79,9 +79,10 @@ object DistributedBaseline extends App {
       tmp
     }
   }
+  println("present")
 
   def distribItemAvg(item : Int): Double = {
-    if (allItemAvg.get(item) != None)
+    if (allItemAvg.get(item) != None) 
       allItemAvg(item)
     else 
       {
@@ -96,8 +97,12 @@ object DistributedBaseline extends App {
       tmp
       }
   }
+  println("meanI1")
+  val meanItem1 = distribItemAvg(1)
+  println("meanI1F")
+  val meanItem1pr = distribItemAvg(1)
+  println("fromMap")
 
-  
   def scale(x : Double, userAvg : Double): Double = {
     if (x > userAvg)
       5 - userAvg
@@ -133,8 +138,10 @@ object DistributedBaseline extends App {
           userAvg + avgDev * scale((userAvg + avgDev), userAvg)
     }
   }
-  
-  val allprediction = train.flatMap(elem => Map((elem.user, elem.item) -> distribpredicted(elem.user, elem.item))).collectAsMap()
+  println("present2")
+  val pred1 = distribpredicted(1, 1)
+  println("present2'")
+  val allprediction = train.flatMap( elem => Map((elem.user, elem.item) -> distribpredicted(elem.user, elem.item))).collectAsMap()
 
   def abs(x : Double): Double = {
     if (x <= 0)
@@ -142,8 +149,12 @@ object DistributedBaseline extends App {
     else 
       x
   }
+  println("present3")
+  
+
 
   val mae = test.map{elem =>
+    println("Ju là")
     if (allprediction.get((elem.user, elem.item)) != None)
       abs(elem.rating - allprediction(elem.user, elem.item))
     else
