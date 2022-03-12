@@ -203,7 +203,6 @@ object Baseline extends App {
         ),
         "B.1" -> ujson.Obj(
           "1.GlobalAvg" -> ujson.Num(globalAvg), // Datatype of answer: Double
-<<<<<<< HEAD
           "2.User1Avg" -> ujson.Num(UserAvg(1, train)),  // Datatype of answer: Double
           "3.Item1Avg" -> ujson.Num(ItemAvg(1, train)),   // Datatype of answer: Double
           "4.Item1AvgDev" -> ujson.Num(AnyAvgDev(1, train)), // Datatype of answer: Double
@@ -214,18 +213,6 @@ object Baseline extends App {
           "2.UserAvgMAE" -> ujson.Num(MAE(test, train, "UserAvg")),  // Datatype of answer: Double
           "3.ItemAvgMAE" -> ujson.Num(MAE(test, train, "ItemAvg")),   // Datatype of answer: Double
           "4.BaselineMAE" -> ujson.Num(MAE(test, train, "BaselineAvg"))   // Datatype of answer: Double
-=======
-          "2.User1Avg" -> ujson.Num(anyUserAvg(1, train)),  // Datatype of answer: Double
-          "3.Item1Avg" -> ujson.Num(anyItemAvg(1, train)),   // Datatype of answer: Double
-          "4.Item1AvgDev" -> ujson.Num(anyAvgDev(1, train)), // Datatype of answer: Double
-          "5.PredUser1Item1" -> ujson.Num(predicted(1, 1, train)) // Datatype of answer: Double
-        ),
-        "B.2" -> ujson.Obj(
-          "1.GlobalAvgMAE" -> ujson.Num(mae(train, test, "GlobalAvg")), // Datatype of answer: Double
-          "2.UserAvgMAE" -> ujson.Num(0.0),  // Datatype of answer: Double
-          "3.ItemAvgMAE" -> ujson.Num(0.0),   // Datatype of answer: Double
-          "4.BaselineMAE" -> ujson.Num(0.0)   // Datatype of answer: Double
->>>>>>> origin
         ),
         "B.3" -> ujson.Obj(
           "1.GlobalAvg" -> ujson.Obj(
