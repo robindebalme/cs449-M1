@@ -50,11 +50,11 @@ object DistributedBaseline extends App {
 
   val timings = measurements.map(t => t._2) // Retrieve the timing measurements
 
-  val sizeOfTrain = train.count()
-
   val sizeOfTest = test.count()
 
-  val globalAvg = train.map(elem => elem.rating).reduce(_ + _) / sizeOfTrain
+  val sizeOfTrain = 
+
+  val globalAvg = train.map(elem => elem.rating).sum() / train.count()
 
   var allUserAvg = Map(0 -> 0.0)
 
@@ -158,6 +158,10 @@ object DistributedBaseline extends App {
 
   val allprediction = train.flatMap( elem => Map((elem.user, elem.item) -> distribpredicted(elem.user, elem.item))).collectAsMap()
 
+  def mae(df_test : RDD[Rating], df_train : RDD[Rating]): Double = {
+    df_test.map{ elem =>
+      abs(elem.rating - distribpredicted(elem.user, elem.item, df_train))
+    }
   def abs(x : Double): Double = {
     if (x <= 0)
       -x
@@ -180,7 +184,7 @@ object DistributedBaseline extends App {
   }.sum() / sizeOfTest
 
   // Save answers as JSON
-
+    
   def printToFile(content: String, 
                   location: String = "./answers.json") =
     Some(new java.io.PrintWriter(location)).foreach{
@@ -223,4 +227,7 @@ object DistributedBaseline extends App {
 
   println("")
   spark.close()
+  
+}
+
 }

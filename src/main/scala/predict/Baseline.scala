@@ -78,7 +78,7 @@ object Baseline extends App {
   }
 
   //// CALCULER AVERAGES POUR CHAQUE INDEX ET MISE DANS UN TABLEAU ////
-  def AllUserAvg(info: Array[Rating]): Array[Double] = {
+  def AllUserAvg(info: Array[Rating]) : Array[Double] = {
     val array = Array.fill(943)(0.0)
     var j = 0
     for(i <- 0 to 942){
@@ -89,7 +89,7 @@ object Baseline extends App {
 
   val allUserAvg = AllUserAvg(train)
 
-  def AllItemAvg(info: Array[Rating]): Array[Double] = {
+  def AllItemAvg(info: Array[Rating]) : Array[Double] = {
     val array = Array.fill(1682)(0.0)
     var j = 0
     for(j <- 0 to 1681){
