@@ -1623,3 +1623,367 @@ AVERTISSEMENT: null
 2022.03.12 10:48:57 INFO  time: compiled cs449-m1 in 0.61s
 2022.03.12 10:49:22 INFO  compiling cs449-m1 (3 scala sources)
 2022.03.12 10:49:22 INFO  time: compiled cs449-m1 in 0.15s
+2022.03.13 09:25:58 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/robindebalme/cs449-M1/.metals/lsp.trace.json or /Users/robindebalme/Library/Caches/org.scalameta.metals/lsp.trace.json
+2022.03.13 09:25:59 INFO  logging to file /Users/robindebalme/cs449-M1/.metals/metals.log
+2022.03.13 09:25:59 INFO  Started: Metals version 0.11.2 in workspace '/Users/robindebalme/cs449-M1' for client Visual Studio Code 1.65.0.
+2022.03.13 09:25:59 INFO  Parse release: 1.8.0_292
+2022.03.13 09:26:00 INFO  time: initialize in 1.44s
+2022.03.13 09:26:05 INFO  Attempting to connect to the build server...
+2022.03.13 09:26:05 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/robindebalme/cs449-M1/.metals/bsp.trace.json or /Users/robindebalme/Library/Caches/org.scalameta.metals/bsp.trace.json
+2022.03.13 09:26:05 INFO  Attempting to connect to the build server...
+2022.03.13 09:26:05 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/robindebalme/cs449-M1/project/.metals/bsp.trace.json or /Users/robindebalme/Library/Caches/org.scalameta.metals/bsp.trace.json
+2022.03.13 09:26:05 INFO  time: Connected to build server in 0.5s
+2022.03.13 09:26:05 INFO  Connected to Build server: Bloop v1.4.13
+2022.03.13 09:26:11 INFO  time: indexed workspace in 5.68s
+2022.03.13 09:26:11 INFO  compiling cs449-m1 (6 scala sources)
+2022.03.13 09:26:12 INFO  time: compiled cs449-m1 in 1.03s
+2022.03.13 09:26:12 INFO  compiling cs449-m1 (6 scala sources)
+2022.03.13 09:26:12 INFO  time: compiled cs449-m1 in 0.28s
+2022.03.13 09:26:17 INFO  running '/Users/robindebalme/Library/Caches/Coursier/jvm/adopt@1.8.0-292/Contents/Home/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /var/folders/n2/lkxf5xgn5qd0l88pblwqxc6h0000gn/T/metals2630471686316937322/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2022.03.13 09:26:17 WARN  no build target for: /Users/robindebalme/cs449-M1/project/project/metals.sbt
+2022.03.13 09:26:17 INFO  skipping build import with status 'Started'
+2022.03.13 09:26:18 INFO  [info] welcome to sbt 1.4.7 (AdoptOpenJDK Java 1.8.0_292)
+2022.03.13 09:26:21 INFO  [info] loading settings for project cs449-m1-build-build-build from metals.sbt ...
+2022.03.13 09:26:21 INFO  [info] loading project definition from /Users/robindebalme/cs449-M1/project/project/project
+2022.03.13 09:26:24 INFO  [info] loading settings for project cs449-m1-build-build from metals.sbt ...
+2022.03.13 09:26:24 INFO  [info] loading project definition from /Users/robindebalme/cs449-M1/project/project
+2022.03.13 09:26:26 INFO  [success] Generated .bloop/cs449-m1-build-build.json
+2022.03.13 09:26:26 INFO  [success] Total time: 2 s, completed 13 mars 2022 09:26:26
+2022.03.13 09:26:27 INFO  [info] loading settings for project cs449-m1-build from metals.sbt,plugins.sbt ...
+2022.03.13 09:26:27 INFO  [info] loading project definition from /Users/robindebalme/cs449-M1/project
+2022.03.13 09:26:29 INFO  [success] Generated .bloop/cs449-m1-build.json
+2022.03.13 09:26:29 INFO  [success] Total time: 2 s, completed 13 mars 2022 09:26:29
+2022.03.13 09:26:32 INFO  [info] loading settings for project cs449-m1 from build.sbt ...
+2022.03.13 09:26:32 INFO  [info] set current project to m1_yourid (in build file:/Users/robindebalme/cs449-M1/)
+2022.03.13 09:26:35 INFO  [warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+2022.03.13 09:26:35 INFO  [warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+2022.03.13 09:26:35 INFO  [success] Generated .bloop/cs449-m1.json
+2022.03.13 09:26:35 INFO  [success] Generated .bloop/cs449-m1-test.json
+2022.03.13 09:26:35 INFO  [success] Total time: 3 s, completed 13 mars 2022 09:26:36
+2022.03.13 09:26:36 INFO  time: ran 'sbt bloopInstall' in 18s
+2022.03.13 09:26:36 INFO  Disconnecting from Bloop session...
+2022.03.13 09:26:36 INFO  Shut down connection with build server.
+2022.03.13 09:26:36 INFO  Shut down connection with build server.
+2022.03.13 09:26:36 INFO  Attempting to connect to the build server...
+2022.03.13 09:26:36 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/robindebalme/cs449-M1/.metals/bsp.trace.json or /Users/robindebalme/Library/Caches/org.scalameta.metals/bsp.trace.json
+2022.03.13 09:26:36 INFO  Attempting to connect to the build server...
+2022.03.13 09:26:36 INFO  Attempting to connect to the build server...
+2022.03.13 09:26:36 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/robindebalme/cs449-M1/project/.metals/bsp.trace.json or /Users/robindebalme/Library/Caches/org.scalameta.metals/bsp.trace.json
+2022.03.13 09:26:36 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/robindebalme/cs449-M1/project/project/.metals/bsp.trace.json or /Users/robindebalme/Library/Caches/org.scalameta.metals/bsp.trace.json
+2022.03.13 09:26:36 INFO  time: Connected to build server in 71ms
+2022.03.13 09:26:36 INFO  Connected to Build server: Bloop v1.4.13
+2022.03.13 09:26:38 INFO  time: indexed workspace in 1.69s
+2022.03.13 09:26:38 INFO  compiling cs449-m1 (6 scala sources)
+2022.03.13 09:26:38 INFO  time: compiled cs449-m1 in 0.72s
+2022.03.13 09:28:04 INFO  compiling cs449-m1 (6 scala sources)
+2022.03.13 09:28:04 INFO  time: compiled cs449-m1 in 0.36s
+2022.03.13 09:28:12 INFO  compiling cs449-m1 (6 scala sources)
+2022.03.13 09:28:12 INFO  time: compiled cs449-m1 in 0.96s
+2022.03.13 09:28:55 INFO  compiling cs449-m1 (6 scala sources)
+2022.03.13 09:28:58 INFO  time: compiled cs449-m1 in 3.2s
+mars 13, 2022 9:43:59 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 274
+2022.03.13 09:44:14 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 09:44:16 INFO  time: compiled cs449-m1 in 1.82s
+mars 13, 2022 9:53:57 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 560
+mars 13, 2022 9:56:54 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 722
+mars 13, 2022 10:02:10 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 1234
+2022.03.13 10:02:30 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 10:02:31 INFO  time: compiled cs449-m1 in 1.75s
+mars 13, 2022 10:02:31 AM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+2022.03.13 10:02:45 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 10:02:47 INFO  time: compiled cs449-m1 in 1.57s
+2022.03.13 10:07:56 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 10:07:56 INFO  time: compiled cs449-m1 in 0.13s
+2022.03.13 10:10:48 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 10:10:50 INFO  time: compiled cs449-m1 in 1.71s
+2022.03.13 10:13:38 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 10:13:38 INFO  time: compiled cs449-m1 in 0.37s
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Baseline.scala in Map[Int,<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Baseline.scala, 1462, 1462, 1476)
+2022.03.13 10:14:07 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 10:14:07 INFO  time: compiled cs449-m1 in 0.39s
+2022.03.13 10:14:44 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 10:14:44 INFO  time: compiled cs449-m1 in 0.38s
+mars 13, 2022 10:14:46 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 2057
+mars 13, 2022 10:14:59 AM scala.meta.internal.pc.CompletionProvider expected$1
+AVERTISSEMENT: null
+2022.03.13 10:15:02 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 10:15:02 INFO  time: compiled cs449-m1 in 0.34s
+2022.03.13 10:15:18 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 10:15:18 INFO  time: compiled cs449-m1 in 0.38s
+2022.03.13 10:17:25 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 10:17:27 INFO  time: compiled cs449-m1 in 1.69s
+2022.03.13 10:23:36 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Baseline.scala:121:26: stale bloop warning: Class predict.Baseline$$anonfun$UserAvg$1 differs only in case from predict.Baseline$$anonfun$useravg$1. Such classes will overwrite one another on case-insensitive filesystems.
+> (acc,x) => 
+>       if(x.user == u) acc + x.rating 
+>       else acc
+2022.03.13 10:23:36 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Baseline.scala:121:26: stale bloop warning: Class predict.Baseline$$anonfun$UserAvg$1 differs only in case from predict.Baseline$$anonfun$useravg$1. Such classes will overwrite one another on case-insensitive filesystems.
+> (acc,x) => 
+>       if(x.user == u) acc + x.rating 
+>       else acc
+2022.03.13 10:28:07 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 10:28:09 INFO  time: compiled cs449-m1 in 1.66s
+2022.03.13 10:30:36 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 10:30:37 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/predict/Baseline.scala
+2022.03.13 10:30:37 INFO  time: compiled cs449-m1 in 1.76s
+2022.03.13 10:31:02 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 10:31:02 INFO  time: compiled cs449-m1 in 0.37s
+2022.03.13 10:31:10 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 10:31:11 INFO  time: compiled cs449-m1 in 1.61s
+2022.03.13 10:31:40 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 10:31:44 INFO  time: compiled cs449-m1 in 3.48s
+2022.03.13 10:32:07 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 10:32:10 INFO  time: compiled cs449-m1 in 2.41s
+2022.03.13 10:32:24 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 10:32:26 INFO  time: compiled cs449-m1 in 1.51s
+2022.03.13 10:32:40 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 10:32:41 INFO  time: compiled cs449-m1 in 1.46s
+2022.03.13 10:32:53 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 10:32:55 INFO  time: compiled cs449-m1 in 1.48s
+2022.03.13 10:33:20 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 10:33:20 INFO  time: compiled cs449-m1 in 0.41s
+2022.03.13 10:33:23 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 10:33:23 INFO  time: compiled cs449-m1 in 0.39s
+2022.03.13 10:33:27 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 10:33:27 INFO  time: compiled cs449-m1 in 0.34s
+2022.03.13 10:33:30 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 10:33:30 INFO  time: compiled cs449-m1 in 0.41s
+mars 13, 2022 10:33:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 3351
+2022.03.13 10:33:34 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 10:33:34 INFO  time: compiled cs449-m1 in 0.39s
+2022.03.13 10:33:51 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 10:33:51 INFO  time: compiled cs449-m1 in 0.35s
+2022.03.13 10:34:00 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 10:34:00 INFO  time: compiled cs449-m1 in 0.4s
+2022.03.13 10:34:02 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 10:34:02 INFO  time: compiled cs449-m1 in 0.37s
+2022.03.13 10:34:05 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 10:34:05 INFO  time: compiled cs449-m1 in 0.38s
+2022.03.13 10:34:09 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 10:34:09 INFO  time: compiled cs449-m1 in 0.38s
+2022.03.13 10:34:12 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 10:34:12 INFO  time: compiled cs449-m1 in 0.42s
+2022.03.13 10:34:14 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 10:34:14 INFO  time: compiled cs449-m1 in 0.37s
+2022.03.13 10:34:19 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 10:34:19 INFO  time: compiled cs449-m1 in 0.35s
+2022.03.13 10:34:22 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 10:34:22 INFO  time: compiled cs449-m1 in 0.38s
+2022.03.13 10:34:25 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 10:34:25 INFO  time: compiled cs449-m1 in 0.39s
+2022.03.13 10:34:32 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 10:34:32 INFO  time: compiled cs449-m1 in 0.35s
+2022.03.13 10:34:35 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 10:34:35 INFO  time: compiled cs449-m1 in 0.39s
+2022.03.13 10:34:38 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 10:34:38 INFO  time: compiled cs449-m1 in 0.41s
+2022.03.13 10:34:42 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 10:34:42 INFO  time: compiled cs449-m1 in 0.39s
+2022.03.13 10:34:44 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 10:34:44 INFO  time: compiled cs449-m1 in 0.41s
+2022.03.13 10:34:49 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 10:34:49 INFO  time: compiled cs449-m1 in 0.35s
+2022.03.13 10:35:09 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 10:35:10 INFO  time: compiled cs449-m1 in 1.37s
+mars 13, 2022 10:42:03 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 3787
+mars 13, 2022 10:42:14 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 3816
+mars 13, 2022 10:42:36 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 3894
+mars 13, 2022 10:42:37 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 3895
+2022.03.13 10:42:57 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 10:42:59 INFO  time: compiled cs449-m1 in 1.54s
+2022.03.13 10:48:31 INFO  shutting down Metals
+2022.03.13 10:48:32 INFO  Shut down connection with build server.
+2022.03.13 10:48:32 INFO  Shut down connection with build server.
+2022.03.13 10:48:32 INFO  Shut down connection with build server.
+2022.03.13 15:30:14 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/robindebalme/cs449-M1/.metals/lsp.trace.json or /Users/robindebalme/Library/Caches/org.scalameta.metals/lsp.trace.json
+2022.03.13 15:30:14 INFO  logging to file /Users/robindebalme/cs449-M1/.metals/metals.log
+2022.03.13 15:30:14 INFO  Started: Metals version 0.11.2 in workspace '/Users/robindebalme/cs449-M1' for client Visual Studio Code 1.65.1.
+2022.03.13 15:30:14 INFO  Parse release: 1.8.0_292
+2022.03.13 15:30:16 INFO  time: initialize in 2.01s
+2022.03.13 15:30:17 INFO  Attempting to connect to the build server...
+2022.03.13 15:30:17 INFO  skipping build import with status 'Installed'
+2022.03.13 15:30:17 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/robindebalme/cs449-M1/.metals/bsp.trace.json or /Users/robindebalme/Library/Caches/org.scalameta.metals/bsp.trace.json
+2022.03.13 15:30:17 INFO  Attempting to connect to the build server...
+2022.03.13 15:30:17 INFO  Attempting to connect to the build server...
+2022.03.13 15:30:17 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/robindebalme/cs449-M1/project/project/.metals/bsp.trace.json or /Users/robindebalme/Library/Caches/org.scalameta.metals/bsp.trace.json
+2022.03.13 15:30:17 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/robindebalme/cs449-M1/project/.metals/bsp.trace.json or /Users/robindebalme/Library/Caches/org.scalameta.metals/bsp.trace.json
+2022.03.13 15:30:17 INFO  time: Connected to build server in 0.73s
+2022.03.13 15:30:17 INFO  Connected to Build server: Bloop v1.4.13
+2022.03.13 15:30:18 INFO  time: Imported build in 0.11s
+mars 13, 2022 3:30:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 4
+mars 13, 2022 3:30:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 1
+2022.03.13 15:30:20 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 15:30:23 INFO  time: compiled cs449-m1 in 3.32s
+2022.03.13 15:30:24 INFO  time: indexed workspace in 5.73s
+2022.03.13 15:30:25 INFO  compiling cs449-m1-test (7 scala sources)
+2022.03.13 15:30:27 INFO  time: compiled cs449-m1-test in 1.72s
+2022.03.13 15:31:36 INFO  shutting down Metals
+2022.03.13 15:31:36 INFO  Shut down connection with build server.
+2022.03.13 15:31:36 INFO  Shut down connection with build server.
+2022.03.13 15:31:36 INFO  Shut down connection with build server.
+2022.03.13 15:31:48 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/robindebalme/cs449-M1/.metals/lsp.trace.json or /Users/robindebalme/Library/Caches/org.scalameta.metals/lsp.trace.json
+2022.03.13 15:31:49 INFO  logging to file /Users/robindebalme/cs449-M1/.metals/metals.log
+2022.03.13 15:31:49 INFO  Started: Metals version 0.11.2 in workspace '/Users/robindebalme/cs449-M1' for client Visual Studio Code 1.65.1.
+2022.03.13 15:31:49 INFO  Parse release: 1.8.0_292
+2022.03.13 15:31:50 INFO  time: initialize in 1.73s
+2022.03.13 15:31:51 INFO  Attempting to connect to the build server...
+2022.03.13 15:31:51 INFO  skipping build import with status 'Installed'
+2022.03.13 15:31:51 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/robindebalme/cs449-M1/.metals/bsp.trace.json or /Users/robindebalme/Library/Caches/org.scalameta.metals/bsp.trace.json
+2022.03.13 15:31:51 INFO  Attempting to connect to the build server...
+2022.03.13 15:31:51 INFO  Attempting to connect to the build server...
+2022.03.13 15:31:51 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/robindebalme/cs449-M1/project/.metals/bsp.trace.json or /Users/robindebalme/Library/Caches/org.scalameta.metals/bsp.trace.json
+2022.03.13 15:31:52 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/robindebalme/cs449-M1/project/project/.metals/bsp.trace.json or /Users/robindebalme/Library/Caches/org.scalameta.metals/bsp.trace.json
+2022.03.13 15:31:52 INFO  time: Connected to build server in 0.4s
+2022.03.13 15:31:52 INFO  Connected to Build server: Bloop v1.4.13
+2022.03.13 15:31:54 INFO  no build target found for /Users/robindebalme/cs449-M1/src/main/scala/predict/Baseline.scala. Using presentation compiler with project's scala-library version: 2.11.12
+2022.03.13 15:31:56 INFO  time: indexed workspace in 4.63s
+2022.03.13 15:31:59 INFO  time: code lens generation in 7.05s
+mars 13, 2022 3:33:56 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 65
+mars 13, 2022 3:37:57 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+2022.03.13 15:38:25 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 15:38:27 INFO  time: compiled cs449-m1 in 1.74s
+2022.03.13 15:39:02 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 15:39:02 INFO  time: compiled cs449-m1 in 0.32s
+2022.03.13 15:39:45 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala:173:9: stale bloop error: not found: value allprediction
+    if (allprediction.get((elem.user, elem.item)) != None)
+        ^^^^^^^^^^^^^
+2022.03.13 15:39:45 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala:174:25: stale bloop error: not found: value allprediction
+      abs(elem.rating - allprediction(elem.user, elem.item))
+                        ^^^^^^^^^^^^^
+2022.03.13 15:39:45 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala:173:9: stale bloop error: not found: value allprediction
+    if (allprediction.get((elem.user, elem.item)) != None)
+        ^^^^^^^^^^^^^
+2022.03.13 15:39:45 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala:174:25: stale bloop error: not found: value allprediction
+      abs(elem.rating - allprediction(elem.user, elem.item))
+                        ^^^^^^^^^^^^^
+2022.03.13 15:39:48 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 15:39:48 INFO  time: compiled cs449-m1 in 0.33s
+2022.03.13 15:40:22 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 15:40:23 INFO  time: compiled cs449-m1 in 1.29s
+2022.03.13 15:43:31 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 15:43:31 INFO  time: compiled cs449-m1 in 0.34s
+2022.03.13 15:44:59 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 15:44:59 INFO  time: compiled cs449-m1 in 0.32s
+2022.03.13 15:45:35 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 15:45:37 INFO  time: compiled cs449-m1 in 1.29s
+2022.03.13 15:49:51 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 15:49:52 INFO  time: compiled cs449-m1 in 1.29s
+2022.03.13 15:58:08 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 15:58:08 INFO  time: compiled cs449-m1 in 0.3s
+2022.03.13 16:11:21 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 16:11:21 INFO  time: compiled cs449-m1 in 0.41s
+2022.03.13 16:11:49 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 16:11:50 INFO  time: compiled cs449-m1 in 1.35s
+2022.03.13 16:12:13 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 16:12:13 INFO  time: compiled cs449-m1 in 0.13s
+2022.03.13 16:12:25 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 16:12:27 INFO  time: compiled cs449-m1 in 1.49s
+2022.03.13 16:19:21 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 16:19:21 INFO  time: compiled cs449-m1 in 0.33s
+2022.03.13 16:19:39 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 16:19:39 INFO  time: compiled cs449-m1 in 0.32s
+2022.03.13 16:21:42 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 16:21:42 INFO  time: compiled cs449-m1 in 0.39s
+2022.03.13 16:21:56 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 16:21:56 INFO  time: compiled cs449-m1 in 0.32s
+2022.03.13 16:22:21 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 16:22:21 INFO  time: compiled cs449-m1 in 0.31s
+2022.03.13 16:22:25 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 16:22:25 INFO  time: compiled cs449-m1 in 0.32s
+2022.03.13 16:23:58 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 16:23:58 INFO  time: compiled cs449-m1 in 0.33s
+2022.03.13 16:24:09 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 16:24:10 INFO  time: compiled cs449-m1 in 1.32s
+2022.03.13 17:02:24 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 17:02:24 INFO  time: compiled cs449-m1 in 0.35s
+2022.03.13 17:02:30 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 17:02:31 INFO  time: compiled cs449-m1 in 1.49s
+2022.03.13 17:03:11 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 17:03:11 INFO  time: compiled cs449-m1 in 0.36s
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala in org.apache.spark.rdd.RDD[shared.predictions.Rating]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala, 4598, 4598, 4609)
+2022.03.13 17:03:28 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 17:03:29 INFO  time: compiled cs449-m1 in 1.39s
+2022.03.13 17:10:22 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 17:10:24 INFO  time: compiled cs449-m1 in 1.85s
+2022.03.13 17:15:23 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 17:15:23 INFO  time: compiled cs449-m1 in 0.48s
+2022.03.13 17:15:41 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 17:15:42 INFO  time: compiled cs449-m1 in 1.66s
+2022.03.13 17:21:38 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 17:21:40 INFO  time: compiled cs449-m1 in 1.62s
+2022.03.13 17:24:09 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 17:24:11 INFO  time: compiled cs449-m1 in 1.57s
+2022.03.13 17:25:20 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 17:25:22 INFO  time: compiled cs449-m1 in 1.74s
+2022.03.13 17:25:25 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 17:25:26 INFO  time: compiled cs449-m1 in 1.5s
+2022.03.13 17:26:27 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 17:26:28 INFO  time: compiled cs449-m1 in 1.48s
+2022.03.13 17:27:25 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 17:27:28 INFO  time: compiled cs449-m1 in 3.07s
+2022.03.13 17:27:33 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 17:27:34 INFO  time: compiled cs449-m1 in 1.42s
+mars 13, 2022 5:29:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 2688
+2022.03.13 17:29:05 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 17:29:06 INFO  time: compiled cs449-m1 in 1.38s
+2022.03.13 17:30:03 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 17:30:04 INFO  time: compiled cs449-m1 in 1.45s
+2022.03.13 17:31:04 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 17:31:04 INFO  time: compiled cs449-m1 in 0.3s
+2022.03.13 17:40:02 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 17:40:03 INFO  time: compiled cs449-m1 in 1.4s
+2022.03.13 17:40:10 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 17:40:12 INFO  time: compiled cs449-m1 in 2.04s
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala in org.apache.spark.rdd.RDD[<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala, 1851, 1851, 1864)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala in org.apache.spark.rdd.RDD[<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala, 1851, 1851, 1857)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala in org.apache.spark.rdd.RDD[<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala, 1851, 1851, 1858)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala in org.apache.spark.rdd.RDD[<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala, 1851, 1851, 1859)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala in org.apache.spark.rdd.RDD[<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala, 1851, 1851, 1860)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala in org.apache.spark.rdd.RDD[<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala, 1851, 1851, 1861)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala in org.apache.spark.rdd.RDD[shared.predictions.Rating]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala, 1851, 1851, 1862)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala in org.apache.spark.rdd.RDD[shared.predictions.Rating]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala, 1851, 1851, 1862)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala in org.apache.spark.rdd.RDD[shared.predictions.Rating]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala, 1851, 1851, 1862)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala in org.apache.spark.rdd.RDD[shared.predictions.Rating]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala, 1851, 1851, 1862)
+2022.03.13 17:43:22 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 17:43:23 INFO  time: compiled cs449-m1 in 1.55s
+2022.03.13 17:43:59 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 17:43:59 INFO  time: compiled cs449-m1 in 0.32s
+mars 13, 2022 5:44:06 PM scala.meta.internal.pc.CompletionProvider expected$1
+AVERTISSEMENT: null
+2022.03.13 17:44:11 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 17:44:12 INFO  time: compiled cs449-m1 in 1.47s
+2022.03.13 17:45:41 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 17:45:42 INFO  time: compiled cs449-m1 in 1.53s
+mars 13, 2022 5:46:04 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+2022.03.13 17:46:26 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 17:46:27 INFO  time: compiled cs449-m1 in 1.52s
+2022.03.13 17:47:57 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 17:47:58 INFO  time: compiled cs449-m1 in 1.39s
+2022.03.13 17:48:12 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 17:48:13 INFO  time: compiled cs449-m1 in 1.38s
+2022.03.13 17:51:59 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 17:51:59 INFO  time: compiled cs449-m1 in 0.3s
+2022.03.13 17:53:07 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 17:53:07 INFO  time: compiled cs449-m1 in 0.36s
+2022.03.13 17:53:15 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 17:53:15 INFO  time: compiled cs449-m1 in 0.32s
+2022.03.13 17:53:50 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 17:53:51 INFO  time: compiled cs449-m1 in 1.4s
+2022.03.13 17:54:25 INFO  compiling cs449-m1 (1 scala source)
+2022.03.13 17:54:26 INFO  time: compiled cs449-m1 in 1.35s

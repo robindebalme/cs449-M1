@@ -43,26 +43,24 @@ object DistributedBaseline extends App {
   println("Loading test data from: " + conf.test()) 
   val test = load(spark, conf.test(), conf.separator())
 
-  val measurements = (1 to conf.num_measurements()).map(x => timingInMs(() => {
-    Thread.sleep(1000) // Do everything here from train and test
-    42  // Output answer as last value
-  }))
-
-  val timings = measurements.map(t => t._2) // Retrieve the timing measurements
-
+  
   val sizeOfTest = test.count()
+  val sizeOfTrain = train.count()
+  val maxUser = List(train.map(elem => elem.user).max(), test.map(elem => elem.user).max()).max
+  val maxItem = List(train.map(elem => elem.item).max(), test.map(elem => elem.item).max()).max
 
-  val sizeOfTrain = 
-
-  val globalAvg = train.map(elem => elem.rating).sum() / train.count()
+  val globalAvg = distribmean(train)
 
   var allUserAvg = Map(0 -> 0.0)
-
   var allItemAvg = Map(0 -> 0.0)
-
   var allItemDev = Map(0 -> 0.0)
-
   var singleDev = Map((0.0, 0.0) -> 0.0)
+  var pred = Map((0, 0) -> 0.0)
+
+  def distribmean(df : RDD[Rating]): Double = {
+    val pair = df.map(elem => (elem.rating, 1)).reduce((x, y) => (x._1 + y._1, x._2 + y._2))
+    pair._1 / pair._2
+  }
 
   def distribUserAvg(user : Int): Double = {
     if (allUserAvg.get(user) != None)
@@ -75,7 +73,7 @@ object DistributedBaseline extends App {
         tmp = globalAvg
 
       else
-        tmp = dfFiltered.map(elem => elem.rating).reduce(_ + _) / dfFiltered.count()
+        tmp = distribmean(dfFiltered)
 
       allUserAvg = allUserAvg.updated(user, tmp)
       tmp
@@ -92,7 +90,7 @@ object DistributedBaseline extends App {
       if (dfFiltered.isEmpty)
         tmp = globalAvg
       else
-        tmp = dfFiltered.map(elem => elem.rating).reduce(_ + _) / dfFiltered.count()
+        tmp = distribmean(dfFiltered)
 
       allItemAvg = allItemAvg.updated(item, tmp)
       tmp
@@ -125,63 +123,71 @@ object DistributedBaseline extends App {
       var tmp = train.filter(l => l.item == item)
       var tmp2 = tmp.map{(elem) =>
         val userAvg = distribUserAvg(elem.user)
-        dev(elem.rating, userAvg)}.reduce(_ + _) / tmp.count()
-      allItemDev =  allItemDev.updated(item, tmp2)
-      tmp2
+        (dev(elem.rating, userAvg) , 1)}.reduce((x, y) => (x._1 + y._1, x._2 + y._2))
+      val final_dev = tmp2._1 / tmp2._2
+      allItemDev =  allItemDev.updated(item, final_dev)
+      final_dev
     }
   }
 
-  println("meanI1")
-  val meanItem1 = distribAvgDev(1)
-  println("meanI1F")
-  val meanItem1pr = distribAvgDev(1)
-  println("fromMap")
-
-  def distribpredicted(user: Int, item : Int): Double = {
-    val userAvg = distribUserAvg(user)
-    if (userAvg == globalAvg)
-      globalAvg
-    else
-      if (train.filter(l => l.item == item).isEmpty)
-        userAvg
-      else {
-        val avgDev = distribAvgDev(item)
-        if (avgDev == 0)
-          userAvg
-        else
-          userAvg + avgDev * scale((userAvg + avgDev), userAvg)
-    }
-  }
-  println("present2")
-  val pred1 = distribpredicted(1, 1)
-  println("present2'")
-
-  val allprediction = train.flatMap( elem => Map((elem.user, elem.item) -> distribpredicted(elem.user, elem.item))).collectAsMap()
-
-  def mae(df_test : RDD[Rating], df_train : RDD[Rating]): Double = {
-    df_test.map{ elem =>
-      abs(elem.rating - distribpredicted(elem.user, elem.item, df_train))
-    }
-  def abs(x : Double): Double = {
-    if (x <= 0)
-      -x
-    else 
-      x
-  }
-  println("present3")
-  
-
-
-  val mae = test.map{elem =>
-    println("Ju là")
-    if (allprediction.get((elem.user, elem.item)) != None)
-      abs(elem.rating - allprediction(elem.user, elem.item))
-    else
-      if (allUserAvg.get(elem.user) != None)
-        abs(elem.rating - allUserAvg(elem.user))
+  def predicted(user: Int, item : Int): Double = {
+    if (pred.get(user, item) != None)
+      pred(user, item)
+    else{
+      val useravg = distribUserAvg(user)
+      if (useravg == globalAvg) {
+        pred = pred.updated((user, item), globalAvg)
+        globalAvg
+      }
       else
-        abs(elem.rating - globalAvg)
-  }.sum() / sizeOfTest
+        if (train.filter(l => l.item == item).isEmpty) {
+          pred = pred.updated((user, item), useravg)
+          useravg
+        }
+        else {
+          val avgdev = distribAvgDev(item)
+          if (avgdev == 0) {
+            pred = pred.updated((user, item), useravg)
+            useravg
+          }
+          else
+            pred = pred.updated((user, item), useravg + avgdev * scale((useravg + avgdev), useravg))
+            useravg + avgdev * scale((useravg + avgdev), useravg)
+        }
+    }
+  }
+
+  def mae(test: RDD[Rating], train: RDD[Rating], prediction_method: String): Double = {
+    if (prediction_method == "GlobalAvg")
+      test.map(x => (globalAvg - x.rating).abs).reduce(_ + _)/sizeOfTest
+    else if (prediction_method == "UserAvg")
+      test.map(x => (distribUserAvg(x.user) - x.rating).abs).reduce(_ + _)/sizeOfTest
+    else if (prediction_method == "ItemAvg") 
+      test.map(x => (distribItemAvg(x.item) - x.rating).abs).reduce(_ + _)/sizeOfTest
+    else if (prediction_method == "DistributedBaselineAvg")
+     test.map(x => (predicted(x.user, x.item) - x.rating).abs).reduce(_ + _)/sizeOfTest
+    else 0
+  }
+  
+  val measurements = (1 to conf.num_measurements()).map(x => timingInMs(() => {
+    //val sizeOfTest = test.count()
+    //val sizeOfTrain = train.count()
+    val maxUser = List(train.map(elem => elem.user).max(), test.map(elem => elem.user).max()).max
+    val maxItem = List(train.map(elem => elem.item).max(), test.map(elem => elem.item).max()).max
+
+    val globalAvg = distribmean(train)
+
+    var allUserAvg = Map(0 -> 0.0)
+    var allItemAvg = Map(0 -> 0.0)
+    var allItemDev = Map(0 -> 0.0)
+    var singleDev = Map((0.0, 0.0) -> 0.0)
+    var pred = Map((0, 0) -> 0.0)
+
+    // Thread.sleep(1000) // Do everything here from train and test
+    mae(test, train, "DistributedBaselineAvg")  // Output answer as last value
+  }))
+
+  val timings = measurements.map(t => t._2)
 
   // Save answers as JSON
     
@@ -207,8 +213,8 @@ object DistributedBaseline extends App {
           "2.User1Avg" -> ujson.Num(distribUserAvg(1)),  // Datatype of answer: Double
           "3.Item1Avg" -> ujson.Num(distribItemAvg(1)),   // Datatype of answer: Double
           "4.Item1AvgDev" -> ujson.Num(distribAvgDev(1)), // Datatype of answer: Double,
-          "5.PredUser1Item1" -> ujson.Num(distribpredicted(1, 1)), // Datatype of answer: Double
-          "6.Mae" -> ujson.Num(mae) // Datatype of answer: Double
+          "5.PredUser1Item1" -> ujson.Num(predicted(1, 1)), // Datatype of answer: Double
+          "6.Mae" -> ujson.Num(0.0) // Datatype of answer: Double
         ),
         "D.2" -> ujson.Obj(
           "1.DistributedBaseline" -> ujson.Obj(
@@ -230,4 +236,3 @@ object DistributedBaseline extends App {
   
 }
 
-}
