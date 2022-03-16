@@ -1987,3 +1987,265 @@ INFOS: compiler crashed due to an error in the Scala compiler, retrying with new
 2022.03.13 17:53:51 INFO  time: compiled cs449-m1 in 1.4s
 2022.03.13 17:54:25 INFO  compiling cs449-m1 (1 scala source)
 2022.03.13 17:54:26 INFO  time: compiled cs449-m1 in 1.35s
+2022.03.14 10:35:37 INFO  shutting down Metals
+2022.03.14 10:35:37 INFO  Shut down connection with build server.
+2022.03.14 10:35:37 INFO  Shut down connection with build server.
+java.util.concurrent.RejectedExecutionException: Task scala.concurrent.impl.CallbackRunnable@18aa86c2 rejected from java.util.concurrent.ThreadPoolExecutor@5da80bb3[Shutting down, pool size = 4, active threads = 4, queued tasks = 0, completed tasks = 36908]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2063)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:830)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1379)
+	at scala.concurrent.impl.ExecutionContextImpl$$anon$4.execute(ExecutionContextImpl.scala:138)
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:72)
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1(Promise.scala:288)
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1$adapted(Promise.scala:288)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:288)
+	at scala.concurrent.Promise.complete(Promise.scala:53)
+	at scala.concurrent.Promise.complete$(Promise.scala:52)
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:187)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2022.03.14 10:43:23 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/robindebalme/cs449-M1/.metals/lsp.trace.json or /Users/robindebalme/Library/Caches/org.scalameta.metals/lsp.trace.json
+2022.03.14 10:43:24 INFO  logging to file /Users/robindebalme/cs449-M1/.metals/metals.log
+2022.03.14 10:43:24 INFO  Started: Metals version 0.11.2 in workspace '/Users/robindebalme/cs449-M1' for client Visual Studio Code 1.65.1.
+2022.03.14 10:43:24 INFO  Parse release: 1.8.0_292
+2022.03.14 10:43:25 INFO  time: initialize in 1.44s
+2022.03.14 10:43:26 INFO  Attempting to connect to the build server...
+2022.03.14 10:43:26 INFO  skipping build import with status 'Installed'
+2022.03.14 10:43:26 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/robindebalme/cs449-M1/.metals/bsp.trace.json or /Users/robindebalme/Library/Caches/org.scalameta.metals/bsp.trace.json
+2022.03.14 10:43:26 INFO  Attempting to connect to the build server...
+2022.03.14 10:43:26 INFO  Attempting to connect to the build server...
+2022.03.14 10:43:26 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/robindebalme/cs449-M1/project/project/.metals/bsp.trace.json or /Users/robindebalme/Library/Caches/org.scalameta.metals/bsp.trace.json
+2022.03.14 10:43:26 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/robindebalme/cs449-M1/project/.metals/bsp.trace.json or /Users/robindebalme/Library/Caches/org.scalameta.metals/bsp.trace.json
+2022.03.14 10:43:26 INFO  time: Connected to build server in 0.61s
+2022.03.14 10:43:26 INFO  Connected to Build server: Bloop v1.4.13
+2022.03.14 10:43:27 INFO  time: Imported build in 0.51s
+2022.03.14 10:43:32 INFO  time: indexed workspace in 4.99s
+2022.03.14 11:13:14 INFO  shutting down Metals
+2022.03.14 11:13:14 INFO  Shut down connection with build server.
+2022.03.14 11:13:14 INFO  Shut down connection with build server.
+2022.03.14 11:13:14 INFO  Shut down connection with build server.
+2022.03.14 13:14:13 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/robindebalme/cs449-M1/.metals/lsp.trace.json or /Users/robindebalme/Library/Caches/org.scalameta.metals/lsp.trace.json
+2022.03.14 13:14:13 INFO  logging to file /Users/robindebalme/cs449-M1/.metals/metals.log
+2022.03.14 13:14:13 INFO  Started: Metals version 0.11.2 in workspace '/Users/robindebalme/cs449-M1' for client Visual Studio Code 1.65.1.
+2022.03.14 13:14:13 INFO  Parse release: 1.8.0_292
+2022.03.14 13:14:15 INFO  time: initialize in 1.73s
+2022.03.14 13:14:16 INFO  Attempting to connect to the build server...
+2022.03.14 13:14:16 INFO  skipping build import with status 'Installed'
+2022.03.14 13:14:16 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/robindebalme/cs449-M1/.metals/bsp.trace.json or /Users/robindebalme/Library/Caches/org.scalameta.metals/bsp.trace.json
+2022.03.14 13:14:16 INFO  Attempting to connect to the build server...
+2022.03.14 13:14:16 INFO  Attempting to connect to the build server...
+2022.03.14 13:14:16 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/robindebalme/cs449-M1/project/.metals/bsp.trace.json or /Users/robindebalme/Library/Caches/org.scalameta.metals/bsp.trace.json
+2022.03.14 13:14:17 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/robindebalme/cs449-M1/project/project/.metals/bsp.trace.json or /Users/robindebalme/Library/Caches/org.scalameta.metals/bsp.trace.json
+2022.03.14 13:14:17 INFO  time: Connected to build server in 0.45s
+2022.03.14 13:14:17 INFO  Connected to Build server: Bloop v1.4.13
+2022.03.14 13:14:17 INFO  time: Imported build in 0.13s
+2022.03.14 13:14:21 INFO  time: indexed workspace in 4.69s
+2022.03.14 14:37:00 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 14:37:04 INFO  time: compiled cs449-m1 in 4.14s
+2022.03.14 14:37:37 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 14:37:39 INFO  time: compiled cs449-m1 in 1.57s
+2022.03.14 14:47:44 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 14:47:45 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.14 14:47:46 INFO  time: compiled cs449-m1 in 1.84s
+2022.03.14 14:51:52 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 14:51:52 INFO  time: compiled cs449-m1 in 0.21s
+mars 14, 2022 2:51:54 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 384
+2022.03.14 14:52:00 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 14:52:00 INFO  time: compiled cs449-m1 in 0.15s
+2022.03.14 14:52:31 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 14:52:31 INFO  time: compiled cs449-m1 in 0.28s
+2022.03.14 14:52:41 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 14:52:42 INFO  time: compiled cs449-m1 in 1.69s
+2022.03.14 14:52:52 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 14:52:54 INFO  time: compiled cs449-m1 in 1.72s
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala in Map[(Double, Double),<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala, 1738, 1738, 1768)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala in Map[(Double, Double),<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala, 1738, 1738, 1761)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala in Map[(Double, Double),<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala, 1738, 1738, 1762)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala in Map[(Double, Double),<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala, 1738, 1738, 1763)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala in Map[(Double, Double),<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala, 1738, 1738, 1764)
+mars 14, 2022 3:07:51 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala in Map[(Double, Double),Double]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala, 1738, 1738, 1766)
+2022.03.14 15:07:55 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 15:07:55 INFO  time: compiled cs449-m1 in 0.39s
+2022.03.14 15:08:04 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 15:08:06 INFO  time: compiled cs449-m1 in 1.71s
+2022.03.14 15:11:24 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 15:11:24 INFO  time: compiled cs449-m1 in 0.39s
+2022.03.14 15:12:52 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 15:12:52 INFO  time: compiled cs449-m1 in 0.35s
+2022.03.14 15:13:08 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 15:13:08 INFO  time: compiled cs449-m1 in 0.32s
+2022.03.14 15:14:27 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala:79:7: stale bloop error: reassignment to val
+      allUserAvg = allUserAvg.updated(user, tmp)
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2022.03.14 15:14:27 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala:93:7: stale bloop error: reassignment to val
+      allItemAvg = allItemAvg.updated(item, tmp)
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2022.03.14 15:14:27 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala:79:7: stale bloop error: reassignment to val
+      allUserAvg = allUserAvg.updated(user, tmp)
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2022.03.14 15:14:27 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala:93:7: stale bloop error: reassignment to val
+      allItemAvg = allItemAvg.updated(item, tmp)
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala in Map[Int,<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala, 1704, 1704, 1721)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala in Map[Int,<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala, 1704, 1704, 1722)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala in Map[Int,<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala, 1704, 1704, 1721)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala in Map[Int,<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala, 1704, 1704, 1722)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala in Map[Int,<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala, 1704, 1704, 1715)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala in Map[Int,<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala, 1704, 1704, 1716)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala in Map[Int,<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala, 1704, 1704, 1717)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala in Map[Int,<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala, 1704, 1704, 1718)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala in Map[Int,<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala, 1704, 1704, 1719)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala in Map[Int,Double]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala, 1704, 1704, 1720)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala in Map[Int,Double]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala, 1704, 1704, 1720)
+2022.03.14 15:14:45 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 15:14:45 INFO  time: compiled cs449-m1 in 0.36s
+2022.03.14 15:14:59 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 15:14:59 INFO  time: compiled cs449-m1 in 0.31s
+2022.03.14 15:15:01 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 15:15:01 INFO  time: compiled cs449-m1 in 0.34s
+2022.03.14 15:15:01 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 15:15:01 INFO  time: compiled cs449-m1 in 0.33s
+2022.03.14 15:16:12 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 15:16:12 INFO  time: compiled cs449-m1 in 0.34s
+2022.03.14 15:23:11 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 15:23:13 INFO  time: compiled cs449-m1 in 1.75s
+2022.03.14 16:08:26 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 16:08:26 INFO  time: compiled cs449-m1 in 0.73s
+2022.03.14 16:08:27 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.14 16:08:30 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.14 16:08:30 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.14 16:08:31 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.14 16:08:32 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.14 16:08:33 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.14 16:08:33 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.14 16:08:34 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.14 16:08:34 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.14 16:08:37 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.14 16:08:37 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.14 16:08:38 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.14 16:08:38 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.14 16:08:39 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.14 16:08:40 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.14 16:08:42 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.14 16:08:43 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.14 16:08:44 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.14 16:08:44 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 16:08:44 INFO  time: compiled cs449-m1 in 0.82s
+2022.03.14 16:08:45 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.14 16:08:46 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.14 16:08:47 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.14 16:08:46 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.14 16:08:47 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.14 16:08:47 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.14 16:08:48 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 16:08:48 INFO  time: compiled cs449-m1 in 0.32s
+2022.03.14 16:08:48 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.14 16:08:51 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.14 16:08:51 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.14 16:08:51 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.14 16:08:53 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.14 16:08:54 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.14 16:08:55 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 16:08:55 INFO  time: compiled cs449-m1 in 0.44s
+2022.03.14 16:08:55 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.14 16:08:58 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.14 16:08:59 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.14 16:08:59 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.14 16:09:00 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.14 16:09:00 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.14 16:09:00 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.14 16:09:01 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 16:09:01 INFO  time: compiled cs449-m1 in 0.3s
+2022.03.14 16:09:01 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.14 16:09:02 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.14 16:09:02 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.14 16:09:03 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 16:09:03 INFO  time: compiled cs449-m1 in 0.37s
+2022.03.14 16:09:03 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.14 16:09:04 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.14 16:09:05 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.14 16:09:05 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 16:09:06 INFO  time: compiled cs449-m1 in 1.49s
+2022.03.14 16:09:38 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 16:09:39 INFO  time: compiled cs449-m1 in 1.46s
+2022.03.14 16:10:39 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 16:10:41 INFO  time: compiled cs449-m1 in 1.47s
+2022.03.14 16:10:49 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 16:10:51 INFO  time: compiled cs449-m1 in 1.53s
+2022.03.14 16:16:31 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 16:16:32 INFO  time: compiled cs449-m1 in 1.47s
+mars 14, 2022 4:17:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 1797
+2022.03.14 16:17:21 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 16:17:21 INFO  time: compiled cs449-m1 in 0.36s
+2022.03.14 16:17:31 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 16:17:31 INFO  time: compiled cs449-m1 in 0.12s
+2022.03.14 16:17:35 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 16:17:35 INFO  time: compiled cs449-m1 in 0.12s
+2022.03.14 16:17:35 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 16:17:35 INFO  time: compiled cs449-m1 in 0.31s
+2022.03.14 16:20:01 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 16:20:01 INFO  time: compiled cs449-m1 in 0.3s
+2022.03.14 16:20:11 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 16:20:11 INFO  time: compiled cs449-m1 in 0.32s
+2022.03.14 16:20:31 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 16:20:31 INFO  time: compiled cs449-m1 in 0.29s
+2022.03.14 16:20:37 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 16:20:37 INFO  time: compiled cs449-m1 in 0.3s
+2022.03.14 16:21:01 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 16:21:03 INFO  time: compiled cs449-m1 in 1.62s
+mars 14, 2022 4:21:08 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 2062
+2022.03.14 16:21:09 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 16:21:09 INFO  time: compiled cs449-m1 in 0.32s
+2022.03.14 16:21:21 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 16:21:21 INFO  time: compiled cs449-m1 in 0.28s
+2022.03.14 16:21:24 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 16:21:26 INFO  time: compiled cs449-m1 in 1.31s
+2022.03.14 16:23:28 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 16:23:28 INFO  time: compiled cs449-m1 in 0.31s
+mars 14, 2022 4:23:32 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 2223
+2022.03.14 16:23:34 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 16:23:34 INFO  time: compiled cs449-m1 in 0.34s
+2022.03.14 16:23:49 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 16:23:49 INFO  time: compiled cs449-m1 in 0.31s
+2022.03.14 16:24:03 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 16:24:03 INFO  time: compiled cs449-m1 in 0.3s
+mars 14, 2022 4:24:20 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 2323
+mars 14, 2022 4:24:20 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 2324
+2022.03.14 16:24:50 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 16:24:50 INFO  time: compiled cs449-m1 in 0.32s
+2022.03.14 16:24:54 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 16:24:54 INFO  time: compiled cs449-m1 in 0.31s
+2022.03.14 16:25:23 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 16:25:23 INFO  time: compiled cs449-m1 in 0.3s
+2022.03.14 16:25:31 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 16:25:31 INFO  time: compiled cs449-m1 in 0.31s
+mars 14, 2022 4:25:44 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 2469
+mars 14, 2022 4:25:44 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 2470
+2022.03.14 16:25:45 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 16:25:46 INFO  time: compiled cs449-m1 in 1.24s
+mars 14, 2022 4:34:04 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 2490
+2022.03.14 16:34:06 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 16:34:08 INFO  time: compiled cs449-m1 in 2.13s
+2022.03.14 16:37:53 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 16:37:55 INFO  time: compiled cs449-m1 in 1.94s
+2022.03.14 16:38:36 INFO  compiling cs449-m1 (1 scala source)
+2022.03.14 16:38:37 INFO  time: compiled cs449-m1 in 1.39s
+2022.03.16 14:13:34 INFO  time: code lens generation in 1.11s
+mars 16, 2022 2:13:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 2624
+mars 16, 2022 2:19:11 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 2710
