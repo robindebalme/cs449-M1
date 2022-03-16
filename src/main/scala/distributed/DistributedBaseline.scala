@@ -50,7 +50,7 @@ object DistributedBaseline extends App {
 
   val timings = measurements.map(t => t._2) // Retrieve the timing measurements
   val globalAvg = train.map(elem => elem.rating).sum() / train.count()
-
+  /*
   var allUserAvg = Map(0 -> 0.0)
 
   var allItemAvg = Map(0 -> 0.0)
@@ -209,5 +209,5 @@ object DistributedBaseline extends App {
   spark.close()
   
 }
-
+*/
 }

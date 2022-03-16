@@ -8,7 +8,7 @@ import org.apache.spark.sql.SparkSession
 import org.apache.log4j.Logger
 import org.apache.log4j.Level
 
-import scala.math
+import scala.math._
 import shared.predictions._
 
 
@@ -103,61 +103,100 @@ object Personalized extends App {
   }
   
   def NormDev(i: Int, u: Int, info: Array[Rating]): Double = {
-    val r_u_i = info.filter(x => x.user == u).filter(y => y.item == i)(0).rating
-    (r_u_i - allUserAvg(u-1))/(scale(r_u_i, allUserAvg(u-1)))
+    val arrFiltered = info.filter(x => x.user == u).filter(y => y.item == i)
+    if(arrFiltered.isEmpty) 0
+    else (arrFiltered(0).rating - allUserAvg(u-1))/(scale(arrFiltered(0).rating, allUserAvg(u-1)))   
   }
 
   // Nouveau pour cet exo
 
   def Similarity(u: Int, v: Int): Double = {
-    val arrFiltered_u = train.filter(x => x.user == u )
-    val arrFiltered_v = train.filter(x => x.user == v )
+    val arrFiltered_u = train.filter(x => x.user == u ).filter(x => !(x.rating.isNaN)).filter(y => !(y.item.isNaN))
+    val arrFiltered_v = train.filter(x => x.user == v ).filter(x => !(x.rating.isNaN)).filter(y => !(y.item.isNaN))
 
-    val item_commun = List()
+    val item_commun = arrFiltered_u.foldLeft[List[Int]](List()){(accU, x) =>
+                        val a = arrFiltered_v.foldLeft[Int](-1){(accV, y) =>
+                            if(x.item == y.item) x.item
+                            else accV
+                            }
+                        if(a == (-1)) accU
+                        else a :: accU
+                        }
 
-    for(i <- arrFiltered_u)
-      for(j <- arrFiltered_v)
-        if (i.item == j.item) i.item :: item_commun
-        else item_commun
     if(item_commun.isEmpty) 0
     else
         item_commun.foldLeft(0.0){(acc, x) =>
           val normDevU = NormDev(x, u, train)
           val normDevV = NormDev(x, v, train)
           acc + normDevU*normDevV
-          }/(arrFiltered_u.foldLeft(0.0){(acc, x) =>
-              val normDevU = NormDev(x.user, u, train)
-              acc + normDevU*normDevU// AJOUTER  LA RACINE CARRé
-              }*arrFiltered_v.foldLeft(0.0){(acc, y) =>
-              val normDevV = NormDev(y.user, v, train)
-              acc + normDevV*normDevV// AJOUTER  LA RACINE CARRé
-              })
-        //haut/bas
+          }/(sqrt(arrFiltered_u.foldLeft(0.0){(acc, x) =>
+                val normDevU = NormDev(x.item, u, train)
+                acc + normDevU*normDevU
+                })*sqrt(arrFiltered_v.foldLeft(0.0){(acc, y) =>
+                  val normDevV = NormDev(y.item, v, train)
+                  acc + normDevV*normDevV
+                  }))
   }
 
-  def AnyAvgDev(i: Int, u: Int, info: Array[Rating]): Double = {
+  def sim_anyAvgDev(i: Int, u: Int, info: Array[Rating]): Double = {
     val arrFiltered = info.filter(x => x.item == i)
     val arrFiltered2 = arrFiltered.filter(x => !(x.rating.isNaN)).filter(y => !(y.user.isNaN))
     if(arrFiltered2.isEmpty) 0 // A REVOIR, C'EST LE CAS D'UN FILM SANS RATING PAR UN USER
-    else 
-      arrFiltered2.foldLeft(0.0){(acc, x) =>
-        acc + Similarity(u, x.user)*NormDev(x.item, x.user, info)
-        }/arrFiltered2.length // C EST PAS VRAIMENT LA BONNE FORMULE
+    else {
+      val haut = arrFiltered2.foldLeft(0.0){(acc, x) =>
+        val sim = Similarity(u, x.user)
+        if(sim == 0) acc
+        else acc + sim*NormDev(i, x.user, info)
+        } // C EST PAS VRAIMENT LA BONNE FORMULE
+      val bas = arrFiltered2.foldLeft(0.0){(acc, x) =>
+        val sim = Similarity(u, x.user)
+        if(sim == 0) acc
+        else acc + Similarity(u, x.user)
+        }
+      haut/bas
+    }
+      
   }
   
   def PredRat(u: Int, i: Int, info: Array[Rating]): Double = {
 
     val useravg = allUserAvg(u-1)
-    val anyavgdev = AnyAvgDev(i,u, info)
+    val anyavgdev = sim_anyAvgDev(i,u, info)
 
     if (info.filter(x => x.item == i).isEmpty) useravg
     else if (info.filter(x => x.user == u).isEmpty) globalAvg 
     else useravg + anyavgdev*scale((useravg+anyavgdev), useravg)
   }
   
-  println("predrat cas 1 :" + allUserAvg(0))
-  println("predrat cas 2 :" + AnyAvgDev(15,19, train))
-  println("predrat cas 3 :" + (scale((allUserAvg(0)+AnyAvgDev(1,1, train)), allUserAvg(0))))
+  
+  def preProc(i: Int,u: Int): Double = {
+    val arrFiltered = train.filter(x => x.user == u ).filter(x => !(x.rating.isNaN)).filter(y => !(y.item.isNaN))
+    if(arrFiltered.isEmpty) 0
+    else NormDev(i, u, train)/sqrt(arrFiltered.foldLeft(0.0){(acc, x) =>
+                                      val normDevU = NormDev(x.item, u, train)
+                                      if(normDevU == 0) acc
+                                      else acc + normDevU*normDevU
+                                      })
+  }
+  def preProc_Similarity(u: Int, v: Int): Double = { // DONNE PAS DES BONS RESULTATS
+    val arrFiltered_u = train.filter(x => x.user == u ).filter(x => !(x.rating.isNaN)).filter(y => !(y.item.isNaN))
+    val arrFiltered_v = train.filter(x => x.user == v ).filter(x => !(x.rating.isNaN)).filter(y => !(y.item.isNaN))
+
+    val item_commun = arrFiltered_u.foldLeft[List[Int]](List()){(accU, x) =>
+                        val a = arrFiltered_v.foldLeft[Int](-1){(accV, y) =>
+                            if(x.item == y.item) x.item
+                            else accV
+                            }
+                        if(a == (-1)) accU
+                        else a :: accU
+                        }
+
+    if(item_commun.isEmpty) 0
+    else
+        item_commun.foldLeft(0.0){(acc, x) =>
+          preProc(x, u)*preProc(x, v)
+          }
+  }
 
 
   def MAE(test: Array[Rating], train: Array[Rating], prediction_method: String): Double = {

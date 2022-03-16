@@ -136,7 +136,7 @@ object Baseline extends App {
     val arrFiltered2 = arrFiltered.filter(x => !(x.rating.isNaN)).filter(y => !(y.user.isNaN))
     if(arrFiltered2.isEmpty) 0 // A REVOIR, C'EST LE CAS D'UN FILM SANS RATING PAR UN USER
     else arrFiltered2.foldLeft(0.0){(acc, x) =>
-      acc + NormDev(x.item, x.user, info)/(arrFiltered2.length)
+      acc + NormDev(i, x.user, info)/(arrFiltered2.length)
       }
   }
 
@@ -164,6 +164,9 @@ object Baseline extends App {
     else useravg + anyavgdev*scale((useravg+anyavgdev), useravg)
   }
   
+  println("predrat cas 1 :" + allUserAvg(0))
+  println("predrat cas 2 :" + allAnyAvgDev(17-1))
+  //println("predrat cas 3 :" + (scale((allUserAvg(0)+AnyAvgDev(1, train)), allUserAvg(0))))
 
   ////B2////
 
