@@ -10,3 +10,9 @@ src/main/scala/project/
 src/main/scala/target/
 target/
 logs/
+project/metals.sbt
+.metals/metals.lock.db
+.gitignore
+.vscode/settings.json
+.gitignore
+.gitignore
