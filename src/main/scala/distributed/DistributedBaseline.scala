@@ -49,12 +49,12 @@ object DistributedBaseline extends App {
   val maxUser = List(train.map(elem => elem.user).max(), test.map(elem => elem.user).max()).max
   val maxItem = List(train.map(elem => elem.item).max(), test.map(elem => elem.item).max()).max
 
-<<<<<<< HEAD
-  val timings = measurements.map(t => t._2) // Retrieve the timing measurements
+
+  //val timings = measurements.map(t => t._2) // Retrieve the timing measurements
   val globalAvg = train.map(elem => elem.rating).sum() / train.count()
   /*
   var allUserAvg = Map(0 -> 0.0)
-=======
+
   val globalAvg = distribmean(train)
 
   val alluserAvg = mutable.Map(0 -> 0.0)
@@ -62,7 +62,7 @@ object DistributedBaseline extends App {
   val allitemDev = mutable.Map(0 -> 0.0)
   val singleDev : mutable.Map[(Double, Double),Double] = mutable.Map()
   val pred : mutable.Map[(Int, Int),Double] = mutable.Map()
->>>>>>> fbebf150bd413f7121032fdf78a155f9ef8c22ac
+
 
   def distribmean(df : RDD[Rating]): Double = {
     val pair = df.map(elem => (elem.rating, 1)).reduce((x, y) => (x._1 + y._1, x._2 + y._2))
@@ -240,6 +240,3 @@ object DistributedBaseline extends App {
 <<<<<<< HEAD
 */
 }
-=======
-
->>>>>>> fbebf150bd413f7121032fdf78a155f9ef8c22ac

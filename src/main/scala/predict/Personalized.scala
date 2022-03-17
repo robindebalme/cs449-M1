@@ -8,6 +8,7 @@ import org.apache.spark.sql.SparkSession
 import org.apache.log4j.Logger
 import org.apache.log4j.Level
 
+import scala.collection.mutable
 import scala.math._
 import shared.predictions._
 
@@ -45,15 +46,26 @@ object Personalized extends App {
   ////// CE QUE MOI J'AJOUTE //////
   ////////////////////////////////
 
-  val globalAvg = train.foldLeft(0.0)((acc, x) => acc + x.rating)/train.length
+  val sizeOfTrain = train.length
+  val sizeOfTest = test.length
+  val maxUser = List(train.map(elem => elem.user).max, test.map(elem => elem.user).max).max
+  val maxItem = List(train.map(elem => elem.item).max, test.map(elem => elem.item).max).max
 
-  def scale(x: Double, rAvg: Double): Double = {
+  val alluserAvg : mutable.Map[Int, Double] = mutable.Map()
+  val allitemAvg : mutable.Map[Int, Double] = mutable.Map()
+  val allitemDev : mutable.Map[Int, Double] = mutable.Map()
+  val singleDev : mutable.Map[(Double, Double),Double] = mutable.Map()
+  val cosineSim : mutable.Map[(Int, Int),Double] = mutable.Map()
+
+  val globalAvg =  mean_(train.map(_.rating))
+
+  /*def scale(x: Double, rAvg: Double): Double = {
     if (x>rAvg) 5.0-rAvg
     else if (x < rAvg) rAvg - 1.0
     else if (x == rAvg) 1.0
     else 0 // ESSAYER DE PRINT UNE ERREUR
     
-  }
+  }*/
 
   //// CALCULER AVERAGES POUR CHAQUE INDEX ET MISE DANS UN TABLEAU ////
   def AllUserAvg(info: Array[Rating]): Array[Double] = {
@@ -110,94 +122,119 @@ object Personalized extends App {
 
   // Nouveau pour cet exo
 
-  def Similarity(u: Int, v: Int): Double = {
-    val arrFiltered_u = train.filter(x => x.user == u ).filter(x => !(x.rating.isNaN)).filter(y => !(y.item.isNaN))
-    val arrFiltered_v = train.filter(x => x.user == v ).filter(x => !(x.rating.isNaN)).filter(y => !(y.item.isNaN))
-
-    val item_commun = arrFiltered_u.foldLeft[List[Int]](List()){(accU, x) =>
-                        val a = arrFiltered_v.foldLeft[Int](-1){(accV, y) =>
-                            if(x.item == y.item) x.item
-                            else accV
-                            }
-                        if(a == (-1)) accU
-                        else a :: accU
-                        }
-
-    if(item_commun.isEmpty) 0
-    else
-        item_commun.foldLeft(0.0){(acc, x) =>
-          val normDevU = NormDev(x, u, train)
-          val normDevV = NormDev(x, v, train)
-          acc + normDevU*normDevV
-          }/(sqrt(arrFiltered_u.foldLeft(0.0){(acc, x) =>
-                val normDevU = NormDev(x.item, u, train)
-                acc + normDevU*normDevU
-                })*sqrt(arrFiltered_v.foldLeft(0.0){(acc, y) =>
-                  val normDevV = NormDev(y.item, v, train)
-                  acc + normDevV*normDevV
-                  }))
+  def common_item(arrU : Array[Rating], arrV : Array[Rating]): Array[Rating] = {
+    val itemIn2 = arrV.map(_.item).distinct
+    val common_item_Ur = arrU.filter(elem => itemIn2.contains(elem.item))
+    common_item_Ur   
   }
 
-  def sim_anyAvgDev(i: Int, u: Int, info: Array[Rating]): Double = {
-    val arrFiltered = info.filter(x => x.item == i)
-    val arrFiltered2 = arrFiltered.filter(x => !(x.rating.isNaN)).filter(y => !(y.user.isNaN))
-    if(arrFiltered2.isEmpty) 0 // A REVOIR, C'EST LE CAS D'UN FILM SANS RATING PAR UN USER
-    else {
-      val haut = arrFiltered2.foldLeft(0.0){(acc, x) =>
-        val sim = Similarity(u, x.user)
-        if(sim == 0) acc
-        else acc + sim*NormDev(i, x.user, info)
-        } // C EST PAS VRAIMENT LA BONNE FORMULE
-      val bas = arrFiltered2.foldLeft(0.0){(acc, x) =>
-        val sim = Similarity(u, x.user)
-        if(sim == 0) acc
-        else acc + Similarity(u, x.user)
-        }
-      haut/bas
+  def cosineSimilarity(u: Int, v: Int): Double = {
+    cosineSim.getOrElse((u, v), {
+    val arrFiltered_u = train.filter(_.user == u )
+    val arrFiltered_v = train.filter(_.user == v )
+
+    val item_commun = common_item(arrFiltered_u , arrFiltered_v )
+
+    var tmp = 0.0
+    if(item_commun.isEmpty) {
+      cosineSim += (((u,v), tmp))
+      tmp
     }
-      
-  }
-  
-  def PredRat(u: Int, i: Int, info: Array[Rating]): Double = {
+    else {
+      val uAvg = userAvg(u, train, alluserAvg, globalAvg)
+      val vAvg = userAvg(v, train, alluserAvg, globalAvg)
 
-    val useravg = allUserAvg(u-1)
-    val anyavgdev = sim_anyAvgDev(i,u, info)
+      val top = item_commun.foldLeft(0.0){(acc, x) =>
+        val normDevU = dev(x.rating, uAvg, singleDev)
+        val normDevV = dev((arrFiltered_v.filter(_.item == x.item)).apply(0).rating, vAvg, singleDev)
+        acc + normDevU * normDevV
+        }
 
-    if (info.filter(x => x.item == i).isEmpty) useravg
-    else if (info.filter(x => x.user == u).isEmpty) globalAvg 
-    else useravg + anyavgdev*scale((useravg+anyavgdev), useravg)
+      val bottom = (sqrt(arrFiltered_u.foldLeft(0.0){(acc, elem) =>
+        val normDevU = dev(elem.rating, uAvg, singleDev)
+        acc + normDevU * normDevU
+        }) * sqrt(arrFiltered_v.foldLeft(0.0){(acc, elem2) =>
+        val normDevV = dev(elem2.rating, vAvg, singleDev)
+        acc + normDevV * normDevV
+        }))
+
+      tmp = top / bottom
+      cosineSim += (((u,v), tmp))
+      tmp
+      }
+    })
   }
-  
-  
-  def preProc(i: Int,u: Int): Double = {
-    val arrFiltered = train.filter(x => x.user == u ).filter(x => !(x.rating.isNaN)).filter(y => !(y.item.isNaN))
+
+
+  def avgSimilarity(i: Int, u: Int, train: Array[Rating]): Double = {
+    val arrFiltered = train.filter(_.item == i)
     if(arrFiltered.isEmpty) 0
-    else NormDev(i, u, train)/sqrt(arrFiltered.foldLeft(0.0){(acc, x) =>
-                                      val normDevU = NormDev(x.item, u, train)
-                                      if(normDevU == 0) acc
-                                      else acc + normDevU*normDevU
-                                      })
+    else {
+      val top = arrFiltered.foldLeft((0.0)){(acc, x) =>
+        val sim = preProcess_Similarity(u, x.user)
+        (acc + (sim * dev(x.rating, userAvg(x.user, train, alluserAvg, globalAvg), singleDev)))
+        }
+      val bottom = arrFiltered.foldLeft(0.0){(acc, x) =>
+        val sim = preProcess_Similarity(u, x.user)
+        acc + sim.abs
+        }
+      top / bottom
+    }  
   }
-  def preProc_Similarity(u: Int, v: Int): Double = { // DONNE PAS DES BONS RESULTATS
-    val arrFiltered_u = train.filter(x => x.user == u ).filter(x => !(x.rating.isNaN)).filter(y => !(y.item.isNaN))
-    val arrFiltered_v = train.filter(x => x.user == v ).filter(x => !(x.rating.isNaN)).filter(y => !(y.item.isNaN))
+  
+  def predictedPersonalized(user: Int, item : Int): Double = {
+    val useravg = userAvg(user, train, alluserAvg, globalAvg)
+    if (useravg == globalAvg) {
+      globalAvg
+    }
+    else{
+      val itemavg = itemAvg(item, train, allitemAvg, globalAvg)
+      if (itemavg == globalAvg) {
+        useravg
+      }
+      else {
+        val simavgdev = avgSimilarity(item ,user, train)
+        if (simavgdev == 0) {
+          useravg
+        }
+        else
+        useravg + simavgdev * scale((useravg + simavgdev), useravg)
+      }
+    }
+  }
+  
+  
+  def preProcess(i: Int,u: Int): Double = {
+    val arrFiltered = train.filter(x => x.user == u )
+    if(arrFiltered.isEmpty) 0
+    else {
+      val rating_u_i = arrFiltered.filter(_.item == i).apply(0).rating
+      val top = dev(rating_u_i, userAvg(u, train, alluserAvg, globalAvg), singleDev) 
+      val bottom = arrFiltered.foldLeft(0.0){(acc, x) =>
+        val normDevU = dev(x.rating, userAvg(u, train, alluserAvg, globalAvg), singleDev)
+        acc + normDevU*normDevU
+      }
+      top / sqrt(bottom)
+    }
+  }
+  
+  def preProcess_Similarity(u: Int, v: Int): Double = { 
+    val arrFiltered_u = train.filter(x => x.user == u )
+    val arrFiltered_v = train.filter(x => x.user == v )
 
-    val item_commun = arrFiltered_u.foldLeft[List[Int]](List()){(accU, x) =>
-                        val a = arrFiltered_v.foldLeft[Int](-1){(accV, y) =>
-                            if(x.item == y.item) x.item
-                            else accV
-                            }
-                        if(a == (-1)) accU
-                        else a :: accU
-                        }
+    val item_commun = common_item(arrFiltered_u, arrFiltered_v).map(_.item).distinct
 
     if(item_commun.isEmpty) 0
     else
-        item_commun.foldLeft(0.0){(acc, x) =>
-          preProc(x, u)*preProc(x, v)
-          }
+        item_commun.foldLeft(0.0){(acc, x) => acc + (preProcess(x, u) * preProcess(x, v))
+    }
   }
 
+
+
+  def predictorCosine(train : Array[Rating]): (Int, Int) => Double = {
+    (user, item) => predictedPersonalized(user, item)
+  }
 
   def MAE(test: Array[Rating], train: Array[Rating], prediction_method: String): Double = {
     if (prediction_method == "Sim1")
@@ -209,6 +246,23 @@ object Personalized extends App {
     else 0
   }
 
+
+  val measurements1 = (1 to conf.num_measurements()).map(x => timingInMs(() => {
+
+    val alluserAvg : mutable.Map[Int, Double] = mutable.Map()
+    val allitemAvg : mutable.Map[Int, Double] = mutable.Map()
+    val allitemDev : mutable.Map[Int, Double] = mutable.Map()
+    val singleDev : mutable.Map[(Double, Double),Double] = mutable.Map()
+
+
+    val globalAvg =  mean_(train.map(_.rating))
+    //Thread.sleep(1000) // Do everything here from train and test
+    //42        // Output answer as last value
+    mae(test, train, predictorCosine)
+
+  }))
+
+  val timingsGlobalAvg = measurements1.map(t => t._2)
 
   /////////////////////////////////
   //////// J'AI ARRETER LA ///////
@@ -233,17 +287,17 @@ object Personalized extends App {
           "3.Measurements" -> ujson.Num(conf.num_measurements())
         ),
         "P.1" -> ujson.Obj(
-          "1.PredUser1Item1" -> ujson.Num(PredRat(1,1, train)), // Prediction of item 1 for user 1 (similarity 1 between users)
-          "2.OnesMAE" -> ujson.Num(0.0)         // MAE when using similarities of 1 between all users
+          "1.PredUser1Item1" -> ujson.Num(predictedPersonalized(1, 1)), // Prediction of item 1 for user 1 (similarity 1 between users)
+          "2.OnesMAE" -> ujson.Num(predictedBaseline(1, 1, train, singleDev, allitemDev, globalAvg, alluserAvg, allitemAvg))         // MAE when using similarities of 1 between all users
         ),
         "P.2" -> ujson.Obj(
-          "1.AdjustedCosineUser1User2" -> ujson.Num(0.0), // Similarity between user 1 and user 2 (adjusted Cosine)
-          "2.PredUser1Item1" -> ujson.Num(0.0),  // Prediction item 1 for user 1 (adjusted cosine)
-          "3.AdjustedCosineMAE" -> ujson.Num(0.0) // MAE when using adjusted cosine similarity
+          "1.AdjustedCosineUser1User2" -> ujson.Num(cosineSimilarity(1, 8)), // Similarity between user 1 and user 2 (adjusted Cosine)
+          "2.PredUser1Item1" -> ujson.Num(avgSimilarity(1, 1, train)),  // Prediction item 1 for user 1 (adjusted cosine)
+          "3.AdjustedCosineMAE" -> ujson.Num(mae(test, train, predictorCosine)) // MAE when using adjusted cosine similarity
         ),
         "P.3" -> ujson.Obj(
-          "1.JaccardUser1User2" -> ujson.Num(0.0), // Similarity between user 1 and user 2 (jaccard similarity)
-          "2.PredUser1Item1" -> ujson.Num(0.0),  // Prediction item 1 for user 1 (jaccard)
+          "1.JaccardUser1User2" -> ujson.Num(preProcess_Similarity(1, 2)), // Similarity between user 1 and user 2 (jaccard similarity)
+          "2.PredUser1Item1" -> ujson.Num(cosineSimilarity(1, 2)),  // Prediction item 1 for user 1 (jaccard)
           "3.JaccardPersonalizedMAE" -> ujson.Num(0.0) // MAE when using jaccard similarity
         )
       )
