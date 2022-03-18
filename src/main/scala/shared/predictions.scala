@@ -49,6 +49,7 @@ package object predictions
   var allitemAvg : mutable.Map[Int, Double] = mutable.Map()
   var allitemDev : mutable.Map[Int, Double] = mutable.Map()
   var cosineSim : mutable.Map[(Int, Int),Double] = mutable.Map()
+  var jaccardSim : mutable.Map[(Int, Int),Double] = mutable.Map()
   var preProcessSim : mutable.Map[(Int, Int),Double] = mutable.Map()
   var commonItemMap: mutable.Map[(Int, Int),Array[Int]] = mutable.Map()
   var mapArrUsers : Map[Int, Array[Rating]] =  Map()

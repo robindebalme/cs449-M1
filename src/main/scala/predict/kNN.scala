@@ -222,9 +222,9 @@ object kNN extends App {
   
 
   println("Pred U1 I1 K10 :" + knn_pred(1,1, 10, train))
-  println("Pred U1 I1 K10 :" + knn_pred(1,1, 30, train))
-  println("Pred U1 I1 K10 :" + knn_pred(1,1, 50, train))
-  println("Pred U1 I1 K10 :" + knn_pred(1,1, 100, train))
+  //println("Pred U1 I1 K10 :" + knn_pred(1,1, 30, train))
+  //println("Pred U1 I1 K10 :" + knn_pred(1,1, 50, train))
+  //println("Pred U1 I1 K10 :" + knn_pred(1,1, 100, train))
   //println("recommendation for new user : " + recommendation(945, 5, 2, train))
   //println("MAE K10 :" + mae(10, test, train, "knn"))
 

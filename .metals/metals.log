@@ -6068,3 +6068,693 @@ AVERTISSEMENT: Unmatched cancel notification for request id 26328
 2022.03.18 13:03:58 INFO  compiling cs449-m1-test (1 scala source)
 2022.03.18 13:03:58 INFO  time: compiled cs449-m1 in 11s
 2022.03.18 13:04:00 INFO  time: compiled cs449-m1-test in 1.77s
+2022.03.18 13:17:48 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/.metals/lsp.trace.json or /Users/salimcherkaoui/Library/Caches/org.scalameta.metals/lsp.trace.json[0m
+2022.03.18 13:17:49 INFO  logging to file /Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/.metals/metals.log[0m
+2022.03.18 13:17:49 INFO  Started: Metals version 0.11.2 in workspace '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1' for client Visual Studio Code 1.65.2.[0m
+2022.03.18 13:17:49 INFO  Parse release: 11.0.11[0m
+2022.03.18 13:17:54 INFO  time: initialize in 5.46s[0m
+2022.03.18 13:17:58 INFO  Attempting to connect to the build server...[0m
+2022.03.18 13:17:59 ERROR Starting the bsp launcher for bloop...[0m
+2022.03.18 13:17:59 ERROR Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/5x/w56lcgf97dd2_7gsjr9xyzz40000gn/T/bsp-launcher10207136155779431871/bsp.socket'...[0m
+2022.03.18 13:17:59 ERROR Waiting for the bsp connection to come up...[0m
+2022.03.18 13:17:59 ERROR error: The command bsp --protocol local --socket /var/folders/5x/w56lcgf97dd2_7gsjr9xyzz40000gn/T/bsp-launcher10207136155779431871/bsp.socket returned with an error[0m
+2022.03.18 13:17:59 ERROR > [0m[32m[D][0m Loading workspace settings from bloop.settings.json[0m
+2022.03.18 13:17:59 ERROR > [0m[32m[D][0m Loading 2 projects from '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/.bloop'...[0m
+2022.03.18 13:17:59 ERROR > [0m[32m[D][0m Loading project from '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/.bloop/cs449-m1.json'[0m
+2022.03.18 13:17:59 ERROR > [0m[32m[D][0m Loading project from '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/.bloop/cs449-m1-test.json'[0m
+2022.03.18 13:17:59 ERROR > [0m[33m[W][0m Scala instance jar /Users/robindebalme/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.12/scala-compiler-2.11.12.jar doesn't exist![0m
+2022.03.18 13:17:59 ERROR > [0m[33m[W][0m Scala instance jar /Users/robindebalme/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar doesn't exist![0m
+2022.03.18 13:17:59 ERROR > [0m[33m[W][0m Scala instance jar /Users/robindebalme/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.12/scala-reflect-2.11.12.jar doesn't exist![0m
+2022.03.18 13:17:59 ERROR > [0m[33m[W][0m Scala instance jar /Users/robindebalme/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.12/scala-compiler-2.11.12.jar doesn't exist![0m
+2022.03.18 13:17:59 ERROR > [0m[33m[W][0m Scala instance jar /Users/robindebalme/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.jar doesn't exist![0m
+2022.03.18 13:17:59 ERROR > [0m[33m[W][0m Scala instance jar /Users/robindebalme/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar doesn't exist![0m
+2022.03.18 13:17:59 ERROR > [0m[33m[W][0m Scala instance jar /Users/robindebalme/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar doesn't exist![0m
+2022.03.18 13:17:59 ERROR > [0m[33m[W][0m Scala instance jar /Users/robindebalme/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.12/scala-reflect-2.11.12.jar doesn't exist![0m
+2022.03.18 13:17:59 ERROR > [0m[33m[W][0m Scala instance jar /Users/robindebalme/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/jline/jline/2.14.3/jline-2.14.3.jar doesn't exist![0m
+2022.03.18 13:17:59 ERROR > [0m[33m[W][0m Scala instance jar /Users/robindebalme/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.jar doesn't exist![0m
+2022.03.18 13:17:59 ERROR > [0m[33m[W][0m Scala instance jar /Users/robindebalme/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar doesn't exist![0m
+2022.03.18 13:17:59 ERROR > [0m[33m[W][0m Scala instance jar /Users/robindebalme/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/jline/jline/2.14.3/jline-2.14.3.jar doesn't exist![0m
+2022.03.18 13:17:59 ERROR > [0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.11.12.[0m
+2022.03.18 13:17:59 ERROR > [0m[32m[D][0m   => /Users/robindebalme/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/jline/jline/2.14.3/jline-2.14.3.jar[0m
+2022.03.18 13:17:59 ERROR > [0m[32m[D][0m   => /Users/robindebalme/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar[0m
+2022.03.18 13:17:59 ERROR > [0m[32m[D][0m   => /Users/robindebalme/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.jar[0m
+2022.03.18 13:17:59 ERROR > [0m[32m[D][0m   => /Users/robindebalme/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.12/scala-compiler-2.11.12.jar[0m
+2022.03.18 13:17:59 ERROR > [0m[32m[D][0m   => /Users/robindebalme/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar[0m
+2022.03.18 13:17:59 ERROR > [0m[32m[D][0m   => /Users/robindebalme/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.12/scala-reflect-2.11.12.jar[0m
+2022.03.18 13:17:59 ERROR > [0m[32m[D][0m Elapsed: 22.039875 ms[0m
+2022.03.18 13:17:59 ERROR > [0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.11.12.[0m
+2022.03.18 13:17:59 ERROR > [0m[31m[E][0m Failed to load project from /Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/.bloop/cs449-m1-test.json[0m
+2022.03.18 13:17:59 ERROR > [0m[32m[D][0m   => /Users/robindebalme/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/jline/jline/2.14.3/jline-2.14.3.jar[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m bloop.data.Project$ProjectReadException: Failed to load project from /Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/.bloop/cs449-m1-test.json[0m
+2022.03.18 13:17:59 ERROR > [0m[32m[D][0m   => /Users/robindebalme/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar[0m
+2022.03.18 13:17:59 ERROR > [0m[32m[D][0m   => /Users/robindebalme/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.jar[0m
+2022.03.18 13:17:59 ERROR > [0m[32m[D][0m   => /Users/robindebalme/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.12/scala-compiler-2.11.12.jar[0m
+2022.03.18 13:17:59 ERROR > [0m[32m[D][0m   => /Users/robindebalme/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar[0m
+2022.03.18 13:17:59 ERROR > [0m[32m[D][0m   => /Users/robindebalme/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.12/scala-reflect-2.11.12.jar[0m
+2022.03.18 13:17:59 ERROR > bloop.data.Project$ProjectReadException: Failed to load project from /Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/.bloop/cs449-m1.json[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	bloop.data.Project$.fromBytesAndOrigin(Project.scala:287)[0m
+2022.03.18 13:17:59 ERROR > 	at bloop.data.Project$.fromBytesAndOrigin(Project.scala:287)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	bloop.engine.BuildLoader$.loadProject(BuildLoader.scala:256)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	bloop.engine.BuildLoader$.$anonfun$loadBuildIncrementally$3(BuildLoader.scala:60)[0m
+2022.03.18 13:17:59 ERROR > 	at bloop.engine.BuildLoader$.loadProject(BuildLoader.scala:256)[0m
+2022.03.18 13:17:59 ERROR > 	at bloop.engine.BuildLoader$.$anonfun$loadBuildIncrementally$3(BuildLoader.scala:60)[0m
+2022.03.18 13:17:59 ERROR > 	at monix.eval.internal.TaskRunLoop$.monix$eval$internal$TaskRunLoop$$loop$1(TaskRunLoop.scala:187)[0m
+2022.03.18 13:17:59 ERROR > 	at monix.eval.internal.TaskRunLoop$RestartCallback$1.onSuccess(TaskRunLoop.scala:119)[0m
+2022.03.18 13:17:59 ERROR > 	at monix.eval.Task$.$anonfun$forkedUnit$2(Task.scala:1463)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	monix.eval.internal.TaskRunLoop$.monix$eval$internal$TaskRunLoop$$loop$1(TaskRunLoop.scala:187)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	monix.eval.internal.TaskRunLoop$RestartCallback$1.onSuccess(TaskRunLoop.scala:119)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	monix.eval.Task$.$anonfun$forkedUnit$2(Task.scala:1463)[0m
+2022.03.18 13:17:59 ERROR > 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)[0m
+2022.03.18 13:17:59 ERROR > 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)[0m
+2022.03.18 13:17:59 ERROR > 	at java.base/java.lang.Thread.run(Thread.java:829)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)[0m
+2022.03.18 13:17:59 ERROR > Caused by: java.nio.file.NoSuchFileException: /Users/robindebalme/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.12/scala-compiler-2.11.12.jar[0m
+2022.03.18 13:17:59 ERROR > 	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)[0m
+2022.03.18 13:17:59 ERROR > 	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)[0m
+2022.03.18 13:17:59 ERROR > 	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)[0m
+2022.03.18 13:17:59 ERROR > 	at java.base/sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)[0m
+2022.03.18 13:17:59 ERROR > 	at java.base/sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:149)[0m
+2022.03.18 13:17:59 ERROR > 	at java.base/java.nio.file.Files.readAttributes(Files.java:1764)[0m
+2022.03.18 13:17:59 ERROR > 	at bloop.ScalaInstance.$anonfun$hashCode$1(ScalaInstance.scala:82)[0m
+2022.03.18 13:17:59 ERROR > 	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:286)[0m
+2022.03.18 13:17:59 ERROR > 	at scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36)[0m
+2022.03.18 13:17:59 ERROR > 	at scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33)[0m
+2022.03.18 13:17:59 ERROR > 	at scala.collection.mutable.WrappedArray.foreach(WrappedArray.scala:38)[0m
+2022.03.18 13:17:59 ERROR > 	at scala.collection.TraversableLike.map(TraversableLike.scala:286)[0m
+2022.03.18 13:17:59 ERROR > 	at scala.collection.TraversableLike.map$(TraversableLike.scala:279)[0m
+2022.03.18 13:17:59 ERROR > 	at scala.collection.AbstractTraversable.map(Traversable.scala:108)[0m
+2022.03.18 13:17:59 ERROR > 	at bloop.ScalaInstance.<init>(ScalaInstance.scala:78)[0m
+2022.03.18 13:17:59 ERROR > 	at bloop.ScalaInstance$.newInstance$1(ScalaInstance.scala:152)[0m
+2022.03.18 13:17:59 ERROR > 	at bloop.ScalaInstance$.$anonfun$apply$7(ScalaInstance.scala:157)[0m
+2022.03.18 13:17:59 ERROR > 	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1705)[0m
+2022.03.18 13:17:59 ERROR > 	at bloop.ScalaInstance$.apply(ScalaInstance.scala:157)[0m
+2022.03.18 13:17:59 ERROR > 	at bloop.data.Project$.$anonfun$fromConfig$1(Project.scala:304)[0m
+2022.03.18 13:17:59 ERROR > 	at scala.Option.flatMap(Option.scala:271)[0m
+2022.03.18 13:17:59 ERROR > 	at bloop.data.Project$.fromConfig(Project.scala:299)[0m
+2022.03.18 13:17:59 ERROR > 	at bloop.data.Project$.fromBytesAndOrigin(Project.scala:281)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	java.base/java.lang.Thread.run(Thread.java:829)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m Caused by: java.nio.file.NoSuchFileException: /Users/robindebalme/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.12/scala-compiler-2.11.12.jar[0m
+2022.03.18 13:17:59 ERROR > 	... 8 more[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	java.base/sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	java.base/sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:149)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	java.base/java.nio.file.Files.readAttributes(Files.java:1764)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	bloop.ScalaInstance.$anonfun$hashCode$1(ScalaInstance.scala:82)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:286)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	scala.collection.mutable.WrappedArray.foreach(WrappedArray.scala:38)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	scala.collection.TraversableLike.map(TraversableLike.scala:286)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	scala.collection.TraversableLike.map$(TraversableLike.scala:279)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	scala.collection.AbstractTraversable.map(Traversable.scala:108)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	bloop.ScalaInstance.<init>(ScalaInstance.scala:78)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	bloop.ScalaInstance$.newInstance$1(ScalaInstance.scala:152)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	bloop.ScalaInstance$.$anonfun$apply$7(ScalaInstance.scala:157)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1705)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	bloop.ScalaInstance$.apply(ScalaInstance.scala:157)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	bloop.data.Project$.$anonfun$fromConfig$1(Project.scala:304)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	scala.Option.flatMap(Option.scala:271)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	bloop.data.Project$.fromConfig(Project.scala:299)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	bloop.data.Project$.fromBytesAndOrigin(Project.scala:281)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	bloop.engine.BuildLoader$.loadProject(BuildLoader.scala:256)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	bloop.engine.BuildLoader$.$anonfun$loadBuildIncrementally$3(BuildLoader.scala:60)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	monix.eval.internal.TaskRunLoop$.monix$eval$internal$TaskRunLoop$$loop$1(TaskRunLoop.scala:187)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	monix.eval.internal.TaskRunLoop$RestartCallback$1.onSuccess(TaskRunLoop.scala:119)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	monix.eval.Task$.$anonfun$forkedUnit$2(Task.scala:1463)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	java.base/java.lang.Thread.run(Thread.java:829)[0m
+2022.03.18 13:17:59 ERROR error: Trying a tcp-based connection to the server instead...[0m
+2022.03.18 13:17:59 ERROR Opening a bsp server connection with 'bsp --protocol tcp --port 42240'...[0m
+2022.03.18 13:17:59 ERROR Waiting for the bsp connection to come up...[0m
+2022.03.18 13:17:59 ERROR error: The command bsp --protocol tcp --port 42240 returned with an error[0m
+2022.03.18 13:17:59 ERROR > [0m[32m[D][0m Loading workspace settings from bloop.settings.json[0m
+2022.03.18 13:17:59 ERROR > [0m[32m[D][0m Loading 2 projects from '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/.bloop'...[0m
+2022.03.18 13:17:59 ERROR > [0m[32m[D][0m Loading project from '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/.bloop/cs449-m1-test.json'[0m
+2022.03.18 13:17:59 ERROR > [0m[32m[D][0m Loading project from '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/.bloop/cs449-m1.json'[0m
+2022.03.18 13:17:59 ERROR > [0m[33m[W][0m Scala instance jar /Users/robindebalme/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.12/scala-compiler-2.11.12.jar doesn't exist![0m
+2022.03.18 13:17:59 ERROR > [0m[33m[W][0m Scala instance jar /Users/robindebalme/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.12/scala-compiler-2.11.12.jar doesn't exist![0m
+2022.03.18 13:17:59 ERROR > [0m[33m[W][0m Scala instance jar /Users/robindebalme/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar doesn't exist![0m
+2022.03.18 13:17:59 ERROR > [0m[33m[W][0m Scala instance jar /Users/robindebalme/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar doesn't exist![0m
+2022.03.18 13:17:59 ERROR > [0m[33m[W][0m Scala instance jar /Users/robindebalme/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.12/scala-reflect-2.11.12.jar doesn't exist![0m
+2022.03.18 13:17:59 ERROR > [0m[33m[W][0m Scala instance jar /Users/robindebalme/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.jar doesn't exist![0m
+2022.03.18 13:17:59 ERROR > [0m[33m[W][0m Scala instance jar /Users/robindebalme/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.12/scala-reflect-2.11.12.jar doesn't exist![0m
+2022.03.18 13:17:59 ERROR > [0m[33m[W][0m Scala instance jar /Users/robindebalme/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.jar doesn't exist![0m
+2022.03.18 13:17:59 ERROR > [0m[33m[W][0m Scala instance jar /Users/robindebalme/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar doesn't exist![0m
+2022.03.18 13:17:59 ERROR > [0m[33m[W][0m Scala instance jar /Users/robindebalme/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/jline/jline/2.14.3/jline-2.14.3.jar doesn't exist![0m
+2022.03.18 13:17:59 ERROR > [0m[33m[W][0m Scala instance jar /Users/robindebalme/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar doesn't exist![0m
+2022.03.18 13:17:59 ERROR > [0m[33m[W][0m Scala instance jar /Users/robindebalme/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/jline/jline/2.14.3/jline-2.14.3.jar doesn't exist![0m
+2022.03.18 13:17:59 ERROR > [0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.11.12.[0m
+2022.03.18 13:17:59 ERROR > [0m[32m[D][0m   => /Users/robindebalme/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/jline/jline/2.14.3/jline-2.14.3.jar[0m
+2022.03.18 13:17:59 ERROR > [0m[32m[D][0m   => /Users/robindebalme/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar[0m
+2022.03.18 13:17:59 ERROR > [0m[32m[D][0m   => /Users/robindebalme/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.jar[0m
+2022.03.18 13:17:59 ERROR > [0m[32m[D][0m   => /Users/robindebalme/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.12/scala-compiler-2.11.12.jar[0m
+2022.03.18 13:17:59 ERROR > [0m[32m[D][0m   => /Users/robindebalme/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar[0m
+2022.03.18 13:17:59 ERROR > [0m[32m[D][0m   => /Users/robindebalme/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.12/scala-reflect-2.11.12.jar[0m
+2022.03.18 13:17:59 ERROR > [0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.11.12.[0m
+2022.03.18 13:17:59 ERROR > [0m[32m[D][0m Elapsed: 24.315042 ms[0m
+2022.03.18 13:17:59 ERROR > [0m[32m[D][0m   => /Users/robindebalme/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/jline/jline/2.14.3/jline-2.14.3.jar[0m
+2022.03.18 13:17:59 ERROR > [0m[31m[E][0m Failed to load project from /Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/.bloop/cs449-m1-test.json[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m bloop.data.Project$ProjectReadException: Failed to load project from /Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/.bloop/cs449-m1-test.json[0m
+2022.03.18 13:17:59 ERROR > [0m[32m[D][0m   => /Users/robindebalme/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	bloop.data.Project$.fromBytesAndOrigin(Project.scala:287)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	bloop.engine.BuildLoader$.loadProject(BuildLoader.scala:256)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	bloop.engine.BuildLoader$.$anonfun$loadBuildIncrementally$3(BuildLoader.scala:60)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	monix.eval.internal.TaskRunLoop$.monix$eval$internal$TaskRunLoop$$loop$1(TaskRunLoop.scala:187)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	monix.eval.internal.TaskRunLoop$RestartCallback$1.onSuccess(TaskRunLoop.scala:119)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	monix.eval.Task$.$anonfun$forkedUnit$2(Task.scala:1463)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	java.base/java.lang.Thread.run(Thread.java:829)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m Caused by: java.nio.file.NoSuchFileException: /Users/robindebalme/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.12/scala-compiler-2.11.12.jar[0m
+2022.03.18 13:17:59 ERROR > [0m[32m[D][0m   => /Users/robindebalme/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.jar[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	java.base/sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)[0m
+2022.03.18 13:17:59 ERROR > [0m[32m[D][0m   => /Users/robindebalme/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.12/scala-compiler-2.11.12.jar[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	java.base/sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:149)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	java.base/java.nio.file.Files.readAttributes(Files.java:1764)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	bloop.ScalaInstance.$anonfun$hashCode$1(ScalaInstance.scala:82)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:286)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	scala.collection.mutable.WrappedArray.foreach(WrappedArray.scala:38)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	scala.collection.TraversableLike.map(TraversableLike.scala:286)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	scala.collection.TraversableLike.map$(TraversableLike.scala:279)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	scala.collection.AbstractTraversable.map(Traversable.scala:108)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	bloop.ScalaInstance.<init>(ScalaInstance.scala:78)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	bloop.ScalaInstance$.newInstance$1(ScalaInstance.scala:152)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	bloop.ScalaInstance$.$anonfun$apply$7(ScalaInstance.scala:157)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1705)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	bloop.ScalaInstance$.apply(ScalaInstance.scala:157)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	bloop.data.Project$.$anonfun$fromConfig$1(Project.scala:304)[0m
+2022.03.18 13:17:59 ERROR > [0m[32m[D][0m   => /Users/robindebalme/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar[0m
+2022.03.18 13:17:59 ERROR > [0m[32m[D][0m   => /Users/robindebalme/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.12/scala-reflect-2.11.12.jar[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	scala.Option.flatMap(Option.scala:271)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	bloop.data.Project$.fromConfig(Project.scala:299)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	bloop.data.Project$.fromBytesAndOrigin(Project.scala:281)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	bloop.engine.BuildLoader$.loadProject(BuildLoader.scala:256)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	bloop.engine.BuildLoader$.$anonfun$loadBuildIncrementally$3(BuildLoader.scala:60)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	monix.eval.internal.TaskRunLoop$.monix$eval$internal$TaskRunLoop$$loop$1(TaskRunLoop.scala:187)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	monix.eval.internal.TaskRunLoop$RestartCallback$1.onSuccess(TaskRunLoop.scala:119)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	monix.eval.Task$.$anonfun$forkedUnit$2(Task.scala:1463)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)[0m
+2022.03.18 13:17:59 ERROR > [0m[36m[T][0m 	java.base/java.lang.Thread.run(Thread.java:829)[0m
+2022.03.18 13:17:59 ERROR error: The launcher failed to establish a bsp connection, aborting...[0m
+2022.03.18 13:17:59 ERROR Failed to connect with build server, no functionality will work.
+java.lang.RuntimeException: The server did not start, got FailedToOpenBspConnection
+	at bloop.launcher.LauncherMain.failPromise$1(Launcher.scala:95)
+	at bloop.launcher.LauncherMain.runLauncher(Launcher.scala:122)
+	at scala.meta.internal.metals.BloopServers$$anon$2.run(BloopServers.scala:169)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2022.03.18 13:18:03 WARN  no build target for: /Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/Personalized.scala[0m
+2022.03.18 13:18:10 INFO  no build target found for /Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/Personalized.scala. Using presentation compiler with project's scala-library version: 3.1.1[0m
+2022.03.18 13:18:10 WARN  no build target for: /Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/Baseline.scala[0m
+2022.03.18 13:18:13 INFO  time: code lens generation in 8.3s[0m
+2022.03.18 13:18:13 INFO  time: code lens generation in 3.11s[0m
+2022.03.18 13:18:15 INFO  running '/Users/salimcherkaoui/.jabba/jdk/adopt@1.11.0-11/Contents/Home/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /var/folders/5x/w56lcgf97dd2_7gsjr9xyzz40000gn/T/metals6580372115162722292/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+2022.03.18 13:18:16 WARN  no build target for: /Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/project/project/metals.sbt[0m
+2022.03.18 13:18:16 INFO  skipping build import with status 'Started'[0m
+2022.03.18 13:18:18 INFO  [info] welcome to sbt 1.4.7 (AdoptOpenJDK Java 11.0.11)[0m
+2022.03.18 13:18:22 INFO  [info] loading settings for project cs449-m1-build-build-build from metals.sbt ...[0m
+2022.03.18 13:18:24 INFO  [info] loading project definition from /Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/project/project/project[0m
+2022.03.18 13:18:28 INFO  [info] loading settings for project cs449-m1-build-build from metals.sbt ...[0m
+2022.03.18 13:18:28 INFO  [info] loading project definition from /Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/project/project[0m
+2022.03.18 13:18:32 INFO  [success] Generated .bloop/cs449-m1-build-build.json[0m
+2022.03.18 13:18:32 INFO  [success] Total time: 4 s, completed 18 mars 2022 à 13:18:32[0m
+2022.03.18 13:18:34 INFO  [info] loading settings for project cs449-m1-build from metals.sbt,plugins.sbt ...[0m
+2022.03.18 13:18:34 INFO  [info] loading project definition from /Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/project[0m
+2022.03.18 13:18:40 INFO  [success] Generated .bloop/cs449-m1-build.json[0m
+2022.03.18 13:18:40 INFO  [success] Total time: 6 s, completed 18 mars 2022 à 13:18:41[0m
+2022.03.18 13:18:46 INFO  [info] loading settings for project cs449-m1 from build.sbt ...[0m
+2022.03.18 13:18:46 INFO  [info] set current project to m1_yourid (in build file:/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/)[0m
+2022.03.18 13:18:49 INFO  [warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.[0m
+2022.03.18 13:18:57 INFO  [warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.[0m
+2022.03.18 13:18:57 INFO  [success] Generated .bloop/cs449-m1-test.json[0m
+2022.03.18 13:18:57 INFO  [success] Generated .bloop/cs449-m1.json[0m
+2022.03.18 13:18:57 INFO  [success] Total time: 11 s, completed 18 mars 2022 à 13:18:58[0m
+2022.03.18 13:18:58 INFO  time: ran 'sbt bloopInstall' in 42s[0m
+2022.03.18 13:18:58 INFO  Attempting to connect to the build server...[0m
+2022.03.18 13:19:04 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/.metals/bsp.trace.json or /Users/salimcherkaoui/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2022.03.18 13:19:04 INFO  Attempting to connect to the build server...[0m
+2022.03.18 13:19:04 INFO  Attempting to connect to the build server...[0m
+2022.03.18 13:19:04 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/project/.metals/bsp.trace.json or /Users/salimcherkaoui/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2022.03.18 13:19:04 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/project/project/.metals/bsp.trace.json or /Users/salimcherkaoui/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2022.03.18 13:19:08 INFO  time: Connected to build server in 9.88s[0m
+2022.03.18 13:19:08 INFO  Connected to Build server: Bloop v1.4.13[0m
+2022.03.18 13:19:08 INFO  time: Imported build in 0.29s[0m
+2022.03.18 13:19:26 INFO  time: indexed workspace in 17s[0m
+2022.03.18 13:21:32 INFO  compiling cs449-m1 (6 scala sources)[0m
+2022.03.18 13:22:07 INFO  compiling cs449-m1-test (7 scala sources)[0m
+2022.03.18 13:22:07 INFO  time: compiled cs449-m1 in 35s[0m
+2022.03.18 13:22:11 INFO  time: compiled cs449-m1-test in 4.7s[0m
+mars 18, 2022 1:46:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 173
+mars 18, 2022 1:46:28 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 251
+mars 18, 2022 1:50:44 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 611
+mars 18, 2022 1:52:51 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 685
+2022.03.18 13:52:54 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 13:52:57 INFO  time: compiled cs449-m1 in 3.51s[0m
+mars 18, 2022 1:57:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 1034
+2022.03.18 13:57:27 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 13:57:30 INFO  time: compiled cs449-m1 in 2.66s[0m
+2022.03.18 13:58:26 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 13:58:26 INFO  time: compiled cs449-m1 in 0.82s[0m
+2022.03.18 13:58:32 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 13:58:32 INFO  time: compiled cs449-m1 in 0.83s[0m
+2022.03.18 13:58:38 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 13:58:38 INFO  time: compiled cs449-m1 in 0.77s[0m
+2022.03.18 13:58:50 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.18 13:58:55 INFO  time: compiled cs449-m1 in 4.96s[0m
+mars 18, 2022 2:00:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 1318
+2022.03.18 14:00:27 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 14:00:30 INFO  time: compiled cs449-m1 in 2.93s[0m
+2022.03.18 14:02:46 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 14:02:49 INFO  time: compiled cs449-m1 in 2.38s[0m
+2022.03.18 14:04:24 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 14:04:26 INFO  time: compiled cs449-m1 in 2.71s[0m
+2022.03.18 14:06:01 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 14:06:04 INFO  time: compiled cs449-m1 in 2.43s[0m
+2022.03.18 14:08:30 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 14:08:32 INFO  time: compiled cs449-m1 in 2.2s[0m
+2022.03.18 14:12:14 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 14:12:17 INFO  time: compiled cs449-m1 in 2.44s[0m
+mars 18, 2022 2:12:56 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 1810
+mars 18, 2022 2:13:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 1849
+2022.03.18 14:13:55 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 14:13:57 INFO  time: compiled cs449-m1 in 2.16s[0m
+mars 18, 2022 2:21:58 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 2072
+mars 18, 2022 2:27:42 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$handleError
+GRAVE: offset 4246, count -5, length 10721
+java.lang.StringIndexOutOfBoundsException: offset 4246, count -5, length 10721
+	at java.base/java.lang.String.checkBoundsOffCount(String.java:3304)
+	at java.base/java.lang.String.rangeCheck(String.java:280)
+	at java.base/java.lang.String.<init>(String.java:276)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1229)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1252)
+	at scala.meta.internal.pc.SignatureHelpProvider$$anonfun$8.apply(SignatureHelpProvider.scala:375)
+	at scala.meta.internal.pc.SignatureHelpProvider$$anonfun$8.apply(SignatureHelpProvider.scala:373)
+	at scala.Option.map(Option.scala:146)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:373)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:198)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:309)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser$$anonfun$visit$2$$anonfun$apply$3.apply(SignatureHelpProvider.scala:339)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser$$anonfun$visit$2$$anonfun$apply$3.apply(SignatureHelpProvider.scala:316)
+	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:733)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:732)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser$$anonfun$visit$2.apply(SignatureHelpProvider.scala:316)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser$$anonfun$visit$2.apply(SignatureHelpProvider.scala:315)
+	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:733)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:732)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:315)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:272)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+2022.03.18 14:29:03 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 14:29:03 INFO  time: compiled cs449-m1 in 0.54s[0m
+mars 18, 2022 2:29:11 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 2412
+2022.03.18 14:31:47 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 14:31:49 INFO  time: compiled cs449-m1 in 1.9s[0m
+2022.03.18 14:37:38 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 14:37:38 INFO  time: compiled cs449-m1 in 0.64s[0m
+2022.03.18 14:38:29 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/Personalized.scala:179:19: stale bloop error: too many arguments for method jaccardSimilarity: (u: Int, v: Int)Double
+        val sim = jaccardSimilarity(u, x.user, filteredArrUsers)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+2022.03.18 14:38:29 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/Personalized.scala:183:19: stale bloop error: too many arguments for method jaccardSimilarity: (u: Int, v: Int)Double
+        val sim = jaccardSimilarity(u, x.user, filteredArrUsers)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+2022.03.18 14:38:29 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/Personalized.scala:179:19: stale bloop error: too many arguments for method jaccardSimilarity: (u: Int, v: Int)Double
+        val sim = jaccardSimilarity(u, x.user, filteredArrUsers)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+2022.03.18 14:38:29 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/Personalized.scala:183:19: stale bloop error: too many arguments for method jaccardSimilarity: (u: Int, v: Int)Double
+        val sim = jaccardSimilarity(u, x.user, filteredArrUsers)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+2022.03.18 14:38:31 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/Personalized.scala:179:19: stale bloop error: too many arguments for method jaccardSimilarity: (u: Int, v: Int)Double
+        val sim = jaccardSimilarity(u, x.user, filteredArrUsers)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+2022.03.18 14:38:31 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/Personalized.scala:183:19: stale bloop error: too many arguments for method jaccardSimilarity: (u: Int, v: Int)Double
+        val sim = jaccardSimilarity(u, x.user, filteredArrUsers)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+2022.03.18 14:38:31 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/Personalized.scala:179:19: stale bloop error: too many arguments for method jaccardSimilarity: (u: Int, v: Int)Double
+        val sim = jaccardSimilarity(u, x.user, filteredArrUsers)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+2022.03.18 14:38:31 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/Personalized.scala:183:19: stale bloop error: too many arguments for method jaccardSimilarity: (u: Int, v: Int)Double
+        val sim = jaccardSimilarity(u, x.user, filteredArrUsers)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+2022.03.18 14:38:31 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/Personalized.scala:179:19: stale bloop error: too many arguments for method jaccardSimilarity: (u: Int, v: Int)Double
+        val sim = jaccardSimilarity(u, x.user, filteredArrUsers)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+2022.03.18 14:38:31 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/Personalized.scala:183:19: stale bloop error: too many arguments for method jaccardSimilarity: (u: Int, v: Int)Double
+        val sim = jaccardSimilarity(u, x.user, filteredArrUsers)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+2022.03.18 14:38:31 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/Personalized.scala:179:19: stale bloop error: too many arguments for method jaccardSimilarity: (u: Int, v: Int)Double
+        val sim = jaccardSimilarity(u, x.user, filteredArrUsers)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+2022.03.18 14:38:31 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/Personalized.scala:183:19: stale bloop error: too many arguments for method jaccardSimilarity: (u: Int, v: Int)Double
+        val sim = jaccardSimilarity(u, x.user, filteredArrUsers)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+2022.03.18 14:39:11 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/Personalized.scala:179:19: stale bloop error: too many arguments for method jaccardSimilarity: (u: Int, v: Int)Double
+        val sim = jaccardSimilarity(u, x.user, filteredArrUsers)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+2022.03.18 14:39:11 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/Personalized.scala:183:19: stale bloop error: too many arguments for method jaccardSimilarity: (u: Int, v: Int)Double
+        val sim = jaccardSimilarity(u, x.user, filteredArrUsers)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+2022.03.18 14:39:11 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/Personalized.scala:179:19: stale bloop error: too many arguments for method jaccardSimilarity: (u: Int, v: Int)Double
+        val sim = jaccardSimilarity(u, x.user, filteredArrUsers)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+2022.03.18 14:39:11 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/Personalized.scala:183:19: stale bloop error: too many arguments for method jaccardSimilarity: (u: Int, v: Int)Double
+        val sim = jaccardSimilarity(u, x.user, filteredArrUsers)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+2022.03.18 14:39:11 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/Personalized.scala:179:19: stale bloop error: too many arguments for method jaccardSimilarity: (u: Int, v: Int)Double
+        val sim = jaccardSimilarity(u, x.user, filteredArrUsers)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+2022.03.18 14:39:11 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/Personalized.scala:183:19: stale bloop error: too many arguments for method jaccardSimilarity: (u: Int, v: Int)Double
+        val sim = jaccardSimilarity(u, x.user, filteredArrUsers)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+2022.03.18 14:39:12 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/Personalized.scala:179:19: stale bloop error: too many arguments for method jaccardSimilarity: (u: Int, v: Int)Double
+        val sim = jaccardSimilarity(u, x.user, filteredArrUsers)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+2022.03.18 14:39:12 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/Personalized.scala:183:19: stale bloop error: too many arguments for method jaccardSimilarity: (u: Int, v: Int)Double
+        val sim = jaccardSimilarity(u, x.user, filteredArrUsers)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+2022.03.18 14:39:34 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 14:39:34 INFO  time: compiled cs449-m1 in 0.5s[0m
+2022.03.18 14:39:56 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 14:39:56 INFO  time: compiled cs449-m1 in 0.81s[0m
+2022.03.18 14:40:13 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 14:40:13 INFO  time: compiled cs449-m1 in 0.55s[0m
+2022.03.18 14:44:18 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 14:44:18 INFO  time: compiled cs449-m1 in 0.51s[0m
+2022.03.18 14:44:23 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 14:44:23 INFO  time: compiled cs449-m1 in 0.47s[0m
+2022.03.18 14:45:54 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 14:45:56 INFO  time: compiled cs449-m1 in 2.01s[0m
+2022.03.18 15:08:29 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 15:08:29 INFO  time: compiled cs449-m1 in 0.51s[0m
+2022.03.18 15:08:45 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 15:08:50 INFO  time: compiled cs449-m1 in 4.79s[0m
+mars 18, 2022 3:11:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 3334
+2022.03.18 15:11:42 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 15:11:44 INFO  time: compiled cs449-m1 in 2.5s[0m
+2022.03.18 15:14:07 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 15:14:09 INFO  time: compiled cs449-m1 in 1.9s[0m
+2022.03.18 15:24:42 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 15:24:42 INFO  time: compiled cs449-m1 in 0.52s[0m
+2022.03.18 15:25:15 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 15:25:15 INFO  time: compiled cs449-m1 in 0.46s[0m
+2022.03.18 15:31:08 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 15:31:08 INFO  time: compiled cs449-m1 in 0.4s[0m
+mars 18, 2022 3:31:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 3853
+2022.03.18 15:31:36 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 15:31:36 INFO  time: compiled cs449-m1 in 0.39s[0m
+2022.03.18 15:32:11 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 15:32:11 INFO  time: compiled cs449-m1 in 0.42s[0m
+2022.03.18 15:32:32 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 15:32:32 INFO  time: compiled cs449-m1 in 0.39s[0m
+mars 18, 2022 3:32:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+GRAVE: Internal error: java.lang.InterruptedException
+java.util.concurrent.CompletionException: java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:314)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:319)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2073)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:42)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.pc.VirtualFileParams.checkCanceled(VirtualFileParams.java:25)
+	at scala.meta.internal.pc.CompletionProvider$$anonfun$1.apply(CompletionProvider.scala:77)
+	at scala.meta.internal.pc.CompletionProvider$$anonfun$1.apply(CompletionProvider.scala:76)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:410)
+	at scala.collection.Iterator$class.toStream(Iterator.scala:1320)
+	at scala.collection.AbstractIterator.toStream(Iterator.scala:1334)
+	at scala.collection.Iterator$$anonfun$toStream$1.apply(Iterator.scala:1320)
+	at scala.collection.Iterator$$anonfun$toStream$1.apply(Iterator.scala:1320)
+	at scala.collection.immutable.Stream$Cons.tail(Stream.scala:1233)
+	at scala.collection.immutable.Stream$Cons.tail(Stream.scala:1223)
+	at scala.collection.immutable.StreamIterator$$anonfun$next$1.apply(Stream.scala:1120)
+	at scala.collection.immutable.StreamIterator$$anonfun$next$1.apply(Stream.scala:1120)
+	at scala.collection.immutable.StreamIterator$LazyCell.v$lzycompute(Stream.scala:1109)
+	at scala.collection.immutable.StreamIterator$LazyCell.v(Stream.scala:1109)
+	at scala.collection.immutable.StreamIterator.hasNext(Stream.scala:1114)
+	at scala.collection.convert.Wrappers$IteratorWrapper.hasNext(Wrappers.scala:30)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.CollectionTypeAdapter.write(CollectionTypeAdapter.java:134)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.CollectionTypeAdapter.write(CollectionTypeAdapter.java:40)
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:69)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.write(ReflectiveTypeAdapterFactory.java:127)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.write(ReflectiveTypeAdapterFactory.java:245)
+	at com.google.gson.Gson.toJson(Gson.java:735)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.MessageTypeAdapter.write(MessageTypeAdapter.java:423)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.MessageTypeAdapter.write(MessageTypeAdapter.java:55)
+	at com.google.gson.Gson.toJson(Gson.java:735)
+	at com.google.gson.Gson.toJson(Gson.java:714)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.serialize(MessageJsonHandler.java:145)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.serialize(MessageJsonHandler.java:140)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:59)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.lambda$handleRequest$1(RemoteEndpoint.java:281)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:714)
+	... 8 more
+
+2022.03.18 15:32:36 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 15:32:38 INFO  time: compiled cs449-m1 in 2.21s[0m
+2022.03.18 15:33:57 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 15:33:59 INFO  time: compiled cs449-m1 in 1.8s[0m
+2022.03.18 15:37:00 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 15:37:02 INFO  time: compiled cs449-m1 in 1.92s[0m
+2022.03.18 15:37:12 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 15:37:14 INFO  time: compiled cs449-m1 in 1.89s[0m
+2022.03.18 15:39:56 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 15:39:58 INFO  time: compiled cs449-m1 in 1.83s[0m
+2022.03.18 15:43:53 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 15:43:55 INFO  time: compiled cs449-m1 in 1.8s[0m
+mars 18, 2022 3:48:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 4635
+2022.03.18 15:49:37 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 15:49:37 INFO  time: compiled cs449-m1 in 0.68s[0m
+mars 18, 2022 3:52:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 5047
+2022.03.18 15:53:07 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 15:53:07 INFO  time: compiled cs449-m1 in 0.66s[0m
+2022.03.18 15:53:26 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 15:53:28 INFO  time: compiled cs449-m1 in 1.98s[0m
+2022.03.18 15:53:56 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 15:53:56 INFO  time: compiled cs449-m1 in 0.53s[0m
+2022.03.18 15:54:36 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/recommend/Recommender.scala:190:37: stale bloop error: value _1 is not a member of Double
+      val out_scores = init.sortBy(-_._1).take(n) // les n notes les plus hautes
+                                    ^^^^[0m
+2022.03.18 15:54:37 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/recommend/Recommender.scala:190:37: stale bloop error: value _1 is not a member of Double
+      val out_scores = init.sortBy(-_._1).take(n) // les n notes les plus hautes
+                                    ^^^^[0m
+mars 18, 2022 3:54:37 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 5333
+mars 18, 2022 4:01:45 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+2022.03.18 16:02:46 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 16:02:46 INFO  time: compiled cs449-m1 in 0.47s[0m
+2022.03.18 16:03:31 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 16:03:31 INFO  time: compiled cs449-m1 in 0.43s[0m
+2022.03.18 16:04:45 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 16:04:45 INFO  time: compiled cs449-m1 in 0.47s[0m
+2022.03.18 16:04:54 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 16:04:56 INFO  time: compiled cs449-m1 in 1.71s[0m
+mars 18, 2022 4:05:58 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$handleError
+GRAVE: offset 6948, count -1, length 8316
+java.lang.StringIndexOutOfBoundsException: offset 6948, count -1, length 8316
+	at java.base/java.lang.String.checkBoundsOffCount(String.java:3304)
+	at java.base/java.lang.String.rangeCheck(String.java:280)
+	at java.base/java.lang.String.<init>(String.java:276)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1229)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1252)
+	at scala.meta.internal.pc.SignatureHelpProvider$$anonfun$8.apply(SignatureHelpProvider.scala:375)
+	at scala.meta.internal.pc.SignatureHelpProvider$$anonfun$8.apply(SignatureHelpProvider.scala:373)
+	at scala.Option.map(Option.scala:146)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:373)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:198)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:309)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser$$anonfun$visit$2$$anonfun$apply$3.apply(SignatureHelpProvider.scala:339)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser$$anonfun$visit$2$$anonfun$apply$3.apply(SignatureHelpProvider.scala:316)
+	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:733)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:732)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser$$anonfun$visit$2.apply(SignatureHelpProvider.scala:316)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser$$anonfun$visit$2.apply(SignatureHelpProvider.scala:315)
+	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:733)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:732)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:315)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:272)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+mars 18, 2022 4:05:59 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+mars 18, 2022 4:06:00 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$handleError
+GRAVE: Something is wrong: cannot find T in applied type Array
+   sought  T in Array
+ classSym  Array in scala
+  tparams  T in Array
+
+scala.reflect.internal.FatalError: Something is wrong: cannot find T in applied type Array
+   sought  T in Array
+ classSym  Array in scala
+  tparams  T in Array
+
+	at scala.reflect.internal.Reporting$class.abort(Reporting.scala:59)
+	at scala.reflect.internal.SymbolTable.abort(SymbolTable.scala:16)
+	at scala.reflect.internal.tpe.TypeMaps$AsSeenFromMap.correspondingTypeArgument(TypeMaps.scala:565)
+	at scala.reflect.internal.tpe.TypeMaps$AsSeenFromMap.loop$3(TypeMaps.scala:601)
+	at scala.reflect.internal.tpe.TypeMaps$AsSeenFromMap.classParameterAsSeen(TypeMaps.scala:606)
+	at scala.reflect.internal.tpe.TypeMaps$AsSeenFromMap.apply(TypeMaps.scala:483)
+	at scala.reflect.internal.tpe.TypeMaps$AsSeenFromMap.apply(TypeMaps.scala:457)
+	at scala.collection.immutable.List.loop$1(List.scala:176)
+	at scala.collection.immutable.List.mapConserve(List.scala:200)
+	at scala.reflect.internal.tpe.TypeMaps$TypeMap.mapOver(TypeMaps.scala:115)
+	at scala.reflect.internal.tpe.TypeMaps$AsSeenFromMap.apply(TypeMaps.scala:484)
+	at scala.reflect.internal.tpe.TypeMaps$TypeMap.mapOver(TypeMaps.scala:129)
+	at scala.reflect.internal.tpe.TypeMaps$AsSeenFromMap.apply(TypeMaps.scala:484)
+	at scala.reflect.internal.Types$Type.asSeenFrom(Types.scala:668)
+	at scala.reflect.internal.Types$Type.computeMemberType(Types.scala:703)
+	at scala.reflect.internal.Symbols$MethodSymbol.typeAsMemberOf(Symbols.scala:2967)
+	at scala.reflect.internal.Types$Type.memberType(Types.scala:694)
+	at scala.tools.nsc.interactive.Global$Members$$anonfun$19.apply(Global.scala:1004)
+	at scala.tools.nsc.interactive.Global$Members$$anonfun$19.apply(Global.scala:1004)
+	at scala.tools.nsc.interactive.Global$OnTypeError.onTypeError(Global.scala:1357)
+	at scala.tools.nsc.interactive.Global$Members.add(Global.scala:1004)
+	at scala.tools.nsc.interactive.Global.scala$tools$nsc$interactive$Global$$addTypeMember$1(Global.scala:1106)
+	at scala.tools.nsc.interactive.Global$$anonfun$scala$tools$nsc$interactive$Global$$typeMembers$2.apply(Global.scala:1137)
+	at scala.tools.nsc.interactive.Global$$anonfun$scala$tools$nsc$interactive$Global$$typeMembers$2.apply(Global.scala:1136)
+	at scala.reflect.internal.Scopes$Scope.foreach(Scopes.scala:373)
+	at scala.tools.nsc.interactive.Global.scala$tools$nsc$interactive$Global$$typeMembers(Global.scala:1128)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1227)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1252)
+	at scala.meta.internal.pc.SignatureHelpProvider$$anonfun$8.apply(SignatureHelpProvider.scala:375)
+	at scala.meta.internal.pc.SignatureHelpProvider$$anonfun$8.apply(SignatureHelpProvider.scala:373)
+	at scala.Option.map(Option.scala:146)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:373)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:198)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:309)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser$$anonfun$visit$2$$anonfun$apply$3.apply(SignatureHelpProvider.scala:339)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser$$anonfun$visit$2$$anonfun$apply$3.apply(SignatureHelpProvider.scala:316)
+	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:733)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:732)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser$$anonfun$visit$2.apply(SignatureHelpProvider.scala:316)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser$$anonfun$visit$2.apply(SignatureHelpProvider.scala:315)
+	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:733)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:732)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:315)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:272)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+mars 18, 2022 4:06:01 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$handleError
+GRAVE: offset 6954, count -1, length 8319
+java.lang.StringIndexOutOfBoundsException: offset 6954, count -1, length 8319
+	at java.base/java.lang.String.checkBoundsOffCount(String.java:3304)
+	at java.base/java.lang.String.rangeCheck(String.java:280)
+	at java.base/java.lang.String.<init>(String.java:276)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1229)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1252)
+	at scala.meta.internal.pc.SignatureHelpProvider$$anonfun$8.apply(SignatureHelpProvider.scala:375)
+	at scala.meta.internal.pc.SignatureHelpProvider$$anonfun$8.apply(SignatureHelpProvider.scala:373)
+	at scala.Option.map(Option.scala:146)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:373)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:198)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:309)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser$$anonfun$visit$2$$anonfun$apply$3.apply(SignatureHelpProvider.scala:339)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser$$anonfun$visit$2$$anonfun$apply$3.apply(SignatureHelpProvider.scala:316)
+	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:733)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:732)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser$$anonfun$visit$2.apply(SignatureHelpProvider.scala:316)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser$$anonfun$visit$2.apply(SignatureHelpProvider.scala:315)
+	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:733)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:732)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:315)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:272)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+mars 18, 2022 4:06:02 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$handleError
+GRAVE: offset 6954, count -1, length 8329
+java.lang.StringIndexOutOfBoundsException: offset 6954, count -1, length 8329
+	at java.base/java.lang.String.checkBoundsOffCount(String.java:3304)
+	at java.base/java.lang.String.rangeCheck(String.java:280)
+	at java.base/java.lang.String.<init>(String.java:276)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1229)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1252)
+	at scala.meta.internal.pc.SignatureHelpProvider$$anonfun$8.apply(SignatureHelpProvider.scala:375)
+	at scala.meta.internal.pc.SignatureHelpProvider$$anonfun$8.apply(SignatureHelpProvider.scala:373)
+	at scala.Option.map(Option.scala:146)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:373)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:198)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:309)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:272)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+2022.03.18 16:07:02 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 16:07:02 INFO  time: compiled cs449-m1 in 0.48s[0m
+2022.03.18 16:07:12 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/recommend/Recommender.scala:214:12: stale bloop error: type mismatch;
+ found   : Array[Double]
+ required: Array[Int]
+    out.map(x => init(x-1))
+           ^[0m
+2022.03.18 16:07:12 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/recommend/Recommender.scala:214:12: stale bloop error: type mismatch;
+ found   : Array[Double]
+ required: Array[Int]
+    out.map(x => init(x-1))
+           ^[0m
+2022.03.18 16:07:44 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 16:07:44 INFO  time: compiled cs449-m1 in 0.54s[0m
+2022.03.18 16:08:28 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 16:08:29 INFO  time: compiled cs449-m1 in 1.75s[0m
+2022.03.18 16:09:58 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 16:10:00 INFO  time: compiled cs449-m1 in 1.84s[0m
+2022.03.18 16:16:41 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 16:16:43 INFO  time: compiled cs449-m1 in 2.01s[0m
+2022.03.18 16:20:48 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 16:20:48 INFO  time: compiled cs449-m1 in 0.65s[0m
+2022.03.18 16:25:02 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 16:25:04 INFO  time: compiled cs449-m1 in 1.76s[0m
+2022.03.18 16:25:09 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 16:25:13 INFO  time: compiled cs449-m1 in 4.35s[0m
+2022.03.18 16:27:11 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 16:27:13 INFO  time: compiled cs449-m1 in 2.42s[0m
+2022.03.18 17:30:12 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.18 17:30:14 INFO  time: compiled cs449-m1 in 1.8s[0m
