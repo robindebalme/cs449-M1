@@ -90,7 +90,6 @@ object Baseline extends App {
     alluserAvg = mutable.Map()
     allitemAvg = mutable.Map()
     allitemDev = mutable.Map()
-    singleDev = mutable.Map()
 
     globalAvg = computeGlobalAvg(train)
     //Thread.sleep(1000) // Do everything here from train and test
@@ -122,8 +121,8 @@ object Baseline extends App {
           "1.GlobalAvg" -> ujson.Num(globalAvg), // Datatype of answer: Double
           "2.User1Avg" -> ujson.Num(userAvg(1, train, alluserAvg, globalAvg)),  // Datatype of answer: Double
           "3.Item1Avg" -> ujson.Num(itemAvg(1, train, allitemAvg, globalAvg)),   // Datatype of answer: Double
-          "4.Item1AvgDev" -> ujson.Num(itemAvgDev(1, train, singleDev, allitemDev, globalAvg, alluserAvg)), // Datatype of answer: Double
-          "5.PredUser1Item1" -> ujson.Num(predictedBaseline(1, 1, train, singleDev, allitemDev, globalAvg, alluserAvg, allitemAvg)) // Datatype of answer: Double
+          "4.Item1AvgDev" -> ujson.Num(itemAvgDev(1, train, allitemDev, globalAvg, alluserAvg)), // Datatype of answer: Double
+          "5.PredUser1Item1" -> ujson.Num(predictedBaseline(1, 1, train, allitemDev, globalAvg, alluserAvg, allitemAvg)) // Datatype of answer: Double
         ),
         "B.2" -> ujson.Obj(
           "1.GlobalAvgMAE" -> ujson.Num(mae(test, train, predictorGlobal)), // Datatype of answer: Double

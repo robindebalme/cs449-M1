@@ -51,17 +51,15 @@ object DistributedBaseline extends App {
 
 
   //val timings = measurements.map(t => t._2) // Retrieve the timing measurements
-  val globalAvg = train.map(elem => elem.rating).sum() / train.count()
-  /*
+  
   var allUserAvg = Map(0 -> 0.0)
 
-  val globalAvg = distribmean(train)
+  val globalAvgDistrib = distribmean(train)
 
-  val alluserAvg = mutable.Map(0 -> 0.0)
-  val allitemAvg = mutable.Map(0 -> 0.0)
-  val allitemDev = mutable.Map(0 -> 0.0)
-  val singleDev : mutable.Map[(Double, Double),Double] = mutable.Map()
-  val pred : mutable.Map[(Int, Int),Double] = mutable.Map()
+  var alluserAvg_ : mutable.Map[Int, Double] = mutable.Map()
+  var allitemAvg_ : mutable.Map[Int, Double] = mutable.Map()
+  var allitemDev_ : mutable.Map[Int, Double] = mutable.Map()
+  var singleDev_ : mutable.Map[(Double, Double),Double] = mutable.Map()
 
 
   def distribmean(df : RDD[Rating]): Double = {
@@ -70,10 +68,7 @@ object DistributedBaseline extends App {
   }
 
   def distribUserAvg(user : Int): Double = {
-    if (alluserAvg.get(user) != None)
-      alluserAvg(user)
-    else
-      {
+    alluserAvg_.getOrElse(user, {
       val dfFiltered = train.filter(elem => elem.user == user)
       var tmp = 0.0
       if (dfFiltered.isEmpty)
@@ -82,13 +77,13 @@ object DistributedBaseline extends App {
       else
         tmp = distribmean(dfFiltered)
 
-      alluserAvg += ((user, tmp))
+      alluserAvg_ += ((user, tmp))
       tmp
-    }
+    })
   }
 
   def distribItemAvg(item : Int): Double = {
-    allitemAvg.getOrElse(item,{
+    allitemAvg_.getOrElse(item,{
       val dfFiltered = train.filter(elem => elem.item == item)
       var tmp = 0.0
       if (dfFiltered.isEmpty)
@@ -96,70 +91,44 @@ object DistributedBaseline extends App {
       else
         tmp = distribmean(dfFiltered)
 
-      allitemAvg += ((item, tmp))
+      allitemAvg_ += ((item, tmp))
       tmp
     })
   }
 
-  def scale(x : Double, userAvg : Double): Double = {
-    if (x > userAvg)
-      5 - userAvg
-    else if (x < userAvg)
-      userAvg - 1
-    else 1
-  }
-
-  def dev(r: Double, useravg : Double): Double = {
-    if (singleDev.get(r, useravg) != None)
-      singleDev(r, useravg)
-    else
-      {
-      val tmp = (r - useravg) / scale(r, useravg)
-      singleDev += (((r, useravg), tmp))
-      tmp
-    }
-  }
 
   def distribAvgDev(item : Int): Double = {
-    if (allitemDev.get(item) != None) 
-      allitemDev(item)
+    if (allitemDev_.get(item) != None) 
+      allitemDev_(item)
     else {
       var tmp = train.filter(l => l.item == item)
       var tmp2 = tmp.map{(elem) =>
         val userAvg = distribUserAvg(elem.user)
         (dev(elem.rating, userAvg) , 1)}.reduce((x, y) => (x._1 + y._1, x._2 + y._2))
       val final_dev = tmp2._1 / tmp2._2
-      allitemDev +=  ((item, final_dev))
+      allitemDev_ +=  ((item, final_dev))
       final_dev
     }
   }
 
   def predicted(user: Int, item : Int): Double = {
-    if (pred.get(user, item) != None)
-      pred(user, item)
-    else{
-      val useravg = distribUserAvg(user)
-      if (useravg == globalAvg) {
-        pred += (((user, item), globalAvg))
-        globalAvg
-      }
-      else
-        if (train.filter(l => l.item == item).isEmpty) {
-          pred += (((user, item), useravg))
-          useravg
-        }
-        else {
-          val avgdev = distribAvgDev(item)
-          if (avgdev == 0) {
-            pred += (((user, item), useravg))
-            useravg
-          }
-          else
-            pred += (((user, item), useravg + avgdev * scale((useravg + avgdev), useravg)))
-            useravg + avgdev * scale((useravg + avgdev), useravg)
-        }
+    val useravg = distribUserAvg(user)
+    if (useravg == globalAvg) {
+      globalAvg
     }
-  }
+    else
+      if (distribItemAvg(item) == globalAvg) {
+        useravg
+      }
+      else {
+        val avgdev = distribAvgDev(item)
+        if (avgdev == 0) {
+          useravg
+          }
+        else
+          useravg + avgdev * scale((useravg + avgdev), useravg)
+      }
+    }
 
   def mae(test: RDD[Rating], train: RDD[Rating], prediction_method: String): Double = {
     if (prediction_method == "GlobalAvg")
@@ -183,7 +152,6 @@ object DistributedBaseline extends App {
     val allitemAvg = mutable.Map(0 -> 0.0)
     val allitemDev = mutable.Map(0 -> 0.0)
     val singleDev : mutable.Map[(Double, Double),Double] = mutable.Map()
-    val pred : mutable.Map[(Int, Int),Double] = mutable.Map()
 
     // Thread.sleep(1000) // Do everything here from train and test
     mae(test, train, "UserAvg")  // Output answer as last value
@@ -237,6 +205,4 @@ object DistributedBaseline extends App {
   spark.close()
   
 }
-<<<<<<< HEAD
-*/
-}
+

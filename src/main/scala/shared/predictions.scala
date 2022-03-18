@@ -48,7 +48,11 @@ package object predictions
   var alluserAvg : mutable.Map[Int, Double] = mutable.Map()
   var allitemAvg : mutable.Map[Int, Double] = mutable.Map()
   var allitemDev : mutable.Map[Int, Double] = mutable.Map()
-  var singleDev : mutable.Map[(Double, Double),Double] = mutable.Map()
+  var cosineSim : mutable.Map[(Int, Int),Double] = mutable.Map()
+  var preProcessSim : mutable.Map[(Int, Int),Double] = mutable.Map()
+  var commonItemMap: mutable.Map[(Int, Int),Array[Int]] = mutable.Map()
+  var mapArrUsers : Map[Int, Array[Rating]] =  Map()
+
   var globalAvg = 0.0
 
   def mean_(arr : Array[Double]): Double = {
@@ -103,29 +107,22 @@ package object predictions
     else 1
   }
 
-  def dev(r: Double, useravg : Double, singleDev : mutable.Map[(Double, Double),Double]): Double = {
-    if (singleDev.get(r, useravg) != None)
-      singleDev(r, useravg)
-    else
-      {
-      val tmp = (r - useravg) / scale(r, useravg)
-      singleDev += (((r, useravg), tmp))
-      tmp
-    }
+  def dev(r: Double, useravg : Double): Double = {
+    (r - useravg) / scale(r, useravg)
   }
 
-  def itemAvgDev(item : Int, train : Array[Rating], singleDev : mutable.Map[(Double, Double),Double], allitemDev : mutable.Map[Int, Double], globalAvg : Double, alluserAvg : mutable.Map[Int, Double]): Double = {
+  def itemAvgDev(item : Int, train : Array[Rating], allitemDev : mutable.Map[Int, Double], globalAvg : Double, alluserAvg : mutable.Map[Int, Double]): Double = {
     if (allitemDev.get(item) != None) 
       allitemDev(item)
     else {
       var tmp = train.filter(l => l.item == item)
-      var tmp2 = mean_(tmp.map(elem => dev(elem.rating, userAvg(elem.user, train, alluserAvg, globalAvg), singleDev)))
+      var tmp2 = mean_(tmp.map(elem => dev(elem.rating, userAvg(elem.user, train, alluserAvg, globalAvg))))
       allitemDev +=  ((item, tmp2))
       tmp2
     }
   }
 
-  def predictedBaseline(user: Int, item : Int, train : Array[Rating], singleDev : mutable.Map[(Double, Double),Double], allitemDev : mutable.Map[Int, Double], globalAvg : Double, alluserAvg : mutable.Map[Int, Double], allitemAvg : mutable.Map[Int, Double]): Double = {
+  def predictedBaseline(user: Int, item : Int, train : Array[Rating], allitemDev : mutable.Map[Int, Double], globalAvg : Double, alluserAvg : mutable.Map[Int, Double], allitemAvg : mutable.Map[Int, Double]): Double = {
     val useravg = userAvg(user, train, alluserAvg, globalAvg)
     if (useravg == globalAvg) {
       globalAvg
@@ -136,7 +133,7 @@ package object predictions
         useravg
       }
       else {
-        val avgdev = itemAvgDev(item, train, singleDev, allitemDev, globalAvg, alluserAvg)
+        val avgdev = itemAvgDev(item, train, allitemDev, globalAvg, alluserAvg)
         if (avgdev == 0) {
           useravg
         }
@@ -159,7 +156,7 @@ package object predictions
   }
 
   def predictorBaseline(train : Array[Rating]): (Int, Int) => Double = {
-    (user, item) => predictedBaseline(user, item, train, singleDev, allitemDev, globalAvg, alluserAvg, allitemAvg)
+    (user, item) => predictedBaseline(user, item, train, allitemDev, globalAvg, alluserAvg, allitemAvg)
   }
 
   def mae(test: Array[Rating], train: Array[Rating], prediction_method: Array[Rating] => ((Int, Int) => Double)): Double = {

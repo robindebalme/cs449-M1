@@ -5568,3 +5568,503 @@ AVERTISSEMENT: Unmatched cancel notification for request id 19820
 2022.03.17 17:49:29 INFO  time: compiled cs449-m1 in 2.23s
 2022.03.17 17:50:40 INFO  compiling cs449-m1 (1 scala source)
 2022.03.17 17:50:42 INFO  time: compiled cs449-m1 in 1.75s
+2022.03.17 17:52:39 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 17:52:40 INFO  time: compiled cs449-m1 in 1.35s
+2022.03.17 17:52:40 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 17:52:42 INFO  time: compiled cs449-m1 in 1.62s
+mars 17, 2022 5:52:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 20005
+2022.03.17 17:52:52 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 17:52:53 INFO  time: compiled cs449-m1 in 1.39s
+2022.03.17 17:52:53 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 17:52:55 INFO  time: compiled cs449-m1 in 1.7s
+2022.03.17 17:56:17 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 17:56:17 INFO  time: compiled cs449-m1 in 0.15s
+2022.03.17 17:56:20 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 17:56:20 INFO  time: compiled cs449-m1 in 0.13s
+mars 17, 2022 5:56:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 20201
+2022.03.17 17:56:27 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 17:56:27 INFO  time: compiled cs449-m1 in 0.39s
+2022.03.17 17:56:39 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 17:56:39 INFO  time: compiled cs449-m1 in 0.3s
+2022.03.17 17:57:21 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 17:57:21 INFO  time: compiled cs449-m1 in 0.34s
+2022.03.17 17:57:29 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 17:57:29 INFO  time: compiled cs449-m1 in 0.34s
+2022.03.17 17:57:38 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 17:57:38 INFO  time: compiled cs449-m1 in 0.33s
+mars 17, 2022 5:57:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 20332
+2022.03.17 17:57:41 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 17:57:41 INFO  time: compiled cs449-m1 in 0.34s
+2022.03.17 17:57:43 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 17:57:43 INFO  time: compiled cs449-m1 in 0.31s
+2022.03.17 17:58:05 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 17:58:05 INFO  time: compiled cs449-m1 in 0.36s
+2022.03.17 17:58:07 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 17:58:07 INFO  time: compiled cs449-m1 in 0.31s
+2022.03.17 18:00:30 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:180:45: stale bloop error: not found: value allUserAvg
+      test.foldLeft(0.0){(acc, x) => acc + (allUserAvg(x.user-1) - x.rating).abs}/test.length
+                                            ^^^^^^^^^^
+2022.03.17 18:00:30 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:182:45: stale bloop error: not found: value allItemAvg
+      test.foldLeft(0.0){(acc, x) => acc + (allItemAvg(x.item-1) - x.rating).abs}/test.length
+                                            ^^^^^^^^^^
+2022.03.17 18:00:30 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:180:45: stale bloop error: not found: value allUserAvg
+      test.foldLeft(0.0){(acc, x) => acc + (allUserAvg(x.user-1) - x.rating).abs}/test.length
+                                            ^^^^^^^^^^
+2022.03.17 18:00:30 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:182:45: stale bloop error: not found: value allItemAvg
+      test.foldLeft(0.0){(acc, x) => acc + (allItemAvg(x.item-1) - x.rating).abs}/test.length
+                                            ^^^^^^^^^^
+2022.03.17 18:00:31 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:180:45: stale bloop error: not found: value allUserAvg
+      test.foldLeft(0.0){(acc, x) => acc + (allUserAvg(x.user-1) - x.rating).abs}/test.length
+                                            ^^^^^^^^^^
+2022.03.17 18:00:31 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:182:45: stale bloop error: not found: value allItemAvg
+      test.foldLeft(0.0){(acc, x) => acc + (allItemAvg(x.item-1) - x.rating).abs}/test.length
+                                            ^^^^^^^^^^
+2022.03.17 18:00:31 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:180:45: stale bloop error: not found: value allUserAvg
+      test.foldLeft(0.0){(acc, x) => acc + (allUserAvg(x.user-1) - x.rating).abs}/test.length
+                                            ^^^^^^^^^^
+2022.03.17 18:00:31 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:182:45: stale bloop error: not found: value allItemAvg
+      test.foldLeft(0.0){(acc, x) => acc + (allItemAvg(x.item-1) - x.rating).abs}/test.length
+                                            ^^^^^^^^^^
+2022.03.17 18:00:32 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 18:00:34 INFO  time: compiled cs449-m1 in 1.6s
+2022.03.17 18:03:24 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 18:03:24 INFO  time: compiled cs449-m1 in 0.32s
+mars 17, 2022 6:03:35 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 20530
+2022.03.17 18:03:37 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 18:03:39 INFO  time: compiled cs449-m1 in 1.63s
+2022.03.17 18:07:38 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 18:07:38 INFO  time: compiled cs449-m1 in 0.36s
+mars 17, 2022 6:07:39 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 20593
+mars 17, 2022 6:07:39 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 20594
+2022.03.17 18:08:21 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 18:08:21 INFO  time: compiled cs449-m1 in 0.15s
+2022.03.17 18:08:23 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 18:08:23 INFO  time: compiled cs449-m1 in 0.13s
+2022.03.17 18:08:49 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 18:08:49 INFO  time: compiled cs449-m1 in 0.15s
+2022.03.17 18:08:54 INFO  compiling cs449-m1 (1 scala source)
+mars 17, 2022 6:08:55 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 20747
+2022.03.17 18:08:55 INFO  time: compiled cs449-m1 in 1.61s
+2022.03.17 18:09:24 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 18:09:26 INFO  time: compiled cs449-m1 in 1.6s
+2022.03.17 18:10:00 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 18:10:02 INFO  time: compiled cs449-m1 in 1.46s
+2022.03.17 18:13:30 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 18:13:34 INFO  time: compiled cs449-m1 in 3.73s
+2022.03.17 18:15:53 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 18:15:56 INFO  time: compiled cs449-m1 in 2.25s
+2022.03.17 18:16:24 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 18:16:25 INFO  time: compiled cs449-m1 in 1.47s
+2022.03.17 18:16:33 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 18:16:33 INFO  time: compiled cs449-m1 in 0.34s
+2022.03.17 18:16:44 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 18:16:44 INFO  time: compiled cs449-m1 in 0.29s
+2022.03.17 18:16:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:198:26: stale bloop error: not found: value measurements1
+  val timingsGlobalAvg = measurements1.map(t => t._2)
+                         ^^^^^^^^^^^^^
+2022.03.17 18:16:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:198:26: stale bloop error: not found: value measurements1
+  val timingsGlobalAvg = measurements1.map(t => t._2)
+                         ^^^^^^^^^^^^^
+2022.03.17 18:16:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:198:26: stale bloop error: not found: value measurements1
+  val timingsGlobalAvg = measurements1.map(t => t._2)
+                         ^^^^^^^^^^^^^
+2022.03.17 18:16:47 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:198:26: stale bloop error: not found: value measurements1
+  val timingsGlobalAvg = measurements1.map(t => t._2)
+                         ^^^^^^^^^^^^^
+2022.03.17 18:16:50 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:198:26: stale bloop error: not found: value measurements1
+  val timingsGlobalAvg = measurements1.map(t => t._2)
+                         ^^^^^^^^^^^^^
+2022.03.17 18:16:50 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:198:26: stale bloop error: not found: value measurements1
+  val timingsGlobalAvg = measurements1.map(t => t._2)
+                         ^^^^^^^^^^^^^
+2022.03.17 18:16:51 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 18:16:52 INFO  time: compiled cs449-m1 in 1.39s
+2022.03.17 18:20:58 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 18:20:58 INFO  time: compiled cs449-m1 in 0.14s
+mars 17, 2022 6:20:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 21158
+mars 17, 2022 6:20:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 21160
+2022.03.17 18:21:09 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:225:9: stale bloop error: illegal start of simple expression
+        ),
+        ^
+2022.03.17 18:21:09 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:241:5: stale bloop error: ')' expected but '}' found.
+    }
+    ^
+2022.03.17 18:21:09 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:225:9: stale bloop error: illegal start of simple expression
+        ),
+        ^
+2022.03.17 18:21:09 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:241:5: stale bloop error: ')' expected but '}' found.
+    }
+    ^
+2022.03.17 18:21:13 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 18:21:14 INFO  time: compiled cs449-m1 in 1.4s
+2022.03.17 18:22:25 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 18:22:26 INFO  time: compiled cs449-m1 in 1.53s
+2022.03.17 18:22:35 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 18:22:37 INFO  time: compiled cs449-m1 in 2.05s
+2022.03.17 18:24:16 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 18:24:17 INFO  time: compiled cs449-m1 in 1.5s
+2022.03.17 18:26:41 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 18:26:42 INFO  time: compiled cs449-m1 in 1.65s
+mars 17, 2022 6:27:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 21380
+mars 17, 2022 6:30:58 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+mars 17, 2022 6:30:59 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+mars 17, 2022 6:31:05 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+mars 17, 2022 6:31:05 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+mars 17, 2022 6:31:08 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+mars 17, 2022 6:31:09 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+mars 17, 2022 6:31:09 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+mars 17, 2022 6:31:10 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+mars 17, 2022 6:31:12 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+mars 17, 2022 6:31:13 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+mars 17, 2022 6:31:21 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+mars 17, 2022 6:31:22 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala in Array[<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala, 3328, 3328, 3343)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala in Array[<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala, 3328, 3328, 3336)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala in Array[<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala, 3328, 3328, 3337)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala in Array[shared.predictions.Rating]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala, 3328, 3328, 3341)
+2022.03.17 18:31:42 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 18:31:42 INFO  time: compiled cs449-m1 in 0.42s
+2022.03.17 18:31:55 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 18:31:55 INFO  time: compiled cs449-m1 in 0.3s
+2022.03.17 18:31:58 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 18:31:58 INFO  time: compiled cs449-m1 in 0.3s
+2022.03.17 18:32:05 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 18:32:07 INFO  time: compiled cs449-m1 in 1.6s
+2022.03.17 18:32:13 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 18:32:15 INFO  time: compiled cs449-m1 in 2.37s
+2022.03.17 18:36:01 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 18:36:02 INFO  time: compiled cs449-m1 in 1.51s
+2022.03.17 18:36:40 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 18:36:42 INFO  time: compiled cs449-m1 in 1.47s
+2022.03.17 18:41:58 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 18:41:59 INFO  time: compiled cs449-m1 in 1.59s
+mars 17, 2022 6:47:08 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 21970
+2022.03.17 18:47:26 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 18:47:27 INFO  time: compiled cs449-m1 in 1.32s
+2022.03.17 18:48:33 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 18:48:34 INFO  time: compiled cs449-m1 in 1.54s
+2022.03.17 18:49:09 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 18:49:09 INFO  time: compiled cs449-m1 in 0.34s
+2022.03.17 18:49:17 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 18:49:18 INFO  time: compiled cs449-m1 in 1.48s
+2022.03.17 18:49:33 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 18:49:33 INFO  time: compiled cs449-m1 in 0.34s
+2022.03.17 18:49:45 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 18:49:45 INFO  time: compiled cs449-m1 in 0.32s
+2022.03.17 18:49:55 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 18:49:55 INFO  time: compiled cs449-m1 in 0.34s
+mars 17, 2022 6:49:57 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 22339
+2022.03.17 18:49:58 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 18:50:00 INFO  time: compiled cs449-m1 in 1.36s
+2022.03.17 18:50:18 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 18:50:20 INFO  time: compiled cs449-m1 in 1.32s
+2022.03.17 18:50:52 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 18:50:53 INFO  time: compiled cs449-m1 in 1.45s
+2022.03.17 18:51:14 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 18:51:16 INFO  time: compiled cs449-m1 in 1.46s
+2022.03.17 18:51:22 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 18:51:24 INFO  time: compiled cs449-m1 in 2.06s
+2022.03.17 18:51:52 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 18:51:53 INFO  time: compiled cs449-m1 in 1.46s
+2022.03.17 18:52:28 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 18:52:28 INFO  time: compiled cs449-m1 in 0.32s
+2022.03.17 18:52:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:217:7: stale bloop error: timingsGlobalAvg is already defined as value timingsGlobalAvg
+  val timingsGlobalAvg = measurements1.map(t => t._2)
+      ^
+2022.03.17 18:52:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:217:7: stale bloop error: timingsGlobalAvg is already defined as value timingsGlobalAvg
+  val timingsGlobalAvg = measurements1.map(t => t._2)
+      ^
+2022.03.17 18:52:48 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:217:7: stale bloop error: timingsGlobalAvg is already defined as value timingsGlobalAvg
+  val timingsGlobalAvg = measurements1.map(t => t._2)
+      ^
+2022.03.17 18:52:48 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:217:7: stale bloop error: timingsGlobalAvg is already defined as value timingsGlobalAvg
+  val timingsGlobalAvg = measurements1.map(t => t._2)
+      ^
+2022.03.17 18:52:49 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 18:52:50 INFO  time: compiled cs449-m1 in 1.48s
+2022.03.17 19:02:24 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 19:02:28 INFO  time: compiled cs449-m1 in 4.42s
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala in Array[<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala, 1774, 1774, 1789)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala in Array[<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala, 1774, 1774, 1782)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala in Array[<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala, 1774, 1774, 1783)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala in Array[<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala, 1774, 1774, 1784)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala in Array[<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala, 1774, 1774, 1785)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala in Array[shared.predictions.package.Rating]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala, 1774, 1774, 1787)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala in Array[shared.predictions.package.Rating]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala, 1774, 1774, 1787)
+2022.03.17 19:21:54 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 19:21:57 INFO  time: compiled cs449-m1 in 2.72s
+mars 17, 2022 7:22:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 22911
+mars 17, 2022 7:22:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 22913
+2022.03.17 19:22:56 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 19:22:56 INFO  time: compiled cs449-m1 in 0.43s
+2022.03.17 19:23:16 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 19:23:16 INFO  time: compiled cs449-m1 in 0.14s
+2022.03.17 19:23:30 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 19:23:32 INFO  time: compiled cs449-m1 in 1.65s
+2022.03.17 19:24:43 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 19:24:43 INFO  time: compiled cs449-m1 in 0.36s
+2022.03.17 19:25:26 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 19:25:26 INFO  time: compiled cs449-m1 in 0.48s
+2022.03.17 19:25:30 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 19:25:30 INFO  time: compiled cs449-m1 in 0.13s
+2022.03.17 19:25:34 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 19:25:34 INFO  time: compiled cs449-m1 in 0.39s
+2022.03.17 19:25:41 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 19:25:43 INFO  time: compiled cs449-m1 in 1.62s
+2022.03.17 19:26:28 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 19:26:28 INFO  time: compiled cs449-m1 in 0.38s
+2022.03.17 19:26:34 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 19:26:34 INFO  time: compiled cs449-m1 in 0.43s
+2022.03.17 19:26:45 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.17 19:26:45 INFO  time: compiled cs449-m1 in 0.48s
+2022.03.17 19:26:45 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+mars 17, 2022 7:26:46 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 23395
+2022.03.17 19:26:48 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.17 19:26:48 INFO  time: compiled cs449-m1 in 0.38s
+mars 17, 2022 7:26:51 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 23401
+2022.03.17 19:27:15 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.17 19:27:15 INFO  time: compiled cs449-m1 in 0.41s
+2022.03.17 19:27:27 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.17 19:27:27 INFO  time: compiled cs449-m1 in 0.38s
+2022.03.17 19:27:37 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.17 19:27:37 INFO  time: compiled cs449-m1 in 0.4s
+2022.03.17 19:27:55 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.17 19:27:57 INFO  time: compiled cs449-m1 in 1.75s
+2022.03.17 19:28:01 INFO  compiling cs449-m1 (1 scala source)
+2022.03.17 19:28:03 INFO  time: compiled cs449-m1 in 1.48s
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala in Array[<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala, 5299, 5299, 5314)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala in Array[<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala, 5299, 5299, 5307)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala in Array[<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala, 5299, 5299, 5308)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala in Array[shared.predictions.Rating]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala, 5299, 5299, 5312)
+mars 18, 2022 6:48:20 AM scala.meta.internal.pc.CompletionProvider expected$1
+AVERTISSEMENT: null
+mars 18, 2022 6:48:24 AM scala.meta.internal.pc.CompletionProvider expected$1
+AVERTISSEMENT: null
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala in Map[Int,AnyRef]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala, 5315, 5315, 5366)
+mars 18, 2022 6:48:28 AM scala.meta.internal.pc.CompletionProvider expected$1
+AVERTISSEMENT: null
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala in Map[Int,<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala, 5315, 5315, 5367)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala in Map[Int,<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala, 5315, 5315, 5368)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala in Map[Int,ujson.Arr]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala, 5315, 5315, 5369)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala in Map[Int,<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala, 5315, 5315, 5370)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala in Map[Int,<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala, 5315, 5315, 5371)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala in Array[AnyRef]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala, 5324, 5324, 5372)
+mars 18, 2022 6:48:30 AM scala.meta.internal.pc.CompletionProvider expected$1
+AVERTISSEMENT: null
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala in Array[<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala, 5324, 5324, 5373)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala in Array[<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala, 5324, 5324, 5374)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala in Array[<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala, 5324, 5324, 5375)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala in Array[<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala, 5324, 5324, 5374)
+mars 18, 2022 6:48:31 AM scala.meta.internal.pc.CompletionProvider expected$1
+AVERTISSEMENT: null
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala in Array[<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala, 5324, 5324, 5375)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala in Array[<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala, 5324, 5324, 5376)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala in Array[<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala, 5324, 5324, 5377)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala in Array[shared.predictions.Rating]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala, 5324, 5324, 5378)
+2022.03.18 06:48:37 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 06:48:38 INFO  time: compiled cs449-m1 in 1.14s
+mars 18, 2022 6:52:49 AM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+mars 18, 2022 6:52:49 AM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+mars 18, 2022 6:52:50 AM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+mars 18, 2022 6:52:53 AM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala in Map[Int,<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala, 4232, 4232, 4249)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala in Map[Int,<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala, 4232, 4232, 4250)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala in Map[Int,<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala, 4232, 4232, 4243)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala in Map[Int,<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala, 4232, 4232, 4244)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala in Map[Int,ujson.Arr]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala, 4232, 4232, 4245)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala in Map[Int,<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala, 4232, 4232, 4246)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala in Map[Int,<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala, 4232, 4232, 4247)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala in Array[<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala, 4241, 4241, 4256)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala in Array[<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala, 4241, 4241, 4249)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala in Array[<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala, 4241, 4241, 4250)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala in Array[<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala, 4241, 4241, 4251)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala in Array[<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala, 4241, 4241, 4252)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala in Array[<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala, 4241, 4241, 4253)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala in Array[shared.predictions.Rating]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala, 4241, 4241, 4254)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala in Array[shared.predictions.Rating]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala, 4241, 4241, 4254)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala in Array[shared.predictions.Rating]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala, 4241, 4241, 4254)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala in Array[<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala, 5621, 5621, 5636)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala in Array[<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala, 5621, 5621, 5629)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala in Array[<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala, 5621, 5621, 5630)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala in Array[shared.predictions.Rating]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala, 5621, 5621, 5634)
+2022.03.18 06:55:33 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:176:74: stale bloop error: ']' expected but '=' found.
+  def filteredArrAllUsers(train : Array[Rating]): Map[Int, Array[Rating] = {
+                                                                         ^
+2022.03.18 06:55:33 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:180:3: stale bloop error: ';' expected but 'def' found.
+  def predictorCosine(train : Array[Rating]): (Int, Int) => Double = {
+  ^
+2022.03.18 06:55:33 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:176:74: stale bloop error: ']' expected but '=' found.
+  def filteredArrAllUsers(train : Array[Rating]): Map[Int, Array[Rating] = {
+                                                                         ^
+2022.03.18 06:55:33 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:180:3: stale bloop error: ';' expected but 'def' found.
+  def predictorCosine(train : Array[Rating]): (Int, Int) => Double = {
+  ^
+2022.03.18 06:55:34 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:176:74: stale bloop error: ']' expected but '=' found.
+  def filteredArrAllUsers(train : Array[Rating]): Map[Int, Array[Rating] = {
+                                                                         ^
+2022.03.18 06:55:34 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:180:3: stale bloop error: ';' expected but 'def' found.
+  def predictorCosine(train : Array[Rating]): (Int, Int) => Double = {
+  ^
+2022.03.18 06:55:34 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:176:74: stale bloop error: ']' expected but '=' found.
+  def filteredArrAllUsers(train : Array[Rating]): Map[Int, Array[Rating] = {
+                                                                         ^
+2022.03.18 06:55:34 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:180:3: stale bloop error: ';' expected but 'def' found.
+  def predictorCosine(train : Array[Rating]): (Int, Int) => Double = {
+  ^
+2022.03.18 07:00:32 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:176:74: stale bloop error: ']' expected but '=' found.
+  def filteredArrAllUsers(train : Array[Rating]): Map[Int, Array[Rating] = {
+                                                                         ^
+2022.03.18 07:00:32 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:180:3: stale bloop error: ';' expected but 'def' found.
+  def predictorCosine(train : Array[Rating]): (Int, Int) => Double = {
+  ^
+2022.03.18 07:00:32 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:176:74: stale bloop error: ']' expected but '=' found.
+  def filteredArrAllUsers(train : Array[Rating]): Map[Int, Array[Rating] = {
+                                                                         ^
+2022.03.18 07:00:32 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:180:3: stale bloop error: ';' expected but 'def' found.
+  def predictorCosine(train : Array[Rating]): (Int, Int) => Double = {
+  ^
+2022.03.18 07:01:26 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:176:74: stale bloop error: ']' expected but '=' found.
+  def filteredArrAllUsers(train : Array[Rating]): Map[Int, Array[Rating] = {
+                                                                         ^
+2022.03.18 07:01:26 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:180:3: stale bloop error: ';' expected but 'def' found.
+  def predictorCosine(train : Array[Rating]): (Int, Int) => Double = {
+  ^
+2022.03.18 07:01:26 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:176:74: stale bloop error: ']' expected but '=' found.
+  def filteredArrAllUsers(train : Array[Rating]): Map[Int, Array[Rating] = {
+                                                                         ^
+2022.03.18 07:01:26 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:180:3: stale bloop error: ';' expected but 'def' found.
+  def predictorCosine(train : Array[Rating]): (Int, Int) => Double = {
+  ^
+2022.03.18 07:02:20 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:176:74: stale bloop error: ']' expected but '=' found.
+  def filteredArrAllUsers(train : Array[Rating]): Map[Int, Array[Rating] = {
+                                                                         ^
+2022.03.18 07:02:20 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:180:3: stale bloop error: ';' expected but 'def' found.
+  def predictorCosine(train : Array[Rating]): (Int, Int) => Double = {
+  ^
+2022.03.18 07:02:20 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:176:74: stale bloop error: ']' expected but '=' found.
+  def filteredArrAllUsers(train : Array[Rating]): Map[Int, Array[Rating] = {
+                                                                         ^
+2022.03.18 07:02:20 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:180:3: stale bloop error: ';' expected but 'def' found.
+  def predictorCosine(train : Array[Rating]): (Int, Int) => Double = {
+  ^
+2022.03.18 07:02:23 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:176:74: stale bloop error: ']' expected but '=' found.
+  def filteredArrAllUsers(train : Array[Rating]): Map[Int, Array[Rating] = {
+                                                                         ^
+2022.03.18 07:02:23 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:180:3: stale bloop error: ';' expected but 'def' found.
+  def predictorCosine(train : Array[Rating]): (Int, Int) => Double = {
+  ^
+2022.03.18 07:02:23 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:176:74: stale bloop error: ']' expected but '=' found.
+  def filteredArrAllUsers(train : Array[Rating]): Map[Int, Array[Rating] = {
+                                                                         ^
+2022.03.18 07:02:23 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:180:3: stale bloop error: ';' expected but 'def' found.
+  def predictorCosine(train : Array[Rating]): (Int, Int) => Double = {
+  ^
+2022.03.18 07:02:25 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:176:74: stale bloop error: ']' expected but '=' found.
+  def filteredArrAllUsers(train : Array[Rating]): Map[Int, Array[Rating] = {
+                                                                         ^
+2022.03.18 07:02:25 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:180:3: stale bloop error: ';' expected but 'def' found.
+  def predictorCosine(train : Array[Rating]): (Int, Int) => Double = {
+  ^
+2022.03.18 07:02:25 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:176:74: stale bloop error: ']' expected but '=' found.
+  def filteredArrAllUsers(train : Array[Rating]): Map[Int, Array[Rating] = {
+                                                                         ^
+2022.03.18 07:02:25 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:180:3: stale bloop error: ';' expected but 'def' found.
+  def predictorCosine(train : Array[Rating]): (Int, Int) => Double = {
+  ^
+2022.03.18 07:02:25 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:176:74: stale bloop error: ']' expected but '=' found.
+  def filteredArrAllUsers(train : Array[Rating]): Map[Int, Array[Rating] = {
+                                                                         ^
+2022.03.18 07:02:25 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:180:3: stale bloop error: ';' expected but 'def' found.
+  def predictorCosine(train : Array[Rating]): (Int, Int) => Double = {
+  ^
+2022.03.18 07:02:26 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:176:74: stale bloop error: ']' expected but '=' found.
+  def filteredArrAllUsers(train : Array[Rating]): Map[Int, Array[Rating] = {
+                                                                         ^
+2022.03.18 07:02:26 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:180:3: stale bloop error: ';' expected but 'def' found.
+  def predictorCosine(train : Array[Rating]): (Int, Int) => Double = {
+  ^
+2022.03.18 07:02:27 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:176:74: stale bloop error: ']' expected but '=' found.
+  def filteredArrAllUsers(train : Array[Rating]): Map[Int, Array[Rating] = {
+                                                                         ^
+2022.03.18 07:02:27 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:180:3: stale bloop error: ';' expected but 'def' found.
+  def predictorCosine(train : Array[Rating]): (Int, Int) => Double = {
+  ^
+2022.03.18 07:02:27 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:176:74: stale bloop error: ']' expected but '=' found.
+  def filteredArrAllUsers(train : Array[Rating]): Map[Int, Array[Rating] = {
+                                                                         ^
+2022.03.18 07:02:27 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:180:3: stale bloop error: ';' expected but 'def' found.
+  def predictorCosine(train : Array[Rating]): (Int, Int) => Double = {
+  ^
+2022.03.18 07:02:28 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:176:74: stale bloop error: ']' expected but '=' found.
+  def filteredArrAllUsers(train : Array[Rating]): Map[Int, Array[Rating] = {
+                                                                         ^
+2022.03.18 07:02:28 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:180:3: stale bloop error: ';' expected but 'def' found.
+  def predictorCosine(train : Array[Rating]): (Int, Int) => Double = {
+  ^
+2022.03.18 07:02:28 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:176:74: stale bloop error: ']' expected but '=' found.
+  def filteredArrAllUsers(train : Array[Rating]): Map[Int, Array[Rating] = {
+                                                                         ^
+2022.03.18 07:02:28 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:180:3: stale bloop error: ';' expected but 'def' found.
+  def predictorCosine(train : Array[Rating]): (Int, Int) => Double = {
+  ^
+mars 18, 2022 7:14:14 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 25682
+mars 18, 2022 7:17:49 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 25963
+mars 18, 2022 7:52:01 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 26328
+2022.03.18 13:02:38 INFO  shutting down Metals
+2022.03.18 13:02:38 INFO  Shut down connection with build server.
+2022.03.18 13:02:38 INFO  Shut down connection with build server.
+2022.03.18 13:03:37 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/robindebalme/cs449-M1/.metals/lsp.trace.json or /Users/robindebalme/Library/Caches/org.scalameta.metals/lsp.trace.json
+2022.03.18 13:03:38 INFO  logging to file /Users/robindebalme/cs449-M1/.metals/metals.log
+2022.03.18 13:03:38 INFO  Started: Metals version 0.11.2 in workspace '/Users/robindebalme/cs449-M1' for client Visual Studio Code 1.65.2.
+2022.03.18 13:03:38 INFO  Parse release: 1.8.0_292
+2022.03.18 13:03:40 INFO  time: initialize in 1.71s
+2022.03.18 13:03:41 INFO  Attempting to connect to the build server...
+2022.03.18 13:03:41 INFO  skipping build import with status 'Installed'
+2022.03.18 13:03:41 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/robindebalme/cs449-M1/.metals/bsp.trace.json or /Users/robindebalme/Library/Caches/org.scalameta.metals/bsp.trace.json
+2022.03.18 13:03:41 INFO  Attempting to connect to the build server...
+2022.03.18 13:03:41 INFO  Attempting to connect to the build server...
+2022.03.18 13:03:41 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/robindebalme/cs449-M1/project/project/.metals/bsp.trace.json or /Users/robindebalme/Library/Caches/org.scalameta.metals/bsp.trace.json
+2022.03.18 13:03:41 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/robindebalme/cs449-M1/project/.metals/bsp.trace.json or /Users/robindebalme/Library/Caches/org.scalameta.metals/bsp.trace.json
+2022.03.18 13:03:41 INFO  time: Connected to build server in 0.53s
+2022.03.18 13:03:41 INFO  Connected to Build server: Bloop v1.4.13
+2022.03.18 13:03:41 INFO  time: Imported build in 0.1s
+2022.03.18 13:03:46 INFO  time: indexed workspace in 4.86s
+2022.03.18 13:03:46 INFO  compiling cs449-m1 (6 scala sources)
+2022.03.18 13:03:58 INFO  compiling cs449-m1-test (1 scala source)
+2022.03.18 13:03:58 INFO  time: compiled cs449-m1 in 11s
+2022.03.18 13:04:00 INFO  time: compiled cs449-m1-test in 1.77s
