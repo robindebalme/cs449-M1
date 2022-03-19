@@ -201,14 +201,15 @@ object kNN extends App {
 
     def kNN_anyAvgDev(i: Int, u: Int, k: Int, info: Array[Rating]): Double = {
     val arrFiltered = info.filter(x => x.item == i)
+    val possible = arrFiltered.groupBy(x => x.user)
 
     val all_simU = kNN_sim(u, k)
     if(arrFiltered.isEmpty) 0
     else {
       val haut = all_simU.foldLeft(0.0){(acc, x) => 
-        val r = arrFiltered.filter(_.user == x._1)
-        if (r.isEmpty) acc
-        else acc + x._2 * dev(r.head.rating, userAvg(x._1, train, alluserAvg, globalAvg))
+        val tmp = possible.getOrElse(x._1, new Rating ((0, 0, 0.0)))
+        if (tmp == 0) acc
+        else acc + x._2 * dev(tmp, userAvg(x._1, train, alluserAvg, globalAvg))
         } // C EST PAS VRAIMENT LA BONNE FORMULE, A CHECK
 
       val bas = all_simU.foldLeft(0.0){(acc, x) =>

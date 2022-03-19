@@ -7215,3 +7215,7 @@ mars 19, 2022 8:53:19 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancella
 AVERTISSEMENT: Unmatched cancel notification for request id 19732
 mars 19, 2022 8:53:19 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
 AVERTISSEMENT: Unmatched cancel notification for request id 19733
+mars 19, 2022 9:01:45 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 20321
+mars 19, 2022 9:03:46 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 20521
