@@ -46,6 +46,7 @@ package object predictions
                 case None => Rating(-1, -1, -1)})
   }
 
+<<<<<<< HEAD
   
   var alluserAvg_ : mutable.Map[Int, Double] = mutable.Map()
   var allitemAvg_ : mutable.Map[Int, Double] = mutable.Map()
@@ -61,6 +62,14 @@ package object predictions
   var allitemDev: mutable.Map[Int, Double] = mutable.Map()
   var cosineSim: mutable.Map[(Int, Int),Double] = mutable.Map()
   var preProcessSim: mutable.Map[(Int, Int),Double] = mutable.Map()
+=======
+  var alluserAvg : mutable.Map[Int, Double] = mutable.Map()
+  var allitemAvg : mutable.Map[Int, Double] = mutable.Map()
+  var allitemDev : mutable.Map[Int, Double] = mutable.Map()
+  var cosineSim : mutable.Map[(Int, Int),Double] = mutable.Map()
+  var jaccardSim : mutable.Map[(Int, Int),Double] = mutable.Map()
+  var preProcessSim : mutable.Map[(Int, Int),Double] = mutable.Map()
+>>>>>>> 2ecb8febbf8908f508c3b0db1b357490c08d2f8d
   var commonItemMap: mutable.Map[(Int, Int),Array[Int]] = mutable.Map()
   var jaccardSim: mutable.Map[(Int, Int),Double] = mutable.Map()
   var kNN_map: mutable.Map[Int, Array[(Int, Double)]] = mutable.Map()
