@@ -46,15 +46,6 @@ package object predictions
                 case None => Rating(-1, -1, -1)})
   }
 
-<<<<<<< HEAD
-  
-  var alluserAvg_ : mutable.Map[Int, Double] = mutable.Map()
-  var allitemAvg_ : mutable.Map[Int, Double] = mutable.Map()
-  var allitemDev_ : mutable.Map[Int, Double] = mutable.Map()
-
-
-
-
 
 
   var alluserAvg: mutable.Map[Int, Double] = mutable.Map()
@@ -62,14 +53,6 @@ package object predictions
   var allitemDev: mutable.Map[Int, Double] = mutable.Map()
   var cosineSim: mutable.Map[(Int, Int),Double] = mutable.Map()
   var preProcessSim: mutable.Map[(Int, Int),Double] = mutable.Map()
-=======
-  var alluserAvg : mutable.Map[Int, Double] = mutable.Map()
-  var allitemAvg : mutable.Map[Int, Double] = mutable.Map()
-  var allitemDev : mutable.Map[Int, Double] = mutable.Map()
-  var cosineSim : mutable.Map[(Int, Int),Double] = mutable.Map()
-  var jaccardSim : mutable.Map[(Int, Int),Double] = mutable.Map()
-  var preProcessSim : mutable.Map[(Int, Int),Double] = mutable.Map()
->>>>>>> 2ecb8febbf8908f508c3b0db1b357490c08d2f8d
   var commonItemMap: mutable.Map[(Int, Int),Array[Int]] = mutable.Map()
   var jaccardSim: mutable.Map[(Int, Int),Double] = mutable.Map()
   var kNN_map: mutable.Map[Int, Array[(Int, Double)]] = mutable.Map()
@@ -78,38 +61,43 @@ package object predictions
 
   var globalAvg = 0.0
 
+  /* 
+  Mean function that compute the mean of an array of double. Using only one
+  foldleft enables to compute the mean faster.
+  */
   def mean_(arr : Array[Double]): Double = {
     val tmp = arr.foldLeft((0.0, 0))((acc, elem) => (acc._1 + elem, acc._2 + 1))
     tmp._1 / tmp._2
   }
 
+  /*
+  Compute the average of ratings of a given array of rating.
+  */
   def computeGlobalAvg(train : Array[Rating]): Double = {
     mean_(train.map(_.rating))
   }
 
+  /*
+  Compute the average of ratings of a given user and store the result dynamically in a Map for future use.
+  */
   def userAvg(user : Int, train : Array[Rating], alluserAvg : mutable.Map[Int, Double], globalAvg : Double): Double = {
-    if (alluserAvg.get(user) != None) 
-      alluserAvg(user)
-    else 
-      {
+    alluserAvg.getOrElse(user, { //Return the average if already computed, otherwise compute it.
       val filtered = train.filter(elem => elem.user == user)
       var tmp = 0.0
-      if (filtered.isEmpty)
-        tmp = globalAvg
+      if (filtered.isEmpty) tmp = globalAvg
       else
         tmp = mean_(filtered.map(_.rating))
 
-      alluserAvg += ((user, tmp))
+      alluserAvg += ((user, tmp)) //Update of the Map 
       tmp
-    }
+    })
   }
 
-
+  /*
+  Compute the average of ratings of a given item and store the result dynamically in a Map for future use.
+  */
   def itemAvg(item : Int, train : Array[Rating], allitemAvg : mutable.Map[Int, Double], globalAvg : Double): Double = {
-    if (allitemAvg.get(item) != None) 
-      allitemAvg(item)
-    else 
-      {
+    allitemAvg.getOrElse(item, { //Return the average if already computed, otherwise compute it.
       val filtered = train.filter(elem => elem.item == item)
       var tmp = 0.0
       if (filtered.isEmpty)
@@ -117,11 +105,12 @@ package object predictions
       else
         tmp = mean_(filtered.map(_.rating))
 
-      allitemAvg += ((item, tmp))
+      allitemAvg += ((item, tmp)) //Update of the Map
       tmp
-    }
+    })
   }
 
+  //Scale fonction.
   def scale(x : Double, userAvg : Double): Double = {
     if (x > userAvg)
       5 - userAvg
@@ -130,22 +119,30 @@ package object predictions
     else 1
   }
 
+  //Normalized deviation fonction for a given rating and a given user average.
   def dev(r: Double, useravg : Double): Double = {
     (r - useravg) / scale(r, useravg)
   }
 
+  /*
+  Compute the average deviation for a given item and store the result dynamically in a Map for future use.
+  */
   def itemAvgDev(item : Int, train : Array[Rating], allitemDev : mutable.Map[Int, Double], globalAvg : Double, 
   alluserAvg : mutable.Map[Int, Double]): Double = {
-    if (allitemDev.get(item) != None) 
-      allitemDev(item)
-    else {
-      var tmp = train.filter(l => l.item == item)
-      var tmp2 = mean_(tmp.map(elem => dev(elem.rating, userAvg(elem.user, train, alluserAvg, globalAvg))))
-      allitemDev +=  ((item, tmp2))
+    allitemDev.getOrElse(item,  {
+      val tmp = train.filter(_.item == item)
+      var tmp2 = 0.0
+      if (tmp.isEmpty)
+        tmp2 = 0.0
+      else
+        // mean of all the deviations of the users who rated item i
+        tmp2 = mean_(tmp.map(elem => dev(elem.rating, userAvg(elem.user, train, alluserAvg, globalAvg))))
+      allitemDev +=  ((item, tmp2)) //Update of the Map
       tmp2
-    }
+    })
   }
 
+  
   def predictedBaseline(user: Int, item : Int, train : Array[Rating], allitemDev : mutable.Map[Int, Double], globalAvg : Double, 
   alluserAvg : mutable.Map[Int, Double], allitemAvg : mutable.Map[Int, Double]): Double = {
     val useravg = userAvg(user, train, alluserAvg, globalAvg)

@@ -207,7 +207,7 @@ object kNN extends App {
     if(arrFiltered.isEmpty) 0
     else {
       val haut = all_simU.foldLeft(0.0){(acc, x) => 
-        val tmp = possible.getOrElse(x._1, new Rating ((0, 0, 0.0)))
+        val tmp = 0
         if (tmp == 0) acc
         else acc + x._2 * dev(tmp, userAvg(x._1, train, alluserAvg, globalAvg))
         } // C EST PAS VRAIMENT LA BONNE FORMULE, A CHECK
@@ -273,17 +273,10 @@ object kNN extends App {
   }
   */
 
-<<<<<<< HEAD
   println("Pred U1 I1 K10 :" + mae(943, test, train, "knn"))
   /*println("Pred U1 I1 K10 :" + knn_pred(1,1, 30, train))
   println("Pred U1 I1 K10 :" + knn_pred(1,1, 50, train))
   println("Pred U1 I1 K10 :" + knn_pred(1,1, 100, train))*/
-=======
-  println("Pred U1 I1 K10 :" + knn_pred(1,1, 10, train))
-  //println("Pred U1 I1 K10 :" + knn_pred(1,1, 30, train))
-  //println("Pred U1 I1 K10 :" + knn_pred(1,1, 50, train))
-  //println("Pred U1 I1 K10 :" + knn_pred(1,1, 100, train))
->>>>>>> 2ecb8febbf8908f508c3b0db1b357490c08d2f8d
   //println("recommendation for new user : " + recommendation(945, 5, 2, train))
   //println("MAE K10 :" + mae(10, test, train, "knn"))
 
