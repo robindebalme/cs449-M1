@@ -6068,3 +6068,1150 @@ AVERTISSEMENT: Unmatched cancel notification for request id 26328
 2022.03.18 13:03:58 INFO  compiling cs449-m1-test (1 scala source)
 2022.03.18 13:03:58 INFO  time: compiled cs449-m1 in 11s
 2022.03.18 13:04:00 INFO  time: compiled cs449-m1-test in 1.77s
+2022.03.18 13:15:17 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 13:15:18 INFO  time: compiled cs449-m1 in 1.73s
+2022.03.18 13:15:33 INFO  time: code lens generation in 1.31s
+2022.03.18 13:18:21 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 13:18:22 INFO  time: compiled cs449-m1 in 1.57s
+2022.03.18 13:18:22 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 13:18:24 INFO  time: compiled cs449-m1 in 1.49s
+2022.03.18 13:19:04 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 13:19:04 INFO  time: compiled cs449-m1 in 0.3s
+mars 18, 2022 1:19:10 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+mars 18, 2022 1:19:10 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+mars 18, 2022 1:19:13 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+2022.03.18 13:19:22 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 13:19:22 INFO  time: compiled cs449-m1 in 0.26s
+2022.03.18 13:19:38 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 13:19:38 INFO  time: compiled cs449-m1 in 0.29s
+2022.03.18 13:19:57 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 13:19:58 INFO  time: compiled cs449-m1 in 1.51s
+2022.03.18 13:20:37 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 13:20:37 INFO  time: compiled cs449-m1 in 0.27s
+2022.03.18 13:21:08 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 13:21:08 INFO  time: compiled cs449-m1 in 0.26s
+mars 18, 2022 1:21:17 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+mars 18, 2022 1:21:18 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+2022.03.18 13:21:26 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 13:21:26 INFO  time: compiled cs449-m1 in 0.29s
+2022.03.18 13:21:38 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 13:21:38 INFO  time: compiled cs449-m1 in 0.27s
+2022.03.18 13:26:24 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 13:26:24 INFO  time: compiled cs449-m1 in 0.34s
+2022.03.18 13:27:04 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 13:27:04 INFO  time: compiled cs449-m1 in 0.26s
+2022.03.18 13:27:19 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 13:27:19 INFO  time: compiled cs449-m1 in 0.29s
+mars 18, 2022 1:27:36 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+2022.03.18 13:27:44 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 13:27:44 INFO  time: compiled cs449-m1 in 0.27s
+mars 18, 2022 1:27:46 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 1048
+2022.03.18 13:27:58 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 13:27:58 INFO  time: compiled cs449-m1 in 0.33s
+2022.03.18 13:28:16 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 13:28:16 INFO  time: compiled cs449-m1 in 0.3s
+2022.03.18 13:28:53 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 13:28:53 INFO  time: compiled cs449-m1 in 0.27s
+2022.03.18 13:29:33 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 13:29:33 INFO  time: compiled cs449-m1 in 0.34s
+2022.03.18 13:29:55 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 13:29:55 INFO  time: compiled cs449-m1 in 0.29s
+2022.03.18 13:30:17 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 13:30:17 INFO  time: compiled cs449-m1 in 0.3s
+2022.03.18 13:30:48 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 13:30:48 INFO  time: compiled cs449-m1 in 0.31s
+2022.03.18 13:31:29 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 13:31:29 INFO  time: compiled cs449-m1 in 0.29s
+2022.03.18 13:32:06 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 13:32:06 INFO  time: compiled cs449-m1 in 0.3s
+2022.03.18 13:32:24 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 13:32:24 INFO  time: compiled cs449-m1 in 0.31s
+2022.03.18 13:32:42 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 13:32:42 INFO  time: compiled cs449-m1 in 0.28s
+mars 18, 2022 1:32:44 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 1496
+2022.03.18 13:32:48 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 13:32:48 INFO  time: compiled cs449-m1 in 0.32s
+2022.03.18 13:33:00 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 13:33:00 INFO  time: compiled cs449-m1 in 0.32s
+2022.03.18 13:33:05 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 13:33:05 INFO  time: compiled cs449-m1 in 0.29s
+2022.03.18 13:33:10 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 13:33:10 INFO  time: compiled cs449-m1 in 0.3s
+2022.03.18 13:33:16 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 13:33:16 INFO  time: compiled cs449-m1 in 0.29s
+2022.03.18 13:33:20 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 13:33:20 INFO  time: compiled cs449-m1 in 0.32s
+2022.03.18 13:40:00 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 13:40:00 INFO  time: compiled cs449-m1 in 0.28s
+mars 18, 2022 1:43:32 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 1607
+2022.03.18 13:43:49 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 13:43:49 INFO  time: compiled cs449-m1 in 0.43s
+2022.03.18 13:44:22 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 13:44:22 INFO  time: compiled cs449-m1 in 0.34s
+2022.03.18 13:45:05 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 13:45:05 INFO  time: compiled cs449-m1 in 0.33s
+2022.03.18 13:45:25 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 13:45:25 INFO  time: compiled cs449-m1 in 0.34s
+2022.03.18 13:45:32 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 13:45:32 INFO  time: compiled cs449-m1 in 0.32s
+2022.03.18 13:45:43 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 13:45:43 INFO  time: compiled cs449-m1 in 0.31s
+mars 18, 2022 1:45:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 1793
+2022.03.18 13:46:05 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 13:46:05 INFO  time: compiled cs449-m1 in 0.31s
+2022.03.18 13:46:14 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 13:46:14 INFO  time: compiled cs449-m1 in 0.32s
+mars 18, 2022 1:46:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 1889
+2022.03.18 13:46:36 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 13:46:36 INFO  time: compiled cs449-m1 in 0.3s
+2022.03.18 13:46:45 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 13:46:45 INFO  time: compiled cs449-m1 in 0.35s
+2022.03.18 13:46:59 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 13:46:59 INFO  time: compiled cs449-m1 in 0.28s
+2022.03.18 13:47:10 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 13:47:10 INFO  time: compiled cs449-m1 in 0.29s
+2022.03.18 13:47:21 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 13:47:21 INFO  time: compiled cs449-m1 in 0.28s
+2022.03.18 13:47:55 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.18 13:47:55 INFO  time: compiled cs449-m1 in 0.45s
+2022.03.18 13:48:31 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.18 13:48:31 INFO  time: compiled cs449-m1 in 0.4s
+2022.03.18 13:54:11 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.18 13:54:11 INFO  time: compiled cs449-m1 in 0.44s
+2022.03.18 13:55:08 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.18 13:55:08 INFO  time: compiled cs449-m1 in 0.42s
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala in Array[<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala, 8621, 8621, 8636)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala in Array[<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala, 8621, 8621, 8629)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala in Array[<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala, 8621, 8621, 8630)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala in Array[<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala, 8621, 8621, 8632)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala in Array[shared.predictions.package.Rating]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala, 8621, 8621, 8634)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala in Array[shared.predictions.package.Rating]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala, 8621, 8621, 8634)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala in Array[shared.predictions.package.Rating]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala, 8621, 8621, 8634)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala in Array[shared.predictions.package.Rating]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala, 8621, 8621, 8634)
+2022.03.18 13:55:39 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.18 13:55:39 INFO  time: compiled cs449-m1 in 0.44s
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala in Array[<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala, 8648, 8648, 8663)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala in Array[<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala, 8648, 8648, 8656)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala in Array[<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala, 8648, 8648, 8657)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala in Array[<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala, 8648, 8648, 8658)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala in Array[shared.predictions.package.Rating]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala, 8648, 8648, 8661)
+2022.03.18 13:55:56 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.18 13:55:56 INFO  time: compiled cs449-m1 in 0.47s
+2022.03.18 13:56:02 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.18 13:56:02 INFO  time: compiled cs449-m1 in 0.53s
+2022.03.18 13:56:20 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.18 13:56:20 INFO  time: compiled cs449-m1 in 0.45s
+mars 18, 2022 1:56:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 2377
+2022.03.18 13:56:31 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.18 13:56:31 INFO  time: compiled cs449-m1 in 0.41s
+2022.03.18 13:57:08 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.18 13:57:08 INFO  time: compiled cs449-m1 in 0.42s
+2022.03.18 13:57:12 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.18 13:57:12 INFO  time: compiled cs449-m1 in 0.42s
+mars 18, 2022 1:57:54 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 2499
+2022.03.18 13:58:01 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.18 13:58:01 INFO  time: compiled cs449-m1 in 0.42s
+2022.03.18 13:58:18 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.18 13:58:18 INFO  time: compiled cs449-m1 in 0.45s
+2022.03.18 13:58:58 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.18 13:58:58 INFO  time: compiled cs449-m1 in 0.4s
+2022.03.18 13:59:09 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.18 13:59:09 INFO  time: compiled cs449-m1 in 0.4s
+2022.03.18 13:59:35 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.18 13:59:35 INFO  time: compiled cs449-m1 in 0.43s
+2022.03.18 13:59:59 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.18 13:59:59 INFO  time: compiled cs449-m1 in 0.42s
+2022.03.18 14:02:22 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.18 14:02:22 INFO  time: compiled cs449-m1 in 0.41s
+2022.03.18 14:02:48 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.18 14:02:48 INFO  time: compiled cs449-m1 in 0.49s
+2022.03.18 14:02:53 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.18 14:02:53 INFO  time: compiled cs449-m1 in 0.44s
+2022.03.18 14:03:05 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.18 14:03:05 INFO  time: compiled cs449-m1 in 0.41s
+2022.03.18 14:03:12 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.18 14:03:12 INFO  time: compiled cs449-m1 in 0.44s
+2022.03.18 14:03:20 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:283:21: stale bloop error: not found: value globalAvg
+    (user, item) => globalAvg
+                    ^^^^^^^^^
+2022.03.18 14:03:20 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:287:42: stale bloop error: not found: value alluserAvg
+    (user, item) => userAvg(user, train, alluserAvg, globalAvg)
+                                         ^^^^^^^^^^
+2022.03.18 14:03:20 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:287:54: stale bloop error: not found: value globalAvg
+    (user, item) => userAvg(user, train, alluserAvg, globalAvg)
+                                                     ^^^^^^^^^
+2022.03.18 14:03:20 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:291:42: stale bloop error: not found: value allitemAvg
+    (user, item) => itemAvg(item, train, allitemAvg, globalAvg)
+                                         ^^^^^^^^^^
+2022.03.18 14:03:20 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:291:54: stale bloop error: not found: value globalAvg
+    (user, item) => itemAvg(item, train, allitemAvg, globalAvg)
+                                                     ^^^^^^^^^
+2022.03.18 14:03:20 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:295:58: stale bloop error: not found: value allitemDev
+    (user, item) => predictedBaseline(user, item, train, allitemDev, globalAvg, alluserAvg, allitemAvg)
+                                                         ^^^^^^^^^^
+2022.03.18 14:03:20 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:295:70: stale bloop error: not found: value globalAvg
+    (user, item) => predictedBaseline(user, item, train, allitemDev, globalAvg, alluserAvg, allitemAvg)
+                                                                     ^^^^^^^^^
+2022.03.18 14:03:20 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:295:81: stale bloop error: not found: value alluserAvg
+    (user, item) => predictedBaseline(user, item, train, allitemDev, globalAvg, alluserAvg, allitemAvg)
+                                                                                ^^^^^^^^^^
+2022.03.18 14:03:20 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:295:93: stale bloop error: not found: value allitemAvg
+    (user, item) => predictedBaseline(user, item, train, allitemDev, globalAvg, alluserAvg, allitemAvg)
+                                                                                            ^^^^^^^^^^
+2022.03.18 14:03:20 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:283:21: stale bloop error: not found: value globalAvg
+    (user, item) => globalAvg
+                    ^^^^^^^^^
+2022.03.18 14:03:20 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:287:42: stale bloop error: not found: value alluserAvg
+    (user, item) => userAvg(user, train, alluserAvg, globalAvg)
+                                         ^^^^^^^^^^
+2022.03.18 14:03:20 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:287:54: stale bloop error: not found: value globalAvg
+    (user, item) => userAvg(user, train, alluserAvg, globalAvg)
+                                                     ^^^^^^^^^
+2022.03.18 14:03:20 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:291:42: stale bloop error: not found: value allitemAvg
+    (user, item) => itemAvg(item, train, allitemAvg, globalAvg)
+                                         ^^^^^^^^^^
+2022.03.18 14:03:20 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:291:54: stale bloop error: not found: value globalAvg
+    (user, item) => itemAvg(item, train, allitemAvg, globalAvg)
+                                                     ^^^^^^^^^
+2022.03.18 14:03:20 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:295:58: stale bloop error: not found: value allitemDev
+    (user, item) => predictedBaseline(user, item, train, allitemDev, globalAvg, alluserAvg, allitemAvg)
+                                                         ^^^^^^^^^^
+2022.03.18 14:03:20 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:295:70: stale bloop error: not found: value globalAvg
+    (user, item) => predictedBaseline(user, item, train, allitemDev, globalAvg, alluserAvg, allitemAvg)
+                                                                     ^^^^^^^^^
+2022.03.18 14:03:20 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:295:81: stale bloop error: not found: value alluserAvg
+    (user, item) => predictedBaseline(user, item, train, allitemDev, globalAvg, alluserAvg, allitemAvg)
+                                                                                ^^^^^^^^^^
+2022.03.18 14:03:20 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:295:93: stale bloop error: not found: value allitemAvg
+    (user, item) => predictedBaseline(user, item, train, allitemDev, globalAvg, alluserAvg, allitemAvg)
+                                                                                            ^^^^^^^^^^
+2022.03.18 14:03:22 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.18 14:03:22 INFO  time: compiled cs449-m1 in 0.46s
+2022.03.18 14:03:32 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:166:25: stale bloop error: not enough arguments for method avgSimilarity: (i: Int, u: Int, train: Array[shared.predictions.Rating], filteredArrUsers: Map[Int,Array[shared.predictions.Rating]], cosineSim: scala.collection.mutable.Map[(Int, Int),Double], globalAvg: Double, alluserAvg: scala.collection.mutable.Map[Int,Double], preProcessSim: scala.collection.mutable.Map[(Int, Int),Double])Double.
+Unspecified value parameters cosineSim, globalAvg, alluserAvg...
+        val simavgdev = avgSimilarity(item ,user, train, mapArrUsers)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2022.03.18 14:03:32 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:166:25: stale bloop error: not enough arguments for method avgSimilarity: (i: Int, u: Int, train: Array[shared.predictions.Rating], filteredArrUsers: Map[Int,Array[shared.predictions.Rating]], cosineSim: scala.collection.mutable.Map[(Int, Int),Double], globalAvg: Double, alluserAvg: scala.collection.mutable.Map[Int,Double], preProcessSim: scala.collection.mutable.Map[(Int, Int),Double])Double.
+Unspecified value parameters cosineSim, globalAvg, alluserAvg...
+        val simavgdev = avgSimilarity(item ,user, train, mapArrUsers)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2022.03.18 14:03:34 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:166:25: stale bloop error: not enough arguments for method avgSimilarity: (i: Int, u: Int, train: Array[shared.predictions.Rating], filteredArrUsers: Map[Int,Array[shared.predictions.Rating]], cosineSim: scala.collection.mutable.Map[(Int, Int),Double], globalAvg: Double, alluserAvg: scala.collection.mutable.Map[Int,Double], preProcessSim: scala.collection.mutable.Map[(Int, Int),Double])Double.
+Unspecified value parameters cosineSim, globalAvg, alluserAvg...
+        val simavgdev = avgSimilarity(item ,user, train, mapArrUsers)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2022.03.18 14:03:34 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/Personalized.scala:166:25: stale bloop error: not enough arguments for method avgSimilarity: (i: Int, u: Int, train: Array[shared.predictions.Rating], filteredArrUsers: Map[Int,Array[shared.predictions.Rating]], cosineSim: scala.collection.mutable.Map[(Int, Int),Double], globalAvg: Double, alluserAvg: scala.collection.mutable.Map[Int,Double], preProcessSim: scala.collection.mutable.Map[(Int, Int),Double])Double.
+Unspecified value parameters cosineSim, globalAvg, alluserAvg...
+        val simavgdev = avgSimilarity(item ,user, train, mapArrUsers)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2022.03.18 14:03:35 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.18 14:03:35 INFO  time: compiled cs449-m1 in 0.43s
+2022.03.18 14:04:12 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.18 14:04:12 INFO  time: compiled cs449-m1 in 0.43s
+2022.03.18 14:04:16 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.18 14:04:16 INFO  time: compiled cs449-m1 in 0.42s
+2022.03.18 14:04:29 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.18 14:04:29 INFO  time: compiled cs449-m1 in 0.44s
+2022.03.18 14:04:46 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.18 14:04:46 INFO  time: compiled cs449-m1 in 0.42s
+2022.03.18 14:06:07 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.18 14:06:07 INFO  time: compiled cs449-m1 in 0.43s
+2022.03.18 14:06:22 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.18 14:06:22 INFO  time: compiled cs449-m1 in 0.43s
+2022.03.18 14:06:27 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.18 14:06:27 INFO  time: compiled cs449-m1 in 0.43s
+2022.03.18 14:06:36 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.18 14:06:36 INFO  time: compiled cs449-m1 in 0.39s
+mars 18, 2022 2:06:37 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 3053
+mars 18, 2022 2:06:37 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 3054
+2022.03.18 14:06:50 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.18 14:06:50 INFO  time: compiled cs449-m1 in 0.45s
+2022.03.18 14:08:29 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.18 14:08:29 INFO  time: compiled cs449-m1 in 0.4s
+2022.03.18 14:08:38 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.18 14:08:41 INFO  time: compiled cs449-m1 in 2.47s
+2022.03.18 14:11:39 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 14:11:41 INFO  time: compiled cs449-m1 in 1.71s
+2022.03.18 14:12:01 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 14:12:05 INFO  time: compiled cs449-m1 in 3.84s
+2022.03.18 14:28:22 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 14:28:24 INFO  time: compiled cs449-m1 in 2.75s
+mars 18, 2022 2:48:16 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala in Map[Int,<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala, 4315, 4315, 4333)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala in Map[Int,<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala, 4315, 4315, 4335)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala in Map[Int,<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala, 4315, 4315, 4328)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala in Map[Int,<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala, 4315, 4315, 4329)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala in Map[Int,<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala, 4315, 4315, 4330)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala in Map[Int,<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala, 4315, 4315, 4331)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala in Map[Int,Double]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala, 4315, 4315, 4333)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala in (Double, <error>)RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala, 4324, 4324, 4342)
+2022.03.18 14:59:59 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 14:59:59 INFO  time: compiled cs449-m1 in 0.56s
+2022.03.18 15:00:17 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 15:00:17 INFO  time: compiled cs449-m1 in 0.44s
+2022.03.18 15:00:27 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 15:00:27 INFO  time: compiled cs449-m1 in 0.41s
+mars 18, 2022 3:00:37 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$handleError
+GRAVE: String index out of range: -23
+java.lang.StringIndexOutOfBoundsException: String index out of range: -23
+	at java.lang.String.<init>(String.java:196)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1229)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1252)
+	at scala.meta.internal.pc.SignatureHelpProvider$$anonfun$8.apply(SignatureHelpProvider.scala:375)
+	at scala.meta.internal.pc.SignatureHelpProvider$$anonfun$8.apply(SignatureHelpProvider.scala:373)
+	at scala.Option.map(Option.scala:146)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:373)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:198)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:309)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser$$anonfun$visit$2$$anonfun$apply$3.apply(SignatureHelpProvider.scala:339)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser$$anonfun$visit$2$$anonfun$apply$3.apply(SignatureHelpProvider.scala:316)
+	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:733)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:732)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser$$anonfun$visit$2.apply(SignatureHelpProvider.scala:316)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser$$anonfun$visit$2.apply(SignatureHelpProvider.scala:315)
+	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:733)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:732)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:315)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:272)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+2022.03.18 15:01:11 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 15:01:11 INFO  time: compiled cs449-m1 in 0.47s
+2022.03.18 15:01:32 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 15:01:32 INFO  time: compiled cs449-m1 in 0.39s
+2022.03.18 15:01:51 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 15:01:51 INFO  time: compiled cs449-m1 in 0.69s
+2022.03.18 15:04:17 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 15:04:17 INFO  time: compiled cs449-m1 in 0.54s
+2022.03.18 15:09:47 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 15:09:47 INFO  time: compiled cs449-m1 in 0.14s
+2022.03.18 15:15:41 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 15:15:41 INFO  time: compiled cs449-m1 in 0.14s
+2022.03.18 15:16:13 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 15:16:13 INFO  time: compiled cs449-m1 in 0.14s
+2022.03.18 15:17:08 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 15:17:08 INFO  time: compiled cs449-m1 in 0.17s
+2022.03.18 15:19:45 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 15:19:45 INFO  time: compiled cs449-m1 in 0.15s
+2022.03.18 15:20:01 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 15:20:01 INFO  time: compiled cs449-m1 in 0.16s
+2022.03.18 15:20:09 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 15:20:09 INFO  time: compiled cs449-m1 in 0.45s
+2022.03.18 15:20:40 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 15:20:40 INFO  time: compiled cs449-m1 in 0.16s
+2022.03.18 15:20:51 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 15:20:52 INFO  time: compiled cs449-m1 in 1.93s
+2022.03.18 15:20:59 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 15:21:00 INFO  time: compiled cs449-m1 in 1.72s
+2022.03.18 15:21:31 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 15:21:31 INFO  time: compiled cs449-m1 in 0.16s
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala in (Int, Double)RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala, 4352, 4352, 4365)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala in (Int, Double)RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala, 4352, 4352, 4365)
+2022.03.18 15:22:01 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 15:22:01 INFO  time: compiled cs449-m1 in 0.42s
+2022.03.18 15:22:07 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 15:22:07 INFO  time: compiled cs449-m1 in 0.42s
+2022.03.18 15:22:48 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 15:22:48 INFO  time: compiled cs449-m1 in 0.14s
+2022.03.18 15:22:54 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 15:22:54 INFO  time: compiled cs449-m1 in 0.14s
+2022.03.18 15:23:11 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 15:23:11 INFO  time: compiled cs449-m1 in 0.39s
+2022.03.18 15:23:20 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 15:23:20 INFO  time: compiled cs449-m1 in 0.47s
+2022.03.18 15:24:46 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 15:24:46 INFO  time: compiled cs449-m1 in 0.43s
+2022.03.18 15:24:56 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 15:24:56 INFO  time: compiled cs449-m1 in 0.4s
+2022.03.18 15:25:21 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 15:25:21 INFO  time: compiled cs449-m1 in 0.52s
+2022.03.18 15:25:43 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 15:25:43 INFO  time: compiled cs449-m1 in 0.42s
+2022.03.18 15:31:07 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 15:31:07 INFO  time: compiled cs449-m1 in 0.47s
+2022.03.18 15:31:28 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 15:31:28 INFO  time: compiled cs449-m1 in 0.41s
+mars 18, 2022 3:31:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 5140
+2022.03.18 15:31:38 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 15:31:38 INFO  time: compiled cs449-m1 in 0.46s
+2022.03.18 15:32:04 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 15:32:04 INFO  time: compiled cs449-m1 in 0.43s
+2022.03.18 15:32:06 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 15:32:06 INFO  time: compiled cs449-m1 in 0.39s
+2022.03.18 15:32:17 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 15:32:17 INFO  time: compiled cs449-m1 in 0.38s
+2022.03.18 15:32:39 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 15:32:39 INFO  time: compiled cs449-m1 in 0.38s
+2022.03.18 15:35:40 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 15:35:40 INFO  time: compiled cs449-m1 in 0.22s
+2022.03.18 15:35:44 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 15:35:44 INFO  time: compiled cs449-m1 in 0.42s
+2022.03.18 15:36:04 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 15:36:04 INFO  time: compiled cs449-m1 in 0.39s
+2022.03.18 15:36:06 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 15:36:06 INFO  time: compiled cs449-m1 in 0.43s
+2022.03.18 15:36:35 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 15:36:35 INFO  time: compiled cs449-m1 in 0.41s
+2022.03.18 15:37:09 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 15:37:09 INFO  time: compiled cs449-m1 in 0.16s
+2022.03.18 15:42:03 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 15:42:03 INFO  time: compiled cs449-m1 in 0.42s
+2022.03.18 15:42:10 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 15:42:10 INFO  time: compiled cs449-m1 in 0.41s
+2022.03.18 15:43:06 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 15:43:06 INFO  time: compiled cs449-m1 in 0.17s
+2022.03.18 15:43:46 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 15:43:46 INFO  time: compiled cs449-m1 in 0.15s
+mars 18, 2022 3:46:37 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 5970
+2022.03.18 15:49:39 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 15:49:39 INFO  time: compiled cs449-m1 in 0.18s
+2022.03.18 16:04:27 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:04:27 INFO  time: compiled cs449-m1 in 0.19s
+2022.03.18 16:12:31 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:12:31 INFO  time: compiled cs449-m1 in 0.66s
+mars 18, 2022 4:12:42 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 6450
+2022.03.18 16:12:46 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:12:46 INFO  time: compiled cs449-m1 in 0.19s
+2022.03.18 16:13:57 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:13:57 INFO  time: compiled cs449-m1 in 0.23s
+2022.03.18 16:16:22 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:16:22 INFO  time: compiled cs449-m1 in 0.18s
+2022.03.18 16:17:04 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:17:04 INFO  time: compiled cs449-m1 in 0.18s
+2022.03.18 16:17:29 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:17:29 INFO  time: compiled cs449-m1 in 0.15s
+2022.03.18 16:17:43 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:17:43 INFO  time: compiled cs449-m1 in 0.2s
+2022.03.18 16:18:01 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:18:01 INFO  time: compiled cs449-m1 in 0.18s
+2022.03.18 16:18:50 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:18:50 INFO  time: compiled cs449-m1 in 0.6s
+2022.03.18 16:20:21 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:20:21 INFO  time: compiled cs449-m1 in 0.53s
+2022.03.18 16:20:34 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:20:34 INFO  time: compiled cs449-m1 in 0.64s
+2022.03.18 16:20:47 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:20:47 INFO  time: compiled cs449-m1 in 0.53s
+2022.03.18 16:21:13 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:21:13 INFO  time: compiled cs449-m1 in 0.43s
+2022.03.18 16:22:11 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:22:11 INFO  time: compiled cs449-m1 in 0.57s
+mars 18, 2022 4:22:24 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 7320
+2022.03.18 16:23:12 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:23:12 INFO  time: compiled cs449-m1 in 0.59s
+2022.03.18 16:25:00 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:25:00 INFO  time: compiled cs449-m1 in 0.47s
+mars 18, 2022 4:25:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 7465
+mars 18, 2022 4:25:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 7466
+2022.03.18 16:25:02 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:25:02 INFO  time: compiled cs449-m1 in 0.43s
+2022.03.18 16:26:30 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:26:30 INFO  time: compiled cs449-m1 in 0.42s
+2022.03.18 16:27:35 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala:148:7: stale bloop error: type mismatch;
+ found   : Unit
+ required: Array[(Int, Double)]
+      acc.update(index_min, ((elem.user, sim)))
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2022.03.18 16:27:35 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala:148:7: stale bloop error: type mismatch;
+ found   : Unit
+ required: Array[(Int, Double)]
+      acc.update(index_min, ((elem.user, sim)))
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2022.03.18 16:27:37 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala:148:7: stale bloop error: type mismatch;
+ found   : Unit
+ required: Array[(Int, Double)]
+      acc.update(index_min, ((elem.user, sim)))
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2022.03.18 16:27:37 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala:148:7: stale bloop error: type mismatch;
+ found   : Unit
+ required: Array[(Int, Double)]
+      acc.update(index_min, ((elem.user, sim)))
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2022.03.18 16:27:39 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala:148:7: stale bloop error: type mismatch;
+ found   : Unit
+ required: Array[(Int, Double)]
+      acc.update(index_min, ((elem.user, sim)))
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2022.03.18 16:27:39 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala:148:7: stale bloop error: type mismatch;
+ found   : Unit
+ required: Array[(Int, Double)]
+      acc.update(index_min, ((elem.user, sim)))
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2022.03.18 16:27:39 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala:148:7: stale bloop error: type mismatch;
+ found   : Unit
+ required: Array[(Int, Double)]
+      acc.update(index_min, ((elem.user, sim)))
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2022.03.18 16:27:39 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala:148:7: stale bloop error: type mismatch;
+ found   : Unit
+ required: Array[(Int, Double)]
+      acc.update(index_min, ((elem.user, sim)))
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2022.03.18 16:27:40 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala:148:7: stale bloop error: type mismatch;
+ found   : Unit
+ required: Array[(Int, Double)]
+      acc.update(index_min, ((elem.user, sim)))
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2022.03.18 16:27:40 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala:148:7: stale bloop error: type mismatch;
+ found   : Unit
+ required: Array[(Int, Double)]
+      acc.update(index_min, ((elem.user, sim)))
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2022.03.18 16:27:41 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:27:41 INFO  time: compiled cs449-m1 in 0.48s
+2022.03.18 16:28:26 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:28:26 INFO  time: compiled cs449-m1 in 0.43s
+2022.03.18 16:28:34 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:28:34 INFO  time: compiled cs449-m1 in 0.41s
+2022.03.18 16:28:35 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:28:35 INFO  time: compiled cs449-m1 in 0.46s
+2022.03.18 16:29:04 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:29:04 INFO  time: compiled cs449-m1 in 0.45s
+2022.03.18 16:29:56 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:29:56 INFO  time: compiled cs449-m1 in 0.15s
+2022.03.18 16:29:59 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:29:59 INFO  time: compiled cs449-m1 in 0.15s
+2022.03.18 16:32:14 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala:162:3: stale bloop error: ')' expected but '}' found.
+  }
+  ^
+2022.03.18 16:32:14 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala:162:3: stale bloop error: ')' expected but '}' found.
+  }
+  ^
+2022.03.18 16:32:17 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:32:17 INFO  time: compiled cs449-m1 in 0.22s
+2022.03.18 16:32:24 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:32:24 INFO  time: compiled cs449-m1 in 0.17s
+2022.03.18 16:32:32 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:32:32 INFO  time: compiled cs449-m1 in 0.15s
+2022.03.18 16:32:49 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:32:49 INFO  time: compiled cs449-m1 in 0.21s
+2022.03.18 16:34:06 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:34:06 INFO  time: compiled cs449-m1 in 0.16s
+2022.03.18 16:34:34 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:34:34 INFO  time: compiled cs449-m1 in 0.18s
+2022.03.18 16:35:25 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:35:25 INFO  time: compiled cs449-m1 in 0.15s
+2022.03.18 16:37:07 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:37:07 INFO  time: compiled cs449-m1 in 0.19s
+2022.03.18 16:37:31 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:37:31 INFO  time: compiled cs449-m1 in 0.17s
+2022.03.18 16:37:41 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:37:41 INFO  time: compiled cs449-m1 in 0.17s
+2022.03.18 16:38:02 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:38:02 INFO  time: compiled cs449-m1 in 0.16s
+2022.03.18 16:38:06 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:38:06 INFO  time: compiled cs449-m1 in 0.17s
+2022.03.18 16:38:29 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:38:29 INFO  time: compiled cs449-m1 in 0.18s
+2022.03.18 16:39:05 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:39:05 INFO  time: compiled cs449-m1 in 0.19s
+2022.03.18 16:39:31 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:39:31 INFO  time: compiled cs449-m1 in 0.16s
+2022.03.18 16:40:03 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:40:03 INFO  time: compiled cs449-m1 in 0.19s
+2022.03.18 16:40:06 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:40:06 INFO  time: compiled cs449-m1 in 0.17s
+2022.03.18 16:40:10 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:40:10 INFO  time: compiled cs449-m1 in 0.15s
+2022.03.18 16:40:23 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:40:23 INFO  time: compiled cs449-m1 in 0.17s
+mars 18, 2022 4:40:25 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 9306
+2022.03.18 16:40:31 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:40:31 INFO  time: compiled cs449-m1 in 0.18s
+2022.03.18 16:40:34 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:40:34 INFO  time: compiled cs449-m1 in 0.51s
+2022.03.18 16:41:24 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:41:24 INFO  time: compiled cs449-m1 in 0.42s
+2022.03.18 16:41:25 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:41:25 INFO  time: compiled cs449-m1 in 0.45s
+2022.03.18 16:41:36 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:41:36 INFO  time: compiled cs449-m1 in 0.46s
+2022.03.18 16:43:23 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:43:23 INFO  time: compiled cs449-m1 in 0.16s
+2022.03.18 16:43:27 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:43:27 INFO  time: compiled cs449-m1 in 0.61s
+2022.03.18 16:43:34 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:43:36 INFO  time: compiled cs449-m1 in 2.6s
+2022.03.18 16:45:14 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:45:16 INFO  time: compiled cs449-m1 in 2.53s
+2022.03.18 16:46:24 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:46:24 INFO  time: compiled cs449-m1 in 0.43s
+2022.03.18 16:46:34 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:46:37 INFO  time: compiled cs449-m1 in 2.35s
+2022.03.18 16:50:30 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:50:30 INFO  time: compiled cs449-m1 in 0.51s
+2022.03.18 16:51:06 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:51:06 INFO  time: compiled cs449-m1 in 0.4s
+2022.03.18 16:53:53 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:53:53 INFO  time: compiled cs449-m1 in 0.61s
+mars 18, 2022 4:53:54 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 10265
+mars 18, 2022 4:53:54 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 10266
+mars 18, 2022 4:53:54 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 10267
+2022.03.18 16:54:04 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:54:04 INFO  time: compiled cs449-m1 in 0.53s
+2022.03.18 16:54:26 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:54:26 INFO  time: compiled cs449-m1 in 0.39s
+mars 18, 2022 4:54:32 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 10340
+2022.03.18 16:54:53 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:54:53 INFO  time: compiled cs449-m1 in 0.44s
+2022.03.18 16:55:05 INFO  compiling cs449-m1 (1 scala source)
+mars 18, 2022 4:55:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 10411
+2022.03.18 16:55:08 INFO  time: compiled cs449-m1 in 2.07s
+2022.03.18 16:55:08 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala
+2022.03.18 16:55:14 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala
+2022.03.18 16:55:18 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala
+2022.03.18 16:55:18 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala
+2022.03.18 16:55:26 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala
+2022.03.18 16:55:27 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala
+2022.03.18 16:55:27 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala
+2022.03.18 16:55:30 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala
+2022.03.18 16:55:32 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala
+2022.03.18 16:55:32 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala
+2022.03.18 16:55:32 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala
+2022.03.18 16:55:33 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:55:33 INFO  time: compiled cs449-m1 in 0.41s
+2022.03.18 16:55:34 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala
+2022.03.18 16:55:47 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala
+2022.03.18 16:55:48 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala
+2022.03.18 16:55:48 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala
+2022.03.18 16:55:49 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:55:51 INFO  time: compiled cs449-m1 in 1.99s
+2022.03.18 16:56:13 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:56:14 INFO  time: compiled cs449-m1 in 1.75s
+2022.03.18 16:56:58 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:57:00 INFO  time: compiled cs449-m1 in 1.76s
+2022.03.18 16:58:10 INFO  compiling cs449-m1 (1 scala source)
+mars 18, 2022 4:58:12 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 10593
+2022.03.18 16:58:12 INFO  time: compiled cs449-m1 in 1.93s
+2022.03.18 16:58:26 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 16:58:28 INFO  time: compiled cs449-m1 in 1.9s
+2022.03.18 17:00:41 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 17:00:41 INFO  time: compiled cs449-m1 in 0.47s
+2022.03.18 17:00:41 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala
+2022.03.18 17:00:45 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala
+2022.03.18 17:00:46 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala
+2022.03.18 17:00:47 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 17:00:49 INFO  time: compiled cs449-m1 in 1.85s
+2022.03.18 17:04:06 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 17:04:08 INFO  time: compiled cs449-m1 in 1.99s
+2022.03.18 17:06:10 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 17:06:10 INFO  time: compiled cs449-m1 in 0.15s
+2022.03.18 17:07:06 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 17:07:06 INFO  time: compiled cs449-m1 in 0.17s
+2022.03.18 17:07:13 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 17:07:13 INFO  time: compiled cs449-m1 in 0.16s
+2022.03.18 17:07:15 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 17:07:15 INFO  time: compiled cs449-m1 in 0.14s
+2022.03.18 17:07:31 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 17:07:31 INFO  time: compiled cs449-m1 in 0.16s
+2022.03.18 17:07:37 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 17:07:37 INFO  time: compiled cs449-m1 in 0.15s
+2022.03.18 17:07:46 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 17:07:46 INFO  time: compiled cs449-m1 in 0.16s
+2022.03.18 17:08:04 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 17:08:04 INFO  time: compiled cs449-m1 in 0.44s
+2022.03.18 17:08:06 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 17:08:06 INFO  time: compiled cs449-m1 in 0.46s
+2022.03.18 17:10:37 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 17:10:37 INFO  time: compiled cs449-m1 in 0.15s
+2022.03.18 17:10:42 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 17:10:44 INFO  time: compiled cs449-m1 in 1.95s
+2022.03.18 17:11:20 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 17:11:23 INFO  time: compiled cs449-m1 in 2.07s
+2022.03.18 17:12:59 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 17:13:01 INFO  time: compiled cs449-m1 in 2.24s
+2022.03.18 17:13:44 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 17:13:45 INFO  time: compiled cs449-m1 in 1.22s
+2022.03.18 17:13:54 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 17:13:54 INFO  time: compiled cs449-m1 in 0.4s
+2022.03.18 17:14:04 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 17:14:04 INFO  time: compiled cs449-m1 in 0.39s
+2022.03.18 17:14:11 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 17:14:11 INFO  time: compiled cs449-m1 in 0.42s
+2022.03.18 17:14:21 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 17:14:21 INFO  time: compiled cs449-m1 in 0.45s
+2022.03.18 17:14:27 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 17:14:29 INFO  time: compiled cs449-m1 in 1.89s
+mars 18, 2022 5:18:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 11675
+2022.03.18 17:19:05 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 17:19:05 INFO  time: compiled cs449-m1 in 0.14s
+2022.03.18 17:19:25 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 17:19:26 INFO  time: compiled cs449-m1 in 1.75s
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala in scala.collection.mutable.Map[Int,<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala, 1766, 1774, 1791)
+2022.03.18 20:29:05 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 20:29:09 INFO  time: compiled cs449-m1 in 3.98s
+2022.03.18 20:30:20 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 20:30:20 INFO  time: compiled cs449-m1 in 0.18s
+2022.03.18 20:30:25 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 20:30:25 INFO  time: compiled cs449-m1 in 0.16s
+2022.03.18 20:30:31 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 20:30:33 INFO  time: compiled cs449-m1 in 2.24s
+2022.03.18 20:32:25 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 20:32:25 INFO  time: compiled cs449-m1 in 0.23s
+2022.03.18 20:32:33 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 20:32:33 INFO  time: compiled cs449-m1 in 0.87s
+mars 18, 2022 8:32:49 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 12455
+mars 18, 2022 8:32:49 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 12457
+2022.03.18 20:33:31 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 20:33:31 INFO  time: compiled cs449-m1 in 0.56s
+2022.03.18 20:33:34 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala:162:5: stale bloop error: type mismatch;
+ found   : scala.collection.mutable.Map[Int,Array[(Int, Double)]]
+ required: Array[(Int, Double)]
+    kNN_map += (user, res)
+    ^^^^^^^^^^^^^^^^^^^^^^
+2022.03.18 20:33:34 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala:162:5: stale bloop error: type mismatch;
+ found   : scala.collection.mutable.Map[Int,Array[(Int, Double)]]
+ required: Array[(Int, Double)]
+    kNN_map += (user, res)
+    ^^^^^^^^^^^^^^^^^^^^^^
+2022.03.18 20:33:36 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala:162:5: stale bloop error: type mismatch;
+ found   : scala.collection.mutable.Map[Int,Array[(Int, Double)]]
+ required: Array[(Int, Double)]
+    kNN_map += (user, res)
+    ^^^^^^^^^^^^^^^^^^^^^^
+2022.03.18 20:33:36 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala:162:5: stale bloop error: type mismatch;
+ found   : scala.collection.mutable.Map[Int,Array[(Int, Double)]]
+ required: Array[(Int, Double)]
+    kNN_map += (user, res)
+    ^^^^^^^^^^^^^^^^^^^^^^
+2022.03.18 20:33:37 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 20:33:37 INFO  time: compiled cs449-m1 in 0.43s
+2022.03.18 20:33:43 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 20:33:45 INFO  time: compiled cs449-m1 in 2.2s
+2022.03.18 20:33:46 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 20:33:46 INFO  time: compiled cs449-m1 in 0.48s
+2022.03.18 20:50:28 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 20:50:28 INFO  time: compiled cs449-m1 in 0.48s
+2022.03.18 20:50:50 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 20:50:50 INFO  time: compiled cs449-m1 in 0.49s
+2022.03.18 20:51:08 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 20:51:09 INFO  time: compiled cs449-m1 in 1.76s
+2022.03.18 20:55:31 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 20:55:31 INFO  time: compiled cs449-m1 in 0.37s
+2022.03.18 20:55:58 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 20:55:58 INFO  time: compiled cs449-m1 in 0.52s
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala in Array[<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala, 6282, 6282, 6297)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala in Array[<error>]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala, 6282, 6282, 6290)
+something's wrong: no file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala in Array[shared.predictions.package.Rating]RangePosition(file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala, 6282, 6282, 6295)
+2022.03.18 20:56:21 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 20:56:23 INFO  time: compiled cs449-m1 in 2.17s
+2022.03.18 20:57:07 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 20:57:10 INFO  time: compiled cs449-m1 in 2.21s
+mars 18, 2022 9:00:29 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+2022.03.18 21:00:32 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 21:00:36 INFO  time: compiled cs449-m1 in 4.62s
+2022.03.18 21:00:48 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 21:00:51 INFO  time: compiled cs449-m1 in 2.5s
+2022.03.18 21:01:12 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 21:01:14 INFO  time: compiled cs449-m1 in 2.03s
+2022.03.18 21:03:16 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 21:03:19 INFO  time: compiled cs449-m1 in 2.14s
+2022.03.18 21:03:20 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 21:03:22 INFO  time: compiled cs449-m1 in 2.09s
+2022.03.18 21:07:54 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 21:07:54 INFO  time: compiled cs449-m1 in 0.18s
+2022.03.18 21:08:58 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.18 21:08:58 INFO  time: compiled cs449-m1 in 0.15s
+2022.03.18 21:09:40 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.18 21:09:40 INFO  time: compiled cs449-m1 in 0.6s
+mars 18, 2022 9:10:29 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+2022.03.18 21:10:41 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.18 21:10:41 INFO  time: compiled cs449-m1 in 0.15s
+2022.03.18 21:10:46 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.18 21:10:46 INFO  time: compiled cs449-m1 in 0.14s
+2022.03.18 21:10:50 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.18 21:10:50 INFO  time: compiled cs449-m1 in 0.48s
+2022.03.18 21:11:30 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.18 21:11:30 INFO  time: compiled cs449-m1 in 0.46s
+2022.03.18 21:12:03 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.18 21:12:03 INFO  time: compiled cs449-m1 in 0.47s
+mars 18, 2022 9:12:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 13445
+2022.03.18 21:12:21 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.18 21:12:21 INFO  time: compiled cs449-m1 in 0.47s
+mars 18, 2022 9:12:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 13478
+2022.03.18 21:12:36 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.18 21:12:38 INFO  time: compiled cs449-m1 in 2.08s
+2022.03.18 21:18:55 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 21:18:55 INFO  time: compiled cs449-m1 in 0.37s
+2022.03.18 21:19:15 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 21:19:17 INFO  time: compiled cs449-m1 in 2.07s
+2022.03.18 21:20:02 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 21:20:04 INFO  time: compiled cs449-m1 in 2.01s
+mars 18, 2022 9:20:25 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 13725
+2022.03.18 21:20:41 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 21:20:41 INFO  time: compiled cs449-m1 in 0.15s
+2022.03.18 21:21:12 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 21:21:13 INFO  time: compiled cs449-m1 in 1.88s
+2022.03.18 21:22:02 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 21:22:02 INFO  time: compiled cs449-m1 in 0.16s
+mars 18, 2022 9:22:12 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 14024
+2022.03.18 21:24:08 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.18 21:24:08 INFO  time: compiled cs449-m1 in 0.15s
+2022.03.18 21:24:08 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala
+mars 18, 2022 9:25:49 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 14069
+mars 18, 2022 9:26:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 14087
+2022.03.18 21:26:16 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.18 21:26:16 INFO  time: compiled cs449-m1 in 0.19s
+2022.03.18 21:26:23 INFO  compiling cs449-m1 (2 scala sources)
+2022.03.18 21:26:26 INFO  time: compiled cs449-m1 in 2.38s
+2022.03.18 21:28:52 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 21:28:52 INFO  time: compiled cs449-m1 in 0.39s
+2022.03.18 21:29:35 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 21:29:35 INFO  time: compiled cs449-m1 in 0.32s
+2022.03.18 21:30:19 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 21:30:19 INFO  time: compiled cs449-m1 in 0.18s
+2022.03.18 21:30:55 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 21:30:55 INFO  time: compiled cs449-m1 in 0.38s
+mars 18, 2022 9:31:03 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+mars 18, 2022 9:31:04 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+mars 18, 2022 9:31:07 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+mars 18, 2022 9:31:08 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+mars 18, 2022 9:31:08 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+mars 18, 2022 9:31:10 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+mars 18, 2022 9:31:11 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+mars 18, 2022 9:31:12 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+mars 18, 2022 9:31:13 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+mars 18, 2022 9:31:19 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+2022.03.18 21:31:23 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 21:31:23 INFO  time: compiled cs449-m1 in 0.31s
+2022.03.18 21:32:52 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 21:32:52 INFO  time: compiled cs449-m1 in 0.33s
+2022.03.18 21:32:56 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 21:32:56 INFO  time: compiled cs449-m1 in 0.33s
+2022.03.18 21:33:13 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 21:33:15 INFO  time: compiled cs449-m1 in 2.11s
+2022.03.18 21:33:15 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 21:33:18 INFO  time: compiled cs449-m1 in 1.74s
+2022.03.18 21:39:18 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 21:39:18 INFO  time: compiled cs449-m1 in 0.87s
+2022.03.18 21:40:31 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 21:40:36 INFO  time: compiled cs449-m1 in 5.1s
+2022.03.18 21:41:02 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 21:41:04 INFO  time: compiled cs449-m1 in 1.79s
+2022.03.18 21:50:11 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 21:50:14 INFO  time: compiled cs449-m1 in 2.99s
+2022.03.18 21:55:07 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 21:55:09 INFO  time: compiled cs449-m1 in 1.68s
+2022.03.18 21:55:12 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 21:55:14 INFO  time: compiled cs449-m1 in 1.65s
+2022.03.18 21:56:24 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 21:56:24 INFO  time: compiled cs449-m1 in 0.34s
+2022.03.18 21:56:45 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 21:56:47 INFO  time: compiled cs449-m1 in 1.53s
+2022.03.18 22:00:40 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 22:00:42 INFO  time: compiled cs449-m1 in 1.75s
+2022.03.18 22:03:27 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 22:03:28 INFO  time: compiled cs449-m1 in 1.52s
+2022.03.18 22:03:40 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 22:03:41 INFO  time: compiled cs449-m1 in 1.68s
+2022.03.18 22:04:43 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 22:04:45 INFO  time: compiled cs449-m1 in 1.65s
+2022.03.18 22:05:10 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 22:05:12 INFO  time: compiled cs449-m1 in 1.5s
+2022.03.18 22:05:19 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 22:05:20 INFO  time: compiled cs449-m1 in 1.48s
+2022.03.18 22:07:58 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 22:08:00 INFO  time: compiled cs449-m1 in 1.79s
+2022.03.18 22:20:57 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 22:20:59 INFO  time: compiled cs449-m1 in 1.54s
+2022.03.18 22:21:16 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 22:21:18 INFO  time: compiled cs449-m1 in 2.06s
+2022.03.18 22:22:06 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 22:22:08 INFO  time: compiled cs449-m1 in 1.99s
+2022.03.18 22:22:14 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 22:22:14 INFO  time: compiled cs449-m1 in 0.17s
+2022.03.18 22:22:14 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:22:17 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:22:19 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:22:20 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:22:22 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:22:24 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:22:24 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:22:25 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:22:26 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:22:53 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:22:53 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:22:55 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:22:55 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:22:56 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:22:56 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:22:58 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:22:58 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:23:01 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:23:15 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:23:15 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:23:18 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:23:18 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:23:21 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:23:21 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:23:21 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:23:22 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:23:22 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:23:23 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 22:23:23 INFO  time: compiled cs449-m1 in 0.14s
+2022.03.18 22:23:23 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:23:42 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:23:44 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:23:44 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:23:46 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:23:46 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:23:47 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 22:23:48 INFO  time: compiled cs449-m1 in 1.81s
+2022.03.18 22:26:34 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 22:26:34 INFO  time: compiled cs449-m1 in 0.35s
+2022.03.18 22:26:48 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 22:26:48 INFO  time: compiled cs449-m1 in 0.65s
+2022.03.18 22:27:35 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 22:27:35 INFO  time: compiled cs449-m1 in 0.4s
+2022.03.18 22:27:43 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 22:27:45 INFO  time: compiled cs449-m1 in 1.73s
+2022.03.18 22:30:17 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 22:30:17 INFO  time: compiled cs449-m1 in 0.34s
+2022.03.18 22:30:27 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 22:30:27 INFO  time: compiled cs449-m1 in 0.36s
+mars 18, 2022 10:30:28 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 16662
+2022.03.18 22:30:53 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 22:30:53 INFO  time: compiled cs449-m1 in 0.38s
+2022.03.18 22:32:26 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 22:32:26 INFO  time: compiled cs449-m1 in 0.36s
+2022.03.18 22:32:36 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 22:32:36 INFO  time: compiled cs449-m1 in 0.32s
+2022.03.18 22:32:55 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 22:32:57 INFO  time: compiled cs449-m1 in 1.78s
+2022.03.18 22:33:53 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 22:33:53 INFO  time: compiled cs449-m1 in 0.33s
+2022.03.18 22:34:02 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 22:34:06 INFO  time: compiled cs449-m1 in 3.76s
+2022.03.18 22:34:07 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 22:34:09 INFO  time: compiled cs449-m1 in 2.1s
+2022.03.18 22:35:08 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 22:35:10 INFO  time: compiled cs449-m1 in 1.54s
+2022.03.18 22:43:59 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 22:44:02 INFO  time: compiled cs449-m1 in 3.9s
+2022.03.18 22:44:02 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 22:44:04 INFO  time: compiled cs449-m1 in 1.65s
+2022.03.18 22:47:49 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 22:47:51 INFO  time: compiled cs449-m1 in 2.07s
+2022.03.18 22:50:27 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 22:50:29 INFO  time: compiled cs449-m1 in 1.67s
+2022.03.18 22:50:37 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 22:50:39 INFO  time: compiled cs449-m1 in 2.05s
+2022.03.18 22:52:27 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 22:52:27 INFO  time: compiled cs449-m1 in 0.54s
+2022.03.18 22:52:37 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 22:52:38 INFO  time: compiled cs449-m1 in 1.8s
+2022.03.18 22:52:42 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 22:52:42 INFO  time: compiled cs449-m1 in 0.36s
+2022.03.18 22:52:43 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:52:48 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:52:50 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:52:51 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:52:52 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:52:53 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:52:55 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:52:56 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:52:57 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:52:59 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+mars 18, 2022 10:52:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 17285
+2022.03.18 22:52:59 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:53:01 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:53:02 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:53:04 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:53:04 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:53:05 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 22:53:05 INFO  time: compiled cs449-m1 in 0.19s
+2022.03.18 22:53:06 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:53:08 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:53:09 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:53:09 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:53:09 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:53:09 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.18 22:53:10 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 22:53:12 INFO  time: compiled cs449-m1 in 1.72s
+mars 18, 2022 10:59:03 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 17443
+2022.03.18 23:03:09 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 23:03:10 INFO  time: compiled cs449-m1 in 1.8s
+2022.03.18 23:10:54 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 23:10:54 INFO  time: compiled cs449-m1 in 0.39s
+2022.03.18 23:10:56 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 23:10:56 INFO  time: compiled cs449-m1 in 0.4s
+2022.03.18 23:11:42 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 23:11:42 INFO  time: compiled cs449-m1 in 0.35s
+2022.03.18 23:11:55 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 23:11:55 INFO  time: compiled cs449-m1 in 0.42s
+2022.03.18 23:14:11 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala:151:5: stale bloop error: reassignment to val
+    alluserAvg_ = Map()
+    ^^^^^^^^^^^^^^^^^^^
+2022.03.18 23:14:11 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala:159:39: stale bloop error: value _2 is not a member of Nothing
+  val timings = measurements.map(t => t._2)
+                                      ^^^^
+2022.03.18 23:14:11 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala:88:7: stale bloop error: value += is not a member of scala.collection.immutable.Map[Int,Double]
+      alluserAvg_ += ((user, tmp))
+      ^^^^^^^^^^^^^^
+2022.03.18 23:14:11 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala:151:5: stale bloop error: reassignment to val
+    alluserAvg_ = Map()
+    ^^^^^^^^^^^^^^^^^^^
+2022.03.18 23:14:11 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala:159:39: stale bloop error: value _2 is not a member of Nothing
+  val timings = measurements.map(t => t._2)
+                                      ^^^^
+2022.03.18 23:14:11 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala:88:7: stale bloop error: value += is not a member of scala.collection.immutable.Map[Int,Double]
+      alluserAvg_ += ((user, tmp))
+      ^^^^^^^^^^^^^^
+2022.03.18 23:14:12 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala:151:5: stale bloop error: reassignment to val
+    alluserAvg_ = Map()
+    ^^^^^^^^^^^^^^^^^^^
+2022.03.18 23:14:12 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala:159:39: stale bloop error: value _2 is not a member of Nothing
+  val timings = measurements.map(t => t._2)
+                                      ^^^^
+2022.03.18 23:14:12 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala:88:7: stale bloop error: value += is not a member of scala.collection.immutable.Map[Int,Double]
+      alluserAvg_ += ((user, tmp))
+      ^^^^^^^^^^^^^^
+2022.03.18 23:14:12 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala:151:5: stale bloop error: reassignment to val
+    alluserAvg_ = Map()
+    ^^^^^^^^^^^^^^^^^^^
+2022.03.18 23:14:12 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala:159:39: stale bloop error: value _2 is not a member of Nothing
+  val timings = measurements.map(t => t._2)
+                                      ^^^^
+2022.03.18 23:14:12 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala:88:7: stale bloop error: value += is not a member of scala.collection.immutable.Map[Int,Double]
+      alluserAvg_ += ((user, tmp))
+      ^^^^^^^^^^^^^^
+2022.03.18 23:14:15 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 23:14:15 INFO  time: compiled cs449-m1 in 0.42s
+mars 18, 2022 11:14:55 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+2022.03.18 23:14:58 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 23:14:58 INFO  time: compiled cs449-m1 in 0.4s
+mars 18, 2022 11:15:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 18119
+2022.03.18 23:15:11 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 23:15:11 INFO  time: compiled cs449-m1 in 0.34s
+2022.03.18 23:15:25 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 23:15:25 INFO  time: compiled cs449-m1 in 0.35s
+2022.03.18 23:15:31 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 23:15:31 INFO  time: compiled cs449-m1 in 0.36s
+2022.03.18 23:15:42 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 23:15:44 INFO  time: compiled cs449-m1 in 1.84s
+2022.03.18 23:17:27 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 23:17:27 INFO  time: compiled cs449-m1 in 0.42s
+2022.03.18 23:20:11 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 23:20:11 INFO  time: compiled cs449-m1 in 0.4s
+2022.03.18 23:20:18 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 23:20:20 INFO  time: compiled cs449-m1 in 1.89s
+2022.03.18 23:20:35 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 23:20:35 INFO  time: compiled cs449-m1 in 0.35s
+2022.03.18 23:20:40 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 23:20:40 INFO  time: compiled cs449-m1 in 0.38s
+2022.03.18 23:21:02 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 23:21:02 INFO  time: compiled cs449-m1 in 0.39s
+2022.03.18 23:21:20 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 23:21:20 INFO  time: compiled cs449-m1 in 0.18s
+2022.03.18 23:21:24 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 23:21:24 INFO  time: compiled cs449-m1 in 0.37s
+2022.03.18 23:21:54 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 23:21:54 INFO  time: compiled cs449-m1 in 0.38s
+2022.03.18 23:22:13 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 23:22:13 INFO  time: compiled cs449-m1 in 0.38s
+2022.03.18 23:24:17 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 23:24:17 INFO  time: compiled cs449-m1 in 0.14s
+2022.03.18 23:25:34 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 23:25:34 INFO  time: compiled cs449-m1 in 0.35s
+2022.03.18 23:27:19 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 23:27:19 INFO  time: compiled cs449-m1 in 0.38s
+2022.03.18 23:27:29 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 23:27:31 INFO  time: compiled cs449-m1 in 1.96s
+2022.03.18 23:28:00 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 23:28:00 INFO  time: compiled cs449-m1 in 0.36s
+2022.03.18 23:28:33 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 23:28:33 INFO  time: compiled cs449-m1 in 0.13s
+2022.03.18 23:28:52 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 23:28:52 INFO  time: compiled cs449-m1 in 0.36s
+2022.03.18 23:29:01 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 23:29:01 INFO  time: compiled cs449-m1 in 0.35s
+2022.03.18 23:29:07 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 23:29:07 INFO  time: compiled cs449-m1 in 0.39s
+2022.03.18 23:29:21 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 23:29:21 INFO  time: compiled cs449-m1 in 0.14s
+2022.03.18 23:29:25 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 23:29:25 INFO  time: compiled cs449-m1 in 0.34s
+2022.03.18 23:29:33 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 23:29:33 INFO  time: compiled cs449-m1 in 0.35s
+2022.03.18 23:30:07 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 23:30:07 INFO  time: compiled cs449-m1 in 0.37s
+2022.03.18 23:30:35 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 23:30:35 INFO  time: compiled cs449-m1 in 0.38s
+2022.03.18 23:31:35 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 23:31:35 INFO  time: compiled cs449-m1 in 0.37s
+2022.03.18 23:32:18 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 23:32:18 INFO  time: compiled cs449-m1 in 0.39s
+2022.03.18 23:32:56 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 23:32:56 INFO  time: compiled cs449-m1 in 0.38s
+2022.03.18 23:33:07 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 23:33:07 INFO  time: compiled cs449-m1 in 0.34s
+2022.03.18 23:33:45 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 23:33:45 INFO  time: compiled cs449-m1 in 0.35s
+2022.03.18 23:33:57 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 23:33:57 INFO  time: compiled cs449-m1 in 0.34s
+2022.03.18 23:35:08 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 23:35:08 INFO  time: compiled cs449-m1 in 0.35s
+2022.03.18 23:35:30 INFO  compiling cs449-m1 (1 scala source)
+2022.03.18 23:35:32 INFO  time: compiled cs449-m1 in 1.85s
+mars 19, 2022 8:53:19 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 19732
+mars 19, 2022 8:53:19 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 19733

@@ -1,5 +1,6 @@
 package shared
 import scala.collection.mutable
+import scala.math._
 
 package object predictions
 {
@@ -45,13 +46,26 @@ package object predictions
                 case None => Rating(-1, -1, -1)})
   }
 
-  var alluserAvg : mutable.Map[Int, Double] = mutable.Map()
-  var allitemAvg : mutable.Map[Int, Double] = mutable.Map()
-  var allitemDev : mutable.Map[Int, Double] = mutable.Map()
-  var cosineSim : mutable.Map[(Int, Int),Double] = mutable.Map()
-  var preProcessSim : mutable.Map[(Int, Int),Double] = mutable.Map()
+  
+  var alluserAvg_ : mutable.Map[Int, Double] = mutable.Map()
+  var allitemAvg_ : mutable.Map[Int, Double] = mutable.Map()
+  var allitemDev_ : mutable.Map[Int, Double] = mutable.Map()
+
+
+
+
+
+
+  var alluserAvg: mutable.Map[Int, Double] = mutable.Map()
+  var allitemAvg: mutable.Map[Int, Double] = mutable.Map()
+  var allitemDev: mutable.Map[Int, Double] = mutable.Map()
+  var cosineSim: mutable.Map[(Int, Int),Double] = mutable.Map()
+  var preProcessSim: mutable.Map[(Int, Int),Double] = mutable.Map()
   var commonItemMap: mutable.Map[(Int, Int),Array[Int]] = mutable.Map()
-  var mapArrUsers : Map[Int, Array[Rating]] =  Map()
+  var jaccardSim: mutable.Map[(Int, Int),Double] = mutable.Map()
+  var kNN_map: mutable.Map[Int, Array[(Int, Double)]] = mutable.Map()
+  
+  var mapArrUsers: Map[Int, Array[Rating]] =  Map()
 
   var globalAvg = 0.0
 
@@ -111,7 +125,8 @@ package object predictions
     (r - useravg) / scale(r, useravg)
   }
 
-  def itemAvgDev(item : Int, train : Array[Rating], allitemDev : mutable.Map[Int, Double], globalAvg : Double, alluserAvg : mutable.Map[Int, Double]): Double = {
+  def itemAvgDev(item : Int, train : Array[Rating], allitemDev : mutable.Map[Int, Double], globalAvg : Double, 
+  alluserAvg : mutable.Map[Int, Double]): Double = {
     if (allitemDev.get(item) != None) 
       allitemDev(item)
     else {
@@ -122,26 +137,212 @@ package object predictions
     }
   }
 
-  def predictedBaseline(user: Int, item : Int, train : Array[Rating], allitemDev : mutable.Map[Int, Double], globalAvg : Double, alluserAvg : mutable.Map[Int, Double], allitemAvg : mutable.Map[Int, Double]): Double = {
+  def predictedBaseline(user: Int, item : Int, train : Array[Rating], allitemDev : mutable.Map[Int, Double], globalAvg : Double, 
+  alluserAvg : mutable.Map[Int, Double], allitemAvg : mutable.Map[Int, Double]): Double = {
     val useravg = userAvg(user, train, alluserAvg, globalAvg)
-    if (useravg == globalAvg) {
-      globalAvg
-    }
-    else{
-      val itemavg = itemAvg(item, train, allitemAvg, globalAvg)
-      if (itemavg == globalAvg) {
-        useravg
-      }
-      else {
+    if (useravg == globalAvg) globalAvg
+    else if (itemAvg(item, train, allitemAvg, globalAvg) == globalAvg) useravg
+    else {
         val avgdev = itemAvgDev(item, train, allitemDev, globalAvg, alluserAvg)
-        if (avgdev == 0) {
-          useravg
-        }
+        if (avgdev == 0) useravg
         else
           useravg + avgdev * scale((useravg + avgdev), useravg)
-      }
     }
   }
+
+  ////
+  // Use for Personalized
+  ////
+
+  def common_item(arrU : Array[Rating], arrV : Array[Rating]): Array[Int] = {
+    val itemIn2 = arrV.map(_.item).distinct
+    val common_item_Ur = arrU.filter(elem => itemIn2.contains(elem.item)).map(_.item)
+    common_item_Ur
+  }
+
+  def filteredArrAllUsers(train : Array[Rating]): Map[Int, Array[Rating]] =  {
+    train.groupBy(elem => elem.user)
+  }
+
+  def cosineSimilarity_withfullformula(u: Int, v: Int, train : Array[Rating], alluserAvg : mutable.Map[Int, Double], 
+  cosineSim : mutable.Map[(Int, Int),Double], globalAvg : Double): Double = {
+    cosineSim.getOrElse((u, v), {
+    val arrFiltered_u = train.filter(_.user == u )
+    val arrFiltered_v = train.filter(_.user == v )
+
+    val item_commun = common_item(arrFiltered_u , arrFiltered_v )
+
+    var tmp = 0.0
+    if(item_commun.isEmpty) {
+      cosineSim += (((u,v), tmp))
+      tmp
+    }
+    else {
+      val uAvg = userAvg(u, train, alluserAvg, globalAvg)
+      val vAvg = userAvg(v, train, alluserAvg, globalAvg)
+
+      val top = item_commun.foldLeft(0.0){(acc, x) =>
+        val normDevU = dev((arrFiltered_u.filter(_.item == x)).head.rating, uAvg)
+        val normDevV = dev((arrFiltered_v.filter(_.item == x)).head.rating, vAvg)
+        acc + normDevU * normDevV
+        }
+
+      val bottom = (sqrt(arrFiltered_u.foldLeft(0.0){(acc, elem) =>
+        val normDevU = dev(elem.rating, uAvg)
+        acc + normDevU * normDevU
+        }) * sqrt(arrFiltered_v.foldLeft(0.0){(acc, elem2) =>
+        val normDevV = dev(elem2.rating, vAvg)
+        acc + normDevV * normDevV
+        }))
+
+      tmp = top / bottom
+      cosineSim += (((u,v), tmp))
+      tmp
+      }
+    })
+  }
+
+  def jaccardSimilarity(u: Int, v: Int, filteredArrUsers: Map[Int, Array[Rating]], train: Array[Rating], 
+  alluserAvg : mutable.Map[Int, Double], globalAvg : Double, jaccardSim : mutable.Map[(Int, Int),Double]): Double = {
+    jaccardSim.getOrElse((u, v), {
+    val arrFiltered_u = filteredArrUsers.getOrElse(u, train.filter(x => x.user == u ))
+    val arrFiltered_v = filteredArrUsers.getOrElse(v, train.filter(x => x.user == v ))
+
+    val item_commun = common_item(arrFiltered_u , arrFiltered_v )
+
+    var tmp = 0.0
+    if(item_commun.isEmpty) {
+      jaccardSim += (((u,v), tmp))
+      jaccardSim += (((v,u), tmp))
+      tmp
+    }
+    else {
+      val uAvg = userAvg(u, train, alluserAvg, globalAvg)
+      val vAvg = userAvg(v, train, alluserAvg, globalAvg)
+
+      val top = item_commun.foldLeft(0.0){(acc, x) =>
+        val normDevU = dev((arrFiltered_u.filter(_.item == x)).head.rating, uAvg)
+        val normDevV = dev((arrFiltered_v.filter(_.item == x)).head.rating, vAvg)
+        acc + normDevU * normDevV
+        }
+      
+      val bottom = (arrFiltered_u.foldLeft(0.0){(acc, elem) =>
+        val normDevU = dev(elem.rating, uAvg)
+        acc + normDevU
+        } + arrFiltered_v.foldLeft(0.0){(acc, elem2) =>
+        val normDevV = dev(elem2.rating, vAvg)
+        acc + normDevV * normDevV
+        } - top)
+      
+      tmp = top / bottom
+      jaccardSim += (((u,v), tmp))
+      jaccardSim += (((v,u), tmp))
+      tmp
+      }
+    })
+  }
+
+  def preProcess(i: Int,u: Int, arrFiltered : Array[Rating], train : Array[Rating], globalAvg : Double, 
+  alluserAvg : mutable.Map[Int, Double], preProcessSim : mutable.Map[(Int, Int),Double]): Double = {
+    preProcessSim.getOrElse((u, i),{
+      var tmp = 0.0
+      if (arrFiltered.isEmpty){
+        preProcessSim += (((u,i), tmp))
+        tmp
+      }
+      else {
+        val rating_u_i = arrFiltered.filter(_.item == i).apply(0).rating
+        val top = dev(rating_u_i, userAvg(u, train, alluserAvg, globalAvg)) 
+        val bottom = arrFiltered.foldLeft(0.0){(acc, x) =>
+          val normDevU = dev(x.rating, userAvg(u, train, alluserAvg, globalAvg))
+          acc + normDevU * normDevU
+        }
+        tmp = top / sqrt(bottom)
+        preProcessSim += (((u,i), tmp))
+        tmp
+      }
+    })
+  }
+
+  def preProcess_Similarity(u: Int, v: Int, filteredArrUsers: Map[Int, Array[Rating]], cosineSim: mutable.Map[(Int, Int),Double], 
+  train: Array[Rating], globalAvg: Double, alluserAvg: mutable.Map[Int, Double], preProcessSim: mutable.Map[(Int, Int),Double]): Double = { 
+    cosineSim.getOrElse((u, v), {
+    val arrFiltered_u = filteredArrUsers.getOrElse(u, train.filter(x => x.user == u ))
+    val arrFiltered_v = filteredArrUsers.getOrElse(v, train.filter(x => x.user == v ))
+
+    val item_commun = common_item(arrFiltered_u, arrFiltered_v)
+    var tmp = 0.0
+    if(item_commun.isEmpty){
+      cosineSim += (((u,v), tmp))
+      cosineSim += (((v,u), tmp))
+      tmp
+    }
+    else
+        tmp = item_commun.foldLeft(0.0){(acc, item) => acc + (preProcess(item, u, arrFiltered_u, train, globalAvg, 
+        alluserAvg, preProcessSim) * preProcess(item, v, arrFiltered_v, train, globalAvg, alluserAvg, preProcessSim))}
+        cosineSim += (((u,v), tmp))
+        cosineSim += (((v,u), tmp))
+        tmp
+    })
+  }
+
+  def avgSimilarity(i: Int, u: Int, train: Array[Rating], filteredArrUsers: Map[Int, Array[Rating]], 
+  cosineSim: mutable.Map[(Int, Int),Double], globalAvg: Double, alluserAvg: mutable.Map[Int, Double], preProcessSim: mutable.Map[(Int, Int),Double]): Double = {
+    val arrFiltered = train.filter(_.item == i)
+    if(arrFiltered.isEmpty) 0
+    else {
+      val res = arrFiltered.foldLeft((0.0, 0.0)){(acc, x) =>
+        val sim = preProcess_Similarity(u, x.user, filteredArrUsers, cosineSim, train, globalAvg, alluserAvg, preProcessSim)
+        (acc._1 + (sim * dev(x.rating, userAvg(x.user, train, alluserAvg, globalAvg))), acc._2 + sim.abs)
+        }
+      res._1 / res._2
+    }  
+  }
+
+  def jaccard_avgSimilarity(i: Int, u: Int, train: Array[Rating], filteredArrUsers: Map[Int, Array[Rating]], globalAvg: Double, 
+  alluserAvg: mutable.Map[Int, Double], jaccardSim : mutable.Map[(Int, Int),Double]): Double = {
+    val arrFiltered = train.filter(_.item == i)
+    if(arrFiltered.isEmpty) 0
+    else {
+      val res = arrFiltered.foldLeft((0.0, 0.0)){(acc, x) =>
+        val sim = jaccardSimilarity(u, x.user, filteredArrUsers, train, alluserAvg, globalAvg, jaccardSim)
+        (acc._1 + (sim * dev(x.rating, userAvg(x.user, train, alluserAvg, globalAvg))), acc._2 + sim.abs)
+        }
+      res._1 / res._2
+    }  
+  }
+
+  def predictedPersonalized(user: Int, item : Int, train: Array[Rating], alluserAvg: mutable.Map[Int, Double], globalAvg: Double, 
+  allitemAvg : mutable.Map[Int, Double], filteredArrUsers: Map[Int, Array[Rating]], cosineSim: mutable.Map[(Int, Int),Double], preProcessSim : mutable.Map[(Int, Int),Double]): Double = {
+    val useravg = userAvg(user, train, alluserAvg, globalAvg)
+    if (useravg == globalAvg) globalAvg
+    else if (itemAvg(item, train, allitemAvg, globalAvg) == globalAvg) useravg
+    else {
+      val simavgdev = avgSimilarity(item ,user, train, filteredArrUsers, cosineSim, globalAvg, alluserAvg, preProcessSim)
+      if (simavgdev == 0) useravg
+      else
+        useravg + simavgdev * scale((useravg + simavgdev), useravg)
+    }
+  }
+
+   def jaccard_predictedPersonalized(user: Int, item : Int, train: Array[Rating], alluserAvg: mutable.Map[Int, Double], globalAvg: Double, 
+  allitemAvg : mutable.Map[Int, Double], filteredArrUsers: Map[Int, Array[Rating]], jaccardSim: mutable.Map[(Int, Int),Double], preProcessSim : mutable.Map[(Int, Int),Double]): Double = {
+    val useravg = userAvg(user, train, alluserAvg, globalAvg)
+    if (useravg == globalAvg) globalAvg
+    else if (itemAvg(item, train, allitemAvg, globalAvg) == globalAvg) useravg
+    else {
+      val simavgdev = jaccard_avgSimilarity(item ,user, train, filteredArrUsers, globalAvg, alluserAvg, jaccardSim)
+      if (simavgdev == 0) useravg
+      else
+      useravg + simavgdev * scale((useravg + simavgdev), useravg)
+    }
+  }
+
+
+  ////
+  // Predictor & MAE
+  ////
+
 
   def predictorGlobal(train : Array[Rating]): (Int, Int) => Double = {
     (user, item) => globalAvg
@@ -158,6 +359,15 @@ package object predictions
   def predictorBaseline(train : Array[Rating]): (Int, Int) => Double = {
     (user, item) => predictedBaseline(user, item, train, allitemDev, globalAvg, alluserAvg, allitemAvg)
   }
+
+  def predictorCosine(train : Array[Rating]): (Int, Int) => Double = {
+    (user, item) => predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
+  }
+
+  def predictorJaccard(train : Array[Rating]): (Int, Int) => Double = {
+    (user, item) => jaccard_predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers , jaccardSim, preProcessSim)
+  }
+
 
   def mae(test: Array[Rating], train: Array[Rating], prediction_method: Array[Rating] => ((Int, Int) => Double)): Double = {
     mean_(test.map(elem => (prediction_method(train)(elem.user, elem.item) - elem.rating).abs))
