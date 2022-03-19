@@ -50,7 +50,7 @@ object DistributedBaseline extends App {
   val maxItem = List(train.map(elem => elem.item).max(), test.map(elem => elem.item).max()).max
 
 
-  
+  /*
   //var alluserAvg_ : Map[Int, Double] = Map()
   //var allitemAvg_ : Map[Int, Double] = Map()
   //var allitemDev_ : Map[Int, Double] = Map()
@@ -241,6 +241,6 @@ object DistributedBaseline extends App {
 
   println("")
   spark.close()
-  
+  */
 }
 

@@ -8314,3 +8314,1104 @@ Caused by: java.nio.file.FileSystemNotFoundException: Provider "git" not install
 	at scala.meta.internal.metals.MetalsLanguageServer.didFocus(MetalsLanguageServer.scala:1118)
 	... 15 more
 
+2022.03.19 13:10:03 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.19 13:10:03 INFO  time: compiled cs449-m1 in 0.58s[0m
+2022.03.19 13:10:09 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.19 13:10:09 INFO  time: compiled cs449-m1 in 0.52s[0m
+2022.03.19 13:10:12 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.19 13:10:12 INFO  time: compiled cs449-m1 in 0.48s[0m
+2022.03.19 13:10:26 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala:60:18: stale bloop error: not found: value data
+  val userArr = (data: RDD[Rating]) average_key_value(data.map(x => (x.user, (x.rating, 1)))).reduceByKey((x, y) => (x._1 + y._1, x._2 + y._2)).mapValues(x => x._1 / x._2)
+                 ^^^^[0m
+2022.03.19 13:10:26 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala:60:17: stale bloop error: value average_key_value is not a member of org.apache.spark.rdd.RDD[shared.predictions.Rating]
+  val userArr = (data: RDD[Rating]) average_key_value(data.map(x => (x.user, (x.rating, 1)))).reduceByKey((x, y) => (x._1 + y._1, x._2 + y._2)).mapValues(x => x._1 / x._2)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+2022.03.19 13:10:26 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala:60:55: stale bloop error: not found: value data
+  val userArr = (data: RDD[Rating]) average_key_value(data.map(x => (x.user, (x.rating, 1)))).reduceByKey((x, y) => (x._1 + y._1, x._2 + y._2)).mapValues(x => x._1 / x._2)
+                                                      ^^^^[0m
+2022.03.19 13:10:26 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala:61:18: stale bloop error: not found: value data
+  val itemArr = (data: RDD[Rating]) average_key_value(data.map(x => (x.item, (x.rating, 1)))).reduceByKey((x, y) => (x._1 + y._1, x._2 + y._2)).mapValues(x => x._1 / x._2)
+                 ^^^^[0m
+2022.03.19 13:10:26 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala:61:17: stale bloop error: value average_key_value is not a member of org.apache.spark.rdd.RDD[shared.predictions.Rating]
+  val itemArr = (data: RDD[Rating]) average_key_value(data.map(x => (x.item, (x.rating, 1)))).reduceByKey((x, y) => (x._1 + y._1, x._2 + y._2)).mapValues(x => x._1 / x._2)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+2022.03.19 13:10:26 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala:61:55: stale bloop error: not found: value data
+  val itemArr = (data: RDD[Rating]) average_key_value(data.map(x => (x.item, (x.rating, 1)))).reduceByKey((x, y) => (x._1 + y._1, x._2 + y._2)).mapValues(x => x._1 / x._2)
+                                                      ^^^^[0m
+2022.03.19 13:10:26 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala:70:26: stale bloop error: not found: value ratings
+        val deviations = ratings.map(x => (x.user, x))
+                         ^^^^^^^[0m
+2022.03.19 13:10:26 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala:60:18: stale bloop error: not found: value data
+  val userArr = (data: RDD[Rating]) average_key_value(data.map(x => (x.user, (x.rating, 1)))).reduceByKey((x, y) => (x._1 + y._1, x._2 + y._2)).mapValues(x => x._1 / x._2)
+                 ^^^^[0m
+2022.03.19 13:10:26 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala:60:17: stale bloop error: value average_key_value is not a member of org.apache.spark.rdd.RDD[shared.predictions.Rating]
+  val userArr = (data: RDD[Rating]) average_key_value(data.map(x => (x.user, (x.rating, 1)))).reduceByKey((x, y) => (x._1 + y._1, x._2 + y._2)).mapValues(x => x._1 / x._2)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+2022.03.19 13:10:26 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala:60:55: stale bloop error: not found: value data
+  val userArr = (data: RDD[Rating]) average_key_value(data.map(x => (x.user, (x.rating, 1)))).reduceByKey((x, y) => (x._1 + y._1, x._2 + y._2)).mapValues(x => x._1 / x._2)
+                                                      ^^^^[0m
+2022.03.19 13:10:26 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala:61:18: stale bloop error: not found: value data
+  val itemArr = (data: RDD[Rating]) average_key_value(data.map(x => (x.item, (x.rating, 1)))).reduceByKey((x, y) => (x._1 + y._1, x._2 + y._2)).mapValues(x => x._1 / x._2)
+                 ^^^^[0m
+2022.03.19 13:10:26 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala:61:17: stale bloop error: value average_key_value is not a member of org.apache.spark.rdd.RDD[shared.predictions.Rating]
+  val itemArr = (data: RDD[Rating]) average_key_value(data.map(x => (x.item, (x.rating, 1)))).reduceByKey((x, y) => (x._1 + y._1, x._2 + y._2)).mapValues(x => x._1 / x._2)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+2022.03.19 13:10:26 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala:61:55: stale bloop error: not found: value data
+  val itemArr = (data: RDD[Rating]) average_key_value(data.map(x => (x.item, (x.rating, 1)))).reduceByKey((x, y) => (x._1 + y._1, x._2 + y._2)).mapValues(x => x._1 / x._2)
+                                                      ^^^^[0m
+2022.03.19 13:10:26 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala:70:26: stale bloop error: not found: value ratings
+        val deviations = ratings.map(x => (x.user, x))
+                         ^^^^^^^[0m
+2022.03.19 13:10:31 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala:60:18: stale bloop error: not found: value data
+  val userArr = (data: RDD[Rating]) average_key_value(data.map(x => (x.user, (x.rating, 1)))).reduceByKey((x, y) => (x._1 + y._1, x._2 + y._2)).mapValues(x => x._1 / x._2)
+                 ^^^^[0m
+2022.03.19 13:10:31 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala:60:17: stale bloop error: value average_key_value is not a member of org.apache.spark.rdd.RDD[shared.predictions.Rating]
+  val userArr = (data: RDD[Rating]) average_key_value(data.map(x => (x.user, (x.rating, 1)))).reduceByKey((x, y) => (x._1 + y._1, x._2 + y._2)).mapValues(x => x._1 / x._2)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+2022.03.19 13:10:31 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala:60:55: stale bloop error: not found: value data
+  val userArr = (data: RDD[Rating]) average_key_value(data.map(x => (x.user, (x.rating, 1)))).reduceByKey((x, y) => (x._1 + y._1, x._2 + y._2)).mapValues(x => x._1 / x._2)
+                                                      ^^^^[0m
+2022.03.19 13:10:31 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala:61:18: stale bloop error: not found: value data
+  val itemArr = (data: RDD[Rating]) average_key_value(data.map(x => (x.item, (x.rating, 1)))).reduceByKey((x, y) => (x._1 + y._1, x._2 + y._2)).mapValues(x => x._1 / x._2)
+                 ^^^^[0m
+2022.03.19 13:10:31 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala:61:17: stale bloop error: value average_key_value is not a member of org.apache.spark.rdd.RDD[shared.predictions.Rating]
+  val itemArr = (data: RDD[Rating]) average_key_value(data.map(x => (x.item, (x.rating, 1)))).reduceByKey((x, y) => (x._1 + y._1, x._2 + y._2)).mapValues(x => x._1 / x._2)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+2022.03.19 13:10:31 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala:61:55: stale bloop error: not found: value data
+  val itemArr = (data: RDD[Rating]) average_key_value(data.map(x => (x.item, (x.rating, 1)))).reduceByKey((x, y) => (x._1 + y._1, x._2 + y._2)).mapValues(x => x._1 / x._2)
+                                                      ^^^^[0m
+2022.03.19 13:10:31 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala:70:26: stale bloop error: not found: value ratings
+        val deviations = ratings.map(x => (x.user, x))
+                         ^^^^^^^[0m
+2022.03.19 13:10:31 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala:60:18: stale bloop error: not found: value data
+  val userArr = (data: RDD[Rating]) average_key_value(data.map(x => (x.user, (x.rating, 1)))).reduceByKey((x, y) => (x._1 + y._1, x._2 + y._2)).mapValues(x => x._1 / x._2)
+                 ^^^^[0m
+2022.03.19 13:10:31 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala:60:17: stale bloop error: value average_key_value is not a member of org.apache.spark.rdd.RDD[shared.predictions.Rating]
+  val userArr = (data: RDD[Rating]) average_key_value(data.map(x => (x.user, (x.rating, 1)))).reduceByKey((x, y) => (x._1 + y._1, x._2 + y._2)).mapValues(x => x._1 / x._2)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+2022.03.19 13:10:31 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala:60:55: stale bloop error: not found: value data
+  val userArr = (data: RDD[Rating]) average_key_value(data.map(x => (x.user, (x.rating, 1)))).reduceByKey((x, y) => (x._1 + y._1, x._2 + y._2)).mapValues(x => x._1 / x._2)
+                                                      ^^^^[0m
+2022.03.19 13:10:31 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala:61:18: stale bloop error: not found: value data
+  val itemArr = (data: RDD[Rating]) average_key_value(data.map(x => (x.item, (x.rating, 1)))).reduceByKey((x, y) => (x._1 + y._1, x._2 + y._2)).mapValues(x => x._1 / x._2)
+                 ^^^^[0m
+2022.03.19 13:10:31 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala:61:17: stale bloop error: value average_key_value is not a member of org.apache.spark.rdd.RDD[shared.predictions.Rating]
+  val itemArr = (data: RDD[Rating]) average_key_value(data.map(x => (x.item, (x.rating, 1)))).reduceByKey((x, y) => (x._1 + y._1, x._2 + y._2)).mapValues(x => x._1 / x._2)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+2022.03.19 13:10:31 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala:61:55: stale bloop error: not found: value data
+  val itemArr = (data: RDD[Rating]) average_key_value(data.map(x => (x.item, (x.rating, 1)))).reduceByKey((x, y) => (x._1 + y._1, x._2 + y._2)).mapValues(x => x._1 / x._2)
+                                                      ^^^^[0m
+2022.03.19 13:10:31 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala:70:26: stale bloop error: not found: value ratings
+        val deviations = ratings.map(x => (x.user, x))
+                         ^^^^^^^[0m
+2022.03.19 13:10:32 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.19 13:10:34 INFO  time: compiled cs449-m1 in 2.15s[0m
+2022.03.19 13:37:19 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.19 13:37:19 INFO  time: compiled cs449-m1 in 0.41s[0m
+2022.03.19 13:37:35 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.19 13:37:35 INFO  time: compiled cs449-m1 in 0.4s[0m
+2022.03.19 13:42:45 ERROR code navigation does not work for the file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala' because the SemanticDB file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/.bloop/cs449-m1/bloop-bsp-clients-classes/classes-Metals-p-L37pdiTeCUjdKiM_eeTg==/META-INF/semanticdb/src/main/scala/predict/kNN.scala.semanticdb' doesn't exist. There can be many reasons for this error. [0m
+2022.03.19 13:42:45 ERROR code navigation does not work for the file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala' because the SemanticDB file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/.bloop/cs449-m1/bloop-bsp-clients-classes/classes-Metals-p-L37pdiTeCUjdKiM_eeTg==/META-INF/semanticdb/src/main/scala/predict/kNN.scala.semanticdb' doesn't exist. There can be many reasons for this error. [0m
+2022.03.19 13:44:19 ERROR code navigation does not work for the file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala' because the SemanticDB file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/.bloop/cs449-m1/bloop-bsp-clients-classes/classes-Metals-p-L37pdiTeCUjdKiM_eeTg==/META-INF/semanticdb/src/main/scala/predict/kNN.scala.semanticdb' doesn't exist. There can be many reasons for this error. [0m
+2022.03.19 13:44:20 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.19 13:44:20 INFO  time: compiled cs449-m1 in 0.47s[0m
+2022.03.19 13:45:50 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.19 13:45:50 INFO  time: compiled cs449-m1 in 0.38s[0m
+2022.03.19 13:46:38 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.19 13:46:38 INFO  time: compiled cs449-m1 in 0.4s[0m
+2022.03.19 13:47:13 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:37:18: stale bloop error: not found: type PersonalizedConf
+  var conf = new PersonalizedConf(args) 
+                 ^^^^^^^^^^^^^^^^[0m
+2022.03.19 13:47:13 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:414:25: stale bloop error: type mismatch;
+ found   : Any
+ required: String
+      printToFile(json, jsonFile)
+                        ^^^^^^^^[0m
+2022.03.19 13:47:13 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:37:18: stale bloop error: not found: type PersonalizedConf
+  var conf = new PersonalizedConf(args) 
+                 ^^^^^^^^^^^^^^^^[0m
+2022.03.19 13:47:13 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:414:25: stale bloop error: type mismatch;
+ found   : Any
+ required: String
+      printToFile(json, jsonFile)
+                        ^^^^^^^^[0m
+2022.03.19 13:47:39 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:37:18: stale bloop error: not found: type PersonalizedConf
+  var conf = new PersonalizedConf(args) 
+                 ^^^^^^^^^^^^^^^^[0m
+2022.03.19 13:47:39 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:414:25: stale bloop error: type mismatch;
+ found   : Any
+ required: String
+      printToFile(json, jsonFile)
+                        ^^^^^^^^[0m
+2022.03.19 13:47:39 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:37:18: stale bloop error: not found: type PersonalizedConf
+  var conf = new PersonalizedConf(args) 
+                 ^^^^^^^^^^^^^^^^[0m
+2022.03.19 13:47:39 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:414:25: stale bloop error: type mismatch;
+ found   : Any
+ required: String
+      printToFile(json, jsonFile)
+                        ^^^^^^^^[0m
+2022.03.19 13:48:42 ERROR code navigation does not work for the file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala' because the SemanticDB file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/.bloop/cs449-m1/bloop-bsp-clients-classes/classes-Metals-p-L37pdiTeCUjdKiM_eeTg==/META-INF/semanticdb/src/main/scala/predict/kNN.scala.semanticdb' doesn't exist. There can be many reasons for this error. [0m
+2022.03.19 13:52:24 ERROR code navigation does not work for the file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala' because the SemanticDB file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/.bloop/cs449-m1/bloop-bsp-clients-classes/classes-Metals-p-L37pdiTeCUjdKiM_eeTg==/META-INF/semanticdb/src/main/scala/predict/kNN.scala.semanticdb' doesn't exist. There can be many reasons for this error. [0m
+2022.03.19 13:52:24 ERROR code navigation does not work for the file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala' because the SemanticDB file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/.bloop/cs449-m1/bloop-bsp-clients-classes/classes-Metals-p-L37pdiTeCUjdKiM_eeTg==/META-INF/semanticdb/src/main/scala/predict/kNN.scala.semanticdb' doesn't exist. There can be many reasons for this error. [0m
+2022.03.19 13:52:36 ERROR code navigation does not work for the file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala' because the SemanticDB file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/.bloop/cs449-m1/bloop-bsp-clients-classes/classes-Metals-p-L37pdiTeCUjdKiM_eeTg==/META-INF/semanticdb/src/main/scala/predict/kNN.scala.semanticdb' doesn't exist. There can be many reasons for this error. [0m
+2022.03.19 13:52:58 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.19 13:52:58 INFO  time: compiled cs449-m1 in 0.46s[0m
+2022.03.19 13:53:03 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:37:18: stale bloop error: not found: type PersonalizedConf
+  var conf = new PersonalizedConf(args) 
+                 ^^^^^^^^^^^^^^^^[0m
+2022.03.19 13:53:03 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:283:15: stale bloop error: not found: value all
+        acc + all.simU.get(x)
+              ^^^[0m
+2022.03.19 13:53:03 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:284:13: stale bloop error: not found: value tmp
+        dev(tmp, userAvg(x._1, train, alluserAvg, globalAvg))
+            ^^^[0m
+2022.03.19 13:53:03 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:287:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Double
+    }
+    ^[0m
+2022.03.19 13:53:03 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:413:25: stale bloop error: type mismatch;
+ found   : Any
+ required: String
+      printToFile(json, jsonFile)
+                        ^^^^^^^^[0m
+2022.03.19 13:53:03 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:37:18: stale bloop error: not found: type PersonalizedConf
+  var conf = new PersonalizedConf(args) 
+                 ^^^^^^^^^^^^^^^^[0m
+2022.03.19 13:53:03 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:283:15: stale bloop error: not found: value all
+        acc + all.simU.get(x)
+              ^^^[0m
+2022.03.19 13:53:03 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:284:13: stale bloop error: not found: value tmp
+        dev(tmp, userAvg(x._1, train, alluserAvg, globalAvg))
+            ^^^[0m
+2022.03.19 13:53:03 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:287:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Double
+    }
+    ^[0m
+2022.03.19 13:53:03 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:413:25: stale bloop error: type mismatch;
+ found   : Any
+ required: String
+      printToFile(json, jsonFile)
+                        ^^^^^^^^[0m
+2022.03.19 13:53:05 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:37:18: stale bloop error: not found: type PersonalizedConf
+  var conf = new PersonalizedConf(args) 
+                 ^^^^^^^^^^^^^^^^[0m
+2022.03.19 13:53:05 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:283:15: stale bloop error: not found: value all
+        acc + all.simU.get(x)
+              ^^^[0m
+2022.03.19 13:53:05 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:284:13: stale bloop error: not found: value tmp
+        dev(tmp, userAvg(x._1, train, alluserAvg, globalAvg))
+            ^^^[0m
+2022.03.19 13:53:05 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:287:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Double
+    }
+    ^[0m
+2022.03.19 13:53:05 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:413:25: stale bloop error: type mismatch;
+ found   : Any
+ required: String
+      printToFile(json, jsonFile)
+                        ^^^^^^^^[0m
+2022.03.19 13:53:05 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:37:18: stale bloop error: not found: type PersonalizedConf
+  var conf = new PersonalizedConf(args) 
+                 ^^^^^^^^^^^^^^^^[0m
+2022.03.19 13:53:05 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:283:15: stale bloop error: not found: value all
+        acc + all.simU.get(x)
+              ^^^[0m
+2022.03.19 13:53:05 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:284:13: stale bloop error: not found: value tmp
+        dev(tmp, userAvg(x._1, train, alluserAvg, globalAvg))
+            ^^^[0m
+2022.03.19 13:53:05 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:287:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Double
+    }
+    ^[0m
+2022.03.19 13:53:05 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:413:25: stale bloop error: type mismatch;
+ found   : Any
+ required: String
+      printToFile(json, jsonFile)
+                        ^^^^^^^^[0m
+2022.03.19 13:53:05 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:37:18: stale bloop error: not found: type PersonalizedConf
+  var conf = new PersonalizedConf(args) 
+                 ^^^^^^^^^^^^^^^^[0m
+2022.03.19 13:53:05 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:283:15: stale bloop error: not found: value all
+        acc + all.simU.get(x)
+              ^^^[0m
+2022.03.19 13:53:05 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:284:13: stale bloop error: not found: value tmp
+        dev(tmp, userAvg(x._1, train, alluserAvg, globalAvg))
+            ^^^[0m
+2022.03.19 13:53:05 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:287:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Double
+    }
+    ^[0m
+2022.03.19 13:53:05 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:413:25: stale bloop error: type mismatch;
+ found   : Any
+ required: String
+      printToFile(json, jsonFile)
+                        ^^^^^^^^[0m
+2022.03.19 13:53:05 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:37:18: stale bloop error: not found: type PersonalizedConf
+  var conf = new PersonalizedConf(args) 
+                 ^^^^^^^^^^^^^^^^[0m
+2022.03.19 13:53:05 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:283:15: stale bloop error: not found: value all
+        acc + all.simU.get(x)
+              ^^^[0m
+2022.03.19 13:53:05 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:284:13: stale bloop error: not found: value tmp
+        dev(tmp, userAvg(x._1, train, alluserAvg, globalAvg))
+            ^^^[0m
+2022.03.19 13:53:05 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:287:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Double
+    }
+    ^[0m
+2022.03.19 13:53:05 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:413:25: stale bloop error: type mismatch;
+ found   : Any
+ required: String
+      printToFile(json, jsonFile)
+                        ^^^^^^^^[0m
+2022.03.19 13:53:06 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.19 13:53:06 INFO  time: compiled cs449-m1 in 0.45s[0m
+2022.03.19 13:55:10 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.19 13:55:10 INFO  time: compiled cs449-m1 in 0.46s[0m
+2022.03.19 13:56:27 ERROR code navigation does not work for the file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala' because the SemanticDB file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/.bloop/cs449-m1/bloop-bsp-clients-classes/classes-Metals-p-L37pdiTeCUjdKiM_eeTg==/META-INF/semanticdb/src/main/scala/predict/kNN.scala.semanticdb' doesn't exist. There can be many reasons for this error. [0m
+2022.03.19 13:57:04 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.19 13:57:04 INFO  time: compiled cs449-m1 in 0.53s[0m
+2022.03.19 13:57:10 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.19 13:57:10 INFO  time: compiled cs449-m1 in 0.48s[0m
+mars 19, 2022 1:57:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 5201
+2022.03.19 13:57:58 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.19 13:57:58 INFO  time: compiled cs449-m1 in 0.5s[0m
+2022.03.19 13:58:11 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.19 13:58:11 INFO  time: compiled cs449-m1 in 0.43s[0m
+2022.03.19 13:58:26 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.19 13:58:26 INFO  time: compiled cs449-m1 in 0.38s[0m
+2022.03.19 13:58:33 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.19 13:58:33 INFO  time: compiled cs449-m1 in 0.43s[0m
+2022.03.19 13:58:49 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.19 13:58:49 INFO  time: compiled cs449-m1 in 0.49s[0m
+2022.03.19 14:00:33 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:37:18: stale bloop error: not found: type PersonalizedConf
+  var conf = new PersonalizedConf(args) 
+                 ^^^^^^^^^^^^^^^^[0m
+2022.03.19 14:00:33 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:179:5: stale bloop error: type mismatch;
+ found   : Array[_3] where type _3 >: (Int, Double) with Double
+ required: Array[Double]
+> kNN_map.getOrElse(user,{
+>       var all_sim  = Array.fill(943)(0.0)
+>       for(j <- 0 to 942){
+>         if(j+1 == user) all_sim(j) = (0.0)
+>         else all_sim(j) = (preProcess_Similarity(user, j+1, mapArrUsers, cosineSim, train, globalAvg, alluserAvg, preProcessSim))
+>       }
+>       val k_top_users = all_sim.zipWithIndex.sortBy(-_._1).take(k+1).map(_._2) // index users les plus important
+>       for(j <- 0 to 942){
+>         if ( !k_top_users.contains(j) || j==(user-1)) 
+>           all_sim(j) = 0
+>       }
+> 
+>       all_sim
+>     })[0m
+2022.03.19 14:00:33 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:289:15: stale bloop error: not found: value all
+        acc + all.simU(x._1 - 1)
+              ^^^[0m
+2022.03.19 14:00:33 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:290:13: stale bloop error: not found: value tmp
+        dev(tmp, userAvg(x._1, train, alluserAvg, globalAvg))
+            ^^^[0m
+2022.03.19 14:00:33 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:293:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Double
+    }
+    ^[0m
+2022.03.19 14:00:33 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:420:25: stale bloop error: type mismatch;
+ found   : Any
+ required: String
+      printToFile(json, jsonFile)
+                        ^^^^^^^^[0m
+2022.03.19 14:00:33 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:37:18: stale bloop error: not found: type PersonalizedConf
+  var conf = new PersonalizedConf(args) 
+                 ^^^^^^^^^^^^^^^^[0m
+2022.03.19 14:00:33 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:179:5: stale bloop error: type mismatch;
+ found   : Array[_3] where type _3 >: (Int, Double) with Double
+ required: Array[Double]
+> kNN_map.getOrElse(user,{
+>       var all_sim  = Array.fill(943)(0.0)
+>       for(j <- 0 to 942){
+>         if(j+1 == user) all_sim(j) = (0.0)
+>         else all_sim(j) = (preProcess_Similarity(user, j+1, mapArrUsers, cosineSim, train, globalAvg, alluserAvg, preProcessSim))
+>       }
+>       val k_top_users = all_sim.zipWithIndex.sortBy(-_._1).take(k+1).map(_._2) // index users les plus important
+>       for(j <- 0 to 942){
+>         if ( !k_top_users.contains(j) || j==(user-1)) 
+>           all_sim(j) = 0
+>       }
+> 
+>       all_sim
+>     })[0m
+2022.03.19 14:00:33 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:289:15: stale bloop error: not found: value all
+        acc + all.simU(x._1 - 1)
+              ^^^[0m
+2022.03.19 14:00:33 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:290:13: stale bloop error: not found: value tmp
+        dev(tmp, userAvg(x._1, train, alluserAvg, globalAvg))
+            ^^^[0m
+2022.03.19 14:00:33 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:293:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Double
+    }
+    ^[0m
+2022.03.19 14:00:33 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:420:25: stale bloop error: type mismatch;
+ found   : Any
+ required: String
+      printToFile(json, jsonFile)
+                        ^^^^^^^^[0m
+2022.03.19 14:00:35 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:37:18: stale bloop error: not found: type PersonalizedConf
+  var conf = new PersonalizedConf(args) 
+                 ^^^^^^^^^^^^^^^^[0m
+2022.03.19 14:00:35 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:179:5: stale bloop error: type mismatch;
+ found   : Array[_3] where type _3 >: (Int, Double) with Double
+ required: Array[Double]
+> kNN_map.getOrElse(user,{
+>       var all_sim  = Array.fill(943)(0.0)
+>       for(j <- 0 to 942){
+>         if(j+1 == user) all_sim(j) = (0.0)
+>         else all_sim(j) = (preProcess_Similarity(user, j+1, mapArrUsers, cosineSim, train, globalAvg, alluserAvg, preProcessSim))
+>       }
+>       val k_top_users = all_sim.zipWithIndex.sortBy(-_._1).take(k+1).map(_._2) // index users les plus important
+>       for(j <- 0 to 942){
+>         if ( !k_top_users.contains(j) || j==(user-1)) 
+>           all_sim(j) = 0
+>       }
+> 
+>       all_sim
+>     })[0m
+2022.03.19 14:00:35 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:289:15: stale bloop error: not found: value all
+        acc + all.simU(x._1 - 1)
+              ^^^[0m
+2022.03.19 14:00:35 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:290:13: stale bloop error: not found: value tmp
+        dev(tmp, userAvg(x._1, train, alluserAvg, globalAvg))
+            ^^^[0m
+2022.03.19 14:00:35 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:293:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Double
+    }
+    ^[0m
+2022.03.19 14:00:35 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:420:25: stale bloop error: type mismatch;
+ found   : Any
+ required: String
+      printToFile(json, jsonFile)
+                        ^^^^^^^^[0m
+2022.03.19 14:00:35 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:37:18: stale bloop error: not found: type PersonalizedConf
+  var conf = new PersonalizedConf(args) 
+                 ^^^^^^^^^^^^^^^^[0m
+2022.03.19 14:00:35 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:179:5: stale bloop error: type mismatch;
+ found   : Array[_3] where type _3 >: (Int, Double) with Double
+ required: Array[Double]
+> kNN_map.getOrElse(user,{
+>       var all_sim  = Array.fill(943)(0.0)
+>       for(j <- 0 to 942){
+>         if(j+1 == user) all_sim(j) = (0.0)
+>         else all_sim(j) = (preProcess_Similarity(user, j+1, mapArrUsers, cosineSim, train, globalAvg, alluserAvg, preProcessSim))
+>       }
+>       val k_top_users = all_sim.zipWithIndex.sortBy(-_._1).take(k+1).map(_._2) // index users les plus important
+>       for(j <- 0 to 942){
+>         if ( !k_top_users.contains(j) || j==(user-1)) 
+>           all_sim(j) = 0
+>       }
+> 
+>       all_sim
+>     })[0m
+2022.03.19 14:00:35 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:289:15: stale bloop error: not found: value all
+        acc + all.simU(x._1 - 1)
+              ^^^[0m
+2022.03.19 14:00:35 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:290:13: stale bloop error: not found: value tmp
+        dev(tmp, userAvg(x._1, train, alluserAvg, globalAvg))
+            ^^^[0m
+2022.03.19 14:00:35 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:293:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Double
+    }
+    ^[0m
+2022.03.19 14:00:35 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:420:25: stale bloop error: type mismatch;
+ found   : Any
+ required: String
+      printToFile(json, jsonFile)
+                        ^^^^^^^^[0m
+2022.03.19 14:00:35 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:37:18: stale bloop error: not found: type PersonalizedConf
+  var conf = new PersonalizedConf(args) 
+                 ^^^^^^^^^^^^^^^^[0m
+2022.03.19 14:00:35 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:179:5: stale bloop error: type mismatch;
+ found   : Array[_3] where type _3 >: (Int, Double) with Double
+ required: Array[Double]
+> kNN_map.getOrElse(user,{
+>       var all_sim  = Array.fill(943)(0.0)
+>       for(j <- 0 to 942){
+>         if(j+1 == user) all_sim(j) = (0.0)
+>         else all_sim(j) = (preProcess_Similarity(user, j+1, mapArrUsers, cosineSim, train, globalAvg, alluserAvg, preProcessSim))
+>       }
+>       val k_top_users = all_sim.zipWithIndex.sortBy(-_._1).take(k+1).map(_._2) // index users les plus important
+>       for(j <- 0 to 942){
+>         if ( !k_top_users.contains(j) || j==(user-1)) 
+>           all_sim(j) = 0
+>       }
+> 
+>       all_sim
+>     })[0m
+2022.03.19 14:00:35 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:289:15: stale bloop error: not found: value all
+        acc + all.simU(x._1 - 1)
+              ^^^[0m
+2022.03.19 14:00:35 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:290:13: stale bloop error: not found: value tmp
+        dev(tmp, userAvg(x._1, train, alluserAvg, globalAvg))
+            ^^^[0m
+2022.03.19 14:00:35 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:293:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Double
+    }
+    ^[0m
+2022.03.19 14:00:35 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:420:25: stale bloop error: type mismatch;
+ found   : Any
+ required: String
+      printToFile(json, jsonFile)
+                        ^^^^^^^^[0m
+2022.03.19 14:00:35 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:37:18: stale bloop error: not found: type PersonalizedConf
+  var conf = new PersonalizedConf(args) 
+                 ^^^^^^^^^^^^^^^^[0m
+2022.03.19 14:00:35 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:179:5: stale bloop error: type mismatch;
+ found   : Array[_3] where type _3 >: (Int, Double) with Double
+ required: Array[Double]
+> kNN_map.getOrElse(user,{
+>       var all_sim  = Array.fill(943)(0.0)
+>       for(j <- 0 to 942){
+>         if(j+1 == user) all_sim(j) = (0.0)
+>         else all_sim(j) = (preProcess_Similarity(user, j+1, mapArrUsers, cosineSim, train, globalAvg, alluserAvg, preProcessSim))
+>       }
+>       val k_top_users = all_sim.zipWithIndex.sortBy(-_._1).take(k+1).map(_._2) // index users les plus important
+>       for(j <- 0 to 942){
+>         if ( !k_top_users.contains(j) || j==(user-1)) 
+>           all_sim(j) = 0
+>       }
+> 
+>       all_sim
+>     })[0m
+2022.03.19 14:00:35 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:289:15: stale bloop error: not found: value all
+        acc + all.simU(x._1 - 1)
+              ^^^[0m
+2022.03.19 14:00:35 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:290:13: stale bloop error: not found: value tmp
+        dev(tmp, userAvg(x._1, train, alluserAvg, globalAvg))
+            ^^^[0m
+2022.03.19 14:00:35 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:293:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Double
+    }
+    ^[0m
+2022.03.19 14:00:35 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:420:25: stale bloop error: type mismatch;
+ found   : Any
+ required: String
+      printToFile(json, jsonFile)
+                        ^^^^^^^^[0m
+2022.03.19 14:00:50 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:37:18: stale bloop error: not found: type PersonalizedConf
+  var conf = new PersonalizedConf(args) 
+                 ^^^^^^^^^^^^^^^^[0m
+2022.03.19 14:00:50 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:179:5: stale bloop error: type mismatch;
+ found   : Array[_3] where type _3 >: (Int, Double) with Double
+ required: Array[Double]
+> kNN_map.getOrElse(user,{
+>       var all_sim  = Array.fill(943)(0.0)
+>       for(j <- 0 to 942){
+>         if(j+1 == user) all_sim(j) = (0.0)
+>         else all_sim(j) = (preProcess_Similarity(user, j+1, mapArrUsers, cosineSim, train, globalAvg, alluserAvg, preProcessSim))
+>       }
+>       val k_top_users = all_sim.zipWithIndex.sortBy(-_._1).take(k+1).map(_._2) // index users les plus important
+>       for(j <- 0 to 942){
+>         if ( !k_top_users.contains(j) || j==(user-1)) 
+>           all_sim(j) = 0
+>       }
+> 
+>       all_sim
+>     })[0m
+2022.03.19 14:00:50 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:289:15: stale bloop error: not found: value all
+        acc + all.simU(x._1 - 1)
+              ^^^[0m
+2022.03.19 14:00:50 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:290:13: stale bloop error: not found: value tmp
+        dev(tmp, userAvg(x._1, train, alluserAvg, globalAvg))
+            ^^^[0m
+2022.03.19 14:00:50 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:293:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Double
+    }
+    ^[0m
+2022.03.19 14:00:50 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:420:25: stale bloop error: type mismatch;
+ found   : Any
+ required: String
+      printToFile(json, jsonFile)
+                        ^^^^^^^^[0m
+2022.03.19 14:00:50 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:37:18: stale bloop error: not found: type PersonalizedConf
+  var conf = new PersonalizedConf(args) 
+                 ^^^^^^^^^^^^^^^^[0m
+2022.03.19 14:00:50 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:179:5: stale bloop error: type mismatch;
+ found   : Array[_3] where type _3 >: (Int, Double) with Double
+ required: Array[Double]
+> kNN_map.getOrElse(user,{
+>       var all_sim  = Array.fill(943)(0.0)
+>       for(j <- 0 to 942){
+>         if(j+1 == user) all_sim(j) = (0.0)
+>         else all_sim(j) = (preProcess_Similarity(user, j+1, mapArrUsers, cosineSim, train, globalAvg, alluserAvg, preProcessSim))
+>       }
+>       val k_top_users = all_sim.zipWithIndex.sortBy(-_._1).take(k+1).map(_._2) // index users les plus important
+>       for(j <- 0 to 942){
+>         if ( !k_top_users.contains(j) || j==(user-1)) 
+>           all_sim(j) = 0
+>       }
+> 
+>       all_sim
+>     })[0m
+2022.03.19 14:00:50 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:289:15: stale bloop error: not found: value all
+        acc + all.simU(x._1 - 1)
+              ^^^[0m
+2022.03.19 14:00:50 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:290:13: stale bloop error: not found: value tmp
+        dev(tmp, userAvg(x._1, train, alluserAvg, globalAvg))
+            ^^^[0m
+2022.03.19 14:00:50 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:293:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Double
+    }
+    ^[0m
+2022.03.19 14:00:50 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:420:25: stale bloop error: type mismatch;
+ found   : Any
+ required: String
+      printToFile(json, jsonFile)
+                        ^^^^^^^^[0m
+2022.03.19 14:00:59 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:37:18: stale bloop error: not found: type PersonalizedConf
+  var conf = new PersonalizedConf(args) 
+                 ^^^^^^^^^^^^^^^^[0m
+2022.03.19 14:00:59 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:179:5: stale bloop error: type mismatch;
+ found   : Array[_3] where type _3 >: (Int, Double) with Double
+ required: Array[Double]
+> kNN_map.getOrElse(user,{
+>       var all_sim  = Array.fill(943)(0.0)
+>       for(j <- 0 to 942){
+>         if(j+1 == user) all_sim(j) = (0.0)
+>         else all_sim(j) = (preProcess_Similarity(user, j+1, mapArrUsers, cosineSim, train, globalAvg, alluserAvg, preProcessSim))
+>       }
+>       val k_top_users = all_sim.zipWithIndex.sortBy(-_._1).take(k+1).map(_._2) // index users les plus important
+>       for(j <- 0 to 942){
+>         if ( !k_top_users.contains(j) || j==(user-1)) 
+>           all_sim(j) = 0
+>       }
+> 
+>       all_sim
+>     })[0m
+2022.03.19 14:00:59 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:289:15: stale bloop error: not found: value all
+        acc + all.simU(x._1 - 1)
+              ^^^[0m
+2022.03.19 14:00:59 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:290:13: stale bloop error: not found: value tmp
+        dev(tmp, userAvg(x._1, train, alluserAvg, globalAvg))
+            ^^^[0m
+2022.03.19 14:00:59 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:293:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Double
+    }
+    ^[0m
+2022.03.19 14:00:59 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:420:25: stale bloop error: type mismatch;
+ found   : Any
+ required: String
+      printToFile(json, jsonFile)
+                        ^^^^^^^^[0m
+2022.03.19 14:00:59 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:37:18: stale bloop error: not found: type PersonalizedConf
+  var conf = new PersonalizedConf(args) 
+                 ^^^^^^^^^^^^^^^^[0m
+2022.03.19 14:00:59 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:179:5: stale bloop error: type mismatch;
+ found   : Array[_3] where type _3 >: (Int, Double) with Double
+ required: Array[Double]
+> kNN_map.getOrElse(user,{
+>       var all_sim  = Array.fill(943)(0.0)
+>       for(j <- 0 to 942){
+>         if(j+1 == user) all_sim(j) = (0.0)
+>         else all_sim(j) = (preProcess_Similarity(user, j+1, mapArrUsers, cosineSim, train, globalAvg, alluserAvg, preProcessSim))
+>       }
+>       val k_top_users = all_sim.zipWithIndex.sortBy(-_._1).take(k+1).map(_._2) // index users les plus important
+>       for(j <- 0 to 942){
+>         if ( !k_top_users.contains(j) || j==(user-1)) 
+>           all_sim(j) = 0
+>       }
+> 
+>       all_sim
+>     })[0m
+2022.03.19 14:00:59 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:289:15: stale bloop error: not found: value all
+        acc + all.simU(x._1 - 1)
+              ^^^[0m
+2022.03.19 14:00:59 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:290:13: stale bloop error: not found: value tmp
+        dev(tmp, userAvg(x._1, train, alluserAvg, globalAvg))
+            ^^^[0m
+2022.03.19 14:00:59 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:293:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Double
+    }
+    ^[0m
+2022.03.19 14:00:59 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:420:25: stale bloop error: type mismatch;
+ found   : Any
+ required: String
+      printToFile(json, jsonFile)
+                        ^^^^^^^^[0m
+2022.03.19 14:00:59 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:37:18: stale bloop error: not found: type PersonalizedConf
+  var conf = new PersonalizedConf(args) 
+                 ^^^^^^^^^^^^^^^^[0m
+2022.03.19 14:00:59 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:179:5: stale bloop error: type mismatch;
+ found   : Array[_3] where type _3 >: (Int, Double) with Double
+ required: Array[Double]
+> kNN_map.getOrElse(user,{
+>       var all_sim  = Array.fill(943)(0.0)
+>       for(j <- 0 to 942){
+>         if(j+1 == user) all_sim(j) = (0.0)
+>         else all_sim(j) = (preProcess_Similarity(user, j+1, mapArrUsers, cosineSim, train, globalAvg, alluserAvg, preProcessSim))
+>       }
+>       val k_top_users = all_sim.zipWithIndex.sortBy(-_._1).take(k+1).map(_._2) // index users les plus important
+>       for(j <- 0 to 942){
+>         if ( !k_top_users.contains(j) || j==(user-1)) 
+>           all_sim(j) = 0
+>       }
+> 
+>       all_sim
+>     })[0m
+2022.03.19 14:00:59 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:289:15: stale bloop error: not found: value all
+        acc + all.simU(x._1 - 1)
+              ^^^[0m
+2022.03.19 14:00:59 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:290:13: stale bloop error: not found: value tmp
+        dev(tmp, userAvg(x._1, train, alluserAvg, globalAvg))
+            ^^^[0m
+2022.03.19 14:00:59 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:293:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Double
+    }
+    ^[0m
+2022.03.19 14:00:59 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:420:25: stale bloop error: type mismatch;
+ found   : Any
+ required: String
+      printToFile(json, jsonFile)
+                        ^^^^^^^^[0m
+2022.03.19 14:01:00 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:37:18: stale bloop error: not found: type PersonalizedConf
+  var conf = new PersonalizedConf(args) 
+                 ^^^^^^^^^^^^^^^^[0m
+2022.03.19 14:01:00 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:179:5: stale bloop error: type mismatch;
+ found   : Array[_3] where type _3 >: (Int, Double) with Double
+ required: Array[Double]
+> kNN_map.getOrElse(user,{
+>       var all_sim  = Array.fill(943)(0.0)
+>       for(j <- 0 to 942){
+>         if(j+1 == user) all_sim(j) = (0.0)
+>         else all_sim(j) = (preProcess_Similarity(user, j+1, mapArrUsers, cosineSim, train, globalAvg, alluserAvg, preProcessSim))
+>       }
+>       val k_top_users = all_sim.zipWithIndex.sortBy(-_._1).take(k+1).map(_._2) // index users les plus important
+>       for(j <- 0 to 942){
+>         if ( !k_top_users.contains(j) || j==(user-1)) 
+>           all_sim(j) = 0
+>       }
+> 
+>       all_sim
+>     })[0m
+2022.03.19 14:01:00 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:289:15: stale bloop error: not found: value all
+        acc + all.simU(x._1 - 1)
+              ^^^[0m
+2022.03.19 14:01:00 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:290:13: stale bloop error: not found: value tmp
+        dev(tmp, userAvg(x._1, train, alluserAvg, globalAvg))
+            ^^^[0m
+2022.03.19 14:01:00 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:293:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Double
+    }
+    ^[0m
+2022.03.19 14:01:00 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:420:25: stale bloop error: type mismatch;
+ found   : Any
+ required: String
+      printToFile(json, jsonFile)
+                        ^^^^^^^^[0m
+2022.03.19 14:01:17 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:37:18: stale bloop error: not found: type PersonalizedConf
+  var conf = new PersonalizedConf(args) 
+                 ^^^^^^^^^^^^^^^^[0m
+2022.03.19 14:01:17 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:179:5: stale bloop error: type mismatch;
+ found   : Array[_3] where type _3 >: (Int, Double) with Double
+ required: Array[Double]
+> kNN_map.getOrElse(user,{
+>       var all_sim  = Array.fill(943)(0.0)
+>       for(j <- 0 to 942){
+>         if(j+1 == user) all_sim(j) = (0.0)
+>         else all_sim(j) = (preProcess_Similarity(user, j+1, mapArrUsers, cosineSim, train, globalAvg, alluserAvg, preProcessSim))
+>       }
+>       val k_top_users = all_sim.zipWithIndex.sortBy(-_._1).take(k+1).map(_._2) // index users les plus important
+>       for(j <- 0 to 942){
+>         if ( !k_top_users.contains(j) || j==(user-1)) 
+>           all_sim(j) = 0
+>       }
+> 
+>       all_sim
+>     })[0m
+2022.03.19 14:01:17 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:289:15: stale bloop error: not found: value all
+        acc + all.simU(x._1 - 1)
+              ^^^[0m
+2022.03.19 14:01:17 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:290:13: stale bloop error: not found: value tmp
+        dev(tmp, userAvg(x._1, train, alluserAvg, globalAvg))
+            ^^^[0m
+2022.03.19 14:01:17 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:293:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Double
+    }
+    ^[0m
+2022.03.19 14:01:17 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:420:25: stale bloop error: type mismatch;
+ found   : Any
+ required: String
+      printToFile(json, jsonFile)
+                        ^^^^^^^^[0m
+2022.03.19 14:01:17 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:37:18: stale bloop error: not found: type PersonalizedConf
+  var conf = new PersonalizedConf(args) 
+                 ^^^^^^^^^^^^^^^^[0m
+2022.03.19 14:01:17 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:179:5: stale bloop error: type mismatch;
+ found   : Array[_3] where type _3 >: (Int, Double) with Double
+ required: Array[Double]
+> kNN_map.getOrElse(user,{
+>       var all_sim  = Array.fill(943)(0.0)
+>       for(j <- 0 to 942){
+>         if(j+1 == user) all_sim(j) = (0.0)
+>         else all_sim(j) = (preProcess_Similarity(user, j+1, mapArrUsers, cosineSim, train, globalAvg, alluserAvg, preProcessSim))
+>       }
+>       val k_top_users = all_sim.zipWithIndex.sortBy(-_._1).take(k+1).map(_._2) // index users les plus important
+>       for(j <- 0 to 942){
+>         if ( !k_top_users.contains(j) || j==(user-1)) 
+>           all_sim(j) = 0
+>       }
+> 
+>       all_sim
+>     })[0m
+2022.03.19 14:01:17 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:289:15: stale bloop error: not found: value all
+        acc + all.simU(x._1 - 1)
+              ^^^[0m
+2022.03.19 14:01:17 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:290:13: stale bloop error: not found: value tmp
+        dev(tmp, userAvg(x._1, train, alluserAvg, globalAvg))
+            ^^^[0m
+2022.03.19 14:01:17 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:293:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Double
+    }
+    ^[0m
+2022.03.19 14:01:17 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:420:25: stale bloop error: type mismatch;
+ found   : Any
+ required: String
+      printToFile(json, jsonFile)
+                        ^^^^^^^^[0m
+2022.03.19 14:01:23 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:37:18: stale bloop error: not found: type PersonalizedConf
+  var conf = new PersonalizedConf(args) 
+                 ^^^^^^^^^^^^^^^^[0m
+2022.03.19 14:01:23 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:179:5: stale bloop error: type mismatch;
+ found   : Array[_3] where type _3 >: (Int, Double) with Double
+ required: Array[Double]
+> kNN_map.getOrElse(user,{
+>       var all_sim  = Array.fill(943)(0.0)
+>       for(j <- 0 to 942){
+>         if(j+1 == user) all_sim(j) = (0.0)
+>         else all_sim(j) = (preProcess_Similarity(user, j+1, mapArrUsers, cosineSim, train, globalAvg, alluserAvg, preProcessSim))
+>       }
+>       val k_top_users = all_sim.zipWithIndex.sortBy(-_._1).take(k+1).map(_._2) // index users les plus important
+>       for(j <- 0 to 942){
+>         if ( !k_top_users.contains(j) || j==(user-1)) 
+>           all_sim(j) = 0
+>       }
+> 
+>       all_sim
+>     })[0m
+2022.03.19 14:01:23 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:289:15: stale bloop error: not found: value all
+        acc + all.simU(x._1 - 1)
+              ^^^[0m
+2022.03.19 14:01:23 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:290:13: stale bloop error: not found: value tmp
+        dev(tmp, userAvg(x._1, train, alluserAvg, globalAvg))
+            ^^^[0m
+2022.03.19 14:01:23 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:293:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Double
+    }
+    ^[0m
+2022.03.19 14:01:23 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:420:25: stale bloop error: type mismatch;
+ found   : Any
+ required: String
+      printToFile(json, jsonFile)
+                        ^^^^^^^^[0m
+2022.03.19 14:01:23 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:37:18: stale bloop error: not found: type PersonalizedConf
+  var conf = new PersonalizedConf(args) 
+                 ^^^^^^^^^^^^^^^^[0m
+2022.03.19 14:01:23 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:179:5: stale bloop error: type mismatch;
+ found   : Array[_3] where type _3 >: (Int, Double) with Double
+ required: Array[Double]
+> kNN_map.getOrElse(user,{
+>       var all_sim  = Array.fill(943)(0.0)
+>       for(j <- 0 to 942){
+>         if(j+1 == user) all_sim(j) = (0.0)
+>         else all_sim(j) = (preProcess_Similarity(user, j+1, mapArrUsers, cosineSim, train, globalAvg, alluserAvg, preProcessSim))
+>       }
+>       val k_top_users = all_sim.zipWithIndex.sortBy(-_._1).take(k+1).map(_._2) // index users les plus important
+>       for(j <- 0 to 942){
+>         if ( !k_top_users.contains(j) || j==(user-1)) 
+>           all_sim(j) = 0
+>       }
+> 
+>       all_sim
+>     })[0m
+2022.03.19 14:01:23 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:289:15: stale bloop error: not found: value all
+        acc + all.simU(x._1 - 1)
+              ^^^[0m
+2022.03.19 14:01:23 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:290:13: stale bloop error: not found: value tmp
+        dev(tmp, userAvg(x._1, train, alluserAvg, globalAvg))
+            ^^^[0m
+2022.03.19 14:01:23 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:293:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Double
+    }
+    ^[0m
+2022.03.19 14:01:23 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:420:25: stale bloop error: type mismatch;
+ found   : Any
+ required: String
+      printToFile(json, jsonFile)
+                        ^^^^^^^^[0m
+2022.03.19 14:01:52 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.19 14:01:52 INFO  time: compiled cs449-m1 in 0.45s[0m
+2022.03.19 14:02:03 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.19 14:02:03 INFO  time: compiled cs449-m1 in 0.41s[0m
+2022.03.19 14:02:33 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:37:18: stale bloop error: not found: type PersonalizedConf
+  var conf = new PersonalizedConf(args) 
+                 ^^^^^^^^^^^^^^^^[0m
+2022.03.19 14:02:33 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:288:15: stale bloop error: not found: value all
+        acc + all.simU(x._1 - 1)
+              ^^^[0m
+2022.03.19 14:02:33 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:289:13: stale bloop error: not found: value tmp
+        dev(tmp, userAvg(x._1, train, alluserAvg, globalAvg))
+            ^^^[0m
+2022.03.19 14:02:33 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:292:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Double
+    }
+    ^[0m
+2022.03.19 14:02:33 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:419:25: stale bloop error: type mismatch;
+ found   : Any
+ required: String
+      printToFile(json, jsonFile)
+                        ^^^^^^^^[0m
+2022.03.19 14:02:33 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:37:18: stale bloop error: not found: type PersonalizedConf
+  var conf = new PersonalizedConf(args) 
+                 ^^^^^^^^^^^^^^^^[0m
+2022.03.19 14:02:33 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:288:15: stale bloop error: not found: value all
+        acc + all.simU(x._1 - 1)
+              ^^^[0m
+2022.03.19 14:02:33 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:289:13: stale bloop error: not found: value tmp
+        dev(tmp, userAvg(x._1, train, alluserAvg, globalAvg))
+            ^^^[0m
+2022.03.19 14:02:33 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:292:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Double
+    }
+    ^[0m
+2022.03.19 14:02:33 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:419:25: stale bloop error: type mismatch;
+ found   : Any
+ required: String
+      printToFile(json, jsonFile)
+                        ^^^^^^^^[0m
+2022.03.19 14:02:34 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:37:18: stale bloop error: not found: type PersonalizedConf
+  var conf = new PersonalizedConf(args) 
+                 ^^^^^^^^^^^^^^^^[0m
+2022.03.19 14:02:34 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:288:15: stale bloop error: not found: value all
+        acc + all.simU(x._1 - 1)
+              ^^^[0m
+2022.03.19 14:02:34 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:289:13: stale bloop error: not found: value tmp
+        dev(tmp, userAvg(x._1, train, alluserAvg, globalAvg))
+            ^^^[0m
+2022.03.19 14:02:34 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:292:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Double
+    }
+    ^[0m
+2022.03.19 14:02:34 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:419:25: stale bloop error: type mismatch;
+ found   : Any
+ required: String
+      printToFile(json, jsonFile)
+                        ^^^^^^^^[0m
+2022.03.19 14:02:34 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:37:18: stale bloop error: not found: type PersonalizedConf
+  var conf = new PersonalizedConf(args) 
+                 ^^^^^^^^^^^^^^^^[0m
+2022.03.19 14:02:34 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:288:15: stale bloop error: not found: value all
+        acc + all.simU(x._1 - 1)
+              ^^^[0m
+2022.03.19 14:02:34 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:289:13: stale bloop error: not found: value tmp
+        dev(tmp, userAvg(x._1, train, alluserAvg, globalAvg))
+            ^^^[0m
+2022.03.19 14:02:34 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:292:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Double
+    }
+    ^[0m
+2022.03.19 14:02:34 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:419:25: stale bloop error: type mismatch;
+ found   : Any
+ required: String
+      printToFile(json, jsonFile)
+                        ^^^^^^^^[0m
+2022.03.19 14:02:34 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:37:18: stale bloop error: not found: type PersonalizedConf
+  var conf = new PersonalizedConf(args) 
+                 ^^^^^^^^^^^^^^^^[0m
+2022.03.19 14:02:34 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:288:15: stale bloop error: not found: value all
+        acc + all.simU(x._1 - 1)
+              ^^^[0m
+2022.03.19 14:02:34 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:289:13: stale bloop error: not found: value tmp
+        dev(tmp, userAvg(x._1, train, alluserAvg, globalAvg))
+            ^^^[0m
+2022.03.19 14:02:34 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:292:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Double
+    }
+    ^[0m
+2022.03.19 14:02:34 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:419:25: stale bloop error: type mismatch;
+ found   : Any
+ required: String
+      printToFile(json, jsonFile)
+                        ^^^^^^^^[0m
+2022.03.19 14:02:35 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:37:18: stale bloop error: not found: type PersonalizedConf
+  var conf = new PersonalizedConf(args) 
+                 ^^^^^^^^^^^^^^^^[0m
+2022.03.19 14:02:35 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:288:15: stale bloop error: not found: value all
+        acc + all.simU(x._1 - 1)
+              ^^^[0m
+2022.03.19 14:02:35 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:289:13: stale bloop error: not found: value tmp
+        dev(tmp, userAvg(x._1, train, alluserAvg, globalAvg))
+            ^^^[0m
+2022.03.19 14:02:35 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:292:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Double
+    }
+    ^[0m
+2022.03.19 14:02:35 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:419:25: stale bloop error: type mismatch;
+ found   : Any
+ required: String
+      printToFile(json, jsonFile)
+                        ^^^^^^^^[0m
+2022.03.19 14:02:36 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.19 14:02:36 INFO  time: compiled cs449-m1 in 0.47s[0m
+2022.03.19 14:04:54 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.19 14:04:54 INFO  time: compiled cs449-m1 in 0.42s[0m
+mars 19, 2022 2:05:46 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 5900
+2022.03.19 14:05:53 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.19 14:05:53 INFO  time: compiled cs449-m1 in 0.43s[0m
+mars 19, 2022 2:05:57 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+GRAVE: Internal error: java.lang.InterruptedException
+java.util.concurrent.CompletionException: java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:314)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:319)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2073)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:42)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.pc.VirtualFileParams.checkCanceled(VirtualFileParams.java:25)
+	at scala.meta.internal.pc.CompletionProvider$$anonfun$1.apply(CompletionProvider.scala:77)
+	at scala.meta.internal.pc.CompletionProvider$$anonfun$1.apply(CompletionProvider.scala:76)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:410)
+	at scala.collection.Iterator$class.toStream(Iterator.scala:1320)
+	at scala.collection.AbstractIterator.toStream(Iterator.scala:1334)
+	at scala.collection.Iterator$$anonfun$toStream$1.apply(Iterator.scala:1320)
+	at scala.collection.Iterator$$anonfun$toStream$1.apply(Iterator.scala:1320)
+	at scala.collection.immutable.Stream$Cons.tail(Stream.scala:1233)
+	at scala.collection.immutable.Stream$Cons.tail(Stream.scala:1223)
+	at scala.collection.immutable.StreamIterator$$anonfun$next$1.apply(Stream.scala:1120)
+	at scala.collection.immutable.StreamIterator$$anonfun$next$1.apply(Stream.scala:1120)
+	at scala.collection.immutable.StreamIterator$LazyCell.v$lzycompute(Stream.scala:1109)
+	at scala.collection.immutable.StreamIterator$LazyCell.v(Stream.scala:1109)
+	at scala.collection.immutable.StreamIterator.hasNext(Stream.scala:1114)
+	at scala.collection.convert.Wrappers$IteratorWrapper.hasNext(Wrappers.scala:30)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.CollectionTypeAdapter.write(CollectionTypeAdapter.java:134)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.CollectionTypeAdapter.write(CollectionTypeAdapter.java:40)
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:69)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.write(ReflectiveTypeAdapterFactory.java:127)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.write(ReflectiveTypeAdapterFactory.java:245)
+	at com.google.gson.Gson.toJson(Gson.java:735)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.MessageTypeAdapter.write(MessageTypeAdapter.java:423)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.MessageTypeAdapter.write(MessageTypeAdapter.java:55)
+	at com.google.gson.Gson.toJson(Gson.java:735)
+	at com.google.gson.Gson.toJson(Gson.java:714)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.serialize(MessageJsonHandler.java:145)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.serialize(MessageJsonHandler.java:140)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:59)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.lambda$handleRequest$1(RemoteEndpoint.java:281)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:714)
+	... 8 more
+
+2022.03.19 14:06:03 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.19 14:06:03 INFO  time: compiled cs449-m1 in 0.5s[0m
+2022.03.19 14:06:06 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.19 14:06:06 INFO  time: compiled cs449-m1 in 0.47s[0m
+2022.03.19 14:06:21 ERROR code navigation does not work for the file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala' because the SemanticDB file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/.bloop/cs449-m1/bloop-bsp-clients-classes/classes-Metals-p-L37pdiTeCUjdKiM_eeTg==/META-INF/semanticdb/src/main/scala/predict/kNN.scala.semanticdb' doesn't exist. There can be many reasons for this error. [0m
+2022.03.19 14:06:31 ERROR code navigation does not work for the file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala' because the SemanticDB file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/.bloop/cs449-m1/bloop-bsp-clients-classes/classes-Metals-p-L37pdiTeCUjdKiM_eeTg==/META-INF/semanticdb/src/main/scala/predict/kNN.scala.semanticdb' doesn't exist. There can be many reasons for this error. [0m
+2022.03.19 14:06:48 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.19 14:06:48 INFO  time: compiled cs449-m1 in 0.44s[0m
+2022.03.19 14:06:52 ERROR code navigation does not work for the file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala' because the SemanticDB file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/.bloop/cs449-m1/bloop-bsp-clients-classes/classes-Metals-p-L37pdiTeCUjdKiM_eeTg==/META-INF/semanticdb/src/main/scala/predict/kNN.scala.semanticdb' doesn't exist. There can be many reasons for this error. [0m
+2022.03.19 14:06:52 ERROR code navigation does not work for the file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala' because the SemanticDB file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/.bloop/cs449-m1/bloop-bsp-clients-classes/classes-Metals-p-L37pdiTeCUjdKiM_eeTg==/META-INF/semanticdb/src/main/scala/predict/kNN.scala.semanticdb' doesn't exist. There can be many reasons for this error. [0m
+2022.03.19 14:07:04 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.19 14:07:04 INFO  time: compiled cs449-m1 in 0.44s[0m
+mars 19, 2022 2:07:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 6090
+2022.03.19 14:07:15 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.19 14:07:15 INFO  time: compiled cs449-m1 in 0.41s[0m
+mars 19, 2022 2:07:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 6154
+2022.03.19 14:07:33 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.19 14:07:33 INFO  time: compiled cs449-m1 in 0.44s[0m
+2022.03.19 14:18:47 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.19 14:18:47 INFO  time: compiled cs449-m1 in 0.4s[0m
+2022.03.19 14:18:55 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.19 14:18:55 INFO  time: compiled cs449-m1 in 0.44s[0m
+2022.03.19 14:28:29 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.19 14:28:29 INFO  time: compiled cs449-m1 in 0.49s[0m
+2022.03.19 14:36:31 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.19 14:36:31 INFO  time: compiled cs449-m1 in 0.45s[0m
+2022.03.19 14:36:34 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.19 14:36:34 INFO  time: compiled cs449-m1 in 0.53s[0m
+2022.03.19 14:36:34 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.19 14:36:36 INFO  time: compiled cs449-m1 in 0.52s[0m
+2022.03.19 14:40:36 ERROR code navigation does not work for the file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala' because the SemanticDB file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/.bloop/cs449-m1/bloop-bsp-clients-classes/classes-Metals-p-L37pdiTeCUjdKiM_eeTg==/META-INF/semanticdb/src/main/scala/predict/kNN.scala.semanticdb' doesn't exist. There can be many reasons for this error. [0m
+2022.03.19 14:40:36 ERROR code navigation does not work for the file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala' because the SemanticDB file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/.bloop/cs449-m1/bloop-bsp-clients-classes/classes-Metals-p-L37pdiTeCUjdKiM_eeTg==/META-INF/semanticdb/src/main/scala/predict/kNN.scala.semanticdb' doesn't exist. There can be many reasons for this error. [0m
+2022.03.19 14:41:39 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.19 14:41:39 INFO  time: compiled cs449-m1 in 0.41s[0m
+mars 19, 2022 2:41:46 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 6542
+2022.03.19 14:42:04 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.19 14:42:04 INFO  time: compiled cs449-m1 in 0.39s[0m
+mars 19, 2022 2:42:28 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 6692
+2022.03.19 14:43:16 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.19 14:43:16 INFO  Deduplicating compilation of cs449-m1 from bsp client 'Metals 0.11.2' (since 4h 25m 45.595s)[0m
+2022.03.19 14:43:16 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.19 14:43:16 INFO  time: compiled cs449-m1 in 0.33s[0m
+2022.03.19 14:48:29 ERROR code navigation does not work for the file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala' because the SemanticDB file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/.bloop/cs449-m1/bloop-bsp-clients-classes/classes-Metals-p-L37pdiTeCUjdKiM_eeTg==/META-INF/semanticdb/src/main/scala/predict/kNN.scala.semanticdb' doesn't exist. There can be many reasons for this error. [0m
+2022.03.19 14:50:03 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.19 14:50:03 INFO  time: compiled cs449-m1 in 0.42s[0m
+2022.03.19 14:50:03 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.19 14:50:04 INFO  time: compiled cs449-m1 in 0.41s[0m
+2022.03.19 14:50:54 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.19 14:50:54 INFO  time: compiled cs449-m1 in 0.45s[0m
+2022.03.19 14:51:11 ERROR code navigation does not work for the file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala' because the SemanticDB file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/.bloop/cs449-m1/bloop-bsp-clients-classes/classes-Metals-p-L37pdiTeCUjdKiM_eeTg==/META-INF/semanticdb/src/main/scala/predict/kNN.scala.semanticdb' doesn't exist. There can be many reasons for this error. [0m
+2022.03.19 14:51:12 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.19 14:51:12 INFO  time: compiled cs449-m1 in 0.44s[0m
+2022.03.19 14:51:28 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.19 14:51:28 INFO  time: compiled cs449-m1 in 0.43s[0m
+2022.03.19 14:58:10 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.19 14:58:10 INFO  time: compiled cs449-m1 in 0.45s[0m
+2022.03.19 14:58:18 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.19 14:58:18 INFO  time: compiled cs449-m1 in 0.75s[0m
+2022.03.19 14:58:31 INFO  compiling cs449-m1 (1 scala source)[0m
+2022.03.19 14:58:31 INFO  time: compiled cs449-m1 in 0.45s[0m
+2022.03.19 15:08:48 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.19 15:08:48 INFO  time: compiled cs449-m1 in 0.54s[0m
+2022.03.19 15:08:53 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.19 15:08:53 INFO  time: compiled cs449-m1 in 0.52s[0m
+2022.03.19 15:12:15 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.19 15:12:15 INFO  time: compiled cs449-m1 in 0.51s[0m
+2022.03.19 15:12:25 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.19 15:12:25 INFO  time: compiled cs449-m1 in 0.51s[0m
