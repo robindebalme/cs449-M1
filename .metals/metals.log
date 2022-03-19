@@ -8274,3 +8274,43 @@ mars 19, 2022 12:26:21 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancell
 AVERTISSEMENT: Unmatched cancel notification for request id 3768
 2022.03.19 12:27:52 INFO  compiling cs449-m1 (1 scala source)[0m
 2022.03.19 12:27:54 INFO  time: compiled cs449-m1 in 1.97s[0m
+2022.03.19 13:08:14 INFO  compiling cs449-m1 (3 scala sources)[0m
+2022.03.19 13:08:14 INFO  time: compiled cs449-m1 in 0.22s[0m
+2022.03.19 13:08:40 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.19 13:08:40 INFO  time: compiled cs449-m1 in 0.53s[0m
+mars 19, 2022 1:09:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+AVERTISSEMENT: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "git:/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala?%7B%22path%22%3A%22%2FUsers%2Fsalimcherkaoui%2FDesktop%2FSystems_for_Datascience%2Fcs449-M1%2Fsrc%2Fmain%2Fscala%2Fdistributed%2FDistributedBaseline.scala%22%2C%22ref%22%3A%22%22%7D"
+  ]
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor18.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.FileSystemNotFoundException: Provider "git" not installed
+	at java.base/java.nio.file.Path.of(Path.java:212)
+	at java.base/java.nio.file.Paths.get(Paths.java:97)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionURI.toAbsolutePath(MetalsEnrichments.scala:559)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:630)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:621)
+	at scala.meta.internal.metals.MetalsLanguageServer.didFocus(MetalsLanguageServer.scala:1118)
+	... 15 more
+
