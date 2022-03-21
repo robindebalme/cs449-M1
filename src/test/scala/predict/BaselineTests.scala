@@ -57,9 +57,9 @@ class BaselineTests extends AnyFunSuite with BeforeAndAfterAll {
    // 2. There should be a single reusable function to compute the MAE on the test set, given a predictor;
    // 3. There should be invocations of both to show they work on the following datasets.
    test("MAE on all four non-personalized methods on data/ml-100k/u2.base and data/ml-100k/u2.test") {
-     assert(within(1.0, 0.0, 0.0001))
-     assert(within(1.0, 0.0, 0.0001))
-     assert(within(1.0, 0.0, 0.0001))
-     assert(within(1.0, 0.0, 0.0001))
+     assert(within(mae(test2, train2, predictorGlobal), 0.9489109899999697, 0.0001))
+     assert(within(mae(test2, train2, predictorUser), 0.8383401457987351, 0.0001))
+     assert(within(mae(test2, train2, predictorItem), 0.8206951490543668, 0.0001))
+     assert(within(mae(test2, train2, predictorBaseline), 0.7604467914538644, 0.0001))
    }
 }

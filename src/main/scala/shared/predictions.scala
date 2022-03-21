@@ -46,17 +46,6 @@ package object predictions
                 case None => Rating(-1, -1, -1)})
   }
 
-<<<<<<< HEAD
-  
-  var alluserAvg_ : mutable.Map[Int, Double] = mutable.Map()
-  var allitemAvg_ : mutable.Map[Int, Double] = mutable.Map()
-  var allitemDev_ : mutable.Map[Int, Double] = mutable.Map()
-
-
-
-
-=======
->>>>>>> refs/remotes/origin/master
 
 
   var alluserAvg: mutable.Map[Int, Double] = mutable.Map()
@@ -387,6 +376,7 @@ package object predictions
 
 
   def mae(test: Array[Rating], train: Array[Rating], prediction_method: Array[Rating] => ((Int, Int) => Double)): Double = {
+    globalAvg = computeGlobalAvg(train)
     mean_(test.map(elem => (prediction_method(train)(elem.user, elem.item) - elem.rating).abs))
   }
 
