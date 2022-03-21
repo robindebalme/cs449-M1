@@ -44,13 +44,13 @@ object DistributedBaseline extends App {
   val test = load(spark, conf.test(), conf.separator())
 
   
-  /*val sizeOfTest = test.count()
+  val sizeOfTest = test.count()
   val sizeOfTrain = train.count()
   val maxUser = List(train.map(elem => elem.user).max(), test.map(elem => elem.user).max()).max
   val maxItem = List(train.map(elem => elem.item).max(), test.map(elem => elem.item).max()).max
 
 
-  
+  /*
   //var alluserAvg_ : Map[Int, Double] = Map()
   //var allitemAvg_ : Map[Int, Double] = Map()
   //var allitemDev_ : Map[Int, Double] = Map()
@@ -242,6 +242,5 @@ object DistributedBaseline extends App {
   println("")
   spark.close()
   */
-  
 }
 
