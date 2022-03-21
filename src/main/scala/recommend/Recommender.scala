@@ -60,8 +60,8 @@ object Recommender extends App {
   ////////////////////////////////////////
 
   globalAvg =  mean_(data.map(_.rating))
-
-
+  val data_augmented = Array.concat(data, personal)
+  
   // Nouveau pour cet exo
 
   def common_item(arrU : Array[Rating], arrV : Array[Rating]): Array[Int] = {
@@ -72,101 +72,76 @@ object Recommender extends App {
     common_item_Ur  
     //})
   }
+  
 
-  def avgSimilarity(i: Int, u: Int, train: Array[Rating], filteredArrUsers: Map[Int, Array[Rating]]): Double = {
+  ////////////////////////////////////////
+  ///////// NEW STRAT DIMANCHE //////////
+ ///////////////////////////////////////
+ val train = data
+
+def all_similarities(user: Int, k: Int): Array[Double] = {
+      var all_sim  = Array.fill(943)(0.0)
+      for(j <- 0 to 942){
+        if(j+1 == user) all_sim(j) = (0.0)
+        else all_sim(j) = (preProcess_Similarity(user, j+1, mapArrUsers, cosineSim, train, globalAvg, alluserAvg, preProcessSim))
+      }
+      val k_top_users = all_sim.zipWithIndex.sortBy(-_._1).take(k).map(_._2) // index users les plus important
+      for(j <- 0 to 942){
+        if ( !k_top_users.contains(j) || j==(user-1)) 
+          all_sim(j) = 0
+      }
+
+      all_sim
+  }
+
+
+
+  def avgSimilarity_knn(i: Int, u: Int, k: Int, train: Array[Rating]): Double = {
+
     val arrFiltered = train.filter(_.item == i)
     if(arrFiltered.isEmpty) 0
     else {
-      val top = arrFiltered.foldLeft((0.0)){(acc, x) =>
-        val sim = preProcess_Similarity(u, x.user, filteredArrUsers)
-        (acc + (sim * dev(x.rating, userAvg(x.user, train, alluserAvg, globalAvg))))
+      val all_sim = all_similarities(u, k)
+      val res = arrFiltered.foldLeft((0.0, 0.0)){(acc, x) =>
+        val sim = all_sim(x.user - 1)
+        (acc._1 + (sim * dev(x.rating, userAvg(x.user, train, alluserAvg, globalAvg))), acc._2 + sim.abs)
         }
-      val bottom = arrFiltered.foldLeft(0.0){(acc, x) =>
-        val sim = preProcess_Similarity(u, x.user, filteredArrUsers)
-        acc + sim.abs
-        }
-      top / bottom
+      if(res._2 == 0) 0
+      else res._1 / res._2
     }  
   }
-  
-  
-  def preProcess(i: Int,u: Int, arrFiltered : Array[Rating]): Double = {
-    preProcessSim.getOrElse((u, i),{
-      var tmp = 0.0
-      if (arrFiltered.isEmpty){
-        preProcessSim += (((u,i), tmp))
-        tmp
-      }
-      else {
-        val rating_u_i = arrFiltered.filter(_.item == i).apply(0).rating
-        val top = dev(rating_u_i, userAvg(u, data, alluserAvg, globalAvg)) 
-        val bottom = arrFiltered.foldLeft(0.0){(acc, x) =>
-          val normDevU = dev(x.rating, userAvg(u, data, alluserAvg, globalAvg))
-          acc + normDevU * normDevU
-        }
-        tmp = top / sqrt(bottom)
-        preProcessSim += (((u,i), tmp))
-        tmp
-      }
-    })
-  }
-  
-  def preProcess_Similarity(u: Int, v: Int, filteredArrUsers: Map[Int, Array[Rating]]): Double = { 
-    cosineSim.getOrElse((u, v), {
-    val arrFiltered_u = filteredArrUsers.getOrElse(u, data.filter(x => x.user == u ))
-    val arrFiltered_v = filteredArrUsers.getOrElse(v, data.filter(x => x.user == v ))
-    //val arrFiltered_u = train.filter(x => x.user == u )
-    //val arrFiltered_v = train.filter(x => x.user == v )
 
-    val item_commun = common_item(arrFiltered_u, arrFiltered_v)
-    var tmp = 0.0
-    if(item_commun.isEmpty){
-      cosineSim += (((u,v), tmp))
-      cosineSim += (((v,u), tmp))
-      tmp
-    }
-    else
-        tmp = item_commun.foldLeft(0.0){(acc, x) => acc + (preProcess(x, u, arrFiltered_u) * preProcess(x, v, arrFiltered_v))}
-        cosineSim += (((u,v), tmp))
-        cosineSim += (((v,u), tmp))
-        tmp
-    })
-  }
 
-  def predictedPersonalized(user: Int, item : Int): Double = {
-    val useravg = userAvg(user, data, alluserAvg, globalAvg)
-    if (useravg == globalAvg) {
-      globalAvg
-    }
-    else{
-      val itemavg = itemAvg(item, data, allitemAvg, globalAvg)
-      if (itemavg == globalAvg) {
-        useravg
-      }
-      else {
-        val simavgdev = avgSimilarity(item ,user, data, mapArrUsers)
-        if (simavgdev == 0) {
-          useravg
-        }
-        else
+  def predictedPersonalized_knn(user: Int, item : Int, k: Int, train: Array[Rating]): Double = {
+    
+    val useravg = userAvg(user, train, alluserAvg, globalAvg)
+
+    if (useravg == globalAvg) globalAvg
+    else if (itemAvg(item, train, allitemAvg, globalAvg) == globalAvg) useravg
+    else {
+      val simavgdev = avgSimilarity_knn(item ,user, k, train)
+      if (simavgdev == 0) useravg
+      else
         useravg + simavgdev * scale((useravg + simavgdev), useravg)
-      }
     }
+  }
+
+
+  def predictor_knn(train : Array[Rating], k: Int): (Int, Int) => Double = {
+    (user, item) => predictedPersonalized_knn(user, item, k, train)
   }
   
 
-  def filteredArrAllUsers(train : Array[Rating]): Map[Int, Array[Rating]] =  {
-    train.groupBy(elem => elem.user)
+  def mae_test(test: Array[Rating], train: Array[Rating], k: Int): Double = {
+    mean_(test.map(elem => (predictor_knn(train, k)(elem.user, elem.item) - elem.rating).abs))
   }
 
-  mapArrUsers = filteredArrAllUsers(data)
+  /////////////////////////////////
+  //////////FIN DIMANCHE /////////
+  ///////////////////////////////
 
-  def predictorCosine(train : Array[Rating]): (Int, Int) => Double = {
-    (user, item) => predictedPersonalized(user, item)
-  }
-
-
-  def recommendation(u: Int, n: Int, info: Array[Rating]) : Array[Int] = {
+  ///////////////////////////////
+  def recommendation(u: Int, n: Int, k: Int, info: Array[Rating]) : Array[Int] = {
 
       val arrFiltered = info.filter(x => x.user == u).filter(x => !(x.rating.isNaN))
       val init = Array.fill(1682)(-1.0)
@@ -174,13 +149,13 @@ object Recommender extends App {
         init(i.item-1) = i.rating
       }
       for (j <- 0 to 1681){
-        if(init(j) == -1) init(j) = predictedPersonalized(j+1, u) //FAUT COSINE KNN
+        if(init(j) == -1) init(j) = predictedPersonalized_knn(j+1, u, k, info)
       }
-    init.zipWithIndex.sortBy(-_._1).take(n).map(_._2).map(_+1) // le +1 pour avoir numéro d Item pas indice list
+    init.zipWithIndex.sortBy(-_._1).take(n).map(_._2).map(_+1) // le +1 pour avoir numéro d Item pas indice array
 
   }
 
-  def test_recommendation_rating(u: Int, n: Int, info: Array[Rating]) : Array[Double] = {
+  def test_recommendation_rating(u: Int, n: Int, k: Int, info: Array[Rating]) : Array[Double] = {
 
       val arrFiltered = info.filter(x => x.user == u).filter(x => !(x.rating.isNaN))
       val init = Array.fill(1682)(-1.0)
@@ -188,21 +163,17 @@ object Recommender extends App {
         init(i.item-1) = i.rating
       }
       for (j <- 0 to 1681){
-        if(init(j) == -1) init(j) = predictedPersonalized(j+1, u)
+        if(init(j) == -1) init(j) = predictedPersonalized_knn(j+1, u, k, info)
       }
-    val out = init.zipWithIndex.sortBy(-_._1).take(n).map(_._2).map(_+1) // le +1 pour avoir numéro d Item pas indice list
+    val out = init.zipWithIndex.sortBy(-_._1).take(n).map(_._2).map(_+1) // le +1 pour avoir numéro d Item pas indice array
     out.map(x => init(x-1))
 
   }
 
   
   //val rec = recommendation(900, 3, data)
-  val data_augmented = Array.concat(data, personal)
-  val rec_test = test_recommendation_rating(900, 3, data_augmented)
-  println("Recommendation USER 1 : 1): " + rec_test.head)
-  println("Recommendation USER 1 : 2): " + rec_test.tail.head)
-  println("Recommendation USER 1 : 3) " + rec_test.tail.tail.head)
-  //println("Recommendation USER 1 : 4) " + rec_test.tail.tail.tail.head)
+  val rec_test = test_recommendation_rating(900, 3, 10, data_augmented)
+  println("Recommendation USER 1 : 1): " + rec_test.mkString(", "))
 
   // Save answers as JSON
   def printToFile(content: String, 
