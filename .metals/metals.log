@@ -9415,3 +9415,334 @@ AVERTISSEMENT: Unmatched cancel notification for request id 6692
 2022.03.19 15:12:15 INFO  time: compiled cs449-m1 in 0.51s[0m
 2022.03.19 15:12:25 INFO  compiling cs449-m1 (2 scala sources)[0m
 2022.03.19 15:12:25 INFO  time: compiled cs449-m1 in 0.51s[0m
+mars 20, 2022 3:32:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 7315
+2022.03.20 15:34:12 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:37:18: stale bloop error: not found: type PersonalizedConf
+  var conf = new PersonalizedConf(args) 
+                 ^^^^^^^^^^^^^^^^[0m
+2022.03.20 15:34:12 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:328:25: stale bloop error: type mismatch;
+ found   : Any
+ required: String
+      printToFile(json, jsonFile)
+                        ^^^^^^^^[0m
+2022.03.20 15:34:12 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:37:18: stale bloop error: not found: type PersonalizedConf
+  var conf = new PersonalizedConf(args) 
+                 ^^^^^^^^^^^^^^^^[0m
+2022.03.20 15:34:12 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:328:25: stale bloop error: type mismatch;
+ found   : Any
+ required: String
+      printToFile(json, jsonFile)
+                        ^^^^^^^^[0m
+2022.03.20 15:34:50 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.20 15:34:50 INFO  time: compiled cs449-m1 in 0.56s[0m
+2022.03.20 15:35:03 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.20 15:35:03 INFO  time: compiled cs449-m1 in 0.58s[0m
+2022.03.20 15:37:09 ERROR code navigation does not work for the file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala' because the SemanticDB file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/.bloop/cs449-m1/bloop-bsp-clients-classes/classes-Metals-p-L37pdiTeCUjdKiM_eeTg==/META-INF/semanticdb/src/main/scala/predict/kNN.scala.semanticdb' doesn't exist. There can be many reasons for this error. [0m
+2022.03.20 15:40:10 ERROR code navigation does not work for the file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala' because the SemanticDB file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/.bloop/cs449-m1/bloop-bsp-clients-classes/classes-Metals-p-L37pdiTeCUjdKiM_eeTg==/META-INF/semanticdb/src/main/scala/predict/kNN.scala.semanticdb' doesn't exist. There can be many reasons for this error. [0m
+2022.03.20 15:40:10 ERROR code navigation does not work for the file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala' because the SemanticDB file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/.bloop/cs449-m1/bloop-bsp-clients-classes/classes-Metals-p-L37pdiTeCUjdKiM_eeTg==/META-INF/semanticdb/src/main/scala/predict/kNN.scala.semanticdb' doesn't exist. There can be many reasons for this error. [0m
+2022.03.20 15:40:51 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.20 15:40:51 INFO  time: compiled cs449-m1 in 0.6s[0m
+mars 20, 2022 3:40:58 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+2022.03.20 15:40:59 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.20 15:40:59 INFO  time: compiled cs449-m1 in 0.45s[0m
+mars 20, 2022 3:41:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 8216
+2022.03.20 15:41:08 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.20 15:41:08 INFO  time: compiled cs449-m1 in 0.53s[0m
+2022.03.20 15:41:34 ERROR code navigation does not work for the file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala' because the SemanticDB file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/.bloop/cs449-m1/bloop-bsp-clients-classes/classes-Metals-p-L37pdiTeCUjdKiM_eeTg==/META-INF/semanticdb/src/main/scala/predict/kNN.scala.semanticdb' doesn't exist. There can be many reasons for this error. [0m
+2022.03.20 15:41:34 ERROR code navigation does not work for the file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala' because the SemanticDB file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/.bloop/cs449-m1/bloop-bsp-clients-classes/classes-Metals-p-L37pdiTeCUjdKiM_eeTg==/META-INF/semanticdb/src/main/scala/predict/kNN.scala.semanticdb' doesn't exist. There can be many reasons for this error. [0m
+2022.03.20 15:41:38 ERROR code navigation does not work for the file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala' because the SemanticDB file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/.bloop/cs449-m1/bloop-bsp-clients-classes/classes-Metals-p-L37pdiTeCUjdKiM_eeTg==/META-INF/semanticdb/src/main/scala/predict/kNN.scala.semanticdb' doesn't exist. There can be many reasons for this error. [0m
+2022.03.20 15:41:44 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.20 15:41:44 INFO  time: compiled cs449-m1 in 0.54s[0m
+2022.03.20 15:41:49 ERROR code navigation does not work for the file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala' because the SemanticDB file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/.bloop/cs449-m1/bloop-bsp-clients-classes/classes-Metals-p-L37pdiTeCUjdKiM_eeTg==/META-INF/semanticdb/src/main/scala/predict/kNN.scala.semanticdb' doesn't exist. There can be many reasons for this error. [0m
+2022.03.20 15:41:49 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.20 15:41:49 INFO  time: compiled cs449-m1 in 0.53s[0m
+2022.03.20 15:42:05 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.20 15:42:05 INFO  time: compiled cs449-m1 in 0.51s[0m
+2022.03.20 15:42:31 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.20 15:42:31 INFO  time: compiled cs449-m1 in 0.51s[0m
+2022.03.20 15:42:43 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.20 15:42:43 INFO  time: compiled cs449-m1 in 0.51s[0m
+2022.03.20 15:42:49 ERROR code navigation does not work for the file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala' because the SemanticDB file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/.bloop/cs449-m1/bloop-bsp-clients-classes/classes-Metals-p-L37pdiTeCUjdKiM_eeTg==/META-INF/semanticdb/src/main/scala/predict/kNN.scala.semanticdb' doesn't exist. There can be many reasons for this error. [0m
+2022.03.20 15:42:49 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.20 15:42:49 INFO  time: compiled cs449-m1 in 0.52s[0m
+2022.03.20 15:43:00 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.20 15:43:00 INFO  time: compiled cs449-m1 in 0.54s[0m
+2022.03.20 16:00:07 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.20 16:00:07 INFO  time: compiled cs449-m1 in 0.54s[0m
+2022.03.20 16:00:59 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.20 16:00:59 INFO  time: compiled cs449-m1 in 0.51s[0m
+2022.03.20 16:01:13 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.20 16:01:13 INFO  time: compiled cs449-m1 in 0.53s[0m
+2022.03.20 16:02:17 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.20 16:02:17 INFO  time: compiled cs449-m1 in 0.57s[0m
+mars 20, 2022 4:15:24 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+mars 20, 2022 4:15:25 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$handleError
+GRAVE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:379)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:130)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:105)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:95)
+	at scala.reflect.internal.TreeInfo.admitsTypeSelection(TreeInfo.scala:147)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:963)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:812)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:23)
+
+2022.03.20 16:15:41 ERROR code navigation does not work for the file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala' because the SemanticDB file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/.bloop/cs449-m1/bloop-bsp-clients-classes/classes-Metals-p-L37pdiTeCUjdKiM_eeTg==/META-INF/semanticdb/src/main/scala/predict/kNN.scala.semanticdb' doesn't exist. There can be many reasons for this error. [0m
+2022.03.20 16:16:09 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:37:18: stale bloop error: not found: type PersonalizedConf
+  var conf = new PersonalizedConf(args) 
+                 ^^^^^^^^^^^^^^^^[0m
+2022.03.20 16:16:09 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:385:25: stale bloop error: type mismatch;
+ found   : Any
+ required: String
+      printToFile(json, jsonFile)
+                        ^^^^^^^^[0m
+2022.03.20 16:16:09 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:37:18: stale bloop error: not found: type PersonalizedConf
+  var conf = new PersonalizedConf(args) 
+                 ^^^^^^^^^^^^^^^^[0m
+2022.03.20 16:16:09 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:385:25: stale bloop error: type mismatch;
+ found   : Any
+ required: String
+      printToFile(json, jsonFile)
+                        ^^^^^^^^[0m
+2022.03.20 16:16:28 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.20 16:16:28 INFO  time: compiled cs449-m1 in 0.79s[0m
+2022.03.20 16:16:34 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.20 16:16:34 INFO  time: compiled cs449-m1 in 0.67s[0m
+2022.03.20 16:17:19 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.20 16:17:19 INFO  time: compiled cs449-m1 in 0.55s[0m
+2022.03.20 16:17:34 ERROR code navigation does not work for the file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala' because the SemanticDB file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/.bloop/cs449-m1/bloop-bsp-clients-classes/classes-Metals-p-L37pdiTeCUjdKiM_eeTg==/META-INF/semanticdb/src/main/scala/predict/kNN.scala.semanticdb' doesn't exist. There can be many reasons for this error. [0m
+2022.03.20 16:17:34 ERROR code navigation does not work for the file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala' because the SemanticDB file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/.bloop/cs449-m1/bloop-bsp-clients-classes/classes-Metals-p-L37pdiTeCUjdKiM_eeTg==/META-INF/semanticdb/src/main/scala/predict/kNN.scala.semanticdb' doesn't exist. There can be many reasons for this error. [0m
+2022.03.20 16:17:44 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.20 16:17:44 INFO  time: compiled cs449-m1 in 0.59s[0m
+2022.03.20 16:17:45 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.20 16:17:45 INFO  time: compiled cs449-m1 in 0.72s[0m
+2022.03.20 16:17:58 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.20 16:17:58 INFO  time: compiled cs449-m1 in 0.6s[0m
+2022.03.20 16:18:16 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.20 16:18:16 INFO  time: compiled cs449-m1 in 0.54s[0m
+mars 20, 2022 4:24:15 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+2022.03.20 16:25:25 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.20 16:25:25 INFO  time: compiled cs449-m1 in 0.52s[0m
+mars 20, 2022 4:27:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 9487
+mars 20, 2022 4:27:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 9486
+2022.03.20 16:28:59 ERROR code navigation does not work for the file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala' because the SemanticDB file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/.bloop/cs449-m1/bloop-bsp-clients-classes/classes-Metals-p-L37pdiTeCUjdKiM_eeTg==/META-INF/semanticdb/src/main/scala/predict/kNN.scala.semanticdb' doesn't exist. There can be many reasons for this error. [0m
+2022.03.20 16:28:59 ERROR code navigation does not work for the file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala' because the SemanticDB file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/.bloop/cs449-m1/bloop-bsp-clients-classes/classes-Metals-p-L37pdiTeCUjdKiM_eeTg==/META-INF/semanticdb/src/main/scala/predict/kNN.scala.semanticdb' doesn't exist. There can be many reasons for this error. [0m
+2022.03.20 16:29:31 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.20 16:29:31 INFO  time: compiled cs449-m1 in 0.6s[0m
+mars 20, 2022 4:29:35 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 9669
+2022.03.20 16:29:37 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.20 16:29:37 INFO  time: compiled cs449-m1 in 0.53s[0m
+mars 20, 2022 4:29:46 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 9686
+2022.03.20 16:29:52 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.20 16:29:52 INFO  time: compiled cs449-m1 in 0.52s[0m
+2022.03.20 16:30:59 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.20 16:30:59 INFO  time: compiled cs449-m1 in 0.53s[0m
+2022.03.20 16:33:08 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.20 16:33:08 INFO  time: compiled cs449-m1 in 0.61s[0m
+2022.03.20 16:34:43 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.20 16:34:43 INFO  time: compiled cs449-m1 in 0.54s[0m
+2022.03.20 16:34:53 ERROR code navigation does not work for the file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala' because the SemanticDB file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/.bloop/cs449-m1/bloop-bsp-clients-classes/classes-Metals-p-L37pdiTeCUjdKiM_eeTg==/META-INF/semanticdb/src/main/scala/predict/kNN.scala.semanticdb' doesn't exist. There can be many reasons for this error. [0m
+mars 20, 2022 4:35:20 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 9988
+2022.03.20 16:35:34 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.20 16:35:34 INFO  time: compiled cs449-m1 in 0.6s[0m
+2022.03.20 16:36:00 ERROR code navigation does not work for the file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala' because the SemanticDB file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/.bloop/cs449-m1/bloop-bsp-clients-classes/classes-Metals-p-L37pdiTeCUjdKiM_eeTg==/META-INF/semanticdb/src/main/scala/predict/kNN.scala.semanticdb' doesn't exist. There can be many reasons for this error. [0m
+2022.03.20 16:36:18 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.20 16:36:18 INFO  time: compiled cs449-m1 in 0.58s[0m
+2022.03.20 16:36:55 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.20 16:36:55 INFO  time: compiled cs449-m1 in 0.57s[0m
+2022.03.20 16:37:00 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.20 16:37:00 INFO  time: compiled cs449-m1 in 0.55s[0m
+2022.03.20 16:37:35 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.20 16:37:35 INFO  time: compiled cs449-m1 in 0.53s[0m
+2022.03.20 16:37:59 ERROR code navigation does not work for the file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala' because the SemanticDB file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/.bloop/cs449-m1/bloop-bsp-clients-classes/classes-Metals-p-L37pdiTeCUjdKiM_eeTg==/META-INF/semanticdb/src/main/scala/predict/kNN.scala.semanticdb' doesn't exist. There can be many reasons for this error. [0m
+2022.03.20 16:37:59 ERROR code navigation does not work for the file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala' because the SemanticDB file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/.bloop/cs449-m1/bloop-bsp-clients-classes/classes-Metals-p-L37pdiTeCUjdKiM_eeTg==/META-INF/semanticdb/src/main/scala/predict/kNN.scala.semanticdb' doesn't exist. There can be many reasons for this error. [0m
+mars 20, 2022 4:38:11 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 10270
+2022.03.20 16:38:31 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.20 16:38:31 INFO  time: compiled cs449-m1 in 0.56s[0m
+mars 20, 2022 4:38:32 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 10306
+2022.03.20 16:38:35 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.20 16:38:35 INFO  time: compiled cs449-m1 in 0.53s[0m
+2022.03.20 16:38:59 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.20 16:38:59 INFO  time: compiled cs449-m1 in 0.54s[0m
+2022.03.20 16:39:02 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.20 16:39:02 INFO  time: compiled cs449-m1 in 0.64s[0m
+2022.03.20 16:45:34 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.20 16:45:34 INFO  time: compiled cs449-m1 in 0.56s[0m
+2022.03.20 16:45:35 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.20 16:45:35 INFO  time: compiled cs449-m1 in 0.6s[0m
+2022.03.20 16:45:50 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.20 16:45:50 INFO  time: compiled cs449-m1 in 0.56s[0m
+2022.03.20 16:55:18 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.20 16:55:18 INFO  time: compiled cs449-m1 in 0.54s[0m
+2022.03.20 16:56:16 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.20 16:56:16 INFO  time: compiled cs449-m1 in 0.52s[0m
+mars 20, 2022 5:02:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 10785
+mars 20, 2022 5:02:24 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 10793
+2022.03.20 17:02:33 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.20 17:02:33 INFO  time: compiled cs449-m1 in 0.55s[0m
+2022.03.20 17:02:48 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.20 17:02:48 INFO  time: compiled cs449-m1 in 0.53s[0m
+2022.03.20 17:03:43 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.20 17:03:43 INFO  time: compiled cs449-m1 in 0.57s[0m
+2022.03.20 17:04:15 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.20 17:04:15 INFO  time: compiled cs449-m1 in 0.57s[0m
+2022.03.20 18:50:54 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.20 18:50:54 INFO  time: compiled cs449-m1 in 0.62s[0m
+2022.03.20 19:24:39 INFO  compiling cs449-m1 (2 scala sources)[0m
+2022.03.20 19:24:39 INFO  time: compiled cs449-m1 in 0.65s[0m
+2022.03.20 19:27:28 ERROR code navigation does not work for the file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/recommend/Recommender.scala' because the SemanticDB file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/.bloop/cs449-m1/bloop-bsp-clients-classes/classes-Metals-p-L37pdiTeCUjdKiM_eeTg==/META-INF/semanticdb/src/main/scala/recommend/Recommender.scala.semanticdb' doesn't exist. There can be many reasons for this error. [0m
+2022.03.20 19:27:29 INFO  compiling cs449-m1 (3 scala sources)[0m
+2022.03.20 19:27:29 INFO  time: compiled cs449-m1 in 0.71s[0m
+2022.03.20 19:27:51 INFO  compiling cs449-m1 (3 scala sources)[0m
+2022.03.20 19:27:51 INFO  time: compiled cs449-m1 in 0.67s[0m
+2022.03.20 19:28:05 INFO  compiling cs449-m1 (3 scala sources)[0m
+2022.03.20 19:28:05 INFO  time: compiled cs449-m1 in 0.71s[0m
+2022.03.20 19:28:28 INFO  compiling cs449-m1 (3 scala sources)[0m
+2022.03.20 19:28:28 INFO  time: compiled cs449-m1 in 0.69s[0m
+mars 20, 2022 7:28:35 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 11223
+2022.03.20 19:29:03 INFO  compiling cs449-m1 (3 scala sources)[0m
+2022.03.20 19:29:03 INFO  time: compiled cs449-m1 in 0.72s[0m
+2022.03.20 19:29:16 INFO  compiling cs449-m1 (3 scala sources)[0m
+2022.03.20 19:29:16 INFO  time: compiled cs449-m1 in 0.69s[0m
+2022.03.20 19:29:23 INFO  compiling cs449-m1 (3 scala sources)[0m
+2022.03.20 19:29:23 INFO  time: compiled cs449-m1 in 0.71s[0m
+2022.03.20 19:30:28 ERROR code navigation does not work for the file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala' because the SemanticDB file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/.bloop/cs449-m1/bloop-bsp-clients-classes/classes-Metals-p-L37pdiTeCUjdKiM_eeTg==/META-INF/semanticdb/src/main/scala/predict/kNN.scala.semanticdb' doesn't exist. There can be many reasons for this error. [0m
+2022.03.20 19:30:48 INFO  compiling cs449-m1 (3 scala sources)[0m
+2022.03.20 19:30:48 INFO  time: compiled cs449-m1 in 0.21s[0m
+2022.03.20 19:31:13 ERROR code navigation does not work for the file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/recommend/Recommender.scala' because the SemanticDB file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/.bloop/cs449-m1/bloop-bsp-clients-classes/classes-Metals-p-L37pdiTeCUjdKiM_eeTg==/META-INF/semanticdb/src/main/scala/recommend/Recommender.scala.semanticdb' doesn't exist. There can be many reasons for this error. [0m
+2022.03.20 19:31:13 INFO  compiling cs449-m1 (3 scala sources)[0m
+2022.03.20 19:31:13 INFO  time: compiled cs449-m1 in 0.19s[0m
+2022.03.20 19:31:55 INFO  compiling cs449-m1 (3 scala sources)[0m
+2022.03.20 19:31:55 INFO  time: compiled cs449-m1 in 0.69s[0m
+2022.03.20 19:32:00 INFO  compiling cs449-m1 (3 scala sources)[0m
+2022.03.20 19:32:00 INFO  time: compiled cs449-m1 in 0.76s[0m
+2022.03.20 19:34:18 INFO  compiling cs449-m1 (3 scala sources)[0m
+2022.03.20 19:34:18 INFO  time: compiled cs449-m1 in 0.65s[0m
+2022.03.20 19:34:29 INFO  compiling cs449-m1 (3 scala sources)[0m
+2022.03.20 19:34:29 INFO  time: compiled cs449-m1 in 0.67s[0m
+2022.03.20 19:34:33 INFO  compiling cs449-m1 (3 scala sources)[0m
+2022.03.20 19:34:33 INFO  time: compiled cs449-m1 in 0.69s[0m
+2022.03.20 19:34:42 INFO  compiling cs449-m1 (3 scala sources)[0m
+2022.03.20 19:34:42 INFO  time: compiled cs449-m1 in 0.66s[0m
+2022.03.20 19:35:16 INFO  compiling cs449-m1 (3 scala sources)[0m
+2022.03.20 19:35:16 INFO  time: compiled cs449-m1 in 0.73s[0m
+mars 20, 2022 7:38:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 11564
+2022.03.20 19:38:29 INFO  compiling cs449-m1 (3 scala sources)[0m
+2022.03.20 19:38:29 INFO  time: compiled cs449-m1 in 0.67s[0m
+2022.03.20 19:40:14 INFO  compiling cs449-m1 (3 scala sources)[0m
+2022.03.20 19:40:14 INFO  time: compiled cs449-m1 in 0.64s[0m
+2022.03.20 19:40:37 INFO  compiling cs449-m1 (3 scala sources)[0m
+2022.03.20 19:40:37 INFO  time: compiled cs449-m1 in 0.63s[0m
+2022.03.20 19:40:40 INFO  compiling cs449-m1 (3 scala sources)[0m
+2022.03.20 19:40:40 INFO  time: compiled cs449-m1 in 0.66s[0m
+2022.03.20 19:40:52 INFO  compiling cs449-m1 (3 scala sources)[0m
+2022.03.20 19:40:52 INFO  time: compiled cs449-m1 in 0.67s[0m
+2022.03.20 19:45:38 INFO  compiling cs449-m1 (3 scala sources)[0m
+2022.03.20 19:45:38 INFO  time: compiled cs449-m1 in 0.65s[0m
+2022.03.20 19:46:04 INFO  compiling cs449-m1 (3 scala sources)[0m
+2022.03.20 19:46:04 INFO  time: compiled cs449-m1 in 0.65s[0m
+2022.03.20 19:46:56 INFO  compiling cs449-m1 (3 scala sources)[0m
+2022.03.20 19:46:56 INFO  time: compiled cs449-m1 in 0.7s[0m
+2022.03.20 19:48:12 INFO  compiling cs449-m1 (3 scala sources)[0m
+2022.03.20 19:48:12 INFO  time: compiled cs449-m1 in 0.69s[0m
+2022.03.20 19:52:15 ERROR code navigation does not work for the file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/recommend/Recommender.scala' because the SemanticDB file '/Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/.bloop/cs449-m1/bloop-bsp-clients-classes/classes-Metals-p-L37pdiTeCUjdKiM_eeTg==/META-INF/semanticdb/src/main/scala/recommend/Recommender.scala.semanticdb' doesn't exist. There can be many reasons for this error. [0m
+2022.03.20 19:52:15 INFO  compiling cs449-m1 (3 scala sources)[0m
+2022.03.20 19:52:15 INFO  time: compiled cs449-m1 in 0.67s[0m
+2022.03.20 19:58:40 INFO  compiling cs449-m1 (3 scala sources)[0m
+2022.03.20 19:58:40 INFO  time: compiled cs449-m1 in 0.65s[0m
+2022.03.20 19:59:03 INFO  compiling cs449-m1 (3 scala sources)[0m
+2022.03.20 19:59:03 INFO  time: compiled cs449-m1 in 0.67s[0m
+2022.03.20 20:01:46 INFO  compiling cs449-m1 (3 scala sources)[0m
+2022.03.20 20:01:46 INFO  time: compiled cs449-m1 in 0.66s[0m
+2022.03.20 20:06:06 INFO  compiling cs449-m1 (3 scala sources)[0m
+2022.03.20 20:06:06 INFO  time: compiled cs449-m1 in 0.62s[0m
+2022.03.20 20:06:16 INFO  compiling cs449-m1 (3 scala sources)[0m
+2022.03.20 20:06:16 INFO  time: compiled cs449-m1 in 0.66s[0m
+mars 20, 2022 8:06:20 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 11909
+2022.03.21 14:19:24 INFO  compiling cs449-m1 (3 scala sources)[0m
+2022.03.21 14:19:24 INFO  time: compiled cs449-m1 in 0.91s[0m
+2022.03.21 14:19:33 INFO  compiling cs449-m1 (3 scala sources)[0m
+2022.03.21 14:19:33 INFO  time: compiled cs449-m1 in 0.75s[0m
+2022.03.21 14:19:33 INFO  compiling cs449-m1 (3 scala sources)[0m
+2022.03.21 14:19:34 INFO  time: compiled cs449-m1 in 0.73s[0m
+2022.03.21 14:19:36 INFO  compiling cs449-m1 (3 scala sources)[0m
+2022.03.21 14:19:36 INFO  time: compiled cs449-m1 in 0.77s[0m
+2022.03.21 14:21:18 INFO  compiling cs449-m1 (3 scala sources)[0m
+2022.03.21 14:21:18 INFO  time: compiled cs449-m1 in 0.65s[0m
+2022.03.21 14:22:38 INFO  compiling cs449-m1 (3 scala sources)[0m
+2022.03.21 14:22:38 INFO  time: compiled cs449-m1 in 0.67s[0m
+2022.03.21 14:23:05 INFO  compiling cs449-m1 (3 scala sources)[0m
+2022.03.21 14:23:05 INFO  time: compiled cs449-m1 in 0.67s[0m
+2022.03.21 14:23:20 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:37:18: stale bloop error: not found: type PersonalizedConf
+  var conf = new PersonalizedConf(args) 
+                 ^^^^^^^^^^^^^^^^[0m
+2022.03.21 14:23:20 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:254:25: stale bloop error: type mismatch;
+ found   : Any
+ required: String
+      printToFile(json, jsonFile)
+                        ^^^^^^^^[0m
+2022.03.21 14:23:20 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:37:18: stale bloop error: not found: type PersonalizedConf
+  var conf = new PersonalizedConf(args) 
+                 ^^^^^^^^^^^^^^^^[0m
+2022.03.21 14:23:20 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:254:25: stale bloop error: type mismatch;
+ found   : Any
+ required: String
+      printToFile(json, jsonFile)
+                        ^^^^^^^^[0m
+2022.03.21 14:23:24 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:37:18: stale bloop error: not found: type PersonalizedConf
+  var conf = new PersonalizedConf(args) 
+                 ^^^^^^^^^^^^^^^^[0m
+2022.03.21 14:23:24 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:254:25: stale bloop error: type mismatch;
+ found   : Any
+ required: String
+      printToFile(json, jsonFile)
+                        ^^^^^^^^[0m
+2022.03.21 14:23:24 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:37:18: stale bloop error: not found: type PersonalizedConf
+  var conf = new PersonalizedConf(args) 
+                 ^^^^^^^^^^^^^^^^[0m
+2022.03.21 14:23:24 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:254:25: stale bloop error: type mismatch;
+ found   : Any
+ required: String
+      printToFile(json, jsonFile)
+                        ^^^^^^^^[0m
+2022.03.21 14:23:24 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:37:18: stale bloop error: not found: type PersonalizedConf
+  var conf = new PersonalizedConf(args) 
+                 ^^^^^^^^^^^^^^^^[0m
+2022.03.21 14:23:24 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:254:25: stale bloop error: type mismatch;
+ found   : Any
+ required: String
+      printToFile(json, jsonFile)
+                        ^^^^^^^^[0m
+2022.03.21 14:23:25 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:37:18: stale bloop error: not found: type PersonalizedConf
+  var conf = new PersonalizedConf(args) 
+                 ^^^^^^^^^^^^^^^^[0m
+2022.03.21 14:23:25 INFO  file:///Users/salimcherkaoui/Desktop/Systems_for_Datascience/cs449-M1/src/main/scala/predict/kNN.scala:254:25: stale bloop error: type mismatch;
+ found   : Any
+ required: String
+      printToFile(json, jsonFile)
+                        ^^^^^^^^[0m
+2022.03.21 14:23:37 INFO  compiling cs449-m1 (3 scala sources)[0m
+2022.03.21 14:23:37 INFO  time: compiled cs449-m1 in 0.74s[0m
+2022.03.21 14:23:41 INFO  compiling cs449-m1 (3 scala sources)[0m
+2022.03.21 14:23:41 INFO  time: compiled cs449-m1 in 0.78s[0m
+2022.03.21 14:23:44 INFO  compiling cs449-m1 (3 scala sources)[0m
+2022.03.21 14:23:44 INFO  time: compiled cs449-m1 in 0.81s[0m
+2022.03.21 14:25:07 INFO  compiling cs449-m1 (3 scala sources)[0m
+2022.03.21 14:25:07 INFO  time: compiled cs449-m1 in 0.7s[0m

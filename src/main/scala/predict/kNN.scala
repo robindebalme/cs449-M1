@@ -53,9 +53,84 @@ object kNN extends App {
 
   globalAvg =  mean_(train.map(_.rating))
   mapArrUsers = filteredArrAllUsers(train)
+  
+
+  ////////////////////////////////////////
+  ///////// NEW STRAT DIMANCHE //////////
+ ///////////////////////////////////////
+
+def all_similarities(user: Int, k: Int): Array[Double] = {
+      var all_sim  = Array.fill(943)(0.0)
+      for(j <- 0 to 942){
+        if(j+1 == user) all_sim(j) = (0.0)
+        else all_sim(j) = (preProcess_Similarity(user, j+1, mapArrUsers, cosineSim, train, globalAvg, alluserAvg, preProcessSim))
+      }
+      val k_top_users = all_sim.zipWithIndex.sortBy(-_._1).take(k).map(_._2) // index users les plus important
+      for(j <- 0 to 942){
+        if ( !k_top_users.contains(j) || j==(user-1)) 
+          all_sim(j) = 0
+      }
+
+      all_sim
+  }
+
+  //println("All similarities :" + all_similarities(1, 10).mkString(", "))
 
 
-  def kNN_sim(user: Int, k: Int): Array[(Int, Double)] = {
+  def avgSimilarity_knn(i: Int, u: Int, k: Int, train: Array[Rating]): Double = {
+
+    val arrFiltered = train.filter(_.item == i)
+    if(arrFiltered.isEmpty) 0
+    else {
+      val all_sim = all_similarities(u, k)
+      val res = arrFiltered.foldLeft((0.0, 0.0)){(acc, x) =>
+        val sim = all_sim(x.user - 1)
+        (acc._1 + (sim * dev(x.rating, userAvg(x.user, train, alluserAvg, globalAvg))), acc._2 + sim.abs)
+        }
+      if(res._2 == 0) 0
+      else res._1 / res._2
+    }  
+  }
+
+  println("Avg similarity I1 U1 K10 :"  + avgSimilarity_knn(1, 1, 10, train))
+
+  def predictedPersonalized_knn(user: Int, item : Int, k: Int, train: Array[Rating]): Double = {
+    
+    val useravg = userAvg(user, train, alluserAvg, globalAvg)
+
+    if (useravg == globalAvg) globalAvg
+    else if (itemAvg(item, train, allitemAvg, globalAvg) == globalAvg) useravg
+    else {
+      val simavgdev = avgSimilarity_knn(item ,user, k, train)
+      if (simavgdev == 0) useravg
+      else
+        useravg + simavgdev * scale((useravg + simavgdev), useravg)
+    }
+  }
+
+  println("Pred I2 U1 K10 :"  + predictedPersonalized_knn(1, 2, 10, train))
+
+  def predictor_knn(train : Array[Rating], k: Int): (Int, Int) => Double = {
+    (user, item) => predictedPersonalized_knn(user, item, k, train)
+  }
+  
+
+  def mae_test(test: Array[Rating], train: Array[Rating], k: Int): Double = {
+    mean_(test.map(elem => (predictor_knn(train, k)(elem.user, elem.item) - elem.rating).abs))
+  }
+
+  println("mae K10 :"  + mae_test(test, train, 10))
+
+  /////////////////////////////////
+  //////////FIN DIMANCHE /////////
+  ///////////////////////////////
+
+
+   ////////////////////////////////
+  /////AUTRE FACON (-stockage)////
+  ///////////////////////////////
+
+ def kNN_sim(user: Int, k: Int): Array[(Int, Double)] = {
     kNN_map.getOrElse(user,{
     val tmp = train.map(_.user).distinct
     var acc = Array.fill(k)(-1, -1.0)
@@ -81,80 +156,7 @@ object kNN extends App {
     })
   }
 
-  def kNN_sim_normal(user: Int, k: Int): Array[(Int, Double)] = {
-    kNN_map.getOrElse(user,{
-      var all_sim  = Array.fill(943)(-1, -1.0)
-      for(j <- 0 to 942){
-        if(j+1 == user) all_sim(j) = (j+1, -1)
-        else all_sim(j) = (j+1, preProcess_Similarity(user, j+1, mapArrUsers, cosineSim, train, globalAvg, alluserAvg, preProcessSim))
-      }
-      all_sim.sortBy(-_._2).take(k+1)
-    })
-  }
-  
-  def all_sim_normal(user: Int, k: Int): Array[Double] = {
-      var all_sim  = Array.fill(943)(0.0)
-      for(j <- 0 to 942){
-        if(j+1 == user) all_sim(j) = (0.0)
-        else all_sim(j) = (preProcess_Similarity(user, j+1, mapArrUsers, cosineSim, train, globalAvg, alluserAvg, preProcessSim))
-      }
-      val k_top_users = all_sim.zipWithIndex.sortBy(-_._1).take(k+1).map(_._2) // index users les plus important
-      for(j <- 0 to 942){
-        if ( !k_top_users.contains(j) || j==(user-1)) 
-          all_sim(j) = 0
-      }
-
-      all_sim
-  }
-  
-
-  //val test_knn = kNN_sim(1, 10)
-  //val test_knn_normal = kNN_sim_normal(1, 4)
-  //val all_simi = all_sim_normal(1,10)
-  //println("kNN USER1 K3 :" + test_knn.mkString(", "))
-  //println("kNN normal USER1 K3 :" + test_knn_normal.mkString(", "))
-  //println("all simi USER1 K3 :" + all_simi.mkString(", "))
-  //println("kNN USER1 K3 :" + test_knn.tail.head)
-  //println("kNN USER1 K3 :" + test_knn.tail.tail.head)
-  //println("kNN USER1 K3 :" + test_knn.tail.tail.tail.head)
-
-
-  /*def knn_similarity(u: Int, k: Int) : Array[Double] = {
-    val all_sim = Array.fill(943)(0.0)
-    var j = 0
-    for(j <- 0 to 942){
-      all_sim(j) = Similarity(u, j+1)
-    }
-    val k_top_users = all_sim.zipWithIndex.sortBy(-_._1).take(k+1).map(_._2) // index users les plus important
-    for(j <- 0 to 942){
-      if ( !k_top_users.contains(j) || j==(u-1)) 
-        all_sim(j) = 0
-    }
-    all_sim
-  }
-
-  def knn_anyAvgDev(i: Int, u: Int, k: Int, info: Array[Rating]): Double = {
-    val arrFiltered = info.filter(x => x.item == i)
-    val arrFiltered2 = arrFiltered.filter(x => !(x.rating.isNaN)).filter(y => !(y.user.isNaN))
-
-    val all_simU = knn_similarity(u, k)
-    if(arrFiltered2.isEmpty) 0 // A REVOIR, C'EST LE CAS D'UN FILM SANS RATING PAR UN USER
-    else {
-      val haut = arrFiltered2.foldLeft(0.0){(acc, x) =>
-        if(all_simU(x.user-1) == 0) acc
-        else acc + all_simU(x.user-1)*NormDev(i, x.user, info)
-        } // C EST PAS VRAIMENT LA BONNE FORMULE, A CHECK
-
-      val bas = arrFiltered2.foldLeft(0.0){(acc, x) =>
-        if(all_simU(x.user-1) == 0) acc
-        else acc + all_simU(x.user-1)
-        }
-    haut/bas
-    }
-  }*/
-
-  
-    def kNN_anyAvgDev(i: Int, u: Int, k: Int, info: Array[Rating]): Double = {
+  def kNN_anyAvgDev(i: Int, u: Int, k: Int, info: Array[Rating]): Double = {
     val arrFiltered = info.filter(x => x.item == i)
     val possible = (arrFiltered.groupBy(x => x.user)).map(x => (x._1, x._2.head.rating))
 
@@ -172,116 +174,40 @@ object kNN extends App {
         if (tmp == -1.0) acc
         else acc + x._2.abs
         } 
-    haut/bas
+    if(bas == 0) 0
+    else haut/bas
+    
     }
   }
 
-  def kNN_anyAvgDev_test(i: Int, u: Int, k: Int, info: Array[Rating]): Double = {
-    val arrFiltered = info.filter(x => x.item == i)
-    val possible = (arrFiltered.groupBy(x => x.user)).map(x => (x._1, x._2.head.rating))
+def predictedPersonalized_knn_autre(user: Int, item : Int, k: Int, train: Array[Rating]): Double = {
+    
+    val useravg = userAvg(user, train, alluserAvg, globalAvg)
 
-    val all_simU = kNN_sim(u, k)
-    if(arrFiltered.isEmpty) 0
+    if (useravg == globalAvg) globalAvg
+    else if (itemAvg(item, train, allitemAvg, globalAvg) == globalAvg) useravg
     else {
-      val div = all_simU.foldLeft((0.0, 0.0, 0)){(acc, x) => 
-        val tmp = possible.getOrElse(x._1, -1.0)
-        if (tmp == -1.0 || x._2 == 0) acc
-        else 
-          (acc._1 + x._2 * dev(tmp, userAvg(x._1, train, alluserAvg, globalAvg)), acc._2 + x._2.abs, acc._3 + 1)
-        }
-        if(div._2 == 0 || div._3 == 0) 0
-        else div._1/div._2
+      val simavgdev = kNN_anyAvgDev(item ,user, k, train)
+      if (simavgdev == 0) useravg
+      else
+        useravg + simavgdev * scale((useravg + simavgdev), useravg)
     }
   }
-  
 
-
-  def kNN_anyAvgDev_all_sim(i: Int, u: Int, k: Int, info: Array[Rating]): Double = {
-    val arrFiltered = info.filter(x => x.item == i)
-    val possible = (arrFiltered.groupBy(x => x.user)).map(x => (x._1, x._2.head.rating))
-
-    val all_simU = all_sim_normal(u, k)
-    if(arrFiltered.isEmpty) 0
-    else {
-      val div = possible.foldLeft(0.0, 0.0){(acc, x) =>
-        if(all_simU(x._1 - 1) == 0) acc
-        else (acc._1 + all_simU(x._1 - 1)*dev(x._2, userAvg(x._1, train, alluserAvg, globalAvg)), acc._2 + all_simU(x._1 - 1).abs)
-      }
-    if(div._2 == 0) 0
-    else div._1/div._2
-    }
+  def predictor_knn_autre(train : Array[Rating], k: Int): (Int, Int) => Double = {
+    (user, item) => predictedPersonalized_knn_autre(user, item, k, train)
   }
   
-  
-  
-  //val possible_test = (train.filter(x => x.item == 1).groupBy(x => x.user)).map(x => (x._1, x._2.head.rating))
-  //println("possible test :" + possible_test.getOrElse(868, 0.0) )
-  
 
-  /*def knn_pred(i: Int, u: Int, k: Int, info: Array[Rating]): Double = {
-    val useravg = allUserAvg(u-1)
-    val anyavgdev = knn_anyAvgDev(i,u,k, info)
-
-    if (info.filter(x => x.item == i).isEmpty) useravg
-    else if (info.filter(x => x.user == u).isEmpty) globalAvg 
-    else useravg + anyavgdev*scale((useravg+anyavgdev), useravg)
-
-  }*/
-
-  def kNN_pred_(i: Int, u: Int, k: Int, info: Array[Rating]): Double = {
-    val useravg = userAvg(u, train, alluserAvg, globalAvg)
-    val kNNavgdev = kNN_anyAvgDev(i,u,k, info)
-
-    if (info.filter(x => x.item == i).isEmpty) useravg
-    else if (info.filter(x => x.user == u).isEmpty) globalAvg 
-    else useravg + kNNavgdev * scale((useravg + kNNavgdev), useravg)
-
+  def mae_test_autre(test: Array[Rating], train: Array[Rating], k: Int): Double = {
+    mean_(test.map(elem => (predictor_knn_autre(train, k)(elem.user, elem.item) - elem.rating).abs))
   }
 
-  def kNN_pred_test(i: Int, u: Int, k: Int, info: Array[Rating]): Double = {
-    val useravg = userAvg(u, train, alluserAvg, globalAvg)
-    val kNNavgdev = kNN_anyAvgDev_test(i,u,k, info)
+  //println("mae K10 :"  + mae_test_autre(test, train, 10))
 
-    if (info.filter(x => x.item == i).isEmpty) useravg
-    else if (info.filter(x => x.user == u).isEmpty) globalAvg 
-    else useravg + kNNavgdev * scale((useravg + kNNavgdev), useravg)
-
-  }
-
-  def kNN_pred_test_all(i: Int, u: Int, k: Int, info: Array[Rating]): Double = {
-    val useravg = userAvg(u, train, alluserAvg, globalAvg)
-    val kNNavgdev = kNN_anyAvgDev_all_sim(i,u,k, info)
-
-    if (info.filter(x => x.item == i).isEmpty) useravg
-    else if (info.filter(x => x.user == u).isEmpty) globalAvg 
-    else useravg + kNNavgdev * scale((useravg + kNNavgdev), useravg)
-
-  }
-
-
-
-
-  def mae(k: Int, test: Array[Rating], train: Array[Rating], prediction_method: String): Double = {
-    if (prediction_method == "GlobalAvg")
-      test.foldLeft(0.0){(acc, x) => acc + (globalAvg - x.rating).abs}/test.length
-    else if (prediction_method == "knn")
-     test.foldLeft(0.0){(acc, x) => acc + (kNN_pred_(x.user, x.item, k,  train) - x.rating).abs}/test.length
-    else if (prediction_method == "knn_test")
-     test.foldLeft(0.0){(acc, x) => acc + (kNN_pred_test(x.user, x.item, k,  train) - x.rating).abs}/test.length
-    else 0
-  }
-
-  val mae_k10 = mae(10, test, train, "knn_test_all")
-
-  println("mae k10 :" + mae_k10)
-
-
-  //println("Pred U1 I1 K10 :" + mae(943, test, train, "knn"))
-  /*println("Pred U1 I1 K10 :" + knn_pred(1,1, 30, train))
-  println("Pred U1 I1 K10 :" + knn_pred(1,1, 50, train))
-  println("Pred U1 I1 K10 :" + knn_pred(1,1, 100, train))*/
-  //println("recommendation for new user : " + recommendation(945, 5, 2, train))
-  //println("MAE K10 :" + mae(10, test, train, "knn"))
+  ////////////////////////////////
+  //////////FIN DE LA FACON //////
+  ///////////////////////////////
 
   // Save answers as JSON
   def printToFile(content: String, 
