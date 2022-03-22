@@ -44,12 +44,21 @@ object DistributedBaseline extends App {
   val test = load(spark, conf.test(), conf.separator())
 
   
-  val sizeOfTest = test.count()
+  /*val sizeOfTest = test.count()
   val sizeOfTrain = train.count()
   val maxUser = List(train.map(elem => elem.user).max(), test.map(elem => elem.user).max()).max
-  val maxItem = List(train.map(elem => elem.item).max(), test.map(elem => elem.item).max()).max
+  val maxItem = List(train.map(elem => elem.item).max(), test.map(elem => elem.item).max()).max*/
 
 
+  def distribmean(df : RDD[Rating]): Double = {
+    val pair = df.map(elem => (elem.rating, 1)).reduce((x, y) => (x._1 + y._1, x._2 + y._2))
+    pair._1 / pair._2
+  }
+
+  val globalAvgDistrib = distribmean(train)
+
+  val userArr = train.map(x => (x.user, (x.rating, 1))).reduceByKey((x, y) => (x._1 + y._1, x._2 + y._2)).mapValues(x => x._1 / x._2)
+  //val itemArr = train.map(x => (x.item, (x.rating, 1))).reduceByKey((x, y) => (x._1 + y._1, x._2 + y._2)).mapValues(x => x._1 / x._2)
   /*
   //var alluserAvg_ : Map[Int, Double] = Map()
   //var allitemAvg_ : Map[Int, Double] = Map()
@@ -180,19 +189,16 @@ object DistributedBaseline extends App {
   def mae(test: RDD[Rating], train: RDD[Rating], prediction_method: (RDD[Rating], Map[Int,Double], Map[Int,Double], Map[Int,Double])  => ((Int, Int) => Double)): Double = {
     val pair = test.map(x => ((prediction_method(train, alluserAvg_.value, allitemAvg_.value, alluserAvg_.value)(x.user, x.item) - x.rating).abs, 1)).reduce((x, y) => (x._1 + y._1, x._2 + y._2))
     pair._1 / pair._2
-  }
+  }*/
   
   val measurements = (1 to conf.num_measurements()).map(x => timingInMs(() => {
     //val maxUser = List(train.map(elem => elem.user).max(), test.map(elem => elem.user).max()).max
     //val maxItem = List(train.map(elem => elem.item).max(), test.map(elem => elem.item).max()).max
-    val alluserAvg_ = spark.sparkContext.broadcast((1 to maxUser).map(u => (u, distribUseravg(u))).toMap)
-    val allitemAvg_ = spark.sparkContext.broadcast((1 to maxItem).map(i => (i, distribItemavg(i))).toMap)
-    val allitemDev_ = spark.sparkContext.broadcast((1 to maxItem).map(i => (i, distribavgDev(i, alluserAvg_.value))).toMap)
 
-    val globalAvg = distribmean(train)
 
     // Thread.sleep(1000) // Do everything here from train and test
-    mae(test, train, predictorDistrib)  // Output answer as last value
+    distribmean(train) // Output answer as last value
+    train.map(x => (x.user, (x.rating, 1))).reduceByKey((x, y) => (x._1 + y._1, x._2 + y._2)).mapValues(x => x._1 / x._2)
   }))
 
   val timings = measurements.map(t => t._2)
@@ -218,7 +224,7 @@ object DistributedBaseline extends App {
         ),
         "D.1" -> ujson.Obj(
           "1.GlobalAvg" -> ujson.Num(globalAvg), // Datatype of answer: Double
-          "2.User1Avg" -> ujson.Num(0.0),  // Datatype of answer: Double
+          "2.User1Avg" -> ujson.Num((userArr.filter(_._1 == 1)).first._2),  // Datatype of answer: Double
           "3.Item1Avg" -> ujson.Num(0.0),   // Datatype of answer: Double
           "4.Item1AvgDev" -> ujson.Num(0.0), // Datatype of answer: Double,
           "5.PredUser1Item1" -> ujson.Num(0.0), // Datatype of answer: Double
@@ -241,6 +247,5 @@ object DistributedBaseline extends App {
 
   println("")
   spark.close()
-  */
 }
 
