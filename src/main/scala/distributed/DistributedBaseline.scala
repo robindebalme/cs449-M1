@@ -198,7 +198,7 @@ object DistributedBaseline extends App {
 
     // Thread.sleep(1000) // Do everything here from train and test
     distribmean(train) // Output answer as last value
-    train.map(x => (x.user, (x.rating, 1))).reduceByKey((x, y) => (x._1 + y._1, x._2 + y._2)).mapValues(x => x._1 / x._2)
+    //train.map(x => (x.user, (x.rating, 1))).reduceByKey((x, y) => (x._1 + y._1, x._2 + y._2)).mapValues(x => x._1 / x._2)
   }))
 
   val timings = measurements.map(t => t._2)

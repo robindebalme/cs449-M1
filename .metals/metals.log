@@ -9746,3 +9746,1014 @@ AVERTISSEMENT: Unmatched cancel notification for request id 11909
 2022.03.21 14:23:44 INFO  time: compiled cs449-m1 in 0.81s[0m
 2022.03.21 14:25:07 INFO  compiling cs449-m1 (3 scala sources)[0m
 2022.03.21 14:25:07 INFO  time: compiled cs449-m1 in 0.7s[0m
+2022.03.22 14:16:27 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/robindebalme/cs449-M1/.metals/lsp.trace.json or /Users/robindebalme/Library/Caches/org.scalameta.metals/lsp.trace.json
+2022.03.22 14:16:27 INFO  logging to file /Users/robindebalme/cs449-M1/.metals/metals.log
+2022.03.22 14:16:27 INFO  Started: Metals version 0.11.2 in workspace '/Users/robindebalme/cs449-M1' for client Visual Studio Code 1.65.2.
+2022.03.22 14:16:27 INFO  Parse release: 1.8.0_292
+2022.03.22 14:16:29 INFO  time: initialize in 1.49s
+2022.03.22 14:16:30 INFO  Attempting to connect to the build server...
+2022.03.22 14:16:32 ERROR Starting the bsp launcher for bloop...
+2022.03.22 14:16:32 ERROR Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/n2/lkxf5xgn5qd0l88pblwqxc6h0000gn/T/bsp-launcher8983513897596277443/bsp.socket'...
+2022.03.22 14:16:32 ERROR Waiting for the bsp connection to come up...
+2022.03.22 14:16:32 ERROR Waiting for the bsp connection to come up...
+2022.03.22 14:16:32 ERROR error: The command bsp --protocol local --socket /var/folders/n2/lkxf5xgn5qd0l88pblwqxc6h0000gn/T/bsp-launcher8983513897596277443/bsp.socket returned with an error
+2022.03.22 14:16:32 ERROR > [0m[32m[D][0m Loading workspace settings from bloop.settings.json
+2022.03.22 14:16:32 ERROR > [0m[32m[D][0m Loading 2 projects from '/Users/robindebalme/cs449-M1/.bloop'...
+2022.03.22 14:16:32 ERROR > [0m[32m[D][0m Loading project from '/Users/robindebalme/cs449-M1/.bloop/cs449-m1.json'
+2022.03.22 14:16:32 ERROR > [0m[32m[D][0m Loading project from '/Users/robindebalme/cs449-M1/.bloop/cs449-m1-test.json'
+2022.03.22 14:16:32 ERROR > [0m[33m[W][0m Scala instance jar /Users/salimcherkaoui/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.12/scala-compiler-2.11.12.jar doesn't exist!
+2022.03.22 14:16:32 ERROR > [0m[33m[W][0m Scala instance jar /Users/salimcherkaoui/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.12/scala-compiler-2.11.12.jar doesn't exist!
+2022.03.22 14:16:32 ERROR > [0m[33m[W][0m Scala instance jar /Users/salimcherkaoui/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar doesn't exist!
+2022.03.22 14:16:32 ERROR > [0m[33m[W][0m Scala instance jar /Users/salimcherkaoui/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.12/scala-reflect-2.11.12.jar doesn't exist!
+2022.03.22 14:16:32 ERROR > [0m[33m[W][0m Scala instance jar /Users/salimcherkaoui/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.jar doesn't exist!
+2022.03.22 14:16:32 ERROR > [0m[33m[W][0m Scala instance jar /Users/salimcherkaoui/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar doesn't exist!
+2022.03.22 14:16:32 ERROR > [0m[33m[W][0m Scala instance jar /Users/salimcherkaoui/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/jline/jline/2.14.3/jline-2.14.3.jar doesn't exist!
+2022.03.22 14:16:32 ERROR > [0m[33m[W][0m Scala instance jar /Users/salimcherkaoui/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar doesn't exist!
+2022.03.22 14:16:32 ERROR > [0m[33m[W][0m Scala instance jar /Users/salimcherkaoui/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.12/scala-reflect-2.11.12.jar doesn't exist!
+2022.03.22 14:16:32 ERROR > [0m[33m[W][0m Scala instance jar /Users/salimcherkaoui/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.jar doesn't exist!
+2022.03.22 14:16:32 ERROR > [0m[33m[W][0m Scala instance jar /Users/salimcherkaoui/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar doesn't exist!
+2022.03.22 14:16:32 ERROR > [0m[33m[W][0m Scala instance jar /Users/salimcherkaoui/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/jline/jline/2.14.3/jline-2.14.3.jar doesn't exist!
+2022.03.22 14:16:32 ERROR > [0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.11.12.
+2022.03.22 14:16:32 ERROR > [0m[32m[D][0m   => /Users/salimcherkaoui/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/jline/jline/2.14.3/jline-2.14.3.jar
+2022.03.22 14:16:32 ERROR > [0m[32m[D][0m   => /Users/salimcherkaoui/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar
+2022.03.22 14:16:32 ERROR > [0m[32m[D][0m   => /Users/salimcherkaoui/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.jar
+2022.03.22 14:16:32 ERROR > [0m[32m[D][0m   => /Users/salimcherkaoui/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.12/scala-compiler-2.11.12.jar
+2022.03.22 14:16:32 ERROR > [0m[32m[D][0m   => /Users/salimcherkaoui/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar
+2022.03.22 14:16:32 ERROR > [0m[32m[D][0m   => /Users/salimcherkaoui/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.12/scala-reflect-2.11.12.jar
+2022.03.22 14:16:32 ERROR > [0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.11.12.
+2022.03.22 14:16:32 ERROR > [0m[32m[D][0m   => /Users/salimcherkaoui/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/jline/jline/2.14.3/jline-2.14.3.jar
+2022.03.22 14:16:32 ERROR > [0m[32m[D][0m   => /Users/salimcherkaoui/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar
+2022.03.22 14:16:32 ERROR > [0m[32m[D][0m   => /Users/salimcherkaoui/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.jar
+2022.03.22 14:16:32 ERROR > [0m[32m[D][0m   => /Users/salimcherkaoui/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.12/scala-compiler-2.11.12.jar
+2022.03.22 14:16:32 ERROR > [0m[32m[D][0m   => /Users/salimcherkaoui/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar
+2022.03.22 14:16:32 ERROR > [0m[32m[D][0m   => /Users/salimcherkaoui/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.12/scala-reflect-2.11.12.jar
+2022.03.22 14:16:32 ERROR > [0m[32m[D][0m Elapsed: 372.247845 ms
+2022.03.22 14:16:32 ERROR > [0m[31m[E][0m Failed to load project from /Users/robindebalme/cs449-M1/.bloop/cs449-m1-test.json
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m bloop.data.Project$ProjectReadException: Failed to load project from /Users/robindebalme/cs449-M1/.bloop/cs449-m1-test.json
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	bloop.data.Project$.fromBytesAndOrigin(Project.scala:287)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	bloop.engine.BuildLoader$.loadProject(BuildLoader.scala:256)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	bloop.engine.BuildLoader$.$anonfun$loadBuildIncrementally$3(BuildLoader.scala:60)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	monix.eval.internal.TaskRunLoop$.monix$eval$internal$TaskRunLoop$$loop$1(TaskRunLoop.scala:187)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	monix.eval.internal.TaskRunLoop$RestartCallback$1.onSuccess(TaskRunLoop.scala:119)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	monix.eval.Task$.$anonfun$forkedUnit$2(Task.scala:1463)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	java.lang.Thread.run(Thread.java:748)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m Caused by: java.nio.file.NoSuchFileException: /Users/salimcherkaoui/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.12/scala-compiler-2.11.12.jar
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:144)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	java.nio.file.Files.readAttributes(Files.java:1737)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	bloop.ScalaInstance.$anonfun$hashCode$1(ScalaInstance.scala:82)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:286)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	scala.collection.mutable.WrappedArray.foreach(WrappedArray.scala:38)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	scala.collection.TraversableLike.map(TraversableLike.scala:286)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	scala.collection.TraversableLike.map$(TraversableLike.scala:279)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	scala.collection.AbstractTraversable.map(Traversable.scala:108)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	bloop.ScalaInstance.<init>(ScalaInstance.scala:78)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	bloop.ScalaInstance$.newInstance$1(ScalaInstance.scala:152)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	bloop.ScalaInstance$.$anonfun$apply$7(ScalaInstance.scala:157)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1688)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	bloop.ScalaInstance$.apply(ScalaInstance.scala:157)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	bloop.data.Project$.$anonfun$fromConfig$1(Project.scala:304)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	scala.Option.flatMap(Option.scala:271)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	bloop.data.Project$.fromConfig(Project.scala:299)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	bloop.data.Project$.fromBytesAndOrigin(Project.scala:281)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	bloop.engine.BuildLoader$.loadProject(BuildLoader.scala:256)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	bloop.engine.BuildLoader$.$anonfun$loadBuildIncrementally$3(BuildLoader.scala:60)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	monix.eval.internal.TaskRunLoop$.monix$eval$internal$TaskRunLoop$$loop$1(TaskRunLoop.scala:187)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	monix.eval.internal.TaskRunLoop$RestartCallback$1.onSuccess(TaskRunLoop.scala:119)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	monix.eval.Task$.$anonfun$forkedUnit$2(Task.scala:1463)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	java.lang.Thread.run(Thread.java:748)
+2022.03.22 14:16:32 ERROR error: Trying a tcp-based connection to the server instead...
+2022.03.22 14:16:32 ERROR Opening a bsp server connection with 'bsp --protocol tcp --port 40949'...
+2022.03.22 14:16:32 ERROR Waiting for the bsp connection to come up...
+2022.03.22 14:16:32 ERROR error: The command bsp --protocol tcp --port 40949 returned with an error
+2022.03.22 14:16:32 ERROR > [0m[32m[D][0m Loading workspace settings from bloop.settings.json
+2022.03.22 14:16:32 ERROR > [0m[32m[D][0m Loading 2 projects from '/Users/robindebalme/cs449-M1/.bloop'...
+2022.03.22 14:16:32 ERROR > [0m[32m[D][0m Loading project from '/Users/robindebalme/cs449-M1/.bloop/cs449-m1-test.json'
+2022.03.22 14:16:32 ERROR > [0m[32m[D][0m Loading project from '/Users/robindebalme/cs449-M1/.bloop/cs449-m1.json'
+2022.03.22 14:16:32 ERROR > [0m[33m[W][0m Scala instance jar /Users/salimcherkaoui/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.12/scala-compiler-2.11.12.jar doesn't exist!
+2022.03.22 14:16:32 ERROR > [0m[33m[W][0m Scala instance jar /Users/salimcherkaoui/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar doesn't exist!
+2022.03.22 14:16:32 ERROR > [0m[33m[W][0m Scala instance jar /Users/salimcherkaoui/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.12/scala-reflect-2.11.12.jar doesn't exist!
+2022.03.22 14:16:32 ERROR > [0m[33m[W][0m Scala instance jar /Users/salimcherkaoui/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.jar doesn't exist!
+2022.03.22 14:16:32 ERROR > [0m[33m[W][0m Scala instance jar /Users/salimcherkaoui/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar doesn't exist!
+2022.03.22 14:16:32 ERROR > [0m[33m[W][0m Scala instance jar /Users/salimcherkaoui/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/jline/jline/2.14.3/jline-2.14.3.jar doesn't exist!
+2022.03.22 14:16:32 ERROR > [0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.11.12.
+2022.03.22 14:16:32 ERROR > [0m[32m[D][0m   => /Users/salimcherkaoui/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/jline/jline/2.14.3/jline-2.14.3.jar
+2022.03.22 14:16:32 ERROR > [0m[32m[D][0m   => /Users/salimcherkaoui/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar
+2022.03.22 14:16:32 ERROR > [0m[32m[D][0m   => /Users/salimcherkaoui/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.jar
+2022.03.22 14:16:32 ERROR > [0m[32m[D][0m   => /Users/salimcherkaoui/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.12/scala-compiler-2.11.12.jar
+2022.03.22 14:16:32 ERROR > [0m[32m[D][0m   => /Users/salimcherkaoui/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar
+2022.03.22 14:16:32 ERROR > [0m[32m[D][0m   => /Users/salimcherkaoui/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.12/scala-reflect-2.11.12.jar
+2022.03.22 14:16:32 ERROR > [0m[32m[D][0m Elapsed: 45.395431 ms
+2022.03.22 14:16:32 ERROR > [0m[33m[W][0m Scala instance jar /Users/salimcherkaoui/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.12/scala-compiler-2.11.12.jar doesn't exist![0m[31m[E][0m Failed to load project from /Users/robindebalme/cs449-M1/.bloop/cs449-m1.json
+2022.03.22 14:16:32 ERROR > 
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m bloop.data.Project$ProjectReadException: Failed to load project from /Users/robindebalme/cs449-M1/.bloop/cs449-m1.json
+2022.03.22 14:16:32 ERROR > [0m[33m[W][0m Scala instance jar /Users/salimcherkaoui/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar doesn't exist!
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	bloop.data.Project$.fromBytesAndOrigin(Project.scala:287)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	bloop.engine.BuildLoader$.loadProject(BuildLoader.scala:256)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	bloop.engine.BuildLoader$.$anonfun$loadBuildIncrementally$3(BuildLoader.scala:60)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	monix.eval.internal.TaskRunLoop$.monix$eval$internal$TaskRunLoop$$loop$1(TaskRunLoop.scala:187)
+2022.03.22 14:16:32 ERROR > [0m[33m[W][0m Scala instance jar /Users/salimcherkaoui/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.12/scala-reflect-2.11.12.jar doesn't exist!
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	monix.eval.internal.TaskRunLoop$RestartCallback$1.onSuccess(TaskRunLoop.scala:119)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	monix.eval.Task$.$anonfun$forkedUnit$2(Task.scala:1463)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+2022.03.22 14:16:32 ERROR > [0m[33m[W][0m Scala instance jar /Users/salimcherkaoui/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.jar doesn't exist!
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	java.lang.Thread.run(Thread.java:748)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m Caused by: java.nio.file.NoSuchFileException: /Users/salimcherkaoui/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.12/scala-compiler-2.11.12.jar
+2022.03.22 14:16:32 ERROR > [0m[33m[W][0m Scala instance jar /Users/salimcherkaoui/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar doesn't exist!
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+2022.03.22 14:16:32 ERROR > [0m[33m[W][0m Scala instance jar /Users/salimcherkaoui/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/jline/jline/2.14.3/jline-2.14.3.jar doesn't exist!
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:144)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	java.nio.file.Files.readAttributes(Files.java:1737)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	bloop.ScalaInstance.$anonfun$hashCode$1(ScalaInstance.scala:82)
+2022.03.22 14:16:32 ERROR > [0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.11.12.
+2022.03.22 14:16:32 ERROR > [0m[32m[D][0m   => /Users/salimcherkaoui/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/jline/jline/2.14.3/jline-2.14.3.jar
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:286)
+2022.03.22 14:16:32 ERROR > [0m[32m[D][0m   => /Users/salimcherkaoui/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	scala.collection.mutable.WrappedArray.foreach(WrappedArray.scala:38)
+2022.03.22 14:16:32 ERROR > [0m[32m[D][0m   => /Users/salimcherkaoui/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.jar
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	scala.collection.TraversableLike.map(TraversableLike.scala:286)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	scala.collection.TraversableLike.map$(TraversableLike.scala:279)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	scala.collection.AbstractTraversable.map(Traversable.scala:108)
+2022.03.22 14:16:32 ERROR > [0m[32m[D][0m   => /Users/salimcherkaoui/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.12/scala-compiler-2.11.12.jar
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	bloop.ScalaInstance.<init>(ScalaInstance.scala:78)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	bloop.ScalaInstance$.newInstance$1(ScalaInstance.scala:152)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	bloop.ScalaInstance$.$anonfun$apply$7(ScalaInstance.scala:157)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1688)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	bloop.ScalaInstance$.apply(ScalaInstance.scala:157)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	bloop.data.Project$.$anonfun$fromConfig$1(Project.scala:304)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	scala.Option.flatMap(Option.scala:271)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	bloop.data.Project$.fromConfig(Project.scala:299)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	bloop.data.Project$.fromBytesAndOrigin(Project.scala:281)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	bloop.engine.BuildLoader$.loadProject(BuildLoader.scala:256)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	bloop.engine.BuildLoader$.$anonfun$loadBuildIncrementally$3(BuildLoader.scala:60)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	monix.eval.internal.TaskRunLoop$.monix$eval$internal$TaskRunLoop$$loop$1(TaskRunLoop.scala:187)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	monix.eval.internal.TaskRunLoop$RestartCallback$1.onSuccess(TaskRunLoop.scala:119)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	monix.eval.Task$.$anonfun$forkedUnit$2(Task.scala:1463)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+2022.03.22 14:16:32 ERROR > [0m[36m[T][0m 	java.lang.Thread.run(Thread.java:748)
+2022.03.22 14:16:32 ERROR error: The launcher failed to establish a bsp connection, aborting...
+2022.03.22 14:16:32 ERROR Failed to connect with build server, no functionality will work.
+java.lang.RuntimeException: The server did not start, got FailedToOpenBspConnection
+	at bloop.launcher.LauncherMain.failPromise$1(Launcher.scala:95)
+	at bloop.launcher.LauncherMain.runLauncher(Launcher.scala:122)
+	at scala.meta.internal.metals.BloopServers$$anon$2.run(BloopServers.scala:169)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2022.03.22 14:16:32 WARN  no build target for: /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:16:33 WARN  no build target for: /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:16:35 INFO  no build target found for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala. Using presentation compiler with project's scala-library version: 3.1.1
+mars 22, 2022 2:16:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 2
+2022.03.22 14:16:36 INFO  running '/Users/robindebalme/Library/Caches/Coursier/jvm/adopt@1.8.0-292/Contents/Home/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /var/folders/n2/lkxf5xgn5qd0l88pblwqxc6h0000gn/T/metals4999081878560896148/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2022.03.22 14:16:37 INFO  [info] welcome to sbt 1.4.7 (AdoptOpenJDK Java 1.8.0_292)
+2022.03.22 14:16:39 INFO  [info] loading settings for project cs449-m1-build-build-build from metals.sbt ...
+2022.03.22 14:16:40 INFO  [info] loading project definition from /Users/robindebalme/cs449-M1/project/project/project
+2022.03.22 14:16:42 INFO  time: code lens generation in 6.13s
+2022.03.22 14:16:42 INFO  time: code lens generation in 8.34s
+2022.03.22 14:16:42 INFO  time: code lens generation in 6.13s
+2022.03.22 14:16:42 INFO  [info] loading settings for project cs449-m1-build-build from metals.sbt ...
+2022.03.22 14:16:42 INFO  [info] loading project definition from /Users/robindebalme/cs449-M1/project/project
+2022.03.22 14:16:44 INFO  [success] Generated .bloop/cs449-m1-build-build.json
+2022.03.22 14:16:44 INFO  [success] Total time: 2 s, completed 22 mars 2022 14:16:44
+2022.03.22 14:16:44 INFO  [info] loading settings for project cs449-m1-build from metals.sbt,plugins.sbt ...
+2022.03.22 14:16:44 INFO  [info] loading project definition from /Users/robindebalme/cs449-M1/project
+2022.03.22 14:16:45 INFO  [success] Generated .bloop/cs449-m1-build.json
+2022.03.22 14:16:45 INFO  [success] Total time: 1 s, completed 22 mars 2022 14:16:45
+2022.03.22 14:16:45 INFO  [info] loading settings for project cs449-m1 from build.sbt ...
+2022.03.22 14:16:45 INFO  [info] set current project to m1_yourid (in build file:/Users/robindebalme/cs449-M1/)
+2022.03.22 14:16:50 INFO  [warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+2022.03.22 14:16:50 INFO  [success] Generated .bloop/cs449-m1-test.json
+2022.03.22 14:16:50 INFO  [success] Generated .bloop/cs449-m1.json
+2022.03.22 14:16:50 INFO  [success] Total time: 4 s, completed 22 mars 2022 14:16:51
+2022.03.22 14:16:51 INFO  time: ran 'sbt bloopInstall' in 15s
+2022.03.22 14:16:51 INFO  Attempting to connect to the build server...
+2022.03.22 14:16:51 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/robindebalme/cs449-M1/.metals/bsp.trace.json or /Users/robindebalme/Library/Caches/org.scalameta.metals/bsp.trace.json
+2022.03.22 14:16:51 INFO  Attempting to connect to the build server...
+2022.03.22 14:16:51 INFO  Attempting to connect to the build server...
+2022.03.22 14:16:51 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/robindebalme/cs449-M1/project/.metals/bsp.trace.json or /Users/robindebalme/Library/Caches/org.scalameta.metals/bsp.trace.json
+2022.03.22 14:16:51 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/robindebalme/cs449-M1/project/project/.metals/bsp.trace.json or /Users/robindebalme/Library/Caches/org.scalameta.metals/bsp.trace.json
+2022.03.22 14:16:51 INFO  time: Connected to build server in 0.42s
+2022.03.22 14:16:51 INFO  Connected to Build server: Bloop v1.4.13
+2022.03.22 14:16:51 INFO  time: Imported build in 0.19s
+2022.03.22 14:16:59 INFO  compiling cs449-m1 (6 scala sources)
+2022.03.22 14:16:59 INFO  time: indexed workspace in 7.5s
+2022.03.22 14:16:59 INFO  Deduplicating compilation of cs449-m1 from bsp client 'Metals 0.11.2' (since 8.003s)
+2022.03.22 14:17:00 INFO  compiling cs449-m1 (6 scala sources)
+2022.03.22 14:17:04 INFO  time: compiled cs449-m1 in 3.93s
+2022.03.22 14:17:08 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/predict/kNN.scala
+2022.03.22 14:17:08 INFO  compiling cs449-m1 (6 scala sources)
+2022.03.22 14:17:10 INFO  time: compiled cs449-m1 in 2.12s
+2022.03.22 14:17:23 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:17:29 INFO  compiling cs449-m1 (6 scala sources)
+2022.03.22 14:17:30 INFO  time: compiled cs449-m1 in 1.15s
+2022.03.22 14:17:40 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:17:52 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+mars 22, 2022 2:17:54 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+mars 22, 2022 2:17:55 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+2022.03.22 14:17:55 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:18:01 INFO  compiling cs449-m1 (6 scala sources)
+2022.03.22 14:18:01 INFO  time: compiled cs449-m1 in 0.17s
+2022.03.22 14:18:05 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+mars 22, 2022 2:18:15 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+mars 22, 2022 2:18:16 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+2022.03.22 14:18:19 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+mars 22, 2022 2:18:21 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+mars 22, 2022 2:18:22 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+2022.03.22 14:18:23 INFO  compiling cs449-m1 (6 scala sources)
+2022.03.22 14:18:24 INFO  time: compiled cs449-m1 in 1.09s
+2022.03.22 14:18:27 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:18:44 INFO  compiling cs449-m1 (6 scala sources)
+2022.03.22 14:18:45 INFO  time: compiled cs449-m1 in 1.14s
+2022.03.22 14:18:47 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:18:51 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:18:59 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:19:02 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:19:04 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:19:05 INFO  compiling cs449-m1 (6 scala sources)
+2022.03.22 14:19:06 INFO  time: compiled cs449-m1 in 1.15s
+2022.03.22 14:19:06 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:19:11 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:19:16 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:19:22 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:19:22 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:19:23 INFO  compiling cs449-m1 (6 scala sources)
+2022.03.22 14:19:23 INFO  time: compiled cs449-m1 in 0.98s
+2022.03.22 14:19:24 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+mars 22, 2022 2:19:44 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 161
+2022.03.22 14:19:44 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:19:52 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:20:20 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:20:21 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:20:21 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:20:28 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:20:31 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:20:32 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:20:32 INFO  compiling cs449-m1 (6 scala sources)
+2022.03.22 14:20:31 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:20:32 INFO  time: compiled cs449-m1 in 0.98s
+2022.03.22 14:20:33 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:20:34 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:20:37 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:20:37 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:20:37 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:20:38 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:20:37 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:20:39 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:20:39 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:20:41 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:20:42 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:20:45 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:20:45 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:20:48 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:20:49 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:20:49 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:20:50 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:20:51 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:20:51 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:20:51 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:20:53 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:20:56 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:20:56 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:20:56 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:20:59 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:21:00 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:21:01 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:21:02 INFO  compiling cs449-m1 (6 scala sources)
+2022.03.22 14:21:03 INFO  time: compiled cs449-m1 in 1.01s
+2022.03.22 14:21:03 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:21:08 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:21:21 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:21:21 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:21:22 INFO  compiling cs449-m1 (6 scala sources)
+2022.03.22 14:21:22 INFO  time: compiled cs449-m1 in 0.97s
+2022.03.22 14:21:23 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:21:40 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:21:49 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:21:51 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:21:52 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:21:53 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:21:53 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:21:53 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:21:54 INFO  compiling cs449-m1 (6 scala sources)
+2022.03.22 14:21:54 INFO  time: compiled cs449-m1 in 0.96s
+2022.03.22 14:21:56 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:22:06 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:22:20 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:22:25 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:22:26 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:22:27 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:22:31 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:22:31 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:22:31 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:22:33 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:22:36 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:22:36 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:22:36 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:22:39 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:22:42 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:22:43 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:22:42 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:22:45 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:22:45 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:22:46 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:22:47 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:22:48 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:22:48 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:22:50 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:22:53 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:22:53 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:22:56 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:22:58 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:22:58 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:22:59 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:23:00 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:23:00 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:23:00 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:23:00 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:23:04 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:23:04 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:23:05 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:23:08 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:23:08 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:23:08 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:23:10 INFO  compiling cs449-m1 (6 scala sources)
+2022.03.22 14:23:10 INFO  time: compiled cs449-m1 in 0.99s
+2022.03.22 14:23:11 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:23:19 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:23:25 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:23:25 INFO  compiling cs449-m1 (6 scala sources)
+2022.03.22 14:23:26 INFO  time: compiled cs449-m1 in 1.11s
+2022.03.22 14:23:27 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:23:28 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+mars 22, 2022 2:23:32 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+2022.03.22 14:23:32 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+mars 22, 2022 2:23:34 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+mars 22, 2022 2:23:35 PM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFOS: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+2022.03.22 14:23:36 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:23:37 INFO  compiling cs449-m1 (6 scala sources)
+2022.03.22 14:23:37 INFO  time: compiled cs449-m1 in 0.76s
+2022.03.22 14:23:38 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:24:24 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:24:30 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:24:31 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:24:32 INFO  compiling cs449-m1 (6 scala sources)
+2022.03.22 14:24:33 INFO  time: compiled cs449-m1 in 1.06s
+2022.03.22 14:24:33 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:449:21: stale bloop error: not found: value globalAvg
+    (user, item) => globalAvg
+                    ^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:453:42: stale bloop error: not found: value alluserAvg
+    (user, item) => userAvg(user, train, alluserAvg, globalAvg)
+                                         ^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:453:54: stale bloop error: not found: value globalAvg
+    (user, item) => userAvg(user, train, alluserAvg, globalAvg)
+                                                     ^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:457:42: stale bloop error: not found: value allitemAvg
+    (user, item) => itemAvg(item, train, allitemAvg, globalAvg)
+                                         ^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:457:54: stale bloop error: not found: value globalAvg
+    (user, item) => itemAvg(item, train, allitemAvg, globalAvg)
+                                                     ^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:461:58: stale bloop error: not found: value allitemDev
+    (user, item) => predictedBaseline(user, item, train, allitemDev, globalAvg, alluserAvg, allitemAvg)
+                                                         ^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:461:70: stale bloop error: not found: value globalAvg
+    (user, item) => predictedBaseline(user, item, train, allitemDev, globalAvg, alluserAvg, allitemAvg)
+                                                                     ^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:461:81: stale bloop error: not found: value alluserAvg
+    (user, item) => predictedBaseline(user, item, train, allitemDev, globalAvg, alluserAvg, allitemAvg)
+                                                                                ^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:461:93: stale bloop error: not found: value allitemAvg
+    (user, item) => predictedBaseline(user, item, train, allitemDev, globalAvg, alluserAvg, allitemAvg)
+                                                                                            ^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:465:62: stale bloop error: not found: value alluserAvg
+    (user, item) => predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
+                                                             ^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:465:74: stale bloop error: not found: value globalAvg
+    (user, item) => predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
+                                                                         ^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:465:85: stale bloop error: not found: value allitemAvg
+    (user, item) => predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
+                                                                                    ^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:465:97: stale bloop error: not found: value mapArrUsers
+    (user, item) => predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
+                                                                                                ^^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:465:110: stale bloop error: not found: value cosineSim
+    (user, item) => predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
+                                                                                                             ^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:465:121: stale bloop error: not found: value preProcessSim
+    (user, item) => predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
+                                                                                                                        ^^^^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:469:70: stale bloop error: not found: value alluserAvg
+    (user, item) => jaccard_predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers , jaccardSim, preProcessSim)
+                                                                     ^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:469:82: stale bloop error: not found: value globalAvg
+    (user, item) => jaccard_predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers , jaccardSim, preProcessSim)
+                                                                                 ^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:469:93: stale bloop error: not found: value allitemAvg
+    (user, item) => jaccard_predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers , jaccardSim, preProcessSim)
+                                                                                            ^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:469:105: stale bloop error: not found: value mapArrUsers
+    (user, item) => jaccard_predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers , jaccardSim, preProcessSim)
+                                                                                                        ^^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:469:119: stale bloop error: not found: value jaccardSim
+    (user, item) => jaccard_predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers , jaccardSim, preProcessSim)
+                                                                                                                      ^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:469:131: stale bloop error: not found: value preProcessSim
+    (user, item) => jaccard_predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers , jaccardSim, preProcessSim)
+                                                                                                                                  ^^^^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:473:21: stale bloop error: not enough arguments for method predictedPersonalized_knn: (user: Int, item: Int, k: Int, train: Array[shared.predictions.package.Rating], alluserAvg: scala.collection.mutable.Map[Int,Double], globalAvg: Double, allitemAvg: scala.collection.mutable.Map[Int,Double], preProcessSim: scala.collection.mutable.Map[(Int, Int),Double], filteredArrUsers: Map[Int,Array[shared.predictions.package.Rating]], cosineSim: scala.collection.mutable.Map[(Int, Int),Double])Double.
+Unspecified value parameters alluserAvg, globalAvg, allitemAvg...
+    (user, item) => predictedPersonalized_knn(user, item, k, train)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:478:5: stale bloop error: not found: value globalAvg
+    globalAvg = computeGlobalAvg(train)
+    ^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:449:21: stale bloop error: not found: value globalAvg
+    (user, item) => globalAvg
+                    ^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:453:42: stale bloop error: not found: value alluserAvg
+    (user, item) => userAvg(user, train, alluserAvg, globalAvg)
+                                         ^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:453:54: stale bloop error: not found: value globalAvg
+    (user, item) => userAvg(user, train, alluserAvg, globalAvg)
+                                                     ^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:457:42: stale bloop error: not found: value allitemAvg
+    (user, item) => itemAvg(item, train, allitemAvg, globalAvg)
+                                         ^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:457:54: stale bloop error: not found: value globalAvg
+    (user, item) => itemAvg(item, train, allitemAvg, globalAvg)
+                                                     ^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:461:58: stale bloop error: not found: value allitemDev
+    (user, item) => predictedBaseline(user, item, train, allitemDev, globalAvg, alluserAvg, allitemAvg)
+                                                         ^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:461:70: stale bloop error: not found: value globalAvg
+    (user, item) => predictedBaseline(user, item, train, allitemDev, globalAvg, alluserAvg, allitemAvg)
+                                                                     ^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:461:81: stale bloop error: not found: value alluserAvg
+    (user, item) => predictedBaseline(user, item, train, allitemDev, globalAvg, alluserAvg, allitemAvg)
+                                                                                ^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:461:93: stale bloop error: not found: value allitemAvg
+    (user, item) => predictedBaseline(user, item, train, allitemDev, globalAvg, alluserAvg, allitemAvg)
+                                                                                            ^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:465:62: stale bloop error: not found: value alluserAvg
+    (user, item) => predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
+                                                             ^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:465:74: stale bloop error: not found: value globalAvg
+    (user, item) => predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
+                                                                         ^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:465:85: stale bloop error: not found: value allitemAvg
+    (user, item) => predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
+                                                                                    ^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:465:97: stale bloop error: not found: value mapArrUsers
+    (user, item) => predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
+                                                                                                ^^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:465:110: stale bloop error: not found: value cosineSim
+    (user, item) => predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
+                                                                                                             ^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:465:121: stale bloop error: not found: value preProcessSim
+    (user, item) => predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
+                                                                                                                        ^^^^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:469:70: stale bloop error: not found: value alluserAvg
+    (user, item) => jaccard_predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers , jaccardSim, preProcessSim)
+                                                                     ^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:469:82: stale bloop error: not found: value globalAvg
+    (user, item) => jaccard_predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers , jaccardSim, preProcessSim)
+                                                                                 ^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:469:93: stale bloop error: not found: value allitemAvg
+    (user, item) => jaccard_predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers , jaccardSim, preProcessSim)
+                                                                                            ^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:469:105: stale bloop error: not found: value mapArrUsers
+    (user, item) => jaccard_predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers , jaccardSim, preProcessSim)
+                                                                                                        ^^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:469:119: stale bloop error: not found: value jaccardSim
+    (user, item) => jaccard_predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers , jaccardSim, preProcessSim)
+                                                                                                                      ^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:469:131: stale bloop error: not found: value preProcessSim
+    (user, item) => jaccard_predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers , jaccardSim, preProcessSim)
+                                                                                                                                  ^^^^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:473:21: stale bloop error: not enough arguments for method predictedPersonalized_knn: (user: Int, item: Int, k: Int, train: Array[shared.predictions.package.Rating], alluserAvg: scala.collection.mutable.Map[Int,Double], globalAvg: Double, allitemAvg: scala.collection.mutable.Map[Int,Double], preProcessSim: scala.collection.mutable.Map[(Int, Int),Double], filteredArrUsers: Map[Int,Array[shared.predictions.package.Rating]], cosineSim: scala.collection.mutable.Map[(Int, Int),Double])Double.
+Unspecified value parameters alluserAvg, globalAvg, allitemAvg...
+    (user, item) => predictedPersonalized_knn(user, item, k, train)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:478:5: stale bloop error: not found: value globalAvg
+    globalAvg = computeGlobalAvg(train)
+    ^^^^^^^^^
+2022.03.22 14:24:46 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:449:21: stale bloop error: not found: value globalAvg
+    (user, item) => globalAvg
+                    ^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:453:42: stale bloop error: not found: value alluserAvg
+    (user, item) => userAvg(user, train, alluserAvg, globalAvg)
+                                         ^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:453:54: stale bloop error: not found: value globalAvg
+    (user, item) => userAvg(user, train, alluserAvg, globalAvg)
+                                                     ^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:457:42: stale bloop error: not found: value allitemAvg
+    (user, item) => itemAvg(item, train, allitemAvg, globalAvg)
+                                         ^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:457:54: stale bloop error: not found: value globalAvg
+    (user, item) => itemAvg(item, train, allitemAvg, globalAvg)
+                                                     ^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:461:58: stale bloop error: not found: value allitemDev
+    (user, item) => predictedBaseline(user, item, train, allitemDev, globalAvg, alluserAvg, allitemAvg)
+                                                         ^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:461:70: stale bloop error: not found: value globalAvg
+    (user, item) => predictedBaseline(user, item, train, allitemDev, globalAvg, alluserAvg, allitemAvg)
+                                                                     ^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:461:81: stale bloop error: not found: value alluserAvg
+    (user, item) => predictedBaseline(user, item, train, allitemDev, globalAvg, alluserAvg, allitemAvg)
+                                                                                ^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:461:93: stale bloop error: not found: value allitemAvg
+    (user, item) => predictedBaseline(user, item, train, allitemDev, globalAvg, alluserAvg, allitemAvg)
+                                                                                            ^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:465:62: stale bloop error: not found: value alluserAvg
+    (user, item) => predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
+                                                             ^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:465:74: stale bloop error: not found: value globalAvg
+    (user, item) => predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
+                                                                         ^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:465:85: stale bloop error: not found: value allitemAvg
+    (user, item) => predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
+                                                                                    ^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:465:97: stale bloop error: not found: value mapArrUsers
+    (user, item) => predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
+                                                                                                ^^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:465:110: stale bloop error: not found: value cosineSim
+    (user, item) => predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
+                                                                                                             ^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:465:121: stale bloop error: not found: value preProcessSim
+    (user, item) => predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
+                                                                                                                        ^^^^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:469:70: stale bloop error: not found: value alluserAvg
+    (user, item) => jaccard_predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers , jaccardSim, preProcessSim)
+                                                                     ^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:469:82: stale bloop error: not found: value globalAvg
+    (user, item) => jaccard_predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers , jaccardSim, preProcessSim)
+                                                                                 ^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:469:93: stale bloop error: not found: value allitemAvg
+    (user, item) => jaccard_predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers , jaccardSim, preProcessSim)
+                                                                                            ^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:469:105: stale bloop error: not found: value mapArrUsers
+    (user, item) => jaccard_predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers , jaccardSim, preProcessSim)
+                                                                                                        ^^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:469:119: stale bloop error: not found: value jaccardSim
+    (user, item) => jaccard_predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers , jaccardSim, preProcessSim)
+                                                                                                                      ^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:469:131: stale bloop error: not found: value preProcessSim
+    (user, item) => jaccard_predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers , jaccardSim, preProcessSim)
+                                                                                                                                  ^^^^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:473:21: stale bloop error: not enough arguments for method predictedPersonalized_knn: (user: Int, item: Int, k: Int, train: Array[shared.predictions.package.Rating], alluserAvg: scala.collection.mutable.Map[Int,Double], globalAvg: Double, allitemAvg: scala.collection.mutable.Map[Int,Double], preProcessSim: scala.collection.mutable.Map[(Int, Int),Double], filteredArrUsers: Map[Int,Array[shared.predictions.package.Rating]], cosineSim: scala.collection.mutable.Map[(Int, Int),Double])Double.
+Unspecified value parameters alluserAvg, globalAvg, allitemAvg...
+    (user, item) => predictedPersonalized_knn(user, item, k, train)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:478:5: stale bloop error: not found: value globalAvg
+    globalAvg = computeGlobalAvg(train)
+    ^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:449:21: stale bloop error: not found: value globalAvg
+    (user, item) => globalAvg
+                    ^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:453:42: stale bloop error: not found: value alluserAvg
+    (user, item) => userAvg(user, train, alluserAvg, globalAvg)
+                                         ^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:453:54: stale bloop error: not found: value globalAvg
+    (user, item) => userAvg(user, train, alluserAvg, globalAvg)
+                                                     ^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:457:42: stale bloop error: not found: value allitemAvg
+    (user, item) => itemAvg(item, train, allitemAvg, globalAvg)
+                                         ^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:457:54: stale bloop error: not found: value globalAvg
+    (user, item) => itemAvg(item, train, allitemAvg, globalAvg)
+                                                     ^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:461:58: stale bloop error: not found: value allitemDev
+    (user, item) => predictedBaseline(user, item, train, allitemDev, globalAvg, alluserAvg, allitemAvg)
+                                                         ^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:461:70: stale bloop error: not found: value globalAvg
+    (user, item) => predictedBaseline(user, item, train, allitemDev, globalAvg, alluserAvg, allitemAvg)
+                                                                     ^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:461:81: stale bloop error: not found: value alluserAvg
+    (user, item) => predictedBaseline(user, item, train, allitemDev, globalAvg, alluserAvg, allitemAvg)
+                                                                                ^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:461:93: stale bloop error: not found: value allitemAvg
+    (user, item) => predictedBaseline(user, item, train, allitemDev, globalAvg, alluserAvg, allitemAvg)
+                                                                                            ^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:465:62: stale bloop error: not found: value alluserAvg
+    (user, item) => predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
+                                                             ^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:465:74: stale bloop error: not found: value globalAvg
+    (user, item) => predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
+                                                                         ^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:465:85: stale bloop error: not found: value allitemAvg
+    (user, item) => predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
+                                                                                    ^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:465:97: stale bloop error: not found: value mapArrUsers
+    (user, item) => predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
+                                                                                                ^^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:465:110: stale bloop error: not found: value cosineSim
+    (user, item) => predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
+                                                                                                             ^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:465:121: stale bloop error: not found: value preProcessSim
+    (user, item) => predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
+                                                                                                                        ^^^^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:469:70: stale bloop error: not found: value alluserAvg
+    (user, item) => jaccard_predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers , jaccardSim, preProcessSim)
+                                                                     ^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:469:82: stale bloop error: not found: value globalAvg
+    (user, item) => jaccard_predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers , jaccardSim, preProcessSim)
+                                                                                 ^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:469:93: stale bloop error: not found: value allitemAvg
+    (user, item) => jaccard_predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers , jaccardSim, preProcessSim)
+                                                                                            ^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:469:105: stale bloop error: not found: value mapArrUsers
+    (user, item) => jaccard_predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers , jaccardSim, preProcessSim)
+                                                                                                        ^^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:469:119: stale bloop error: not found: value jaccardSim
+    (user, item) => jaccard_predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers , jaccardSim, preProcessSim)
+                                                                                                                      ^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:469:131: stale bloop error: not found: value preProcessSim
+    (user, item) => jaccard_predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers , jaccardSim, preProcessSim)
+                                                                                                                                  ^^^^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:473:21: stale bloop error: not enough arguments for method predictedPersonalized_knn: (user: Int, item: Int, k: Int, train: Array[shared.predictions.package.Rating], alluserAvg: scala.collection.mutable.Map[Int,Double], globalAvg: Double, allitemAvg: scala.collection.mutable.Map[Int,Double], preProcessSim: scala.collection.mutable.Map[(Int, Int),Double], filteredArrUsers: Map[Int,Array[shared.predictions.package.Rating]], cosineSim: scala.collection.mutable.Map[(Int, Int),Double])Double.
+Unspecified value parameters alluserAvg, globalAvg, allitemAvg...
+    (user, item) => predictedPersonalized_knn(user, item, k, train)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:478:5: stale bloop error: not found: value globalAvg
+    globalAvg = computeGlobalAvg(train)
+    ^^^^^^^^^
+2022.03.22 14:24:46 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:24:47 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:449:21: stale bloop error: not found: value globalAvg
+    (user, item) => globalAvg
+                    ^^^^^^^^^
+2022.03.22 14:24:47 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:453:42: stale bloop error: not found: value alluserAvg
+    (user, item) => userAvg(user, train, alluserAvg, globalAvg)
+                                         ^^^^^^^^^^
+2022.03.22 14:24:47 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:453:54: stale bloop error: not found: value globalAvg
+    (user, item) => userAvg(user, train, alluserAvg, globalAvg)
+                                                     ^^^^^^^^^
+2022.03.22 14:24:47 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:457:42: stale bloop error: not found: value allitemAvg
+    (user, item) => itemAvg(item, train, allitemAvg, globalAvg)
+                                         ^^^^^^^^^^
+2022.03.22 14:24:47 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:457:54: stale bloop error: not found: value globalAvg
+    (user, item) => itemAvg(item, train, allitemAvg, globalAvg)
+                                                     ^^^^^^^^^
+2022.03.22 14:24:47 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:461:58: stale bloop error: not found: value allitemDev
+    (user, item) => predictedBaseline(user, item, train, allitemDev, globalAvg, alluserAvg, allitemAvg)
+                                                         ^^^^^^^^^^
+2022.03.22 14:24:47 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:461:70: stale bloop error: not found: value globalAvg
+    (user, item) => predictedBaseline(user, item, train, allitemDev, globalAvg, alluserAvg, allitemAvg)
+                                                                     ^^^^^^^^^
+2022.03.22 14:24:47 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:461:81: stale bloop error: not found: value alluserAvg
+    (user, item) => predictedBaseline(user, item, train, allitemDev, globalAvg, alluserAvg, allitemAvg)
+                                                                                ^^^^^^^^^^
+2022.03.22 14:24:47 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:461:93: stale bloop error: not found: value allitemAvg
+    (user, item) => predictedBaseline(user, item, train, allitemDev, globalAvg, alluserAvg, allitemAvg)
+                                                                                            ^^^^^^^^^^
+2022.03.22 14:24:47 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:465:62: stale bloop error: not found: value alluserAvg
+    (user, item) => predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
+                                                             ^^^^^^^^^^
+2022.03.22 14:24:47 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:465:74: stale bloop error: not found: value globalAvg
+    (user, item) => predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
+                                                                         ^^^^^^^^^
+2022.03.22 14:24:47 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:465:85: stale bloop error: not found: value allitemAvg
+    (user, item) => predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
+                                                                                    ^^^^^^^^^^
+2022.03.22 14:24:47 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:465:97: stale bloop error: not found: value mapArrUsers
+    (user, item) => predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
+                                                                                                ^^^^^^^^^^^
+2022.03.22 14:24:47 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:465:110: stale bloop error: not found: value cosineSim
+    (user, item) => predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
+                                                                                                             ^^^^^^^^^
+2022.03.22 14:24:47 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:465:121: stale bloop error: not found: value preProcessSim
+    (user, item) => predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
+                                                                                                                        ^^^^^^^^^^^^^
+2022.03.22 14:24:47 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:469:70: stale bloop error: not found: value alluserAvg
+    (user, item) => jaccard_predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers , jaccardSim, preProcessSim)
+                                                                     ^^^^^^^^^^
+2022.03.22 14:24:47 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:469:82: stale bloop error: not found: value globalAvg
+    (user, item) => jaccard_predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers , jaccardSim, preProcessSim)
+                                                                                 ^^^^^^^^^
+2022.03.22 14:24:47 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:469:93: stale bloop error: not found: value allitemAvg
+    (user, item) => jaccard_predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers , jaccardSim, preProcessSim)
+                                                                                            ^^^^^^^^^^
+2022.03.22 14:24:47 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:469:105: stale bloop error: not found: value mapArrUsers
+    (user, item) => jaccard_predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers , jaccardSim, preProcessSim)
+                                                                                                        ^^^^^^^^^^^
+2022.03.22 14:24:47 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:469:119: stale bloop error: not found: value jaccardSim
+    (user, item) => jaccard_predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers , jaccardSim, preProcessSim)
+                                                                                                                      ^^^^^^^^^^
+2022.03.22 14:24:47 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:469:131: stale bloop error: not found: value preProcessSim
+    (user, item) => jaccard_predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers , jaccardSim, preProcessSim)
+                                                                                                                                  ^^^^^^^^^^^^^
+2022.03.22 14:24:47 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:473:21: stale bloop error: not enough arguments for method predictedPersonalized_knn: (user: Int, item: Int, k: Int, train: Array[shared.predictions.package.Rating], alluserAvg: scala.collection.mutable.Map[Int,Double], globalAvg: Double, allitemAvg: scala.collection.mutable.Map[Int,Double], preProcessSim: scala.collection.mutable.Map[(Int, Int),Double], filteredArrUsers: Map[Int,Array[shared.predictions.package.Rating]], cosineSim: scala.collection.mutable.Map[(Int, Int),Double])Double.
+Unspecified value parameters alluserAvg, globalAvg, allitemAvg...
+    (user, item) => predictedPersonalized_knn(user, item, k, train)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2022.03.22 14:24:47 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:478:5: stale bloop error: not found: value globalAvg
+    globalAvg = computeGlobalAvg(train)
+    ^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:449:21: stale bloop error: not found: value globalAvg
+    (user, item) => globalAvg
+                    ^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:453:42: stale bloop error: not found: value alluserAvg
+    (user, item) => userAvg(user, train, alluserAvg, globalAvg)
+                                         ^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:453:54: stale bloop error: not found: value globalAvg
+    (user, item) => userAvg(user, train, alluserAvg, globalAvg)
+                                                     ^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:457:42: stale bloop error: not found: value allitemAvg
+    (user, item) => itemAvg(item, train, allitemAvg, globalAvg)
+                                         ^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:457:54: stale bloop error: not found: value globalAvg
+    (user, item) => itemAvg(item, train, allitemAvg, globalAvg)
+                                                     ^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:461:58: stale bloop error: not found: value allitemDev
+    (user, item) => predictedBaseline(user, item, train, allitemDev, globalAvg, alluserAvg, allitemAvg)
+                                                         ^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:461:70: stale bloop error: not found: value globalAvg
+    (user, item) => predictedBaseline(user, item, train, allitemDev, globalAvg, alluserAvg, allitemAvg)
+                                                                     ^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:461:81: stale bloop error: not found: value alluserAvg
+    (user, item) => predictedBaseline(user, item, train, allitemDev, globalAvg, alluserAvg, allitemAvg)
+                                                                                ^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:461:93: stale bloop error: not found: value allitemAvg
+    (user, item) => predictedBaseline(user, item, train, allitemDev, globalAvg, alluserAvg, allitemAvg)
+                                                                                            ^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:465:62: stale bloop error: not found: value alluserAvg
+    (user, item) => predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
+                                                             ^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:465:74: stale bloop error: not found: value globalAvg
+    (user, item) => predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
+                                                                         ^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:465:85: stale bloop error: not found: value allitemAvg
+    (user, item) => predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
+                                                                                    ^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:465:97: stale bloop error: not found: value mapArrUsers
+    (user, item) => predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
+                                                                                                ^^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:465:110: stale bloop error: not found: value cosineSim
+    (user, item) => predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
+                                                                                                             ^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:465:121: stale bloop error: not found: value preProcessSim
+    (user, item) => predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
+                                                                                                                        ^^^^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:469:70: stale bloop error: not found: value alluserAvg
+    (user, item) => jaccard_predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers , jaccardSim, preProcessSim)
+                                                                     ^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:469:82: stale bloop error: not found: value globalAvg
+    (user, item) => jaccard_predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers , jaccardSim, preProcessSim)
+                                                                                 ^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:469:93: stale bloop error: not found: value allitemAvg
+    (user, item) => jaccard_predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers , jaccardSim, preProcessSim)
+                                                                                            ^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:469:105: stale bloop error: not found: value mapArrUsers
+    (user, item) => jaccard_predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers , jaccardSim, preProcessSim)
+                                                                                                        ^^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:469:119: stale bloop error: not found: value jaccardSim
+    (user, item) => jaccard_predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers , jaccardSim, preProcessSim)
+                                                                                                                      ^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:469:131: stale bloop error: not found: value preProcessSim
+    (user, item) => jaccard_predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers , jaccardSim, preProcessSim)
+                                                                                                                                  ^^^^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:473:21: stale bloop error: not enough arguments for method predictedPersonalized_knn: (user: Int, item: Int, k: Int, train: Array[shared.predictions.package.Rating], alluserAvg: scala.collection.mutable.Map[Int,Double], globalAvg: Double, allitemAvg: scala.collection.mutable.Map[Int,Double], preProcessSim: scala.collection.mutable.Map[(Int, Int),Double], filteredArrUsers: Map[Int,Array[shared.predictions.package.Rating]], cosineSim: scala.collection.mutable.Map[(Int, Int),Double])Double.
+Unspecified value parameters alluserAvg, globalAvg, allitemAvg...
+    (user, item) => predictedPersonalized_knn(user, item, k, train)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2022.03.22 14:24:46 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:478:5: stale bloop error: not found: value globalAvg
+    globalAvg = computeGlobalAvg(train)
+    ^^^^^^^^^
+2022.03.22 14:24:46 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:24:47 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:449:21: stale bloop error: not found: value globalAvg
+    (user, item) => globalAvg
+                    ^^^^^^^^^
+2022.03.22 14:24:47 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:453:42: stale bloop error: not found: value alluserAvg
+    (user, item) => userAvg(user, train, alluserAvg, globalAvg)
+                                         ^^^^^^^^^^
+2022.03.22 14:24:47 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:453:54: stale bloop error: not found: value globalAvg
+    (user, item) => userAvg(user, train, alluserAvg, globalAvg)
+                                                     ^^^^^^^^^
+2022.03.22 14:24:47 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:457:42: stale bloop error: not found: value allitemAvg
+    (user, item) => itemAvg(item, train, allitemAvg, globalAvg)
+                                         ^^^^^^^^^^
+2022.03.22 14:24:47 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:457:54: stale bloop error: not found: value globalAvg
+    (user, item) => itemAvg(item, train, allitemAvg, globalAvg)
+                                                     ^^^^^^^^^
+2022.03.22 14:24:47 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:461:58: stale bloop error: not found: value allitemDev
+    (user, item) => predictedBaseline(user, item, train, allitemDev, globalAvg, alluserAvg, allitemAvg)
+                                                         ^^^^^^^^^^
+2022.03.22 14:24:47 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:461:70: stale bloop error: not found: value globalAvg
+    (user, item) => predictedBaseline(user, item, train, allitemDev, globalAvg, alluserAvg, allitemAvg)
+                                                                     ^^^^^^^^^
+2022.03.22 14:24:47 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:461:81: stale bloop error: not found: value alluserAvg
+    (user, item) => predictedBaseline(user, item, train, allitemDev, globalAvg, alluserAvg, allitemAvg)
+                                                                                ^^^^^^^^^^
+2022.03.22 14:24:47 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:461:93: stale bloop error: not found: value allitemAvg
+    (user, item) => predictedBaseline(user, item, train, allitemDev, globalAvg, alluserAvg, allitemAvg)
+                                                                                            ^^^^^^^^^^
+2022.03.22 14:24:47 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:465:62: stale bloop error: not found: value alluserAvg
+    (user, item) => predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
+                                                             ^^^^^^^^^^
+2022.03.22 14:24:47 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:465:74: stale bloop error: not found: value globalAvg
+    (user, item) => predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
+                                                                         ^^^^^^^^^
+2022.03.22 14:24:47 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:465:85: stale bloop error: not found: value allitemAvg
+    (user, item) => predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
+                                                                                    ^^^^^^^^^^
+2022.03.22 14:24:47 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:465:97: stale bloop error: not found: value mapArrUsers
+    (user, item) => predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
+                                                                                                ^^^^^^^^^^^
+2022.03.22 14:24:47 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:465:110: stale bloop error: not found: value cosineSim
+    (user, item) => predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
+                                                                                                             ^^^^^^^^^
+2022.03.22 14:24:47 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:465:121: stale bloop error: not found: value preProcessSim
+    (user, item) => predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
+                                                                                                                        ^^^^^^^^^^^^^
+2022.03.22 14:24:47 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:469:70: stale bloop error: not found: value alluserAvg
+    (user, item) => jaccard_predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers , jaccardSim, preProcessSim)
+                                                                     ^^^^^^^^^^
+2022.03.22 14:24:47 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:469:82: stale bloop error: not found: value globalAvg
+    (user, item) => jaccard_predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers , jaccardSim, preProcessSim)
+                                                                                 ^^^^^^^^^
+2022.03.22 14:24:47 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:469:93: stale bloop error: not found: value allitemAvg
+    (user, item) => jaccard_predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers , jaccardSim, preProcessSim)
+                                                                                            ^^^^^^^^^^
+2022.03.22 14:24:47 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:469:105: stale bloop error: not found: value mapArrUsers
+    (user, item) => jaccard_predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers , jaccardSim, preProcessSim)
+                                                                                                        ^^^^^^^^^^^
+2022.03.22 14:24:47 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:469:119: stale bloop error: not found: value jaccardSim
+    (user, item) => jaccard_predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers , jaccardSim, preProcessSim)
+                                                                                                                      ^^^^^^^^^^
+2022.03.22 14:24:47 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:469:131: stale bloop error: not found: value preProcessSim
+    (user, item) => jaccard_predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers , jaccardSim, preProcessSim)
+                                                                                                                                  ^^^^^^^^^^^^^
+2022.03.22 14:24:47 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:473:21: stale bloop error: not enough arguments for method predictedPersonalized_knn: (user: Int, item: Int, k: Int, train: Array[shared.predictions.package.Rating], alluserAvg: scala.collection.mutable.Map[Int,Double], globalAvg: Double, allitemAvg: scala.collection.mutable.Map[Int,Double], preProcessSim: scala.collection.mutable.Map[(Int, Int),Double], filteredArrUsers: Map[Int,Array[shared.predictions.package.Rating]], cosineSim: scala.collection.mutable.Map[(Int, Int),Double])Double.
+Unspecified value parameters alluserAvg, globalAvg, allitemAvg...
+    (user, item) => predictedPersonalized_knn(user, item, k, train)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2022.03.22 14:24:47 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:478:5: stale bloop error: not found: value globalAvg
+    globalAvg = computeGlobalAvg(train)
+    ^^^^^^^^^
+2022.03.22 14:24:48 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:449:21: stale bloop error: not found: value globalAvg
+    (user, item) => globalAvg
+                    ^^^^^^^^^
+2022.03.22 14:24:48 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:453:42: stale bloop error: not found: value alluserAvg
+    (user, item) => userAvg(user, train, alluserAvg, globalAvg)
+                                         ^^^^^^^^^^
+2022.03.22 14:24:48 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:453:54: stale bloop error: not found: value globalAvg
+    (user, item) => userAvg(user, train, alluserAvg, globalAvg)
+                                                     ^^^^^^^^^
+2022.03.22 14:24:48 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:457:42: stale bloop error: not found: value allitemAvg
+    (user, item) => itemAvg(item, train, allitemAvg, globalAvg)
+                                         ^^^^^^^^^^
+2022.03.22 14:24:48 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:457:54: stale bloop error: not found: value globalAvg
+    (user, item) => itemAvg(item, train, allitemAvg, globalAvg)
+                                                     ^^^^^^^^^
+2022.03.22 14:24:48 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:461:58: stale bloop error: not found: value allitemDev
+    (user, item) => predictedBaseline(user, item, train, allitemDev, globalAvg, alluserAvg, allitemAvg)
+                                                         ^^^^^^^^^^
+2022.03.22 14:24:48 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:461:70: stale bloop error: not found: value globalAvg
+    (user, item) => predictedBaseline(user, item, train, allitemDev, globalAvg, alluserAvg, allitemAvg)
+                                                                     ^^^^^^^^^
+2022.03.22 14:24:48 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:461:81: stale bloop error: not found: value alluserAvg
+    (user, item) => predictedBaseline(user, item, train, allitemDev, globalAvg, alluserAvg, allitemAvg)
+                                                                                ^^^^^^^^^^
+2022.03.22 14:24:48 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:461:93: stale bloop error: not found: value allitemAvg
+    (user, item) => predictedBaseline(user, item, train, allitemDev, globalAvg, alluserAvg, allitemAvg)
+                                                                                            ^^^^^^^^^^
+2022.03.22 14:24:48 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:465:62: stale bloop error: not found: value alluserAvg
+    (user, item) => predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
+                                                             ^^^^^^^^^^
+2022.03.22 14:24:48 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:465:74: stale bloop error: not found: value globalAvg
+    (user, item) => predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
+                                                                         ^^^^^^^^^
+2022.03.22 14:24:48 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:465:85: stale bloop error: not found: value allitemAvg
+    (user, item) => predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
+                                                                                    ^^^^^^^^^^
+2022.03.22 14:24:48 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:465:97: stale bloop error: not found: value mapArrUsers
+    (user, item) => predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
+                                                                                                ^^^^^^^^^^^
+2022.03.22 14:24:48 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:465:110: stale bloop error: not found: value cosineSim
+    (user, item) => predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
+                                                                                                             ^^^^^^^^^
+2022.03.22 14:24:48 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:465:121: stale bloop error: not found: value preProcessSim
+    (user, item) => predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
+                                                                                                                        ^^^^^^^^^^^^^
+2022.03.22 14:24:48 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:469:70: stale bloop error: not found: value alluserAvg
+    (user, item) => jaccard_predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers , jaccardSim, preProcessSim)
+                                                                     ^^^^^^^^^^
+2022.03.22 14:24:48 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:469:82: stale bloop error: not found: value globalAvg
+    (user, item) => jaccard_predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers , jaccardSim, preProcessSim)
+                                                                                 ^^^^^^^^^
+2022.03.22 14:24:48 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:469:93: stale bloop error: not found: value allitemAvg
+    (user, item) => jaccard_predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers , jaccardSim, preProcessSim)
+                                                                                            ^^^^^^^^^^
+2022.03.22 14:24:48 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:469:105: stale bloop error: not found: value mapArrUsers
+    (user, item) => jaccard_predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers , jaccardSim, preProcessSim)
+                                                                                                        ^^^^^^^^^^^
+2022.03.22 14:24:48 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:469:119: stale bloop error: not found: value jaccardSim
+    (user, item) => jaccard_predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers , jaccardSim, preProcessSim)
+                                                                                                                      ^^^^^^^^^^
+2022.03.22 14:24:48 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:469:131: stale bloop error: not found: value preProcessSim
+    (user, item) => jaccard_predictedPersonalized(user, item, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers , jaccardSim, preProcessSim)
+                                                                                                                                  ^^^^^^^^^^^^^
+2022.03.22 14:24:48 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:473:21: stale bloop error: not enough arguments for method predictedPersonalized_knn: (user: Int, item: Int, k: Int, train: Array[shared.predictions.package.Rating], alluserAvg: scala.collection.mutable.Map[Int,Double], globalAvg: Double, allitemAvg: scala.collection.mutable.Map[Int,Double], preProcessSim: scala.collection.mutable.Map[(Int, Int),Double], filteredArrUsers: Map[Int,Array[shared.predictions.package.Rating]], cosineSim: scala.collection.mutable.Map[(Int, Int),Double])Double.
+Unspecified value parameters alluserAvg, globalAvg, allitemAvg...
+    (user, item) => predictedPersonalized_knn(user, item, k, train)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2022.03.22 14:24:48 INFO  file:///Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala:478:5: stale bloop error: not found: value globalAvg
+    globalAvg = computeGlobalAvg(train)
+    ^^^^^^^^^
+2022.03.22 14:24:48 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:24:49 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:24:49 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:24:51 INFO  compiling cs449-m1 (6 scala sources)
+2022.03.22 14:24:51 INFO  time: compiled cs449-m1 in 0.86s
+2022.03.22 14:24:52 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:24:56 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:24:58 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:25:01 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:25:09 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:25:10 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:25:13 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:25:13 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:25:14 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:25:14 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:25:16 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:25:19 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:25:25 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:25:28 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:25:31 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:25:31 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:25:31 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:25:33 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:25:36 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:25:36 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:25:37 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:25:38 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:25:39 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:25:40 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:25:40 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:25:40 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:25:41 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:25:42 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:25:44 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:25:47 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:25:47 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:25:47 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:25:48 INFO  compiling cs449-m1 (6 scala sources)
+2022.03.22 14:25:48 INFO  time: compiled cs449-m1 in 0.83s
+2022.03.22 14:25:49 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:25:55 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:25:56 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:26:02 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:26:04 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:26:04 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:26:04 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:26:04 INFO  compiling cs449-m1 (6 scala sources)
+2022.03.22 14:26:04 INFO  time: compiled cs449-m1 in 0.89s
+2022.03.22 14:26:06 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:26:10 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:26:12 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:26:13 INFO  compiling cs449-m1 (6 scala sources)
+2022.03.22 14:26:13 INFO  time: compiled cs449-m1 in 0.92s
+2022.03.22 14:26:15 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.22 14:26:16 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.22 14:26:16 INFO  compiling cs449-m1 (6 scala sources)
+2022.03.22 14:26:16 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.22 14:26:17 INFO  time: compiled cs449-m1 in 1.01s
+2022.03.22 14:26:17 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.22 14:26:24 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.22 14:26:24 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.22 14:26:26 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.22 14:26:26 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/distributed/DistributedBaseline.scala
+2022.03.22 14:26:26 INFO  compiling cs449-m1 (6 scala sources)
+2022.03.22 14:26:31 INFO  time: compiled cs449-m1 in 4.56s
