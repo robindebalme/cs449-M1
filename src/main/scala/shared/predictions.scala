@@ -454,6 +454,7 @@ package object predictions
 
   
 
+<<<<<<< HEAD
   ////
   // Predictor & MAE
   ////
@@ -461,18 +462,44 @@ package object predictions
 
   def predictorGlobal(train : Array[Rating]): (Int, Int) => Double = {
     (user, item) => globalAvg
+=======
+////
+// Predictor & MAE
+////
+
+
+def predictorBaseline(train : Array[Rating]):(Int, Int) => Double = {
+    val globalAvg2 = computeGlobalAvg(train)
+    val userArr = train.groupBy(_.user).map(x => (x._1, computeGlobalAvg(x._2)))
+    val devArr = train.groupBy(_.item).map(x => (x._1, mean_(x._2.map(elem => dev(elem.rating, userArr.getOrElse(elem.user, elem.rating))))))
+    (user: Int, item : Int) => {
+    val useravg = userArr.getOrElse(user, globalAvg2)
+    if (useravg == globalAvg2) globalAvg2
+    else {
+        val avgdev = devArr.getOrElse(item, 0.0)
+        if (avgdev == 0.0) useravg
+        else
+          useravg + avgdev * scale((useravg + avgdev), useravg)
+      }
+    }
+>>>>>>> refs/remotes/origin/master
   }
 
+  def predictorGlobal(train : Array[Rating]): (Int, Int) => Double = {
+    val globalAvg2 = computeGlobalAvg(train)
+    (user, item) => globalAvg2
+  }
+  
   def predictorUser(train : Array[Rating]): (Int, Int) => Double = {
-    (user, item) => userAvg(user, train, alluserAvg, globalAvg)
+    val globalAvg2 = computeGlobalAvg(train)
+    val userArr = train.groupBy(_.user).map(x => (x._1, computeGlobalAvg(x._2)))
+    (user, item) => userArr.getOrElse(user, globalAvg2)
   }
 
   def predictorItem(train : Array[Rating]): (Int, Int) => Double = {
-    (user, item) => itemAvg(item, train, allitemAvg, globalAvg)
-  }
-
-  def predictorBaseline(train : Array[Rating]): (Int, Int) => Double = {
-    (user, item) => predictedBaseline(user, item, train, allitemDev, globalAvg, alluserAvg, allitemAvg)
+    val globalAvg2 = computeGlobalAvg(train)
+    val itemArr = train.groupBy(_.item).map(x => (x._1, computeGlobalAvg(x._2)))
+    (user, item) => itemArr.getOrElse(item, globalAvg2)
   }
 
   def predictorCosine(train : Array[Rating]): (Int, Int) => Double = {
@@ -489,8 +516,9 @@ package object predictions
 
 
   def mae(test: Array[Rating], train: Array[Rating], prediction_method: Array[Rating] => ((Int, Int) => Double)): Double = {
-    globalAvg = computeGlobalAvg(train)
-    mean_(test.map(elem => (prediction_method(train)(elem.user, elem.item) - elem.rating).abs))
+    //globalAvg = computeGlobalAvg(train)
+    val predFctn = prediction_method(train)
+    mean_(test.map(elem => (predFctn(elem.user, elem.item) - elem.rating).abs))
   }
 
   def mae_knn(test: Array[Rating], train: Array[Rating], k: Int): Double = {

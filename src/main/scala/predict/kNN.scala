@@ -42,8 +42,10 @@ object kNN extends App {
 
 
   val measurements = (1 to conf.num_measurements()).map(x => timingInMs(() => {
-    Thread.sleep(1000) // Do everything here from train and test
-    42        // Output answer as last value
+    globalAvg =  mean_(train.map(_.rating))
+    mapArrUsers = filteredArrAllUsers(train)
+    //Thread.sleep(1000) // Do everything here from train and test
+    mae_knn(test, train, 10)       // Output answer as last value
   }))
   val timings = measurements.map(t => t._2) // Retrieve the timing measurements
 
@@ -53,13 +55,16 @@ object kNN extends App {
 
   globalAvg =  mean_(train.map(_.rating))
   mapArrUsers = filteredArrAllUsers(train)
+
+  val arr_SimUser1 = all_similarities_knn(1, 10, train, mapArrUsers, globalAvg, 
+  alluserAvg, preProcessSim, cosineSim)
   
 
   ////////////////////////////////////////
   ///////// NEW STRAT DIMANCHE //////////
  ///////////////////////////////////////
 
-def all_similarities(user: Int, k: Int): Array[Double] = {
+/*def all_similarities(user: Int, k: Int): Array[Double] = {
       var all_sim  = Array.fill(943)(0.0)
       for(j <- 0 to 942){
         if(j+1 == user) all_sim(j) = (0.0)
@@ -202,7 +207,7 @@ def predictedPersonalized_knn_autre(user: Int, item : Int, k: Int, train: Array[
   def mae_test_autre(test: Array[Rating], train: Array[Rating], k: Int): Double = {
     mean_(test.map(elem => (predictor_knn_autre(train, k)(elem.user, elem.item) - elem.rating).abs))
   }
-
+*/
   //println("mae K10 :"  + mae_test_autre(test, train, 10))
 
   ////////////////////////////////
@@ -227,16 +232,16 @@ def predictedPersonalized_knn_autre(user: Int, item : Int, k: Int, train: Array[
           "3.Measurements" -> conf.num_measurements()
         ),
         "N.1" -> ujson.Obj(
-          "1.k10u1v1" -> ujson.Num(0.0), // Similarity between user 1 and user 1 (k=10)
-          "2.k10u1v864" -> ujson.Num(0.0), // Similarity between user 1 and user 864 (k=10)
-          "3.k10u1v886" -> ujson.Num(0.0), // Similarity between user 1 and user 886 (k=10)
-          "4.PredUser1Item1" -> ujson.Num(0.0) // Prediction of item 1 for user 1 (k=10)
+          "1.k10u1v1" -> ujson.Num(arr_SimUser1.apply(0)), // Similarity between user 1 and user 1 (k=10)
+          "2.k10u1v864" -> ujson.Num(arr_SimUser1.apply(863)), // Similarity between user 1 and user 864 (k=10)
+          "3.k10u1v886" -> ujson.Num(arr_SimUser1.apply(886)), // Similarity between user 1 and user 886 (k=10)
+          "4.PredUser1Item1" -> ujson.Num(predictor_knn(train, 10)(1, 1)) // Prediction of item 1 for user 1 (k=10)
         ),
         "N.2" -> ujson.Obj(
           "1.kNN-Mae" -> List(10,30,50,100,200,300,400,800,943).map(k => 
               List(
                 k,
-                0.0 // Compute MAE
+                mae_knn(test, train, k) // Compute MAE
               )
           ).toList
         ),

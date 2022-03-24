@@ -2,20 +2,36 @@
     "Meta": {
         "1.Train": "data/ml-100k/u2.base",
         "2.Test": "data/ml-100k/u2.test",
-        "3.Master": "local[4]",
-        "4.Measurements": 1
+        "3.Measurements": 1
     },
-    "D.1": {
-        "1.GlobalAvg": 0,
-        "2.User1Avg": 0,
-        "3.Item1Avg": 0,
-        "4.Item1AvgDev": 0,
-        "5.PredUser1Item1": 0,
-        "6.Mae": 0
+    "B.1": {
+        "1.GlobalAvg": 3.5264625,
+        "2.User1Avg": 3.63302752293578,
+        "3.Item1Avg": 3.888268156424581,
+        "4.Item1AvgDev": 0.3027072341444875,
+        "5.PredUser1Item1": 4.046819980619529
     },
-    "D.2": {
-        "1.DistributedBaseline": {
-            "average (ms)": 101.653655,
+    "B.2": {
+        "1.GlobalAvgMAE": 0.9489109899999697,
+        "2.UserAvgMAE": 0.8383401457987351,
+        "3.ItemAvgMAE": 0.8206951490543668,
+        "4.BaselineMAE": 0.7604467914538644
+    },
+    "B.3": {
+        "1.GlobalAvg": {
+            "average (ms)": 11.698276,
+            "stddev (ms)": 0
+        },
+        "2.UserAvg": {
+            "average (ms)": 59.217703,
+            "stddev (ms)": 0
+        },
+        "3.ItemAvg": {
+            "average (ms)": 31.754588,
+            "stddev (ms)": 0
+        },
+        "4.Baseline": {
+            "average (ms)": 55.741546,
             "stddev (ms)": 0
         }
     }
