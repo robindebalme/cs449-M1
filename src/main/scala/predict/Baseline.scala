@@ -8,6 +8,7 @@ import org.apache.log4j.Logger
 import org.apache.log4j.Level
 
 import scala.collection.mutable
+import scala.math._
 import scala.math
 import shared.predictions._
 import scala.collection
@@ -45,12 +46,8 @@ object Baseline extends App {
 
   globalAvg =  computeGlobalAvg(train)
 
-
   val measurements1 = (1 to conf.num_measurements()).map(x => timingInMs(() => {
 
-    globalAvg =  computeGlobalAvg(train)
-    //Thread.sleep(1000) // Do everything here from train and test
-    //42        // Output answer as last value
     mae(test, train, predictorGlobal)
 
   }))
@@ -59,12 +56,6 @@ object Baseline extends App {
   
   val measurements2 = (1 to conf.num_measurements()).map(x => timingInMs(() => {
 
-    alluserAvg = mutable.Map()
-
-
-    globalAvg =  computeGlobalAvg(train)
-    //Thread.sleep(1000) // Do everything here from train and test
-    //42        // Output answer as last value
     mae(test, train, predictorUser)
     
   }))
@@ -73,12 +64,6 @@ object Baseline extends App {
 
   val measurements3 = (1 to conf.num_measurements()).map(x => timingInMs(() => {
 
-    alluserAvg = mutable.Map()
-    allitemAvg = mutable.Map()
-
-    globalAvg =  computeGlobalAvg(train)
-    //Thread.sleep(1000) // Do everything here from train and test
-    //42        // Output answer as last value
     mae(test, train, predictorItem)
     
   }))
@@ -87,13 +72,6 @@ object Baseline extends App {
 
   val measurements4 = (1 to conf.num_measurements()).map(x => timingInMs(() => {
 
-    alluserAvg = mutable.Map()
-    allitemAvg = mutable.Map()
-    allitemDev = mutable.Map()
-
-    globalAvg = computeGlobalAvg(train)
-    //Thread.sleep(1000) // Do everything here from train and test
-    //42        // Output answer as last value
     mae(test, train, predictorBaseline)
     
   })) 
