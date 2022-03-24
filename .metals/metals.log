@@ -12444,3 +12444,10 @@ AVERTISSEMENT: Unmatched cancel notification for request id 25854
 2022.03.24 10:25:11 INFO  time: compiled cs449-m1 in 0.53s
 2022.03.24 10:27:15 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
 2022.03.24 10:27:15 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.24 10:36:01 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+mars 24, 2022 10:36:10 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFOS: Unsupported notification method: $/setTrace
+2022.03.24 10:36:36 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.24 10:36:36 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.24 10:36:41 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
+2022.03.24 10:36:41 WARN  Could not load snapshot text for /Users/robindebalme/cs449-M1/src/main/scala/shared/predictions.scala
