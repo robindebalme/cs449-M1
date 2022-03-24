@@ -356,8 +356,8 @@ package object predictions
   }
 
   def all_similarities_knn(user: Int, k: Int, train: Array[Rating], filteredArrUsers: Map[Int, Array[Rating]], globalAvg: Double, 
-  alluserAvg: mutable.Map[Int, Double], preProcessSim: mutable.Map[(Int, Int),Double], cosineSim: mutable.Map[(Int, Int),Double]): Array[Double] = {
-      val maxUser = train.map(elem => elem.user).max
+  alluserAvg: mutable.Map[Int, Double], preProcessSim: mutable.Map[(Int, Int),Double], cosineSim: mutable.Map[(Int, Int),Double], maxUser: Int): Array[Double] = {
+      //val maxUser = train.map(elem => elem.user).max
       var all_sim  = Array.fill(maxUser)(0.0)
       for(j <- 0 to (maxUser-1)){
         if(j+1 == user) all_sim(j) = (0.0)
@@ -374,12 +374,12 @@ package object predictions
 
 
   def avgSimilarity_knn(i: Int, u: Int, k: Int, train: Array[Rating], filteredArrUsers: Map[Int, Array[Rating]], globalAvg: Double, 
-  alluserAvg: mutable.Map[Int, Double], preProcessSim: mutable.Map[(Int, Int),Double], cosineSim: mutable.Map[(Int, Int),Double]): Double = {
+  alluserAvg: mutable.Map[Int, Double], preProcessSim: mutable.Map[(Int, Int),Double], cosineSim: mutable.Map[(Int, Int),Double], maxUser: Int): Double = {
 
     val arrFiltered = train.filter(_.item == i)
     if(arrFiltered.isEmpty) 0
     else {
-      val all_sim = all_similarities_knn(u, k, train, filteredArrUsers, globalAvg, alluserAvg, preProcessSim, cosineSim)
+      val all_sim = all_similarities_knn(u, k, train, filteredArrUsers, globalAvg, alluserAvg, preProcessSim, cosineSim, maxUser)
       val res = arrFiltered.foldLeft((0.0, 0.0)){(acc, x) =>
         val sim = all_sim(x.user - 1)
         (acc._1 + (sim * dev(x.rating, userAvg(x.user, train, alluserAvg, globalAvg))), acc._2 + sim.abs)
@@ -397,7 +397,7 @@ package object predictions
   allitemAvg : mutable.Map[Int, Double], filteredArrUsers: Map[Int, Array[Rating]], cosineSim: mutable.Map[(Int, Int),Double], preProcessSim : mutable.Map[(Int, Int),Double]): Double = {
     val useravg = userAvg(user, train, alluserAvg, globalAvg)
     if (useravg == globalAvg) globalAvg
-    else if (itemAvg(item, train, allitemAvg, globalAvg) == globalAvg) useravg
+    //else if (itemAvg(item, train, allitemAvg, globalAvg) == globalAvg) useravg
     else {
       val simavgdev = avgSimilarity(item ,user, train, filteredArrUsers, cosineSim, globalAvg, alluserAvg, preProcessSim)
       if (simavgdev == 0) useravg
@@ -411,7 +411,7 @@ package object predictions
   allitemAvg : mutable.Map[Int, Double], filteredArrUsers: Map[Int, Array[Rating]], jaccardSim: mutable.Map[(Int, Int),Double], preProcessSim : mutable.Map[(Int, Int),Double]): Double = {
     val useravg = userAvg(user, train, alluserAvg, globalAvg)
     if (useravg == globalAvg) globalAvg
-    else if (itemAvg(item, train, allitemAvg, globalAvg) == globalAvg) useravg
+    //else if (itemAvg(item, train, allitemAvg, globalAvg) == globalAvg) useravg
     else {
       val simavgdev = jaccard_avgSimilarity(item ,user, train, filteredArrUsers, globalAvg, alluserAvg, jaccardSim)
       if (simavgdev == 0) useravg
@@ -421,14 +421,14 @@ package object predictions
   }
 
   def predictedPersonalized_knn(user: Int, item : Int, k: Int, train: Array[Rating], alluserAvg: mutable.Map[Int, Double], 
-  globalAvg: Double, allitemAvg: mutable.Map[Int, Double], filteredArrUsers: Map[Int, Array[Rating]], cosineSim: mutable.Map[(Int, Int),Double], preProcessSim : mutable.Map[(Int, Int),Double]): Double = {
+  globalAvg: Double, allitemAvg: mutable.Map[Int, Double], filteredArrUsers: Map[Int, Array[Rating]], cosineSim: mutable.Map[(Int, Int),Double], preProcessSim : mutable.Map[(Int, Int),Double], maxUser: Int): Double = {
     
     val useravg = userAvg(user, train, alluserAvg, globalAvg)
 
     if (useravg == globalAvg) globalAvg
-    else if (itemAvg(item, train, allitemAvg, globalAvg) == globalAvg) useravg
+    //else if (itemAvg(item, train, allitemAvg, globalAvg) == globalAvg) useravg
     else {
-      val simavgdev = avgSimilarity_knn(item ,user, k, train, filteredArrUsers, globalAvg, alluserAvg, preProcessSim, cosineSim)
+      val simavgdev = avgSimilarity_knn(item ,user, k, train, filteredArrUsers, globalAvg, alluserAvg, preProcessSim, cosineSim, maxUser)
       if (simavgdev == 0) useravg
       else
         useravg + simavgdev * scale((useravg + simavgdev), useravg)
@@ -436,12 +436,12 @@ package object predictions
   }
 
   def recommendation(u: Int, n: Int, k: Int, info: Array[Rating]) : (Array[Double], Array[Int]) = {
-
+      val maxUser = info.map(elem => elem.user).max
       val arrFiltered = info.filter(x => x.user == u && !(x.rating.isNaN))
       val maxItem = info.map(elem => elem.item).max
       val init = Array.fill(maxItem)(-1.0)
       for (j <- 0 to (maxItem-1)){
-        if(init(j) == -1) init(j) = predictedPersonalized_knn(u, j+1, k, info, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
+        if(init(j) == -1) init(j) = predictedPersonalized_knn(u, j+1, k, info, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim, maxUser)
       }
       for(i <- arrFiltered){
         init(i.item-1) = -1 // ENLEVER LES FILMS DEJA VU PAR L'UTILISATEUR
@@ -454,15 +454,6 @@ package object predictions
 
   
 
-<<<<<<< HEAD
-  ////
-  // Predictor & MAE
-  ////
-
-
-  def predictorGlobal(train : Array[Rating]): (Int, Int) => Double = {
-    (user, item) => globalAvg
-=======
 ////
 // Predictor & MAE
 ////
@@ -482,7 +473,6 @@ def predictorBaseline(train : Array[Rating]):(Int, Int) => Double = {
           useravg + avgdev * scale((useravg + avgdev), useravg)
       }
     }
->>>>>>> refs/remotes/origin/master
   }
 
   def predictorGlobal(train : Array[Rating]): (Int, Int) => Double = {
@@ -511,7 +501,8 @@ def predictorBaseline(train : Array[Rating]):(Int, Int) => Double = {
   }
 
   def predictor_knn(train : Array[Rating], k: Int): (Int, Int) => Double = {
-    (user, item) => predictedPersonalized_knn(user, item, k, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
+    val maxUser = train.map(elem => elem.user).max
+    (user, item) => predictedPersonalized_knn(user, item, k, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim, maxUser)
   }
 
 
@@ -522,7 +513,8 @@ def predictorBaseline(train : Array[Rating]):(Int, Int) => Double = {
   }
 
   def mae_knn(test: Array[Rating], train: Array[Rating], k: Int): Double = {
-    mean_(test.map(elem => (predictor_knn(train, k)(elem.user, elem.item) - elem.rating).abs))
+    val predFctn = predictor_knn(train, k)
+    mean_(test.map(elem => (predFctn(elem.user, elem.item) - elem.rating).abs))
   }
 
 }

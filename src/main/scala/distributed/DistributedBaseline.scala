@@ -64,6 +64,13 @@ object DistributedBaseline extends App {
     train.map(x => (x.item, (dev(x.rating, userArr.getOrElse(x.user, x.rating)), 1))).reduceByKey((x, y) => (x._1 + y._1, x._2 + y._2)).mapValues(x => (x._1 / x._2))
   }
 
+  def itemDevAllAlone(train: RDD[Rating]): RDD[(Int, Double)] =  {
+    val userArr = (train.map(x => (x.user, (x.rating, 1))).reduceByKey((x, y) => (x._1 + y._1, x._2 + y._2)).mapValues(x => x._1 / x._2)).collectAsMap
+    train.map(x => (x.item, (dev(x.rating, userArr.getOrElse(x.user, x.rating)), 1))).reduceByKey((x, y) => (x._1 + y._1, x._2 + y._2)).mapValues(x => (x._1 / x._2))
+  }
+
+  
+
 
   def predictedDistribBaseline(train: RDD[Rating]): (Int, Int) => Double = {
     val globalAvgDistrib = distribmeanr(train)

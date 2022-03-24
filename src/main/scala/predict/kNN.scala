@@ -45,7 +45,7 @@ object kNN extends App {
     globalAvg =  mean_(train.map(_.rating))
     mapArrUsers = filteredArrAllUsers(train)
     //Thread.sleep(1000) // Do everything here from train and test
-    mae_knn(test, train, 10)       // Output answer as last value
+    mae_knn(test, train, 300)       // Output answer as last value
   }))
   val timings = measurements.map(t => t._2) // Retrieve the timing measurements
 
@@ -55,9 +55,9 @@ object kNN extends App {
 
   globalAvg =  mean_(train.map(_.rating))
   mapArrUsers = filteredArrAllUsers(train)
+  val maxUser = train.map(elem => elem.user).max
 
-  val arr_SimUser1 = all_similarities_knn(1, 10, train, mapArrUsers, globalAvg, 
-  alluserAvg, preProcessSim, cosineSim)
+  val arr_SimUser1 = all_similarities_knn(1, 10, train, mapArrUsers, globalAvg, alluserAvg, preProcessSim, cosineSim, maxUser)
   
 
   ////////////////////////////////////////
