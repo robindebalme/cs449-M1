@@ -357,13 +357,14 @@ package object predictions
 
   def all_similarities_knn(user: Int, k: Int, train: Array[Rating], filteredArrUsers: Map[Int, Array[Rating]], globalAvg: Double, 
   alluserAvg: mutable.Map[Int, Double], preProcessSim: mutable.Map[(Int, Int),Double], cosineSim: mutable.Map[(Int, Int),Double]): Array[Double] = {
-      var all_sim  = Array.fill(943)(0.0)
-      for(j <- 0 to 942){
+      val maxUser = train.map(elem => elem.user).max
+      var all_sim  = Array.fill(maxUser)(0.0)
+      for(j <- 0 to (maxUser-1)){
         if(j+1 == user) all_sim(j) = (0.0)
         else all_sim(j) = (preProcess_Similarity(user, j+1, filteredArrUsers, cosineSim, train, globalAvg, alluserAvg, preProcessSim))
       }
       val k_top_users = all_sim.zipWithIndex.sortBy(-_._1).take(k).map(_._2) // index users les plus important
-      for(j <- 0 to 942){
+      for(j <- 0 to (maxUser-1)){
         if ( !k_top_users.contains(j) || j==(user-1)) 
           all_sim(j) = 0
       }
@@ -420,7 +421,7 @@ package object predictions
   }
 
   def predictedPersonalized_knn(user: Int, item : Int, k: Int, train: Array[Rating], alluserAvg: mutable.Map[Int, Double], 
-  globalAvg: Double, allitemAvg: mutable.Map[Int, Double], preProcessSim : mutable.Map[(Int, Int),Double], filteredArrUsers: Map[Int, Array[Rating]], cosineSim: mutable.Map[(Int, Int),Double]): Double = {
+  globalAvg: Double, allitemAvg: mutable.Map[Int, Double], filteredArrUsers: Map[Int, Array[Rating]], cosineSim: mutable.Map[(Int, Int),Double], preProcessSim : mutable.Map[(Int, Int),Double]): Double = {
     
     val useravg = userAvg(user, train, alluserAvg, globalAvg)
 
@@ -434,11 +435,24 @@ package object predictions
     }
   }
 
+  def recommendation(u: Int, n: Int, k: Int, info: Array[Rating]) : (Array[Double], Array[Int]) = {
+
+      val arrFiltered = info.filter(x => x.user == u && !(x.rating.isNaN))
+      val maxItem = info.map(elem => elem.item).max
+      val init = Array.fill(maxItem)(-1.0)
+      for (j <- 0 to (maxItem-1)){
+        if(init(j) == -1) init(j) = predictedPersonalized_knn(u, j+1, k, info, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
+      }
+      for(i <- arrFiltered){
+        init(i.item-1) = -1 // ENLEVER LES FILMS DEJA VU PAR L'UTILISATEUR
+      }
+    val out = init.zipWithIndex.sortBy(-_._1).take(n).map(_._2).map(_+1) // le +1 pour avoir numéro d Item pas indice array
+    (out.map(x => init(x-1)), out) // LES N RATINGS, LES N ITEMS
+
+  }
+
 
   
-
-  
-
 
   ////
   // Predictor & MAE
@@ -470,7 +484,7 @@ package object predictions
   }
 
   def predictor_knn(train : Array[Rating], k: Int): (Int, Int) => Double = {
-    (user, item) => predictedPersonalized_knn(user, item, k, train, alluserAvg, globalAvg, allitemAvg, preProcessSim, mapArrUsers, cosineSim)
+    (user, item) => predictedPersonalized_knn(user, item, k, train, alluserAvg, globalAvg, allitemAvg, mapArrUsers, cosineSim, preProcessSim)
   }
 
 

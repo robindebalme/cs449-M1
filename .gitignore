@@ -16,3 +16,5 @@ project/metals.sbt
 .vscode/settings.json
 .gitignore
 .gitignore
+.metals/metals.lock.db
+.metals/metals.lock.db
