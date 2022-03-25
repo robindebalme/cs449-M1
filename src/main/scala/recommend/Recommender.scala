@@ -59,12 +59,10 @@ object Recommender extends App {
   ////////////////////////////////////////
   ////////////////////////////////////////
 
-  globalAvg =  mean_(data.map(_.rating))
+  globalAvg = mean_(data.map(_.rating))
   val data_augmented = Array.concat(data, personal)
 
   val rec_test_rating = recommendation(944, 3, 300, data_augmented)
-  println("Recommendation USER 1 K300 : 1): " + rec_test_rating._2.mkString(", "))
-  println("Recommendation USER 1 K300 RATING: 1): " + rec_test_rating._1.mkString(", "))
 
   // Save answers as JSON
   def printToFile(content: String, 
@@ -83,13 +81,13 @@ object Recommender extends App {
           "personal" -> conf.personal()
         ),
         "R.1" -> ujson.Obj(
-          "PredUser1Item1" -> ujson.Num(0.0) // Prediction for user 1 of item 1
+          "PredUser1Item1" -> ujson.Num(predictor_knn(data_augmented, 300)(1, 1)) // Prediction for user 1 of item 1
         ),
           // IMPORTANT: To break ties and ensure reproducibility of results,
           // please report the top-3 recommendations that have the smallest
           // movie identifier.
 
-        "R.2" -> List((254, 0.0), (338, 0.0), (615, 0.0)).map(x => ujson.Arr(x._1, movieNames(x._1), x._2))
+        "R.2" -> List((rec_test_rating._2.apply(0), rec_test_rating._1.apply(0)), (rec_test_rating._2.apply(1), rec_test_rating._1.apply(1)), (rec_test_rating._2.apply(2), rec_test_rating._1.apply(2))).map(x => ujson.Arr(x._1, movieNames(x._1), x._2))
        )
       val json = write(answers, 4)
 

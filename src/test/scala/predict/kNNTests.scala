@@ -50,25 +50,26 @@ class kNNTests extends AnyFunSuite with BeforeAndAfterAll {
      // Create predictor on train2
 
      // Similarity between user 1 and itself
-     assert(within(1.0, 0.0, 0.0001))
+     assert(within(best_similarities_knn(1, 10, train2, mapArrUsers, computeGlobalAvg(train2), alluserAvg, preProcessSim, cosineSim,  train2.map(elem => elem.user).max).getOrElse(1, 0.0), 0.0, 0.0001))
  
      // Similarity between user 1 and 864
-     assert(within(1.0, 0.0, 0.0001))
+     assert(within(best_similarities_knn(1, 10, train2, mapArrUsers, computeGlobalAvg(train2), alluserAvg, preProcessSim, cosineSim,  train2.map(elem => elem.user).max).getOrElse(864, 0.0), 0.24232304952129619, 0.0001))
 
      // Similarity between user 1 and 886
-     assert(within(1.0, 0.0, 0.0001))
+     assert(within(best_similarities_knn(1, 10, train2, mapArrUsers, computeGlobalAvg(train2), alluserAvg, preProcessSim, cosineSim,  train2.map(elem => elem.user).max).getOrElse(886, 0.0), 0.0, 0.0001))
 
      // Prediction user 1 and item 1
-     assert(within(1.0, 0.0, 0.0001))
+     assert(within(predictor_knn(train2, 10)(1, 1), 4.319093503763853, 0.0001))
 
      // MAE on test2 
-     assert(within(1.0, 0.0, 0.0001))
+     assert(within(mae_knn(test2, train2, 10), 0.8287277961963556, 0.0001))
    } 
 
    test("kNN Mae") {
      // Compute MAE for k around the baseline MAE
      
      // Ensure the MAEs are indeed lower/higher than baseline
-     assert(1.0 < 0.0)
+     assert(mae(test2, train2, predictorBaseline) < mae_knn(test2, train2, 50))
+     assert(mae_knn(test2, train2, 100) < mae(test2, train2, predictorBaseline))
    }
 }

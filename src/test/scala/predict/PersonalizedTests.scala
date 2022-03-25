@@ -57,7 +57,7 @@ class PersonalizedTests extends AnyFunSuite with BeforeAndAfterAll {
      // Create predictor with adjusted cosine similarities
 
      // Similarity between user 1 and user 2
-     assert(within(preProcess_Similarity(1, 2, mapArrUsers, cosineSim, train2, globalAvg, alluserAvg, preProcessSim), 0.07303711860794568, 0.0001))
+     assert(within(preProcess_Similarity(1, 2, mapArrUsers, cosineSim, train2, computeGlobalAvg(train2), alluserAvg, preProcessSim), 0.07303711860794568, 0.0001))
 
      // Compute personalized prediction for user 1 on item 1
      assert(within(predictorCosine(train2)(1, 1), 4.08702725876936, 0.0001))
@@ -70,12 +70,13 @@ class PersonalizedTests extends AnyFunSuite with BeforeAndAfterAll {
      // Create predictor with jaccard similarities
 
      // Similarity between user 1 and user 2
-     assert(within(1.0, 0.0, 0.0001))
+     assert(within(jaccardSimilarity(1, 2, mapArrUsers, train2, 
+  alluserAvg, computeGlobalAvg(train2), jaccardSim), 0.03187250996015936, 0.0001))
 
      // Compute personalized prediction for user 1 on item 1
-     assert(within(1.0, 0.0, 0.0001))
+     assert(within(predictorJaccard(train2)(1, 1), 4.098236648361599, 0.0001))
 
      // MAE 
-     assert(within(1.0, 0.0, 0.0001))
+     assert(within(mae(test2, train2, predictorJaccard), 0.7556138848602905, 0.0001))
    }
 }

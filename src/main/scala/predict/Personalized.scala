@@ -44,7 +44,7 @@ object Personalized extends App {
 
   globalAvg =  mean_(train.map(_.rating))
 
-  mapArrUsers = filteredArrAllUsers(train)
+  val mapArrUsers = filteredArrAllUsers(train)
 
   // Save answers as JSON
   def printToFile(content: String, 

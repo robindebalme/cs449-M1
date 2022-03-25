@@ -49,6 +49,9 @@ object Baseline extends App {
   val devArr = train.groupBy(_.item).map(x => (x._1, mean_(x._2.map(elem => dev(elem.rating, userArr.getOrElse(elem.user, elem.rating))))))
 
   val measurements1 = (1 to conf.num_measurements()).map(x => timingInMs(() => {
+    alluserAvg = mutable.Map()
+    allitemAvg = mutable.Map()
+    allitemDev = mutable.Map()
 
     mae(test, train, predictorGlobal)
 
@@ -57,6 +60,9 @@ object Baseline extends App {
   val timingsGlobalAvg = measurements1.map(t => t._2)
   
   val measurements2 = (1 to conf.num_measurements()).map(x => timingInMs(() => {
+    alluserAvg = mutable.Map()
+    allitemAvg = mutable.Map()
+    allitemDev = mutable.Map()
     mae(test, train, predictorUser)
     
   }))
@@ -64,6 +70,9 @@ object Baseline extends App {
   val timingsUserAvg = measurements2.map(t => t._2)
 
   val measurements3 = (1 to conf.num_measurements()).map(x => timingInMs(() => {
+    alluserAvg = mutable.Map()
+    allitemAvg = mutable.Map()
+    allitemDev = mutable.Map()
     
     mae(test, train, predictorItem)
     
@@ -72,6 +81,9 @@ object Baseline extends App {
   val timingsItemAvg = measurements3.map(t => t._2)
 
   val measurements4 = (1 to conf.num_measurements()).map(x => timingInMs(() => {
+    alluserAvg = mutable.Map()
+    allitemAvg = mutable.Map()
+    allitemDev = mutable.Map()
     
     mae(test, train, predictorBaseline)
     
