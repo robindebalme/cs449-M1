@@ -18764,3 +18764,5 @@ Caused by: java.lang.IllegalArgumentException: 68 is not a valid line number, al
 2022.03.25 14:33:53 INFO  time: compiled cs449-m1 in 3.9s
 mars 25, 2022 3:01:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
 AVERTISSEMENT: Unmatched cancel notification for request id 6097
+mars 25, 2022 3:57:58 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFOS: Unsupported notification method: $/setTrace
